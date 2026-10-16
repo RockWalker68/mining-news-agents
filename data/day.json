@@ -1,5 +1,100 @@
 {
-  "articles": [],
-  "discussions": [],
+  "articles": [
+    {
+      "title": "Mining Experts Call For Funding, Federal Focus on Critical Minerals - National Defense Magazine",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONDdzdVBsQVVHekl1MDdtOE5uNmRnQWpULVFYVHh5MXVFRXZnSmloRVQxYW82bzBKazdmRldOcmlvMEZHV21UeTFrZUFpbGZSazNwT3RIemhzMTZRYVRUYUtZZVoyblVTNUVJSkt1UHQ0eC1ZTEN5ZlBXbHk0WWZsQmFocEtxZElGa1hKZ1VHN1dBRFhFTG51ODFBRU5ELThFSFc1TnhYcGdnZ1VZb3lscVZaS1I2Q3JPQ3hsSmNVMzVwOTdZ?oc=5",
+      "published": "Fri, 16 Oct 2026 16:10:40 GMT",
+      "source": "National Defense Magazine"
+    },
+    {
+      "title": "Eight Countries Launch Plans to Turn Mineral Resources into Jobs and Economic Growth - World Bank Group",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVlpjZ0E5NFhlUFNkYlZmb1dPQzlkZ3IxWENzajIzMXFtTEdpVzl5WnpNRmhWc2V5S0RoQTk0WHNmSEljSjE1WjNyNkNFVzV4ZmZTYmotWFk4LUoxRWVnU0k0RjBEbG1sYlE0bFk1VU05eV9DemlxTnppaWNrZzhsUlZHY3htOFhDNlBNdm1oeFFjR0M5aHdCZE1YRlBDWm8?oc=5",
+      "published": "Fri, 16 Oct 2026 05:27:41 GMT",
+      "source": "World Bank Group"
+    },
+    {
+      "title": "ONERugged Unveils Rugged Vehicle-Mount Computers for Precision Agriculture and Autonomous Mining - PR Newswire",
+      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOck9kSm9wcjdFempvUFZvb08ySUZ6RlZ3dEZzeEotRHRoeUVLZUZDbVlqT0czby1OdFVhcnFwWE9KOWRJYVNRMURqY3JpMHJaQjhVTGdFZkpOWU1GTldpdUU3em1RMjBvbnphQl9PWXNlZWs1cDRoZm9RWmJVX3cycjZuQkxlSGxoUVhNcnRkWEc5WFJzRlo1QnBkdk8tcUZnMDlYWVo0WEk1d1NVSER4MEdoaXptMlU4clA4R2JrWXY5aTVBTFFGcUdLREE4UndEZ0JUajUtMFg3QW9HbGM4YzdNdnRGTm8?oc=5",
+      "published": "Fri, 16 Oct 2026 16:00:00 GMT",
+      "source": "PR Newswire"
+    },
+    {
+      "title": "The critical minerals race is becoming a race for talent - Canadian Mining Journal",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNU09ZY1ItUHRlNFctcS1aMDFiWWt5OG83UWhreWJxYnNMOWQ3Zk52bjJpTE5EaHFKQUNZQXNuRDZ4WFo4bVFhQkFLM3JDUVNteFE2cEF6QXpPSGJVMlcwa0lnZUE3UFNsYmJMVHQ4NDg0QlhIMWNuOXQ2M0Z4ZXNxQzhxWkNpZDdXbTE1TVgwbXJwdFY5dEdZbG5WT3Z1eWw3V0tMQlk5NU5oeFRnNThYaW5n?oc=5",
+      "published": "Fri, 16 Oct 2026 14:42:58 GMT",
+      "source": "Canadian Mining Journal"
+    },
+    {
+      "title": "Blue Copper to increase mining exploration by a third - Missoula Current",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9wQm9FLUdQOEl1MXluU3lpbXplWUhHbDRKVVhPTTdsYmxvdDBaeG9rOFdiYjN5eXFjWWhCd0lvaklmU0x4OXozbEdKeDBxR2wwZVpJa2VXWmkzZmM?oc=5",
+      "published": "Fri, 16 Oct 2026 15:07:30 GMT",
+      "source": "Missoula Current"
+    },
+    {
+      "title": "Congo Arrests Hundreds of Chinese Miners in Copper Heartland - Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMVpHcjlEaGczQk05dFhXU3Q0OXB1Rk9BbmhtaGtJN0NmRndUUmhKMGI3dVRLUEdMUS04MnVGTEozZFpMNUMxSWN1LW1GZjNmR09QcUxiWDRiWktjaXp1SkRDUW55SF96SmtmMVpxcTczWFlMNGlPd3Q3X1BYZkV6NzFNSXlZRU1CS0FtMXc5TlhTT0RZV2s0emFnUlk1bEt3UW95Uy1jV2JqTVZURE1aUA?oc=5",
+      "published": "Fri, 16 Oct 2026 14:01:29 GMT",
+      "source": "Bloomberg.com"
+    },
+    {
+      "title": "BHP sues union at Spence copper mine over 'illegal' stoppages - Mining Weekly",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbHVIZEJQNllFNnlLczdDQlUtVGNaWG9ibHhOdWI3ZEpqblgyaWE3c3pSUzVPd0ZZUGk5bWRLZVN6MFJvMi00c09JdlYxbUdLTlZGZWFIaElJTEgyclo0NF90RXJvd0tZSFFFVmRwdGpKWEdGeEJ2bGpnRjZucGJ0bDhMYUNmc2pfbUlhT1ZWajBFMVlPU3NSSExKcXJTMGJTdzEwNEFXZ2tkRnM?oc=5",
+      "published": "Fri, 16 Oct 2026 06:52:00 GMT",
+      "source": "Mining Weekly"
+    },
+    {
+      "title": "BlackRock’s Hambro blasts gold miners’ ‘reckless capital allocation towards share buybacks… without any real process’ - Kitco",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTXV4Yl9rc0VhVmpQMUtLR3lOWG40NktfQzd5NXFPSVN5c0NtOHdyMzlPNE44c1NVeTc3WnRrTlpOTXRDdjlRallLVlhRcXFaVDlzbmR3dWZybjlNSXBNZ2lyaDFuMFhWYjA3NWliQzc0c3JsaDhfLXpmZ0t4ZXdRbnNKTTR1NEFnLVZkUjBoTDhTRG5FSDIySWliOTdVVjJNUlJIbkFNUldObW0yNVlOMGJQUE52Szdfbnc?oc=5",
+      "published": "Fri, 16 Oct 2026 11:17:00 GMT",
+      "source": "Kitco"
+    },
+    {
+      "title": "The artisanal miners behind Nigeria’s lithium boom - Al Jazeera",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYlJFZjI3NnFBejZWUVlYUmp3ZHk5ZzFNd000OHlKVGROWTNDYTdYNFZlV1E5YUk5UG9DbnZnekRRbDZhdW9qY0VBd3RYZTcwMllnNWZfb050WFlMbGp6elNwREZ5SkdqT3o5OGdOMmI3QUM5QlJnOXYzMVpVS01Wb1VLYW1HOXhGemFENDdpcWdpYnY2ay1EaDhvMXYzTk1qanY00gGoAUFVX3lxTE8wTkdZR3B2dnZpN0RYR3RFQVI1Tk9CeUxlTFc4WEVuTE5sWEdDVDg5ZmRTOThCZTNnck5fYjRSbERBTGVRWENLMFh4STdPTlhnd3YzdE50TlhsZkt4djNHbktsd1RhdjBTWUNhRmlfNEdXMVduSHhqNmpFM24tNjlsYmhYQkFQMC0yakpaSGc1Mmk3SHA3MnVhNFoyVy1RY2pXMThlc1dLXw?oc=5",
+      "published": "Fri, 16 Oct 2026 16:23:50 GMT",
+      "source": "Al Jazeera"
+    },
+    {
+      "title": "Should Canadians investors chase the TSX's best mining stocks after a 2,502% run? - Yahoo! Finance Canada",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVk5uV3NyUVVYWE9KUjhtRVViS1h6V0U2VXlKZjl2UmM5UWtVbEtDZHJJMHA2VTlBR2tRbkVpNGs5MERGcWpOUTlIVGYzNHZ6TDRDanZzV1p1NGFPdHh3dlE1WEZmMHEyeVFCVF85bzgyblc0enZoME1rdG5hREI4dDBPbE13X0xWV0IxaA?oc=5",
+      "published": "Fri, 16 Oct 2026 15:00:00 GMT",
+      "source": "Yahoo! Finance Canada"
+    },
+    {
+      "title": "Shandong Gold Mining Says Teng Hongmeng Resigns As Chief Financial Officer Due To Retirement - TradingView",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOY3F4cV9EZERqN0M0Z1JkaXluSU55UlY0TUxyejJaYTVBYlBOVFA2MGtuOFhDZGd4WjNaeDFOaHpjU1JtU2ZONjEzTnR4dXVVYUdwSGtRbXk5bi1MaDlkNzJxbXpGQjByOGtBZXBhV3NQZjZYMnJsV1QtcGRQMHFINnFaR2xfRlhVZUV1T2MycVZoUVBqYVY4R0tZVGdGOXcyWFVmUmZVcFRZOGV6dktiLVFKajFycTZsdGZLbVpQeVVNS3ZNS1FNZHp1bFJsX3ZZaHJYRGNoMnVXanUySmVvZmdaWkpSNXdnX3RKeHoyVEVzeDV4?oc=5",
+      "published": "Fri, 16 Oct 2026 15:12:22 GMT",
+      "source": "TradingView"
+    },
+    {
+      "title": "Goldman Sachs Picks Top African Gold Miners on Growth, Cash Flow Outlook - Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQQXg5TDYxZW96bldFejM5eXlmZTVOOTNTSlUxX3JhNE5iY2F5aWYwLThJQ1hpeWJEVjNVclhUOS10dTQzVGF6elhLOHdYQV9rcWw5SVc2c1UyQlFTTVpVak5yc3ZCbTZZQkhNd09wWi1JSC01Q3lrZWxiMm85NUpuTFY2MDEzUlEtcUtwNHNQZWhBcGxOcDZpc3kwVUdTVTVfa2phY3FnSzdTeTE3NWlSYlM3X0R3SEVUNlJfVTBXUU1HQ2xObmNJ?oc=5",
+      "published": "Fri, 16 Oct 2026 14:12:58 GMT",
+      "source": "Investing.com"
+    },
+    {
+      "title": "Exiro-led group takes control of Vale’s Manitoba nickel complex",
+      "link": "https://www.mining.com/exiro-led-group-takes-control-of-vales-manitoba-nickel-complex/",
+      "published": "Fri, 16 Oct 2026 15:06:00 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "US Project Vault readies $1B loan blitz for industry",
+      "link": "https://www.mining.com/us-project-vault-readies-1b-loan-blitz-for-industry/",
+      "published": "Fri, 16 Oct 2026 12:39:00 +0000",
+      "source": "MINING.COM"
+    }
+  ],
+  "discussions": [
+    {
+      "time": "2026-10-16T10:57:23.026559-07:00",
+      "article_count": 14,
+      "strategist": "Yukon, Simon: today's list is mostly headlines with no numbers, so I'll keep conclusions small and flag where they're thin.\n\nThe most concrete item is Vale's Manitoba nickel complex passing to an Exiro-led group (MINING.COM). The headline says control has changed hands, which reads as portfolio pruning rather than distress. Set it beside the log's Vale entry, where soaring costs put 10% of iron ore in the red, and the pattern looks like simplification. That's speculation. Simon's caution stands: it's one unexplained data point, and we still lack the price and cost basis.\n\nCopper supply friction is the second cluster. BHP is suing a union at Spence over what it calls illegal stoppages, and Bloomberg reports Congo arrested hundreds of Chinese miners in the copper heartland. Copper fell earlier on easing Chile strike risk, but Spence is a reminder that Chilean labour friction hasn't disappeared. The Congo story has no scale, so I can't size it. Neither item changes my view that the refined surplus is near-term fact. Both do reinforce Yukon's point about tight concentrate, and Simon's that surplus and tight raw material can coexist.\n\nThird, capital allocation. BlackRock's Hambro blasted gold miners' \"reckless capital allocation towards share buybacks\" (Kitco). Read against the Breakingviews piece on Gold Fields, this is a counterweight to my reading of more bidding rounds. Shareholders are pushing cash back to themselves, not into mergers. That doesn't rule out a deal, but it makes my Gold Fields prediction look more doubtful than it did yesterday.\n\nFourth, policy money. Project Vault readies a $1B loan programme (MINING.COM), and the World Bank reports eight countries launching plans to turn minerals into jobs. Together with the Department of War funding for LM in the log, this is more state capital chasing critical minerals. Simon's US tariff risk remains open, and nothing today resolves it.\n\nWorth watching: the Yahoo \"2,502% run\" piece is the kind of headline that tells you more about market mood than fundamentals, and I'd treat it that way.\n\nPREDICTION: Project Vault announces at least one named borrower or completed loan under its $1B facility | BY: 2026-12-31 | CONFIDENCE: low\n\nPREDICTION: Gold Fields announces a new or expanded share buyback programme | BY: 2026-12-31 | CONFIDENCE: low",
+      "geologist": "Meldrum, most of today's items are headlines with no body text, so I'm reading titles only and will say so where it matters.\n\nSupply disruption is the story I'd watch. BHP is suing a union at its Spence copper mine over what it calls illegal stoppages, and Bloomberg reports Congo has arrested hundreds of Chinese miners in the copper heartland. I'd treat both as concentrate and disruption signals, not refined-market facts. They fit the log's point that a refined surplus and tight concentrate supply can coexist. Neither confirms nor weakens the ICSG surplus view. The WSWS Chile death toll is still unverified, and it stays out of any conclusion.\n\nVale is the second item. The log has Vale saying 10% of its iron ore is cash-negative, with no price basis. Now an Exiro-led group has taken control of Vale's Manitoba nickel complex. A headline can't tell us whether this is a cost-driven exit, a portfolio tidy-up, or something else. Dr Simon is right that one data point isn't a distress call. The filing's price and cost basis would tell us far more than the transaction itself.\n\nFunding and policy come third. MINING.COM says Project Vault is readying a $1B loan facility, and the World Bank reports eight countries launching critical-mineral plans. Funding announcements are cheap until a named borrower signs. The Canadian tax-credit thread is still open, since nothing on the provinces' submission has surfaced.\n\nCapital allocation is the last cluster. Kitco quotes BlackRock's Hambro calling gold miners' buybacks \"reckless.\" That sits beside the Gold Fields–Equinox and Breakingviews threads: the sector is arguing over whether cash goes to buybacks, M&A, or growth. My view on gold M&A hasn't changed. Breakingviews is commentary, not a deal.\n\nThin items worth noting only: the Yahoo \"2,502% run\" is a price history, not a valuation case. The Nigeria artisanal and talent pieces are background.\n\nPREDICTION: BHP and the union at Spence publicly announce a settlement, or a court issues a ruling, on the stoppages | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Project Vault publicly names at least one borrower or a finalised loan under its roughly $1B facility | BY: 2026-12-31 | CONFIDENCE: low",
+      "strategist_reply": "Yukon, your point that Spence hits concentrate, not refined metal, sharpens my view. I had lumped the BHP dispute in with the copper surplus story, but a stoppage at a concentrate producer takes tonnes out of the smelter feed, which is exactly where the tightness shows up. That fits the ICSG surplus and the tight raw material coexisting, and I'll adopt that framing.\n\nOn Vale's Manitoba nickel, your operator's eye is more useful than my portfolio-pruning reading. Whether this was a cost exit, a sustaining-capex decision, or an ore-life question depends on grade trends and mine life, none of which a headline shows. I'd like to see that before calling it a pattern.\n\nWhere I differ: I'd tone down the BHP settlement prediction. Stoppage disputes often run for months, and \"publicly announced\" is a higher bar than \"resolved.\" I'm moving it to low. I'd also treat the Congo arrests as a possible flag on Chinese-run operations and artisanal supply there, though that's speculation without scale.\n\nWhat we both missed: no FX, no price data, and no cost curves. Without the Chilean peso, the Canadian dollar, or the rand, I can't yet say how these stories hit producers' margins.\n\nPredictions as I now hold them:\n\nPREDICTION: Project Vault publicly names at least one borrower or a finalised loan under its roughly $1B facility | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: BHP and the union at Spence publicly announce a settlement, or a court issues a reported ruling, on the stoppages | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Gold Fields announces a new or expanded share buyback programme | BY: 2026-12-31 | CONFIDENCE: low",
+      "geologist_reply": "Meldrum, your read on Vale is sound, and I'd add one thing from experience. When a major sells a nickel complex, the ore body is only part of what changes hands. Reclamation, water and tailings obligations, and permit conditions usually move with it, and a change of control often triggers new financing and permitting reviews. The sale price and what the buyer takes on will tell us more than the headline does. That's typical practice, not a finding about this deal.\n\nI'd push back on treating Congo as a supply signal. Arrests of artisanal or informal miners are usually about permits, licensing, and who controls the supply chain, not about lost industrial output. Without scale, I wouldn't read it as a disruption at all.\n\nOn buybacks, I don't see Hambro's criticism as a clean counterweight to M&A. A company can buy back shares because it sees no good deal, or because it wants to look shareholder-friendly while it pursues one. Hambro is attacking the process, not ruling out deals. I'd lower my own confidence on Gold Fields because I only have its headline and no detail on its balance sheet or stated plans. I'm not adopting your buyback prediction for that reason.\n\nWhat we both underweighted is delivery risk. The talent piece from Canadian Mining Journal matters as much as the funding headlines. Many projects that get money stall on staffing and construction capacity, and that's where the studies usually go wrong.\n\nHeld predictions:\n\nPREDICTION: BHP and the union at Spence publicly announce a settlement, or a court issues a ruling, on the stoppages | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Project Vault publicly names at least one borrower or a finalised loan under its roughly $1B facility | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Exiro or Vale publicly discloses the consideration or price for the transfer of Vale's Manitoba nickel complex | BY: 2026-12-31 | CONFIDENCE: medium",
+      "summary": "Key stories:\n- Vale's Manitoba nickel complex has passed to an Exiro-led group. The motive is unknown, and the price and cost basis are missing.\n- BHP is suing a union at its Spence copper mine over alleged illegal stoppages, which both see as a concentrate supply signal.\n- Bloomberg reports Congo arrested hundreds of Chinese miners in the copper heartland, with no scale given.\n- Project Vault is readying a roughly $1B loan facility, and the World Bank reports eight countries launching critical-mineral plans.\n- BlackRock's Hambro criticised gold miners' buybacks as \"reckless,\" which bears on the Gold Fields M&A debate.\n\nWhere they agree:\n- A refined copper surplus and tight concentrate supply can coexist.\n- One Vale headline is not a pattern, and the price and cost basis matter.\n- Funding announcements carry little weight until named borrowers sign.\n\nWhere they disagree:\n- Congo: Meldrum sees a possible flag on Chinese-run and artisanal supply. Yukon sees permit and licensing issues, not lost output.\n- Buybacks: Meldrum reads them as cash returned to shareholders, which makes a Gold Fields deal less likely. Yukon says buybacks can signal no good deal or cover for one, so Hambro's criticism does not rule out M&A.\n- Vale: Meldrum first read portfolio pruning, then deferred to grade and mine-life data. Yukon adds that reclamation, tailings and permit obligations usually transfer with the asset.\n- BHP settlement: Meldrum lowered his confidence to low because stoppage disputes often run for months. Yukon holds medium.\n\nPredictions:\n\nPREDICTION: Project Vault publicly names at least one borrower or a finalised loan under its roughly $1B facility | BY: 2026-12-31 | CONFIDENCE: low (Meldrum)\n\nPREDICTION: Gold Fields announces a new or expanded share buyback programme | BY: 2026-12-31 | CONFIDENCE: low (Meldrum)\n\nPREDICTION: BHP and the union at Spence publicly announce a settlement, or a court issues a ruling, on the stoppages | BY: 2026-12-31 | CONFIDENCE: medium (Yukon Cornelius)\n\nPREDICTION: Project Vault publicly names at least one borrower or a finalised loan under its roughly $1B facility | BY: 2026-12-31 | CONFIDENCE: low (Yukon Cornelius)\n\nPREDICTION: Exiro or Vale publicly discloses the consideration or price for the transfer of Vale's Manitoba nickel complex | BY: 2026-12-31 | CONFIDENCE: medium (Yukon Cornelius)"
+    }
+  ],
   "chief_sessions": []
 }
