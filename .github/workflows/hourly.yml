@@ -1,0 +1,57 @@
+# Runs the Mining Desk every hour on GitHub's computers, then saves the
+# results (data/ and docs/) back into this repository. GitHub Pages serves
+# docs/index.html as your morning page.
+
+name: Mining Desk
+
+on:
+  schedule:
+    - cron: "7 * * * *"      # Every hour at :07 (UTC). pipeline.py checks Pacific time itself.
+  workflow_dispatch:          # Adds a "Run workflow" button on the Actions tab
+    inputs:
+      now:
+        description: "Run every job right now (ignore the schedule)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write             # Lets the run save its results back to the repository
+
+concurrency:
+  group: mining-desk          # Never run two at once
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install libraries
+        run: pip install -r requirements.txt
+
+      - name: Run the desk
+        run: python pipeline.py ${{ inputs.now && '--now' || '' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Save results
+        run: |
+          git config user.name "mining-desk-bot"
+          git config user.email "mining-desk-bot@users.noreply.github.com"
+          git add data docs
+          if git diff --cached --quiet; then
+            echo "Nothing new to save."
+          else
+            git commit -m "Desk update $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git pull --rebase
+            git push
+          fi

@@ -1,0 +1,5 @@
+# Test output from dry runs
+preview/
+
+# Python's cache files
+__pycache__/
