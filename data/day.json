@@ -1,5 +1,112 @@
 {
-  "articles": [],
-  "discussions": [],
+  "articles": [
+    {
+      "title": "US deep-sea mining claims in Pacific's high seas now rival the area set aside by international regulator - news - Mongabay",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQY1lDYUo0MzlZM1RxRWE0cXVTeWR3Z3VjaHJ2NGYyQUpmdTlfRFJUVVV2RnBWLUo5SGpSUE9BTFZCWTVMT2tYa0xfN1BnT1h0Tjc4akloSTYxczNMVTd2OHMwNGpJYW90Vm1hajhiSlhOck9GZURpbWc4S1Z2RldxaWUyQVFGQk5vbGtFLUZJRDB4RkRyb280cWFtMlZLYkNNVWdQeU5nMHpGcW51S0Q3ZVBzc1QteTh5cExudnBKaFpXTnoxd1NpTGxmZ05fcEFBNGVWUlZ3d0kxVUpBYTNTcFFCQURmZw?oc=5",
+      "published": "Tue, 20 Oct 2026 18:34:44 GMT",
+      "source": "news - Mongabay"
+    },
+    {
+      "title": "Volvo Group establishes dedicated mining business - Pit & Quarry",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMzZ4anhNSWlEaUFMMzU3Mmd5UmFBcnN6ekdUNTFXSWZPR1E3aU5tQ29wemsxV0VWQ1BGQm5yYmVHQmFZLVdwMXhHM1dMR0JqeVlHS3JTU2txTmQ5SFFhdnl5aU9DNlNwZExkc0U1U1NwSmpRWUpJeFlXLUJZR2Rwa2hWNTNWQQ?oc=5",
+      "published": "Tue, 20 Oct 2026 16:50:21 GMT",
+      "source": "Pit & Quarry"
+    },
+    {
+      "title": "Seville panel: Europe must match US mining support - The Northern Miner",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSGJQM2hEaU5LUl9GeWhla3F4aGFfZlYyUmFSUUVfWFFJaGVQMm1hSVVDTkIxUWc1NjN3VUZJcVlsUGVqdFpTbWQta1VLb2tMc2EtM08wX2I2Y1lmaXJjWDFNcE55bmxrOWs2NndXVVRqeU5WcjV6a0JfWjVITXIyeGJTcW9ZTGs4bXdHQ0ZGRUZoSmJPaHpHUzU4VDA?oc=5",
+      "published": "Tue, 20 Oct 2026 17:08:05 GMT",
+      "source": "The Northern Miner"
+    },
+    {
+      "title": "Trump’s Deep-Sea Mining Push Slowed by Carter-Era Permitting Law - Bloomberg Law News",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUmVJWlpIeGlQZlFKdEpUZzJqbExqSkpCcHpLeHM5R0RRbnZjNHo4WUszb1N3bWZkOXVaRFluMFk4UkVzRHFvck95RWNWdFlYZ0tUUExrMU42TGhfdi03d2ZZZlJGSkMxUVgxR0ZDQ0pXRVpKejViSXQzZU5ncnROVDVYbDRBWHhGUlUtVTlaX2dwbkRMMVo5ZWlJT0xvSm55Wm1Wb21DRVNrSlI2c05RQnpGeGZ4aUE?oc=5",
+      "published": "Tue, 20 Oct 2026 09:30:00 GMT",
+      "source": "Bloomberg Law News"
+    },
+    {
+      "title": "Vizsla Copper commences inaugural drill programme at The Copperview Copper Project - Global Mining Review",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPMFFXNWJJSmZmaVROTFNzSnhaalEyY0xxODBRTnA0ZVBWbXB4X2M4MXc0TUlkemdNeTVuV2loS05sR0hGTVZUZUhra0NfTmJGcEwtckMyalVxdWZsUWRNMDluYTZQWEpZcHkwcnhnNURIcXFsUnJ0b192NmNYaUFlLXZuZDRHMlJ2clJPUGNuUzJBVW9sQXlxUTM4b3hRdHZtaWRxeDRYN1J1czdSUUI4dDdib2o3bXdCVTRDYkY2ZkdHM3AyU2VONXV3ZjVnWUU?oc=5",
+      "published": "Tue, 20 Oct 2026 16:41:05 GMT",
+      "source": "Global Mining Review"
+    },
+    {
+      "title": "News New mining operations unearth opportunities for logistics in Africa - The Loadstar",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdkRWZVZrdEx4YW1qU3paalV3MmVzd1diRXgxeERxVE4xWEJNekQyUWVIYklINU9uSm1sLW5tS1p6YW9xel96MEZ6WEV5em9NYUNSMF84azZRdjg2dHE1dkstLW1udk5Kc3J0YXNSQVY0Ykg2ZTFLYldjblJnNEZYZTNKSGJmYmYzTFkyaEV6MFNtZlk5NWRF?oc=5",
+      "published": "Tue, 20 Oct 2026 12:45:26 GMT",
+      "source": "The Loadstar"
+    },
+    {
+      "title": "Volvo Group establishes dedicated entity to capture the growing demand in mining - Volvo Group",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPQXRVcGZSN1FTRmMybm11T2NFc0N0VW1qQzJraF9abFRCZHdaWlYyZE0ta2xFYW9wdmFST0huS2lTVUowSWpnN1pXckpTdHJuN1gxLVB6djlPOUtOZVJHcUNDeV8yUGxMcURWOVRkUVFGQmhmTi15dkI0TGJVSUtVTGpkXzRoYWc3U3RrRTh1YnZJb2RhdjI2c3dhVS1HbHc0NHJZbmRPemdxVzU0b2s1ZHZ4RnQ1dWc0b0JueTktdnAzUHhvWDcyWVhsUTNMUlZVcWdLT0xrM3VrMzBl?oc=5",
+      "published": "Mon, 19 Oct 2026 09:01:08 GMT",
+      "source": "Volvo Group"
+    },
+    {
+      "title": "Silver Range Resources Appoints Luke Schranz Vice President to Lead Mineral Exploration - citybiz",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOd1o3eHVIcFRpcU5ES3YzU0p4RHJZcGFmMDd2anFSaWw0ZElLTTJzekRVSFhOZ3BaSGVqNGp5b3BfSDBjb2FLX2NHSktHb2JVMnl0UVdsd0dTXzg5RUpqZ1Z1bUtHSkxEa0g0c2FvZzBLajBKV0NRNUpua0pKWHlXeXFzVFlkSmZBYUFvYlVEYnFiYkx6am1BbGl6Um9WdXlxa3pNUm1iM1JfdUduN2R5enVZRXhLaEc5OURoTG5oTXF1UU05?oc=5",
+      "published": "Tue, 20 Oct 2026 13:11:10 GMT",
+      "source": "citybiz"
+    },
+    {
+      "title": "Barrick Gold Lobbies Mining Regulatory Clarity Act - Legis1",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1qVGV4LWo5ai1FSXlrTmlRVmlEckhxbUZMN2toOVdMbnBHbkR1WFE3bnBXQ1hxaWExYThYT1Nqd2wxVlV3eXFCb0F5RzVSRlRLenVVeGVRTmJ6dm9QOVJTbDlKVFhEUkF6MUV5c083bVVfZmd3dWRMQUgzYw?oc=5",
+      "published": "Tue, 20 Oct 2026 16:43:31 GMT",
+      "source": "Legis1"
+    },
+    {
+      "title": "Australia's Lithium Plus outlines simple, quick returns lithium operation for Bynoe - Mining Weekly",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQOGtUZldRSkxUbUJYdHF5THhncXEtY3NYTEJrZFUyYkVtR0l3Z0hSZFR6Tm1wWDktMHhqUTV6a2ZwY1kwSXlPdzBycng1SFZQU1Q1UUxSN1NXVDB4aDZsMVYzaHZjR2cwZ1lvMk81anlpM1Q1ZTkxXzRzSDU0OHBReDJ2NXF4Qk9zV1h5Z2hNbWx0aTBLNGlQdEtZWTlmb2hTandRd3pCVEw4OHRVRFZzMmUzR09MeWtBSFd1aHdzSzAydUt2SGxkbA?oc=5",
+      "published": "Tue, 20 Oct 2026 10:01:00 GMT",
+      "source": "Mining Weekly"
+    },
+    {
+      "title": "Lincoln Gold Mining Inc. (LMG) Applies for OTCQB Quotation - TradingView",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPM3lXajVBaW80RlROSWZMOGVlMGZwa01DY3EtakdocjNrOEVpNGpBTWxrSjBTUUdKTDU2Zk05N3hkbnRjbkxheHZVeXR3RGZ5UDd6bnlOV3Y1alA1NXpWYnZtcFl5QUtoN0FIR0VXTXhVUkh3UnpaWnMyUGt2MG1TbUo0cENRU3Q0NmNVRFdicjQ0Yk4yWDI0akdRalk0MTh5TVJQUjhmSDYwY0RTb2pCN01pQ0dETmww?oc=5",
+      "published": "Tue, 20 Oct 2026 17:35:02 GMT",
+      "source": "TradingView"
+    },
+    {
+      "title": "Copper surplus masks looming $332B mine shortfall - Mining.com",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE92N1hsMWtQeHdxNnM1VmhfeHBNM2ZrSW1oQ1dZZU9BSG04bVpNeFZobGhIMEtieEYwZkVQcXFnd3VrVXNOZjgwZVZyNUx1VVhIS29yeXdTUVdtQ2ltbTM5cjI0alMtbWktS0xleHgxUTB4SU5qWnY5ZVV3NG4?oc=5",
+      "published": "Tue, 20 Oct 2026 15:00:52 GMT",
+      "source": "Mining.com"
+    },
+    {
+      "title": "Phoenix Tailings to build $375M rare earth plant in New York",
+      "link": "https://www.mining.com/phoenix-tailings-to-build-375m-rare-earth-plant-in-new-york/",
+      "published": "Tue, 20 Oct 2026 16:56:43 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Lithium Africa weighs $60M offer for Springbok lithium project",
+      "link": "https://www.mining.com/lithium-africa-weighs-60m-offer-for-springbok-lithium-project/",
+      "published": "Tue, 20 Oct 2026 16:37:18 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Glencore clears key hurdle for Peru copper expansion",
+      "link": "https://www.mining.com/glencore-clears-key-hurdle-for-peru-copper-expansion/",
+      "published": "Tue, 20 Oct 2026 16:18:00 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Copper surplus masks looming $332B mine shortfall",
+      "link": "https://www.mining.com/copper-surplus-masks-looming-332b-mine-shortfall/",
+      "published": "Tue, 20 Oct 2026 13:09:00 +0000",
+      "source": "MINING.COM"
+    }
+  ],
+  "discussions": [
+    {
+      "time": "2026-10-20T12:09:23.636931-07:00",
+      "article_count": 16,
+      "strategist": "The most useful pairing today is the copper headlines. Mining.com's \"Copper surplus masks looming $332B mine shortfall\" (run twice) says what the desk has been circling: a near-term refined surplus sitting on top of a mine-capacity gap further out. The $332B figure is a headline with no visible source, so I won't reconcile it with BNEF's $300bn. But the shape matches our view. I said on October 16 that the surplus is near-term fact and scarcity a longer bet, and this headline supports that. It doesn't resolve the Yukon dispute over whether scarcity lives in concentrate or in refined metal. Glencore clearing a hurdle on its Peru copper expansion is a supply-side item. Without tonnes or a date, it's a reason not to assume the mine gap closes quickly.\n\nDeep-sea mining is the story where I need to move. Mongabay reports US-linked claims in the Pacific high seas now rival the area the international regulator has set aside. That is a claims story, not a legal title. Bloomberg Law's headline says Trump's push is slowed by a Carter-era permitting law. I'm working from headlines only, and that law is the Deep Seabed Hard Mineral Resources Act of 1980, as I recall it, so treat that detail as background, not verified. The point stands: a slowed permitting process is weak evidence for a November lease sale going ahead on schedule. Simon has also asked that the lease-sale reference be re-sourced before scoring. On that basis I'm cutting my confidence in the November sale to low, and I'd rather be seen changing course than defend a medium I can't support.\n\nVolvo's new mining entity appears in two sources, so the entity is real. The launch date still isn't in the material. The January-versus-January 2027 dispute with Yukon stays open until a Volvo statement names a date.\n\nPolicy and small-cap items to watch: the Seville panel's call for Europe to match US mining support, and the Phoenix Tailings $375M rare earth plant, both point to governments paying to chase projects. The Lithium Africa $60M offer for Springbok, Barrick lobbying on the Mining Regulatory Clarity Act, Vizsla's drilling start and Lithium Plus's Bynoe plan are headlines without numbers that matter yet. Nothing here changes the desk's views.\n\nPREDICTION: Glencore publicly announces a final investment decision or start of construction for its Peru copper expansion | BY: 2027-06-30 | CONFIDENCE: low\nPREDICTION: Volvo Group publicly names a specific launch date for its mining entity | BY: 2026-12-31 | CONFIDENCE: medium",
+      "geologist": "Three stories share one tension: the copper surplus against the long-term supply gap. Start there.\n\n- Copper surplus masks looming $332B mine shortfall (Mining.com, logged twice, counted once). This is the reconciliation I have argued for since the desk started: refined metal can be in surplus now while mine supply falls behind demand later. But the headline gives no period, price basis or source for the $332B. BNEF's $300bn (logged 20 Oct) is a different estimate, so we have two numbers, not a confirmation. The copper call stays untested until the 16 October LME settlement is logged. These headlines don't supply it, and I won't guess.\n\n- Deep-sea mining. Mongabay says US claims in the Pacific high seas now rival the area set aside by the international regulator. Bloomberg Law says Trump's push is slowed by a Carter-era permitting law. Background, from memory: that is most likely the 1980 Deep Seabed Hard Mineral Resources Act, so check the text. Read together, both point to procedural friction, which fits our \"unsettled\" view. Large claims are not settled title, and the November lease sale remains a procedural step, not proof of tenure. Mongabay's \"rival\" comparison needs the actual area figures.\n\n- Volvo. Pit & Quarry and Volvo Group report the same new mining entity, so count it once. It does not change the surplus call. The timing dispute stays open: Meldrum reads January only, while I read January 2027. Customer or deployment naming is the test.\n\nOther items, briefly:\n- Vizsla has started its first Copperview drill programme. That is a start, not a result.\n- Lithium Africa's $60M offer for Springbok is an offer, not a deal.\n- Phoenix Tailings' $375M New York rare earth plant needs a financing check before anyone treats it as built.\n- Glencore has cleared a \"key hurdle\" for its Peru expansion, but the headline doesn't name the hurdle.\n- Barrick's lobbying for the Mining Regulatory Clarity Act shows intent, not law.\n- Lithium Plus's \"simple, quick returns\" is promoter language. I'd wait for a study.\n- Lincoln Gold's OTCQB application and Silver Range's VP appointment are housekeeping.\n\nPREDICTION: Vizsla Copper publicly reports assay results from its Copperview drill programme in a company release or filing | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: The US Mining Regulatory Clarity Act is signed into law | BY: 2026-12-31 | CONFIDENCE: low",
+      "strategist_reply": "Yukon, you're right on the two points that matter most. The $332B headline has no period, price basis or source, so I'll stop treating it as a second confirmation of the mine gap. It's a number to chase, not one to lean on. Your claims-versus-title distinction also sharpens my \"procedural friction\" framing. A large claim on the high seas is an assertion, and a lease sale is a step, not tenure. I'd go further than I did: the November lease sale date isn't in today's headlines, so until it's re-sourced it shouldn't be in our scoring at all.\n\nOn Volvo, I need to correct myself. My \"January\" and your \"January 2027\" are both assumptions. No headline gives a year, so I'm dropping my January reading, and the prediction should only test for a specific launch date.\n\nOn Glencore, I'd still treat the Peru hurdle as a supply-side signal in direction, but I agree it can't carry weight until the hurdle is named.\n\nWhat we both missed is the government-money thread. The Seville call for Europe to match US mining support and Phoenix Tailings' $375M rare earth plant are the same signal from two directions: states paying to build supply. If that works, it changes the timing of the surplus-versus-gap story. It's the first thing I'd look for a number on.\n\nOn Vizsla, assays from an inaugural programme typically take months (background, not sourced here), so a year-end release is plausible but not safe. I'll adopt your prediction at medium. On the Clarity Act, I agree with your low confidence.\n\nPREDICTION: Glencore publicly announces a final investment decision or start of construction for its Peru copper expansion | BY: 2027-06-30 | CONFIDENCE: low\nPREDICTION: Volvo Group publicly names a specific launch date for its mining entity | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Vizsla Copper publicly reports assay results from its Copperview drill programme in a company release or filing | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: The US Mining Regulatory Clarity Act is signed into law | BY: 2026-12-31 | CONFIDENCE: low",
+      "geologist_reply": "Meldrum, your deep-sea call is right, and I'll go further. Of the two items, the Bloomberg Law headline is the stronger evidence. A slowed permitting process is a procedural signal, while the Mongabay claims comparison is an area comparison with no common basis yet. Before anyone compares \"claims\" with \"the area set aside,\" they need to know whether the regulator's figure covers exploration contracts, reserved areas, or something else. Until then, \"rival\" is a headline word, not a measurement. I agree with cutting the November sale to low.\n\nOn copper, your point that the surplus could be a refined-metal story while scarcity lives in concentrate is sharper than my version. In my experience, concentrate and smelter-treatment terms often tighten before the refined market feels a shortage, so the mine gap can show up in concentrate first. That's background, not something these headlines show. Where I'd push back is on Glencore. A cleared hurdle with no named hurdle, tonnes, or date tells us almost nothing about when Peru adds metal, so I'd keep the expansion firmly in the \"not soon\" column.\n\nTwo things we both should flag. First, the timing dispute on Volvo is about launch timing, not a Yukon matter, so let's keep the labels straight in the log. Second, I'd add a financing check to the Phoenix Tailings plant and the Springbok offer. Government backing and an offer are not the same as funded projects, and I'd like to see who writes the cheque before treating either as real.\n\nPredictions I now hold:\n\nPREDICTION: Vizsla Copper publicly reports assay results from its Copperview drill programme in a company release or filing | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: The US Mining Regulatory Clarity Act is signed into law | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Glencore publicly announces a final investment decision or start of construction for its Peru copper expansion | BY: 2027-06-30 | CONFIDENCE: low\nPREDICTION: Volvo Group publicly names a specific launch date for its mining entity | BY: 2026-12-31 | CONFIDENCE: medium",
+      "summary": "Key stories:\n- Copper: A Mining.com headline claims a $332B mine shortfall hides a near-term refined surplus. It gives no period, price basis or source, so it is not confirmation of BNEF's $300bn estimate.\n- Deep-sea mining: Mongabay reports US high-seas claims rivaling the regulator's reserved area, and Bloomberg Law reports slowed permitting. Neither establishes title. The November lease-sale date is unverified and should not be scored.\n- Volvo: Two sources confirm a new mining entity, but no launch date appears.\n- Government support: A Seville panel call for European mining support and Phoenix Tailings' $375M rare earth plant point to state-funded supply, but financing is unconfirmed.\n\nWhere they agree:\n- The surplus and the mine gap can coexist, so the copper call remains untested.\n- The deep-sea claims and permitting evidence signals procedural friction, not settled tenure.\n- Meldrum has dropped the November sale to low confidence and removed the Volvo \"January\" reading.\n- Offers and plans, including Springbok, Lithium Plus and Barrick's lobbying, are not yet funded or enacted.\n\nWhere they disagree:\n- Glencore's Peru hurdle: Meldrum treats it as a directional supply-side signal. Yukon Cornelius keeps the expansion in the \"not soon\" column, since the hurdle is unnamed and no tonnes or dates are given.\n- Government money: Meldrum calls it the most important thread to quantify. Yukon Cornelius asks who provides the financing before treating these projects as real.\n\nCurrent predictions:\n\nPREDICTION: Glencore publicly announces a final investment decision or start of construction for its Peru copper expansion | BY: 2027-06-30 | CONFIDENCE: low (Meldrum)\n\nPREDICTION: Volvo Group publicly names a specific launch date for its mining entity | BY: 2026-12-31 | CONFIDENCE: medium (Meldrum)\n\nPREDICTION: Vizsla Copper publicly reports assay results from its Copperview drill programme in a company release or filing | BY: 2026-12-31 | CONFIDENCE: medium (Yukon Cornelius)\n\nPREDICTION: The US Mining Regulatory Clarity Act is signed into law | BY: 2026-12-31 | CONFIDENCE: low (Yukon Cornelius)"
+    }
+  ],
   "chief_sessions": []
 }
