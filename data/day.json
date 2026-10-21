@@ -1,5 +1,124 @@
 {
-  "articles": [],
-  "discussions": [],
+  "articles": [
+    {
+      "title": "Digging smarter: How AI is reshaping the future of mining - Canadian Mining Journal",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOGt4dkFMRlFWemh3VUY3V29qbUVTamZ6QUtlLWR2bl9KUUVuSnBxYVBjM1JLVkFBNU5uN0FBM0gzRTh5aFNtODNIaEx2VC1lN0xwUjVGcm95d3Zydy1VQWJydEhiNXV6eWlKX1o0aFVhYlBhNEZrY24xVUdfV2JCQVphY09iZTVKTXlhMHlpNWRwNnMzMGk3dVV3SldvaHVIcktHQnRoTmMwMUI4VkREX19R?oc=5",
+      "published": "Wed, 21 Oct 2026 18:22:25 GMT",
+      "source": "Canadian Mining Journal"
+    },
+    {
+      "title": "Feedback future – BuilderX and the rise of remote control excavation in mining - International Mining",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYTFtMS0xMW44TVBNUl9sMzVma1Z2VUZrZ09ZQTRjbzlWZ3NyeExYeERqR3dzcXNTdzB4U2daVWhSbmNIcmJBbXoyNVc5ZlY5SHBEcGxBdmlfWk1TZUdibG9kNW9YUTV1S09YdHRzdE1VLUYtVHlScFU5dFg1ZjVmNUVmQk90UEpRSG9FVUVhdU1jeFpIQS1RTjkxUjdSYVlLLTN2N2tJSHZnbHY1OXQ0?oc=5",
+      "published": "Wed, 21 Oct 2026 15:32:41 GMT",
+      "source": "International Mining"
+    },
+    {
+      "title": "Chile’s rare earth ambitions hit refining bottleneck - Mining.com",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOaTdadWhYaTdrbmRIVlItdTM3ZGllSS1lVTNMRThLaDJrRUxKZ0dseUd2RHVlWGJDSy1EQWlueUJlRXZFaDkzX084d0szdmFweWUwdE1XbnNaQl9nNDJ0cWNUR0Y0OXZkaUlxajMyaUlPZG56MVoyYzRZcG9aUm0xdw?oc=5",
+      "published": "Wed, 21 Oct 2026 13:44:11 GMT",
+      "source": "Mining.com"
+    },
+    {
+      "title": "Weir and Quatro Metales feature in new Investors Guide to Mining issue focused on tailings intelligence - EIN Presswire",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPbnotbUx4MDZUVjlkMXhqUnpvLVB0WEEtam1aX2hUMFhEa1IyS0hGZDY2dFNYYjZ5dkVSaHJqMDI2UF9ObTZuSkhPOURGM1ZoM0NMUTFwYWRmbmFUdmZxQW1CR0tkSVFjNFEzTlJHUy1WTG95Q3NidHdiblVPTlBiUkNqOHFFX21GdVZKaXd1cUpSRWg0bEx5TC1ZNGtrZHlBSHBNNXRZNFlsX2QwUmR2eU9nRm5JU212YXNFdlp3Um5aWWlkMUthS014dzEyWUl2ekJrU1JmU05ITjNtOHJwQ0ZMLXE?oc=5",
+      "published": "Wed, 21 Oct 2026 07:00:00 GMT",
+      "source": "EIN Presswire"
+    },
+    {
+      "title": "BLM Considers New Gold Mining Plan of Operations Near Hereford - Bureau of Land Management (.gov)",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNU96bzNWZ25xdXVMdmRKcHdKSlpHRXRwUUtzbHdYeGt5bjZtaXREczJ3RVIwQmU0bUJxMWFyTHhpZ2lIZHVLb0RTbEFKcFFIM1k4MWJ5SnhBQUNNQjN6R0V2dWVjemYyMVJvdG9YRFVxVzRJbnluOFpob1M2Zm5BdVk1YXlGRE5VVDJIRW1OWEV6TThuOVJIVw?oc=5",
+      "published": "Wed, 21 Oct 2026 12:00:00 GMT",
+      "source": "Bureau of Land Management (.gov)"
+    },
+    {
+      "title": "Gold Streaming vs. Gold Mining Stocks: Costs & Risks - U.S. Gold Bureau",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5XSG90MXB0eEpTRzY5TDFCYlRZMjg4X18zZjFLdkZSLU90Qi1GOUZNRWVNMWlseUM3XzY3OERLTF83dGc2SWQyZGxHNXhxcEtRSFVualhwRGdUZ0podDVwX0haQ2J2OXhRbTR6eTY2Z0JRaVRwVno4?oc=5",
+      "published": "Wed, 21 Oct 2026 18:20:20 GMT",
+      "source": "U.S. Gold Bureau"
+    },
+    {
+      "title": "Two charged with illegal gold mining in Sierra County enter no contest pleas; \"This is not 1849\" - CBS News",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSWkyME1sUUw4dmhZZnQ1V3doOVNlS2VuRkdOQTI3WmxEalVVbHBRX2Z0S3kzaVZjcF9oSThEdXVZMnEtUTAwQTF0c0lzNnlvc1hyNHJETnlvbXIzaEV0ZGFlSm9PbmQ5cXFzUUpkZVRfWDNLR1hBZ2NmYWtySS1BN0VtSG1CenZ5VF95MUN0OW9CSll5UHc?oc=5",
+      "published": "Wed, 21 Oct 2026 19:09:00 GMT",
+      "source": "CBS News"
+    },
+    {
+      "title": "BLM reviewing mining plan in southern Baker County - East Oregonian",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONmRYZHdQOGJRREx6NW9QRnJUNkVlMFg5cGJaZWpFQ0VSVmhITjMwX01mWC1kRV9BaE1rR1IxRFVLMi1ERWtvV3VjT2NRd05iaFhkaU4wc09MTVpzYnFjTXdtWnliUTNZV2Y3YU1aUk91WG5scUdaSVlkVW9rVFlSX01CcnJza3dDZmFPb2Rha3NQdw?oc=5",
+      "published": "Wed, 21 Oct 2026 19:01:40 GMT",
+      "source": "East Oregonian"
+    },
+    {
+      "title": "Planned repairs slowed Pogo gold output - North of 60 Mining News",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdVlKYlJmSTBGWE1OT3RhWmV0d1FQb040c0lUcTVfRVV3V3NmY0s5b3RNWDAzS0UxZEFGUG1fOUltZktMZkxZWFFzV2ZmUy1paFdfRDM2WWhIODBnLU1Zc1BxV3ZiM25VSFZYN3Q3dmh3eHJBTC00SjAyaTJRQ2R5cU8zby04c25ZcmtVTThEdmpsamRyNm1vcnhmNGZ4MU1sWWtXZk5tOGpqMzU2Y1ZYUA?oc=5",
+      "published": "Wed, 21 Oct 2026 17:54:23 GMT",
+      "source": "North of 60 Mining News"
+    },
+    {
+      "title": "Barrick Mining (B) Earnings Rose 50%, but Is Cash Flow Keeping Up? - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQR2ZHRXBIQnhKNmZKWERReUNnYWhlX01rU2lDZG1rNktwRUY2VVo3SFVyQjgwWWRxSHIxOWdqOWFvVEFEUVVqQlFLZEJxb0FwYU1LeHRZVW83QmpsbkgxaWdmcFJBdHQ3VUUyMHZsN2JTcDEyd21jY043NFEtMkptc2drcFdDM1BtR2E5ZURVZk1FU2kyNklZUXJUR3NTTXcxM3c?oc=5",
+      "published": "Wed, 21 Oct 2026 17:27:43 GMT",
+      "source": "Yahoo Finance"
+    },
+    {
+      "title": "Mining Forum video: Stöferle spots gold bargains but keeps cash ready - Mining.com",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMlNxU0JYc2ZpdFREQjhtODJOX0NkdENBRXNzanNJSk5YMTIwTnkxSXhBMmV5bTRIQmJXSXdzNVVvdkp0QXdiQUEweWdQUWFfQkJpWXI1UGNqTUwzOWc4Y0l6ak5xeWQycHJTdWFFcVZDZmNsT2tGUDJHYUN2eW0tU1Z4N0lCdDNQVU02UFd5OThSRnhaRmgw?oc=5",
+      "published": "Wed, 21 Oct 2026 17:49:15 GMT",
+      "source": "Mining.com"
+    },
+    {
+      "title": "‘The price of gold will reflect the pain elsewhere’ and gold equities are working as a leveraged play – BlackRock’s Hambro - Kitco",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQYzM0WDB6VWtJZTdsVWlOTW50dXViZDNQWGNxVVN0VE4xMEJvaWU3bUJsS2JkZGNncnFJQXQyYWVPRm9MTW5mcEw2VG1kSWZPMm1uLTFEeHo3cjh1enRxY1NITzNhbzhtSTBZMXBXWjBBWHhWWFhYeTVNNWljU2JlQTdrQlZsSnJuamhqX2p1V2RDU2hNR1BJWkhveFJUYTU1NFBjS1Q5VzhEVUdBS01LcTZXZC0?oc=5",
+      "published": "Wed, 21 Oct 2026 15:45:00 GMT",
+      "source": "Kitco"
+    },
+    {
+      "title": "Mining Forum video: Stöferle spots gold bargains but keeps cash ready",
+      "link": "https://www.mining.com/mining-forum-video-stoferle-spots-gold-bargains-but-keeps-cash-ready/",
+      "published": "Wed, 21 Oct 2026 17:48:47 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Brazil court halts Belo Sun’s $300M gold project",
+      "link": "https://www.mining.com/brazil-court-halts-belo-suns-300m-gold-project/",
+      "published": "Wed, 21 Oct 2026 17:47:14 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "US moves to unlock deep-sea minerals near American Samoa with massive auction",
+      "link": "https://www.mining.com/us-moves-to-unlock-deep-sea-minerals-near-american-samoa-with-massive-auction/",
+      "published": "Wed, 21 Oct 2026 16:39:23 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Spain hunts hidden metals with $223M plan",
+      "link": "https://www.mining.com/spain-hunts-hidden-metals-with-223m-plan/",
+      "published": "Wed, 21 Oct 2026 16:33:15 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Endurance Gold expands zones at Reliance as PEA work ongoing",
+      "link": "https://www.mining.com/endurance-gold-expands-zones-at-reliance-as-pea-work-ongoing/",
+      "published": "Wed, 21 Oct 2026 15:24:29 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Hudbay, Mitsubishi approve Copper World construction",
+      "link": "https://www.mining.com/hudbay-mitsubishi-approve-copper-world-construction/",
+      "published": "Wed, 21 Oct 2026 14:23:33 +0000",
+      "source": "MINING.COM"
+    }
+  ],
+  "discussions": [
+    {
+      "time": "2026-10-21T12:16:19.496369-07:00",
+      "article_count": 18,
+      "strategist": "Four stories matter today, plus a long tail of commentary.\n\nCopper World is the one our log already tracks. The headline says Hudbay and Mitsubishi approved Copper World construction. That is an approval, not confirmation that building has started, so our construction-underway predictions stay open and unscored. I'd treat the Arizona item in the log as the same asset, as Simon suggested. There is still no capex, tonnage or schedule, and my view holds: it adds nothing to 2027 supply. The useful tests are the technical report and the first capital number.\n\nDeep-sea minerals: the US is moving to unlock deep-sea minerals near American Samoa through a large auction. This is the same procedural track we logged on 20 October. A sale is being set up, but title isn't settled. The new detail is the location. There is no date, no terms and no bidder information. Two of our Simon entries on the Federal Register notice overlap, so we should consolidate them before the next review.\n\nBrazil: a court halt on Belo Sun's $300M gold project would be a jurisdiction-risk signal if confirmed. It isn't in our verified set, and the log flags Brazil references as unverified, so I want the court document or a company filing before we use it. The headline gives no ruling date, grounds or scope.\n\nThroughput and the rest: Pogo's output slowed on planned repairs. That is a timing story, like Kansanshi, and the question is whether output recovers. Barrick's 50% earnings rise comes without a period or a cash-flow comparison, so the headline's own question, whether cash flow is keeping up, is the right one. Chile's rare-earth refining bottleneck and Spain's $223M hidden-metals plan both fit the critical-minerals policy theme, but neither has tonnage or timing yet. The AI, autonomy and tailings pieces are trade commentary.\n\nPREDICTION: Belo Sun publicly confirms, in a company release or filing, that a Brazilian court has ordered a halt to its gold project | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Spain's government publishes the legal instrument, tender or funding call for its $223M hidden-metals plan | BY: 2026-12-31 | CONFIDENCE: low",
+      "geologist": "Copper World is the story that matters most, and it is the same asset as this morning's Arizona item. Hudbay and Mitsubishi approving construction is a real milestone. Permitting and financing are moving, and first production is targeted for 2029. But the headline gives no capex, tonnage, schedule or staffing. As I said earlier, that makes it a permitting and financing milestone with no weight in 2027 supply. The technical report is the test: flowsheet, schedule, capital and staffing. Until it appears, I'll treat \"construction\" as the company's language, not a verified budget. I'm keeping my high confidence that Hudbay will say construction is underway, but the risk is wording, since \"approve construction\" may already be the company's own phrasing.\n\nThe US deep-sea auction near American Samoa is the second story. The headline says the US is \"moving to unlock\" minerals through a large auction. Our log says the first lease sale is scheduled for November and is procedural, not settled title. An auction headline is not a notice of sale. Until a Federal Register notice names the area and terms, I'd keep this at procedural, and the same caution applies to this morning's Mongabay and Bloomberg Law items.\n\nThird, gold. Barrick's earnings are reported up 50%, Kitco calls gold equities a leveraged play, and Stöferle is on bargains. Strong earnings at a major are what strong prices look like, which fits my \"strong prices, weaker margins\" view. The question to ask is the one the Yahoo headline raises: is cash flow keeping up? Earnings growth doesn't answer that. Leverage commentary is opinion, not a forecast. Simon's bond-yield hypothesis for gold is still untested, and none of these pieces tests it.\n\nFourth, the Brazil court halt on Belo Sun's $300M gold project. Our log marks Brazil references as unverified and not to be used. This is the same kind of item: no court document, no ruling date, and I can't see a second source. Log it as unverified until the court record is in hand.\n\nWorth watching: Pogo's output was slowed by planned repairs, which should recover and is not structural. Chile's rare-earth ambitions face a refining bottleneck, a midstream issue with no tonnage attached. Endurance Gold's zone expansion during PEA work is useful only once the assay table and true widths are published; zones are not a resource.\n\nPREDICTION: Belo Sun publicly confirms a court order halting its $300M gold project in Brazil | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: The US government publishes a notice of sale for deep-seabed minerals in waters near American Samoa | BY: 2026-12-31 | CONFIDENCE: low",
+      "strategist_reply": "Yukon, your point on wording sharpens my view. I had \"construction\" as the test, but if \"approve construction\" is Hudbay's own phrasing, the test should be the exact language in the next filing. I'll score a claim only when the document says construction has started, not when a headline does.\n\nWhere I see it differently is Belo Sun. You want low confidence, and I'd keep medium. Belo Sun is a listed company, so, as a matter of background, a court order halting a $300M project would normally be disclosed. The risk is that the headline is simply wrong or the halt is partial. That is why the court record still matters more than my confidence level.\n\nOn the deep-sea auction, the log's November timing is the reason I'm moving to medium. A sale that is scheduled and procedural should be preceded by a notice of sale. If the November date slips, the prediction fails cleanly, which is what we want. Title and terms remain open, as you say.\n\nWhat we both missed: the Barrick headline has no period, so the 50% figure could reflect gold prices, one-off items or a base effect. Until the cash-flow line is in hand, it tells us nothing about margins.\n\nUpdated predictions:\n\nPREDICTION: Belo Sun publicly confirms, in a company release or filing, that a Brazilian court has ordered a halt to its $300M gold project | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: The US government publishes a notice of sale for deep-seabed minerals in waters near American Samoa | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Spain's government publishes the legal instrument, tender or funding call for its $223M hidden-metals plan | BY: 2026-12-31 | CONFIDENCE: low",
+      "geologist_reply": "Meldrum, I'll move my Belo Sun prediction to medium. Your disclosure point is the sharper one. A court halt on a $300M project would be material to funding and timeline, so if it's real, a company filing should follow. That gives us a clean route to verification. (Background, not from the log: listed miners generally must disclose material adverse developments, though timing varies.)\n\nWhere I see it differently is Copper World. \"Approve construction\" is a board decision, not evidence of spending. I'd hold off on reading it as a schedule change until financing and the technical report arrive together. You're right that it adds nothing to 2027 supply. The more useful number, once it appears, is capex per tonne of capacity, because that tells us whether the economics survive a bad price year.\n\nHere's what we both skipped:\n\n- Barrick's 50% earnings rise may reflect a price-driven quarter, one-off items, or a weak comparison base. The test is free cash flow after sustaining capex and tax, plus whether the period is stated.\n- Pogo needs a recovery figure for grade and throughput, not just \"repairs complete.\" Mill downtime is only a timing story if the grade holds.\n- Spain's and Chile's stories share a gap: a policy headline with no tonnage, no tender, and no refining route. I'd log both as policy until a legal instrument or processing plan exists.\n\nPredictions, restated:\n\nPREDICTION: Belo Sun publicly confirms, in a company release or filing, that a Brazilian court has ordered a halt to its gold project | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Spain's government publishes the legal instrument, tender or funding call for its $223M hidden-metals plan | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: The US government publishes a notice of sale for deep-seabed minerals in waters near American Samoa | BY: 2026-12-31 | CONFIDENCE: low",
+      "summary": "Meldrum and Yukon Cornelius reviewed four main stories and several smaller items.\n\nKey stories:\n- Copper World: Hudbay and Mitsubishi approved construction, with first production targeted for 2029. No capex, tonnage or schedule has been published, so it adds nothing to 2027 supply.\n- US deep-sea auction near American Samoa: The sale is procedural and title is unsettled. No notice of sale, terms or bidders have been published.\n- Belo Sun: A reported Brazilian court halt on its $300M gold project is unverified, with no court document or ruling date.\n- Barrick: A 50% earnings rise has no reporting period or cash-flow comparison.\n\nWhere they agree:\n- Copper World's approval is a milestone, not evidence of spending or a changed 2027 supply outlook.\n- The Belo Sun halt stays unverified until a court record or company filing appears.\n- Barrick's earnings need a free-cash-flow test before they mean anything.\n- The Chile and Spain stories are policy items until tonnage, tenders or processing plans appear.\n\nWhere they disagree:\n- Deep-sea confidence: Meldrum moved to medium because a scheduled sale should be preceded by a notice. Yukon Cornelius kept it low, arguing an auction headline is not a notice.\n- Copper World: Both want the exact wording of the next filing, since \"approve construction\" may be company language. Yukon Cornelius also stresses capex per tonne as the key figure.\n\nCurrent predictions:\n\nPREDICTION: Belo Sun publicly confirms, in a company release or filing, that a Brazilian court has ordered a halt to its $300M gold project | BY: 2026-12-31 | CONFIDENCE: medium (Meldrum; Yukon Cornelius)\n\nPREDICTION: Spain's government publishes the legal instrument, tender or funding call for its $223M hidden-metals plan | BY: 2026-12-31 | CONFIDENCE: low (Meldrum; Yukon Cornelius)\n\nPREDICTION: The US government publishes a notice of sale for deep-seabed minerals in waters near American Samoa | BY: 2026-12-31 | CONFIDENCE: medium (Meldrum)\n\nPREDICTION: The US government publishes a notice of sale for deep-seabed minerals in waters near American Samoa | BY: 2026-12-31 | CONFIDENCE: low (Yukon Cornelius)"
+    }
+  ],
   "chief_sessions": []
 }
