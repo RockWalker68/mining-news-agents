@@ -1,5 +1,76 @@
 {
-  "articles": [],
-  "discussions": [],
+  "articles": [
+    {
+      "title": "Cowboys back in black for second annual 'Coal Black Out' game against Air Force Friday - Gillette News Record",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNenpSRUlOb3pva0NpdWhqNGQ0bGg5elp5ZDBBNk9iVEt3Z1lUTDBNTzhTaUJFZW1GcXZBR0RaZnFJMUpVVWlMdzNLUDk0c0owRnJ5R1JWRF9mc2pLLWh1Y0w2dGtEdlcwSkdLSmMzSUVWLUI4eDBYZHpVQ3JQUEdFRXlhS0tvVzluY2dyLU5VQnVSNDgyY0VucGYxOGNSdw?oc=5",
+      "published": "Thu, 22 Oct 2026 17:00:00 GMT",
+      "source": "Gillette News Record"
+    },
+    {
+      "title": "Father and son charged with illegal gold mining in California: ‘This is not 1849’ - The Independent",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSHVHdFFXbHlzWEtLMHZPcjV5dlRmd1liVVdWWVU3UFVfM0E2VkEzXzI4MVVfajBUYlp6dzBYUnBqNzhlU1VkbVJjTFZIVkVvaVVDd0ZPek5qTHRWVXlIVnlMbEg5SzJHaDRrSV96REdQYTA5V2ZEYkl1TXZFQ05MbnNUbElXeEFheXNCQ1dJRFdqSlBDRWZDWDM4VnJZMjlJLWNqQm9Kcw?oc=5",
+      "published": "Thu, 22 Oct 2026 16:12:00 GMT",
+      "source": "The Independent"
+    },
+    {
+      "title": "Mining M&A wave set to lift juniors, investor predicts - Mining.com",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQTmh0c0x6VU80UnF4YlFaYnpHeHpLTDl2Z1N1SXhMQ2h3djlVYzJwR1hBYmNyTUpFbGN0TlRCZ1ZnWk96M1NaRXp6bTNMeVZRUnRWUjFJdGE2a2h1M0pUQkVpRGVwSTdyWThKVkdYSllMRGM1cXMyNDFXa1FNREtGUWl3?oc=5",
+      "published": "Thu, 22 Oct 2026 16:41:58 GMT",
+      "source": "Mining.com"
+    },
+    {
+      "title": "Gold Runs Deep, but so Do the Cracks in Nigeria’s Mining Community - Pulitzer Center",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNd2dfQTBqYTFNWDg4OGZqRXBUY0hHenZEYTY4R1RJNFZqMVAzY0szVmJaWTRhMUpVVjc3MkZTSy1aSVN5UHFoQTN2djA2Nm1Hc1N1NnBwQzhEU0ctM0hSY05xRE5uWWczX3RCSEQ1Q1lmckhzVk1Pb3RNOERVR3pqZGczRVBKV202b2QzeFR1bmFuVWs?oc=5",
+      "published": "Thu, 22 Oct 2026 18:00:00 GMT",
+      "source": "Pulitzer Center"
+    },
+    {
+      "title": "Drills tap New Polaris gold growth targets - North of 60 Mining News",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRkhsSW9xUFpOS0ZUd2FrVVpUWExhVXNxRGZvV3JkTUFMNGZyNjBsT3VVWHdESmcwTmNZNFhFWGRycTYwelA5ajJMcW16QXRGTDU2ZHlqWHNoaVFaX1IwMDZDU0hQYlZrNGtVNW5zNUdteG95OWdzMnFNREc0Ny04azdhTXphLUZYenI1aVBlMmdHRzI4ZVdQQXpBakxJTTFNVkdTM3FRYXdoYkdrU2EyRkNQdjA1dy0wUFpuaQ?oc=5",
+      "published": "Thu, 22 Oct 2026 18:05:31 GMT",
+      "source": "North of 60 Mining News"
+    },
+    {
+      "title": "US permitting: Environmental review overhaul could speed mine approvals, but hurdles remain",
+      "link": "https://www.mining.com/us-permitting-environmental-review-overhaul-could-speed-mine-approvals-but-hurdles-remain/",
+      "published": "Thu, 22 Oct 2026 17:24:54 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Ottawa finally matches C$1B Ring of Fire funds",
+      "link": "https://www.mining.com/ottawa-finally-matches-c1b-ring-of-fire-funds/",
+      "published": "Thu, 22 Oct 2026 17:11:57 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Mining M&A wave set to lift juniors, investor predicts",
+      "link": "https://www.mining.com/mining-ma-wave-set-to-lift-juniors-investor-predicts/",
+      "published": "Thu, 22 Oct 2026 16:30:33 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Southern Copper weighs $680M Cuajone mine expansion",
+      "link": "https://www.mining.com/southern-copper-weighs-680m-cuajone-mine-expansion/",
+      "published": "Thu, 22 Oct 2026 15:49:00 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Liberty Gold stretches Black Pine’s reach in Idaho",
+      "link": "https://www.mining.com/liberty-gold-stretches-black-pines-reach-in-idaho/",
+      "published": "Thu, 22 Oct 2026 14:54:51 +0000",
+      "source": "MINING.COM"
+    }
+  ],
+  "discussions": [
+    {
+      "time": "2026-10-22T12:12:10.474781-07:00",
+      "article_count": 10,
+      "strategist": "Today's feed is thin. Of ten headlines, two are the same M&A story, and one is a college football preview. The useful items are about timing and funding, not new tonnes.\n\nThe US permitting piece is the one with the most potential to matter. It says an environmental review overhaul could speed mine approvals, \"but hurdles remain,\" which is the usual shape of these stories: the rule change makes the headline, and litigation and agency capacity set the timeline. It bears directly on our lead-time argument. If approvals get faster, the 2027–2030 deficit window we've been leaning on could shorten. Historically, review reforms have taken longer to bite than their announcements suggest, so I'd want the Federal Register text before believing it.\n\nSouthern Copper weighing a $680M Cuajone expansion is the most copper-relevant item. It is brownfield, and Cornelius's point holds: expansions at existing operations return faster than greenfield projects. But \"weighs\" means no decision yet, and the headline gives no tonnage or start date. It joins the growing list of expansion plans that don't yet change 2027 supply, so the surplus view doesn't move.\n\nOttawa matching C$1B for Ring of Fire is a funding headline. The log has been consistent on this: announcements carry little weight until money moves. The headline doesn't say whether this is a grant, a loan or infrastructure spending, so I'm not reading anything into it yet.\n\nThe \"M&A wave set to lift juniors\" piece is an investor forecast, not evidence of a wave. The deals we've logged, Malabar and Roxmore, are individual transactions. Juniors often benefit when majors need reserves, but that's background, not news.\n\nPolaris and Liberty Gold's drilling and footprint stories have no grades or tonnes. The Nigeria feature and the California illegal-mining charges are useful on enforcement and community strain, not on supply.\n\nThe copper checkpoint is still blocked: the 16 October LME settlement remains unlogged, and nothing in this feed fills that gap.\n\nPREDICTION: Southern Copper publicly announces a company decision to proceed with the Cuajone expansion | BY: 2027-06-30 | CONFIDENCE: low\nPREDICTION: A US federal agency publishes final implementing rules for the revised environmental review process for mine approvals | BY: 2026-12-31 | CONFIDENCE: low",
+      "geologist": "Most of today's list is noise for us. The football promotion has nothing to do with mining, and the California placer case is a small enforcement story. It belongs with the Colombia and Congo arrests as a pattern of crackdowns on illegal mining, but it moves no markets. The Nigeria feature is useful social context on artisanal mining, with no figures to score.\n\nThe story that matters most is Southern Copper weighing a $680M Cuajone expansion. \"Weighs\" means no decision yet. It is also a brownfield project, the category I flagged on 19 October as able to return faster than new mines. Until the company gives tonnes, a capex range or a decision date, I would not net it against any supply view. The useful test is a board approval with a stated capacity increase, most likely in a filing rather than a press story.\n\nUS permitting is the second item. The environmental review overhaul is directionally helpful and sits alongside the Copper World approval. But the headline itself says \"hurdles remain,\" and it doesn't say which rules change, whether they are final, or whether they apply to projects already in review. Reform shortens calendars. It doesn't change geology or unit costs. I expect Meldrum to agree that Copper World's approval is not a supply event.\n\nThird, the M&A \"wave.\" This is investor opinion with no deal count, period or premium data. It does fit the pattern in our log: SSR–Roxmore, New Hope–Malabar and the still-unresolved Gold Fields–Equinox. That is three deals, and a sector pattern is still a hypothesis. Deal headlines tell us about buyers' appetite, not about sector health. Malabar's binding status is still unconfirmed.\n\nOttawa matching C$1B for Ring of Fire is public infrastructure funding, not a tax instrument, so it should not be confused with the tax-credit prediction. It does bear on the Golden Pursuit road question: government road money is often what turns a district from aspirational into drillable. The headline names no road, timetable or disbursement, so I'd treat it as a commitment only when a signed agreement appears.\n\nNew Polaris \"growth targets\" and Liberty's Black Pine reach are drill-stage headlines. Targets and reach are not resources. Without intercepts, grades and true widths, I score them at zero.\n\nHousekeeping: the 16 October LME settlement is still unlogged, which blocks the 30 October copper checkpoint. That needs fixing before the next review.\n\nPREDICTION: Southern Copper publicly confirms a board or final investment decision on the Cuajone expansion | BY: 2027-06-30 | CONFIDENCE: low\nPREDICTION: A signed Ottawa funding agreement for Ring of Fire infrastructure is published | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: The US permitting reform's first implementing rule or formal guidance is published in the Federal Register | BY: 2026-12-31 | CONFIDENCE: low",
+      "strategist_reply": "Yukon, I agree with your Cuajone test. A board approval with a stated capacity increase is the trigger, and a press story doesn't count. \"Weighs\" plus no tonnage is still a search for a supply view. I'd adopt your wording as the prediction.\n\nWhere I'd push back is on the permitting reform. You say it \"shortens calendars but doesn't change geology,\" and I agree on the physics. But for our 2027–2030 argument, the calendar is the lever. If the reform shortens reviews, it moves the timing of supply, and that's exactly what our thesis depends on. I'd still hold \"directionally helpful\" until we've read the text, because reviews tend to be slowed by litigation and agency staffing, which a rule change doesn't fix. I also can't see from the headline whether the changes apply to projects already in review, and that matters a lot for Copper World.\n\nYour Ring of Fire point sharpens my view. I treated the C$1B as a funding headline to wait on, but you're right that road money is often what makes a district drillable. That links it to the Golden Pursuit question, and I missed it.\n\nWhat we both underweighted: the M&A story. Three deals is a pattern only if we can see the premiums and the buyers' reasons. Gold Fields–Equinox is still unresolved, so it could tell us the most, and we don't yet know whether it will close.\n\nPredictions, restated:\n\nPREDICTION: Southern Copper publicly confirms a board or final investment decision on the Cuajone expansion | BY: 2027-06-30 | CONFIDENCE: low\nPREDICTION: A signed Ottawa funding agreement for Ring of Fire infrastructure is published | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: The US permitting reform's first implementing rule or formal guidance is published in the Federal Register | BY: 2026-12-31 | CONFIDENCE: low\n\nI've replaced my own permitting prediction with yours because it's easier to check. My earlier \"final rules\" wording was too narrow.",
+      "geologist_reply": "Meldrum, your permitting point sharpens mine. \"Hurdles remain\" usually means the calendar is set by litigation and agency staffing, not by the rule text, so I agree we should wait for the Federal Register. Where I'd push back is on the deficit-window argument. Faster approvals help projects that are already studied and funded. For most of the 2027–2030 gap, the binding constraints are feasibility, financing and construction time. Shorter reviews don't create tonnes that were never studied.\n\nOn Ottawa, we agree the headline can't tell us grant from loan. For Ring of Fire, the question that matters is road and power timing, and the headline mentions neither.\n\nYou're also right that I was too loose on Cuajone. I leaned on the brownfield advantage in general terms, but an expansion still needs a board decision, a capex range and a commissioning date before it counts. \"Expansion plans that don't yet change 2027 supply\" is the more disciplined framing.\n\nWhat we both missed: items 3 and 8 are the same story, so the feed holds nine distinct items, not ten, and the \"M&A wave\" is one article. Also, neither of us flagged that the Polaris \"growth targets\" language is the kind of phrasing that gets repeated later as if it were a resource. It isn't one until there are intercepts, grades and true widths.\n\nPredictions I now hold:\n\nPREDICTION: Southern Copper publicly confirms a board approval or final investment decision on the Cuajone expansion, with a stated capacity increase | BY: 2027-06-30 | CONFIDENCE: low\nPREDICTION: A signed Ottawa funding agreement for Ring of Fire infrastructure is published | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: The US permitting reform's first implementing rule or formal guidance is published in the Federal Register | BY: 2026-12-31 | CONFIDENCE: low\n\nMeldrum, your version requires a final rule, which is a stricter test than mine. I'd keep the broader wording because guidance is more likely to appear and is easier to check, but I'd accept yours as the harder bar.",
+      "summary": "Key stories\n- Southern Copper is weighing a $680M Cuajone expansion. It is brownfield, but \"weighs\" means no decision, tonnage or start date, so it does not yet change 2027 supply.\n- A US environmental review overhaul could speed mine approvals, but \"hurdles remain.\" The rule text and its application to projects already in review are unknown.\n- Ottawa is matching C$1B for Ring of Fire. The headline does not say whether the money is a grant, loan or infrastructure spending, or whether it covers roads or power.\n- The \"M&A wave\" is an investor forecast. Three deals (SSR–Roxmore, New Hope–Malabar, Gold Fields–Equinox) are not yet enough to show a pattern.\n- Polaris and Liberty Gold drilling stories contain no grades or tonnes and score zero.\n\nWhere they agree\n- Cuajone counts only after a board decision with a stated capacity increase.\n- Permitting reform should be credited only after the Federal Register text is published.\n- Ottawa funding is a commitment only once a signed agreement appears.\n- The 16 October LME settlement is still unlogged, which blocks the copper checkpoint.\n\nWhere they disagree\n- Meldrum argues that approval timing is the lever for the 2027–2030 deficit thesis, so faster reviews would shift supply. Yukon Cornelius argues that feasibility, financing and construction time bind most of that gap, so shorter reviews create no new tonnes.\n\nCurrent predictions\nPREDICTION: Southern Copper publicly confirms a board or final investment decision on the Cuajone expansion | BY: 2027-06-30 | CONFIDENCE: low (Meldrum)\nPREDICTION: Southern Copper publicly confirms a board approval or final investment decision on the Cuajone expansion, with a stated capacity increase | BY: 2027-06-30 | CONFIDENCE: low (Yukon Cornelius)\nPREDICTION: A signed Ottawa funding agreement for Ring of Fire infrastructure is published | BY: 2026-12-31 | CONFIDENCE: low (Meldrum; Yukon Cornelius)\nPREDICTION: The US permitting reform's first implementing rule or formal guidance is published in the Federal Register | BY: 2026-12-31 | CONFIDENCE: low (Meldrum; Yukon Cornelius)"
+    }
+  ],
   "chief_sessions": []
 }
