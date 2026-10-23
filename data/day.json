@@ -1,5 +1,82 @@
 {
-  "articles": [],
-  "discussions": [],
+  "articles": [
+    {
+      "title": "Volvo Group Strengthens Position in Mining Industry - Construction Outlook",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSmxEZWVDZGNvZGgwaGpPZHpia0QyeHRIeURSM3oxel9mejdvWklIX3BscUk4SGNROGt6SGRuZHBWQTY0dGstbnYwTE1fMmNtREVLbGVLaUtnbXJXakpwbFNFVkk0anF4aEc3YkQybUl1M2ZwbHZqNTlfUms3RWxvTjR4QnJpckJJMjl2V1NGeERuY2dQTUNycHFBZDJ0dzdLeEhpY3lNM0lLV1QtT1VV?oc=5",
+      "published": "Fri, 23 Oct 2026 10:19:35 GMT",
+      "source": "Construction Outlook"
+    },
+    {
+      "title": "Mining's New Environmental Labyrinth - Mexico Business News",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUG50OGhLTDVwUmJGVm5EeEI1T2dka2p0dlpSMFRvbGstZkcwMEYwWHlmcmJwX1ZXLVo4WXNTTFlqMDhsSGZVOFpjVDhLTDlWcE5Zdkk4cFQtMWhnTmhkdHMyR0RuajVIbjVxYnN5ZWdXMG5MZEhLajg1WjN2aW9adA?oc=5",
+      "published": "Fri, 23 Oct 2026 11:00:00 GMT",
+      "source": "Mexico Business News"
+    },
+    {
+      "title": "Equity Metals Corporation is Pleased to be Attending the Red Cloud's Fall Mining Showcase 2026 - Investing News Network",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQQ1FaUTI1bHRqOWxia0xibXJWcW43Zld4emZ1R0VMcGVJRmVmVmdhSmVEUmpUb2lmRHFDVmhURWVHWE5naW93VVhHU2w5aEhRVF9JRXViZWoxb1lrZFkwZXhPT3YtN1d6Mlp5dHd3RFFqYTJDYkJHanNnZnpYYS1ydDVab1V0TmNBRzVzaVBHNUVRaUIzMXF2VFc4c3JaVEcwU01tcXllUHpCczVyTUdhRFNKU1lhTVNXQ3Nua1pn?oc=5",
+      "published": "Fri, 23 Oct 2026 12:21:30 GMT",
+      "source": "Investing News Network"
+    },
+    {
+      "title": "Outlook for the Space Mining Market to 2030: Size, CAGR, Trends, and Forecast Analysis - EIN News",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNWmFEcmJ3U2VYZkZsVzdqNXpzY0FySGtBYnNyRVBUZDlEbmJWajJFdGVieEFqY3pFeWpkeHAyVEdoaDZXU01zOGpHWngzWjZJNFdzTldTQ25YMDllOTVYdW1wVG5icVJad0FEZzhIMFlHNjZSdlNJZGFwS2ZMVlkwT1czMDFRcnFEelFTUGFoTlJCUHV4RzRJcTRhbGtrbUREYVBuMzFuTTZ3OEJZenhweWJvbmZGbmJxSDB5QjI5dDdZUQ?oc=5",
+      "published": "Fri, 23 Oct 2026 16:15:00 GMT",
+      "source": "EIN News"
+    },
+    {
+      "title": "Red Chris shapes Newmont's copper-gold future - North of 60 Mining News",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMkwtWUlRanM2bld6dHhReFphNGxZdGFQSDdHN1p4N2RuTURWVGlmY0QwVVVqaTdtWHNfMFBDaFo2YWNua29oSFd0cDY4TENHeWFMblhqRHVObGNSeF9lSEhESzNtdzNSZFZrLTlYeGZwQUJTa2E5N0k3ODVLdHB3Z3dxVHZLczhHaW85Q19VV215Q2oxRVRQeUYzbEZwdkIxb05DSmRnSHJtby15?oc=5",
+      "published": "Fri, 23 Oct 2026 17:30:22 GMT",
+      "source": "North of 60 Mining News"
+    },
+    {
+      "title": "Lithium Miners News For The Month Of October 2026 - Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcnF6RnBDT2g3QlFEWFZUek5tYWNLYXBmaU9XNE1FS3lmV2JTUEM5TTMzV1Vqa1l1UmM2TUdZVWJiLV83b1ZzblMxYzdMbjQ1VHB5bHQ0cDczVHBEMzE2cEF3al9OcWI1amx4d09ncGNEZTFmZlEyMGo3eVVPZ2xJMEphTEZKQQ?oc=5",
+      "published": "Fri, 23 Oct 2026 14:31:06 GMT",
+      "source": "Seeking Alpha"
+    },
+    {
+      "title": "China’s CMOC Sees Earnings Soar on Copper Rally and More Output - Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOemJsekRJTjVvRkRyZ1hSV2hrRnhoRDZTdjJvQkJpZ1pmTHk2VlM0Q0NRZVRWU0hVZ2JwRE82NzFTV1A5VWlKZ0h3YXB2b09qSEtJbngyTklYU0VkZi1neGVsTkFKYWNDVmtpYjFVdmFCV2VEWW4tMGhhTFBoNXlrVmZ2aFdLSzExNUpRQ2pzZUpkRFhRSzVvdmpuaHVIam1aTzhJLW42RjhTbjlERThsVUlCblU?oc=5",
+      "published": "Fri, 23 Oct 2026 12:52:15 GMT",
+      "source": "Bloomberg.com"
+    },
+    {
+      "title": "This Forgotten Mill in California Has an Eerie Backstory - Only In Your State",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE91YXRRZnk3bGkzRXlWN0Qwa0FNWmNJLXVwT1RYYjFUeFdNMDF3UnhOR1R5SDAwYU9VQkRqUTlUUzVFN09QSUhZcGlpYlpuZU9WSHdZdERBVmxZZjdDT0lma2VXT2pkMHRnWU5MOVBpekFaSGp1bUZKZXZRY0V5Zw?oc=5",
+      "published": "Fri, 23 Oct 2026 15:09:28 GMT",
+      "source": "Only In Your State"
+    },
+    {
+      "title": "Newmont prices Red Chris expansion at up to $4.8B",
+      "link": "https://www.mining.com/newmont-prices-red-chris-expansion-at-up-to-4-8b/",
+      "published": "Fri, 23 Oct 2026 17:15:00 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "New Found Gold doubles Queensway valuation to $1.2B",
+      "link": "https://www.mining.com/new-found-gold-doubles-queensway-valuation-to-1-2b/",
+      "published": "Fri, 23 Oct 2026 13:42:07 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Central banks pile into gold as China leads buying spree",
+      "link": "https://www.mining.com/central-banks-pile-into-gold-as-china-leads-buying-spree/",
+      "published": "Fri, 23 Oct 2026 13:10:00 +0000",
+      "source": "MINING.COM"
+    }
+  ],
+  "discussions": [
+    {
+      "time": "2026-10-23T12:05:32.479747-07:00",
+      "article_count": 11,
+      "strategist": "Most of today's batch is headline weight, not news weight. A couple of items carry real information, and one of them is a number.\n\n- Red Chris. MINING.COM reports Newmont pricing the Red Chris expansion at up to $4.8B. That is the first hard capex figure in a while, and the desk has been short of one. Copper World, Cuajone and Grupo's US projects have none published. Cornelius has argued that feasibility and financing bind the gap, so a capex figure is the kind of evidence we asked for. The caveats: \"up to\" is a ceiling, not a base estimate, and \"prices\" could mean a capex estimate, a decision or something else. I haven't seen the company release. It doesn't change 2027 supply. Approval and financing timing are still the lever for the 2027–2030 deficit thesis.\n\n- Gold demand. Central banks buying gold, with China leading, is a structural bid that doesn't depend on lower yields. That fits alongside the Newmont beat. My October 16 lower-yields explanation stays a hypothesis. Central-bank buying is a separate, observable driver, though the headline gives no volumes.\n\n- Copper producers. CMOC's earnings \"soar\" on the copper rally and higher output. That is a profits story, not a supply story. The headline gives no period and no price basis, so I can't say how much of the jump is price and how much is volume.\n\n- Junior valuations. New Found Gold doubling its Queensway valuation to $1.2B is a market number, not a resource, a cash flow or a financing. Historically, a doubled junior valuation often comes before an equity raise. That is background, not evidence here. Watch for the financing.\n\n- Also worth a glance: Volvo \"strengthens its position\" in mining. If this is the new mining entity, it is the same story the desk already has, with no supply weight. Mexico's \"environmental labyrinth\" is a headline I can't read, so I'm not drawing any conclusions from it. I'm skipping the space-mining research blurb, the lithium roundup and the forgotten mill.\n\nPREDICTION: Newmont publicly confirms a capital cost of up to US$4.8 billion for the Red Chris expansion in a company release or filing | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: CMOC publishes its third-quarter 2026 results by 2026-10-31 showing net profit above the third quarter of 2025 | BY: 2026-10-31 | CONFIDENCE: medium",
+      "geologist": "Colleague, a light day for real news. Most of the batch is market-research filler or repeats of things already in the log. Four stories are worth a look.\n\nRed Chris is the big one. The headline says Newmont has priced the expansion at up to $4.8B. That's the most decision-relevant copper capex number in today's batch, and it's the company-level figure we still lack on Copper World. But \"up to\" means a range, and the headline doesn't say whether the number comes from a filing, a study, or a journalist's reading of one. Until I see the company document, I'd treat it as a capex signal, not a cost estimate. It also fits Simon's point that Newmont's real test is figures. Cadia still needs tonnes, grade and recovery numbers, and Red Chris will need the same discipline.\n\nCMOC's earnings soaring on the copper rally is a backward-looking story. Producer profits reflect prices and volumes from a period this headline doesn't pin down. It's a good example of why margins can look strong while the supply picture is unchanged, and it supports Meldrum's view that costs, not prices, are the story. The \"rally\" also sits awkwardly beside our unlogged 16 October LME settlement. We can't score the copper call until that number is in the log.\n\nGold is the second cluster. Central banks buying gold, led by China, is a demand trend with no volumes in the headline, so I'd log it as a trend, not a number. New Found Gold doubling its Queensway valuation to $1.2B tells you what investors are paying, not what the ground holds. Without a new resource estimate or drill result behind it, I'd treat the doubling as sentiment.\n\nElsewhere: the Volvo outlook piece adds nothing on timing, so the January versus January 2027 disagreement stays open. The Equity Metals showcase, the space-mining forecast and the lithium roundup are promotional or generic, and I wouldn't score them. The Mexico environmental piece matters only if it names a specific Grupo permit.\n\nPREDICTION: Newmont publishes a company release or filing stating a capital cost and design production rate for the Red Chris expansion | BY: 2027-03-31 | CONFIDENCE: medium\nPREDICTION: New Found Gold publishes a new or updated NI 43-101 mineral resource estimate for its Queensway project | BY: 2027-06-30 | CONFIDENCE: low",
+      "strategist_reply": "Yukon, you sharpen my Red Chris read in one useful way. I'd been treating \"up to $4.8B\" as a capex signal that helps the 2027–2030 timing argument. You're right that without the company document it's a range from an unknown source, so I'll hold it as a ceiling and not build on it until we have the release. Your point that Cadia still needs tonnes, grade and recovery figures is the discipline Newmont has to meet here too.\n\nWhere I see it differently is CMOC. You say costs, not prices, are the story. I'd say both matter, but they answer different questions. Price drives this quarter's earnings. Volume and cost drive supply. The headline can't separate them, so neither of us can yet say which is doing the work.\n\nWhat we both missed: the CMOC headline may not be a full quarterly result. \"Earnings soar\" could be a preliminary or a half-year figure. If so, my Q3 prediction may already be settled or may compare the wrong periods. Before anyone relies on it, we need the primary release and the period it covers. I'm lowering my confidence on it to low until then.\n\nOn the New Found Gold resource prediction, I agree with your low confidence. A doubled valuation is a market number, and the desk has seen enough doubled juniors go back to the market to be wary of reading it as geology.\n\nI'm also still waiting on the 16 October LME settlement. Until it's in the log, the copper call stays unscored.\n\nPREDICTION: Newmont publicly confirms a capital cost of up to US$4.8 billion for the Red Chris expansion in a company release or filing | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: CMOC publishes its third-quarter 2026 results by 2026-10-31 showing net profit above the third quarter of 2025 | BY: 2026-10-31 | CONFIDENCE: low\nPREDICTION: Newmont publishes a company release or filing stating a capital cost and design production rate for the Red Chris expansion | BY: 2027-03-31 | CONFIDENCE: medium\nPREDICTION: New Found Gold publishes a new or updated NI 43-101 mineral resource estimate for its Queensway project | BY: 2027-06-30 | CONFIDENCE: low",
+      "geologist_reply": "Meldrum, your read on Red Chris is right, and I'd sharpen it one step further. A capex ceiling tells us little until we know the design production rate, the mill throughput and the study basis behind it. A figure that's been \"priced\" may come from a feasibility study, a scoping study or a board decision, and each would carry very different weight. If Newmont has already put the figure in a release, the question becomes whether the design rate is there too.\n\nOn gold, I agree central-bank buying is a separate, observable driver and shouldn't be folded into the lower-yields hypothesis. But buying changes the price, not the ground. It supports the Newmont and junior-valuation stories without telling us about ounces.\n\nOn CMOC, we agree it's a profits story. Producer earnings in a rally can carry hedging, lagged pricing and volume effects, so the period and comparison basis matter. That's why I'd tighten your prediction: \"net profit\" should mean attributable net profit, and the Q3 2025 comparison needs to be checked against the filing itself. Timing is a risk too. Producers often report in late October, but I'm working from typical practice, not from a confirmed date.\n\nWhat we both missed is the 16 October LME settlement. Until it's in the log, neither of us can score the copper call, and the \"rally\" framing rests on nothing we can check.\n\nOn New Found Gold, your financing watch is the right one. I'd add that the next filing to read is a resource update or a financing document, not a valuation.\n\nPREDICTION: Newmont publishes a company release or filing stating a capital cost and design production rate for the Red Chris expansion | BY: 2027-03-31 | CONFIDENCE: medium\nPREDICTION: CMOC publishes its third-quarter 2026 results by 2026-10-31 showing attributable net profit above its third-quarter 2025 figure | BY: 2026-10-31 | CONFIDENCE: medium\nPREDICTION: New Found Gold publishes a new or updated NI 43-101 mineral resource estimate for its Queensway project | BY: 2027-06-30 | CONFIDENCE: low",
+      "summary": "Key stories\n- Newmont has priced the Red Chris expansion at up to US$4.8B. This is the first hard copper capex figure in a while, but \"up to\" is a ceiling from an unconfirmed source.\n- CMOC's earnings \"soar\" on the copper rally. The headline gives no period or price basis, so price and volume effects can't yet be separated.\n- Central banks are buying gold, led by China. This is a demand trend with no volumes given.\n- New Found Gold has doubled its Queensway valuation to $1.2B. This is a market number, not a resource or financing.\n\nWhere they agree\n- The Red Chris figure needs the company document, plus the design rate and study basis.\n- The CMOC headline can't settle the supply question.\n- Central-bank buying is a separate driver from lower yields and doesn't show ounces.\n- The New Found Gold valuation is sentiment. The next thing to watch is a financing or resource update.\n- The copper call can't be scored until the 16 October LME settlement is logged.\n\nWhere they disagree\n- What drives CMOC: Meldrum says price drives earnings while volume and cost drive supply, so both matter. Cornelius says costs, not prices, are the story, because margins can look strong while supply is unchanged.\n- The CMOC prediction: Meldrum lowered his confidence to low, since the release may be preliminary or half-year. Cornelius kept medium after tightening the wording to attributable net profit, while noting that the timing rests on typical practice.\n\nCurrent predictions\nPREDICTION: Newmont publicly confirms a capital cost of up to US$4.8 billion for the Red Chris expansion in a company release or filing | BY: 2026-12-31 | CONFIDENCE: medium (Meldrum)\nPREDICTION: CMOC publishes its third-quarter 2026 results by 2026-10-31 showing net profit above the third quarter of 2025 | BY: 2026-10-31 | CONFIDENCE: low (Meldrum)\nPREDICTION: Newmont publishes a company release or filing stating a capital cost and design production rate for the Red Chris expansion | BY: 2027-03-31 | CONFIDENCE: medium (Yukon Cornelius)\nPREDICTION: CMOC publishes its third-quarter 2026 results by 2026-10-31 showing attributable net profit above its third-quarter 2025 figure | BY: 2026-10-31 | CONFIDENCE: medium (Yukon Cornelius)\nPREDICTION: New Found Gold publishes a new or updated NI 43-101 mineral resource estimate for its Queensway project | BY: 2027-06-30 | CONFIDENCE: low (Yukon Cornelius)"
+    }
+  ],
   "chief_sessions": []
 }
