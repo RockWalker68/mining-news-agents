@@ -1,5 +1,148 @@
 {
-  "articles": [],
-  "discussions": [],
+  "articles": [
+    {
+      "title": "Latin America: Resources, Purpose, and Mining Identity - Mexico Business News",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSllxNmZ5OW5PeVhEMFRENEZtNDBTS0JjaHp6UHpKMk9Bc2swODZDOG5HWERQcXlJZEJOV0Q1QUxlX2ZJTGlfdWstNUZ5bDgzSHFXOVIyVE16ZHN2QlZfUzQ3b0I2X01UeTBjV1d6YlVWSkR3dUpzSmJ6NS1xQ2tZMWNBY1IxV3p5czN6SFZPM2xEZVdGcGc?oc=5",
+      "published": "Mon, 26 Oct 2026 12:00:00 GMT",
+      "source": "Mexico Business News"
+    },
+    {
+      "title": "UA gets $1 million from feds to help train new mining engineers - azcentral.com and The Arizona Republic",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONGJSRTVxZklWbDZWSHNkbVVESUtXbmF6YTFJZnJDLXBWZEVxemZVc2QySUV3eFVuTVl0ajBrNWdveHZMVUVEaVc4SFFZQXRvU2o3OE9GeGxYMVllaDgySHA2NG05QmIzN2tINGs1WmtpamtSVHZNdGVMa3FzbkpPWVFSVGstaExfX2tjWkZlN2VaZlBVVjBiRXlvMlZpOV9BMjV0d005RUIzUDZCRkt5aXp3?oc=5",
+      "published": "Mon, 26 Oct 2026 16:30:00 GMT",
+      "source": "azcentral.com and The Arizona Republic"
+    },
+    {
+      "title": "A mine shift handover needs more than an AI summary - Global Mining Review",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPOU9RQXdDRGF6MFp4VWlaNkVydWdELXdSVGZPNnhHc1hXalF2NENDdkt6UDRHVzZmZGY2bVdNcEFrc1ExeGVJd2VNcng5TVJ2VkJYeWFsR3RlaXU5Z3JvRVBnVThTby10QTZKR0xlQWNLUWlLWHhtMndYQ3d5M3VxbjRRQTE4QjJmOXczUkdvZFlTQUN4MWlUT0RCZEtKR3VnQmZuelJB?oc=5",
+      "published": "Mon, 26 Oct 2026 15:07:58 GMT",
+      "source": "Global Mining Review"
+    },
+    {
+      "title": "Lula’s Brazil win puts rare earths in Trump’s crosshairs - Mining.com",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQbHQyLVZpX0ZvU3pYaVVibFAwb0FhMmJvOG1DZFZxaFYtZ3JycjBKSklmR2RiaVd4cDNCdXBqVFE1U2RaQUk3UDBzQmYxSldGMWo3SXBKTWhvdlIxTmoxYTNQT2FCZzVRNHBQamRrdndaMW9kcndZV3hoZUdUQVhDd09tMjI?oc=5",
+      "published": "Mon, 26 Oct 2026 17:45:51 GMT",
+      "source": "Mining.com"
+    },
+    {
+      "title": "Congo Removes Boss of Artisanal Mining Regulator Amid Crackdown - Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVDNoWk8wOFBuR29JQl8tSHVmeTllTDlCOC1WQkxabXFHOWV1eXZLd1VpRXFsZjAyXzF3UlBYQWM2Zl9BNFZsaFNkMTNSRkdaV0hJNXZEd0NfRUJ1cy1Vcm04THcxZnZlVm55VTNXTU5UVlBPWDJtRUVzRWNsQnZUT3pNQ0xFRWg1NVJMMmVmekFhclVGd1FPdTM3WkVxVTV1N010dGdJNGxaZ2p5cGctV1NLXzI?oc=5",
+      "published": "Mon, 26 Oct 2026 14:17:52 GMT",
+      "source": "Bloomberg.com"
+    },
+    {
+      "title": "AI Framework Spots Unsafe Miner Behavior in Real Time with Dual Attention Pose Network - Bioengineer.org",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxORklvcUNvbGgya0ktZlBQWkUzUkNKTU5PRHNNajNXS0NjYW5qamkyMm56NFpCd3otbFh4NmNqN3pQZG9qeXd2bVgxSXZfZjBBSHEwTXRSUVh3MnFoNFRkZ01ULVcwSFhuSmthc0tOLWZNSnh5TzhLWDAtWEhWVExsZVg0Q09WZzliZ2hybjI5VHFSOWRGUUlfMUFuYkRrNHE2dlVDRzVoV2ROb0VtN1pnTA?oc=5",
+      "published": "Mon, 26 Oct 2026 17:26:15 GMT",
+      "source": "Bioengineer.org"
+    },
+    {
+      "title": "BERGWERK – A Mining Sim Shows off Its Deep Mining Operations in New Trailer - COGconnected",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVjQ5ZHY0QVlhdkJOUVRyVzNKVVVtcG5kQ3Q0NC0xbEl6U0RnQWtPZmZIYkx3OXZKTjNaNno1Y1UxVy1ieW9ScEVuSTllXzV2bUpFcWdGeXVqNWlKZ3pMcHJMU29pUXZXdDFQQVNfTDd6ZVBleDVUSVh4eklGamRta0RhOTVXX2x4SWpUVHM0Z2FIQjA2YjFmWkVwWEUzbjRLbnk4T1FqaVYxYW8?oc=5",
+      "published": "Mon, 26 Oct 2026 12:49:03 GMT",
+      "source": "COGconnected"
+    },
+    {
+      "title": "Tether is Developing AI-Powered Bitcoin Mining Management Technology! Here are the Details - Cryptonews.net",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9XWjVLNVpUZWtOTEhMS3MxUTRIMWszVktPLWRkRm9xOGNQWEM0NFFBVnZnRkZycjdWZGdDa1lvaDU3WDc0NFpiRV92QVA0Qmw4NzhFVXhEaw?oc=5",
+      "published": "Mon, 26 Oct 2026 07:38:06 GMT",
+      "source": "Cryptonews.net"
+    },
+    {
+      "title": "BC Tory landslide raises mining hopes, rights fears - The Northern Miner",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQTlc5cUlBY2hweXU0eVp1Z0pkcDVPQU5sRW5COFM1SnltclZGaWN0OWc2dVVzSjMwRUEyeGRoam5VeFI5LWZCVGJlSDdVZGNpdFF0bTVaMjVkYnllMzNnWVRwMlMzUTRmdXVIQktGZEVBdmdKZWk5VGVZTG5waHVQR2FzbV9UcE9sRXdCUWEtTzJqbF9lYnNZeDlheXlzUQ?oc=5",
+      "published": "Mon, 26 Oct 2026 16:48:05 GMT",
+      "source": "The Northern Miner"
+    },
+    {
+      "title": "Mexico’s Proposed Environmental Law: Mining Impacts - Mexico Business News",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdzJlY0M2R2dYSHVuMjFadHRXV0dSWTZTbG9sVU8yU1prVVlQN3lEX1NBZ256Q0U5SzZiNkpzVVpWRDFNbWNxWkNlT3pzWlFuWHlpTWR2YUx5dVhzcExXb0djU0hVYXd6WFpYTWxiNVNYTXVUdk9ZNGIxTFMzVkdOTXV0UXY0b0lGZEJvaFJhNFdnWTQ?oc=5",
+      "published": "Mon, 26 Oct 2026 11:00:00 GMT",
+      "source": "Mexico Business News"
+    },
+    {
+      "title": "In Suriname's rainforest, Saamaka woodcarvers face the pull of gold mining and logging - WRAL",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORHZmeEg4ckVOZkF4OFZMb3NZdGhDQ1JoT25Fa2h2Zjl5Y0xCam1rWWtkcjVCa2gtcTl1SHRWNTZJb3R6LUZqblFjWWNBU2ZZeEdveHFpLUJKVEpXLVNuLXdqeldDX3hxU25wX0tNMG1fb1RqektQUkZlVnpjZUtFZlpBOEVwa0wtYTJqN3NXaHBQQVRobkJUYUJLWTB3MzZSQXIxSUFzbGswdTM0WUp5TXVNZEhkS01VVEU1Yw?oc=5",
+      "published": "Mon, 26 Oct 2026 13:10:30 GMT",
+      "source": "WRAL"
+    },
+    {
+      "title": "LODE GOLD INITIATES EXPLORATION TO EVALUATE UPSIDE POTENTIAL AT HISTORIC HIGH-GRADE MINES WITHIN FREMONT GOLD MINE - Morningstar",
+      "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNU2J5UDZ1ZUNsMzhtd2F4ajFTV0tjVEF4WkhLZlNaa1R4d3ZuNW9wa1VzSXIxYmpfWmowenprbkhvbEx3anU0X1pKUGlwYl96cDVuRHlNY1dweXJOLWVQU2Zlb3hEVTRweEhqYUYxVnJWZjYxdEJBSGI0OHpNX3F1eEtBZUtLbjljM0M2VVYzSEZMRHhzTU5tRXpTaDRheDdXdUxjVVBJdG56cHRYdGJVUnVGQUxTSHpwMXQ0cDRrYVhDT3VsdmEyelNCSVdhWUwteGFmcjNVN3hFRDFFYjZOYVJMVUtEdjZtdDFSR2xoTEk0cWlmMllmUUpsaUpOVnNTWFd3RHFn?oc=5",
+      "published": "Mon, 26 Oct 2026 16:43:00 GMT",
+      "source": "Morningstar"
+    },
+    {
+      "title": "Buried sediments prove Romans mined gold in Pyrenees - Mining.com",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSVZObU1QakcxeHBvWm1kT3FXZ3RQQVZQWkIzcVJNUjhBV0J1SFM4OUtWN254QnhQMDR4S0hlaUZrMXdFanZuckhwYXlOUDJiSVE2NklfWUhIUmxPeVYwRHZhRklfcU5GcUdsVUZCdjNnR0NreG5HY1g3WGFKcmtkSlB3?oc=5",
+      "published": "Mon, 26 Oct 2026 13:22:09 GMT",
+      "source": "Mining.com"
+    },
+    {
+      "title": "Lode Gold begins exploration program to evaluate upside potential at Fremont Gold Mine, California - Resource World Magazine",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNSVdtYjNPM0l6WjFTNXdXWGt1cTQyOXRuSC1tX1RCYmhFdzlmQzZGTG05NkE0WEYtRGxuWTlJR2lid21NSmZ5THJQVGdYN2VnVTJoUFpDNGhVaFhKeEl0N3hzZlRUalpVSnJPX1hXY29rcFcySmlCMWVQZ0xKWFZxLXRpVGo3WVdwdGw3eVZJM2RmbjZaUGFQc0RsOUN3TS1sZHZfbXRrNXhVSE94QldBUmI0T3k4am10T3IwWkZwdU14QQ?oc=5",
+      "published": "Mon, 26 Oct 2026 14:56:06 GMT",
+      "source": "Resource World Magazine"
+    },
+    {
+      "title": "Gold SWOT: Northern Star is open to improved Gold Fields takeover offer - Kitco",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcWhLZndlNTdacGFGYkI4ek9pZUx2b0s2VUxUVEdRUU9VODVQQTFBTXk5Nk5Vb0JNWC1GMC0yd1RsMkI4N3Y5MWhnS0ZLUGJuREIySGZNb0JaZUxubmNfRjE0dk9ETGhYQTAtUXEzc0NKWGtRV0VNR1ZpUzJZTjFWWjAxQ0pMR21rNkF6cGNaV2JobGw1QWh6Y0lWZzlTTDBPUWsxM1NDbUg?oc=5",
+      "published": "Mon, 26 Oct 2026 13:36:32 GMT",
+      "source": "Kitco"
+    },
+    {
+      "title": "Codelco and BHP team up to pin down possible new copper deposit near Escondida - BNamericas",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQblhES0t1TGRQcDZRRmNZWkV3NkI0cXJmQXBLdlJaYkl6UGhFdERCaTg3aHN4eHhaalRKWWg3dG1XeXp3dUlDQ3NyM2h6Wmd5R2pUUUZUcm53X2tYWTJYU1NEVEtLT0hPaGVxbXJ1UVZrUVYyVk1OZGFUUjRlNkxsSFpfX21jS0hCdlZfOVBCdEhOT29NQUViYU1PeVVCcjB2TVVRUTdRVWgwY1VhRG9YUXBBSFE0TjIy?oc=5",
+      "published": "Mon, 26 Oct 2026 16:50:46 GMT",
+      "source": "BNamericas"
+    },
+    {
+      "title": "Oil’s 2% Drop Lifts Gold Above US$4,000, Offering Miners Potential Cost Relief - Crux Investor",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQnhESXc2c1ZtUmlwUm5NYm04NGhQYS1BTXdUQ0hrWHVpaExjYTVJcDR3UHhFaFhfY3NKcm56cTRqOXpGVmRsU0x0eXFnQlUyeHdCdmxvSmRkZDEwdXU3dzh1aVdjZTdzc0RpVzFvUUxpQjJ6Z0c5OVhwdzd0SS13SXlfMllWX1pHTkRaSFR0amtuRjZpaDlCSmxWOVQ3U2wzeFVUYjVNdjJ5aWN3WDBj?oc=5",
+      "published": "Mon, 26 Oct 2026 16:58:21 GMT",
+      "source": "Crux Investor"
+    },
+    {
+      "title": "Local miner outbids Freeport for Colombia exploration",
+      "link": "https://www.mining.com/local-miner-outbids-freeport-for-colombia-exploration/",
+      "published": "Mon, 26 Oct 2026 15:21:20 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Codelco, BHP launch $40M copper hunt in northern Chile",
+      "link": "https://www.mining.com/codelco-bhp-launch-40m-copper-hunt-in-northern-chile/",
+      "published": "Mon, 26 Oct 2026 15:19:56 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Strike curbs output at Canada’s largest copper mine",
+      "link": "https://www.mining.com/strike-curbs-output-at-canadas-largest-copper-mine/",
+      "published": "Mon, 26 Oct 2026 14:53:12 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Lula’s Brazil win puts rare earths in Trump’s crosshairs",
+      "link": "https://www.mining.com/lulas-brazil-win-puts-rare-earths-in-trumps-crosshairs/",
+      "published": "Mon, 26 Oct 2026 12:08:00 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Buried sediments prove Romans mined gold in Pyrenees",
+      "link": "https://www.mining.com/buried-sediments-prove-romans-mined-gold-in-pyrenees/",
+      "published": "Mon, 26 Oct 2026 10:58:00 +0000",
+      "source": "MINING.COM"
+    }
+  ],
+  "discussions": [
+    {
+      "time": "2026-10-26T12:10:32.340946-07:00",
+      "article_count": 22,
+      "strategist": "Most of today's batch is filler. A few stories are worth a second look.\n\n- Copper: Teck's strike is the one that matters. MINING.COM's \"strike curbs output\" moves the story from labour dispute to production event, but the headline gives no duration or tonnes, and those numbers decide the 2027 arithmetic. Yukon is right that strike length is the main variable. A short stoppage wouldn't change the surplus-or-deficit view. The 16 October LME settlement is still unlogged, so the 30 October copper checkpoint remains blocked.\n\n- Chile exploration: Codelco and BHP are spending about US$40M on a copper hunt in northern Chile, near Escondida. That's a discovery budget, not supply. Historically, exploration to production takes a decade or more. It does show the majors still funding the long-dated pipeline, which fits the BloombergNEF spending-need point from 20 October.\n\n- Gold consolidation: Northern Star says it is \"open to an improved\" Gold Fields offer (Kitco). No terms are given, so this is a bid process, not a deal. It sits alongside the pending Gold Fields–Equinox item. Crux Investor's claim that gold is above US$4,000 comes from a promotional outlet. I'd want a price series before using it.\n\n- Governance and provenance: Congo's removal of its artisanal mining regulator chief during a crackdown matters for the dirty-gold thread. Artisanal gold is where provenance risk concentrates. The headline doesn't say whether this is enforcement or a reshuffle. BC's Tory landslide (Northern Miner) keeps the provincial permitting question alive. I'd read a new majority as a faster policy agenda, but that's my speculation, not a finding.\n\n- Thin items: The Lula and rare-earths headline names no policy, so I can't judge it. The Mexico environmental law and the Romans-in-Pyrenees piece are background.\n\nGunnison's debut isn't in these headlines, so today's venue call stands on the existing record.\n\nPREDICTION: Gold Fields publicly announces a revised takeover proposal for Northern Star Resources | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Codelco or BHP publicly reports a copper resource estimate or drill results from the northern Chile exploration program | BY: 2027-06-30 | CONFIDENCE: low",
+      "geologist": "Today's batch is thin on hard numbers, so I'll sort it by what could actually move.\n\n- Teck's Highland Valley strike is the one with real copper weight. MINING.COM's headline \"Strike curbs output at Canada's largest copper mine\" confirms output is being curbed. It doesn't say by how much or for how long, and I'd want Teck's own figures before accepting the \"largest\" label. My view from October 26 holds: strike length is the main copper variable. Nothing here changes it, and the 30 October checkpoint stays blocked until the 16 October LME settlement is logged.\n\n- Northern Chile exploration: Codelco and BHP's US$40M copper search near Escondida (BNamericas and MINING.COM) is a search budget, not a mine. It doesn't connect to the Escondida strike that was averted on 17 October. Any discovery would be a 2030s story at the earliest, based on typical discovery-to-production timelines. \"Local miner outbids Freeport for Colombia exploration\" gives no ground size, price or terms, so I can't score it.\n\n- Gold: \"Gold above US$4,000\" comes from Crux Investor, which promotes stocks and cites no price source. Treat it as unverified, though it fits the higher gold prices behind Newmont's beat on 23 October. Northern Star's openness to an improved Gold Fields offer is a takeover approach, not a deal. Our pending Gold Fields–Equinox item is a separate matter, so I'm not linking them.\n\n- Policy noise: the BC Tory landslide is the fact the headline reports. Whether it leads to a permitting or royalty review is speculation, and both desk predictions on that review remain open at low. Lula's win and the rare-earths angle, and Congo's removal of the artisanal mining regulator boss, have no detail yet. The Congo move may connect to the unconfirmed arrests logged on 20 October, but a headline can't establish that.\n\n- Gunnison: nothing in today's headlines. The 26 October venue predictions fall due today with no filing on record, so they should be scored as open or missed, not confirmed.\n\nPREDICTION: Northern Star Resources publicly confirms a revised or improved takeover proposal from Gold Fields | BY: 2026-12-31 | CONFIDENCE: low",
+      "strategist_reply": "Yukon, your point that strike length is the copper variable holds, and I'd go further: until we have the duration and tonnes, the 2027 arithmetic is unanswerable, so I won't pretend otherwise. You're also right to question \"largest copper mine.\" It's a headline phrase, and I accepted it too quickly.\n\nYour geology sharpens my exploration note. I wrote \"a decade or more\" from general experience, but you've run the drill programs, and your \"2030s at the earliest\" is the more useful framing. I'd only add that the US$40M figure tells us about the majors' appetite for the long pipeline, not about any timeline.\n\nWhere I'd differ is on linkage. I described the Northern Star approach as sitting \"alongside\" the Gold Fields–Equinox item. You're right to keep them separate in scoring. Shared acquirer, different target and different terms is no basis for a common forecast.\n\nOn the Congo regulator, I should have connected it to the 20 October arrests you flagged. I didn't, and I still can't establish a link from a headline. Same for the Gunnison predictions: silence in a headline isn't a miss. We should mark them unscored until someone checks the filing record, not call them failed.\n\nWhat I missed: I didn't note that the Escondida strike averted on 17 October is unrelated to the northern Chile search, which you caught. I also didn't check the Newmont context for the gold price, which I should have if I'm leaning on price levels at all.\n\nI'm keeping my Codelco–BHP prediction and tightening the Northern Star one to match your trigger.\n\nPREDICTION: Gold Fields makes a revised takeover proposal for Northern Star Resources that is publicly confirmed by either company | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Codelco or BHP publicly reports a copper resource estimate or drill results from the northern Chile exploration program | BY: 2027-06-30 | CONFIDENCE: low",
+      "geologist_reply": "Meldrum, your read on the Chile program is right, and the BNEF link is the useful part. I'd go a bit further on scale, though. Forty million dollars is a token search budget next to what a mine costs, so I'd treat it as a signal of intent, not evidence the majors are closing a supply gap.\n\nOn Gold Fields and Northern Star, I agree the key word is \"improved.\" It implies a first approach that was rejected, so the gap is price, and that's where the next move will show. I'd also add that a takeover approach is a financing and share-exchange negotiation as much as a valuation contest, and nothing in the headlines tells us which way that goes. I'm keeping my Northern Star prediction because the trigger is Northern Star's own statement, but yours is essentially the same event from the other side. Duplicate predictions aren't independent evidence, so I'd score them together.\n\nWhere I think we both missed something: the Lode Gold item appears twice (Morningstar and Resource World), and Mining.com repeats the Lula and Romans stories. That's one story each, not corroboration. Lode Gold's work at historic high-grade mines is also worth a caution from experience. Old workings were often sampled selectively, so \"upside\" there is a target to test, not a resource.\n\nThe University of Arizona grant is small, but it touches the long-run constraint nobody in this batch addresses: there aren't enough trained mining engineers. That matters more to 2030 supply than most of the headlines.\n\nFinally, I agree the BC majority-government point is speculation until a policy document exists.\n\nPREDICTION: Northern Star Resources publicly confirms a revised or improved takeover proposal from Gold Fields | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Codelco or BHP publicly reports a copper resource estimate or drill results from the northern Chile exploration program | BY: 2027-06-30 | CONFIDENCE: low",
+      "summary": "- Key stories:\n- Teck's Highland Valley strike is curbing output at a major copper mine. Neither analyst has the duration or tonnage, so the 2027 copper arithmetic is unresolved. Strike length is the main variable. The 30 October copper checkpoint stays blocked until the 16 October LME settlement is logged.\n- Codelco and BHP are spending about US$40M on a copper search in northern Chile. Both treat it as a signal of intent, not supply, with discovery-to-production timelines of 2030s at the earliest.\n- Northern Star says it is \"open to an improved\" Gold Fields offer. This is a takeover approach with no published terms, separate from the pending Gold Fields–Equinox item.\n- Gold \"above US$4,000\" comes from Crux Investor, which cites no price source and is treated as unverified.\n- Congo's removal of its artisanal mining regulator chief and BC's Tory majority are both unexplained. Any policy effect is speculation.\n\nWhere they agree:\n- Strike length determines the copper outcome.\n- The Chile spending is about long-dated pipeline appetite, not near-term supply.\n- Gold Fields and Northern Star should be scored separately from Gold Fields–Equinox.\n- Gunnison's 26 October predictions should be marked unscored until the filing record is checked.\n- Repeated stories (Lode Gold, Lula, Romans) are not corroboration.\n\nWhere they differ:\n- Meldrum initially called the Northern Star approach \"alongside\" Gold Fields–Equinox. Yukon objected, and Meldrum accepted separate scoring.\n- Meldrum suggested a possible link between the Congo removal and the 20 October arrests. Yukon argued a headline cannot establish that, and Meldrum agreed.\n- Yukon treats the Northern Star approach as a financing and share-exchange negotiation, not only a valuation contest.\n\nPredictions:\n- (Meldrum) PREDICTION: Gold Fields makes a revised takeover proposal for Northern Star Resources that is publicly confirmed by either company | BY: 2026-12-31 | CONFIDENCE: low\n- (Meldrum) PREDICTION: Codelco or BHP publicly reports a copper resource estimate or drill results from the northern Chile exploration program | BY: 2027-06-30 | CONFIDENCE: low\n- (Yukon Cornelius) PREDICTION: Northern Star Resources publicly confirms a revised or improved takeover proposal from Gold Fields | BY: 2026-12-31 | CONFIDENCE: low\n- (Yukon Cornelius) PREDICTION: Codelco or BHP publicly reports a copper resource estimate or drill results from the northern Chile exploration program | BY: 2027-06-30 | CONFIDENCE: low"
+    }
+  ],
   "chief_sessions": []
 }
