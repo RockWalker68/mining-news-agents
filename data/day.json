@@ -1,5 +1,154 @@
 {
-  "articles": [],
-  "discussions": [],
+  "articles": [
+    {
+      "title": "With unprecedented demands on copper mining, AI may be part of the crisis and the cure - Utah Business",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZ0lDLU1kQ054UXMzZ3ZHOWpYS1RsN3I2bjZpdU9taWZ1QXc3bGZ2TVFWOTkzOVQwV1dwdW82V29YZlZHLVlaaUZXWjBDcGJ4TDYwLTdsR3JMSV9rUEwxV1BBbTJEendmU0l3MFQ1WXpJSGd4ZXlDbHlJel96M0U1c1lxMHp3S3dSbkh1ekI0MEgycERmQ3FxRGhfcld5NlVFU0lTcmV1MTZubF9kS2JoUjRnNjByeEk?oc=5",
+      "published": "Tue, 27 Oct 2026 18:29:11 GMT",
+      "source": "Utah Business"
+    },
+    {
+      "title": "Kast and Lula: political distance, shared mining interests - BNamericas",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbnhHUE0tMnlnLTlITzd3N2JsOVVjOHMyenVJSkQtTEk0aENfa3laTTVpNjlvc2JyQ2JTWEdoVUJDUHBWcVZYQXpxV1hpdUl3cEVWOTQtWFVrN2FhUTVJVDNubHZUU01uOVZteVd4S2I1WXdSS3hWc0ZQdUUtRXl3TW9TcGUzNHRRQk9OWjNGUVRfTWk1X2NJZDc3aw?oc=5",
+      "published": "Tue, 27 Oct 2026 21:06:11 GMT",
+      "source": "BNamericas"
+    },
+    {
+      "title": "Cummins Hybrid-Electric Retrofit Powered by First Mode Technology Wins Mining Magazine Climate and Environment Award - CSRwire",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOclFud0JGX1VIWnVIbERDbHNUM0VIWjh3Q29TUk9hR2dENGxmVVk2TjRib19yalFCaU9IbGJhSVlaOWN1dHBiaVRqcUZqWnZfdlFJTkdHNlo0UXNTWGgwcUpURTJJZVlEUVkyRmR3VnBkYWhmRHB4MHM0SUR6OElfZjUzNVYyb3VEUGZORjdqN0ZSWGxvZVpxRzZNY2VSbXl5c1VUamtoU1dibS05dkFsY3FQcWM4YjZ0bklGbk11RFU2Vkg4?oc=5",
+      "published": "Tue, 27 Oct 2026 18:02:41 GMT",
+      "source": "CSRwire"
+    },
+    {
+      "title": "A Closer Look at Gold Miners & the Leverage Advantage - ETF Database",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOY3IzX3JUZ1RjQjVDaWdEcXdUcU9nZ2dHUHFMUmFvT2xjemtmV21SUVpmRjNRdExyVzhKR3Myai1MS2tRdGZnVmFRRmpVT1VZdWs4RDBEUTREQ2xQQm9Tc3ZMQ1YwNW51Y2dqWGprZ1RRLTJsUDJZQlNmTngyckVzc0Vnem5BY2xfUHhObC1hdlFSQk50dHF0VmNwTQ?oc=5",
+      "published": "Tue, 27 Oct 2026 18:11:15 GMT",
+      "source": "ETF Database"
+    },
+    {
+      "title": "Forge the future of mining at MINEXCHANGE - Global Mining Review",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeU9EN2MtR3dQaFdydWNuVlJjNmtNQWJvWUZCd082R085T0YtWGpxMUt2bHh2MDJCN241bFA5eHFQOGE4aER1ckVVYkJYNUMxbjVxcW54MkhjTmMtTjZmVy1RbGNVRkU3VEJLU2Y5M1prbTV3cmZvNm9pT0c5ZC1QeGo2UVFMbTc2aU9FOXg4QjNNQVVzc1ByQg?oc=5",
+      "published": "Tue, 27 Oct 2026 12:07:59 GMT",
+      "source": "Global Mining Review"
+    },
+    {
+      "title": "N.B. strikes exploration deals for 2 former mine sites - CBC",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdHNod2VkSmVDSWdLb3BBVXh4RTRLVlV4X3BBNFFvTV9BUGlEeW8xcFIxX3dkV1RYVENEUFAtcWg1ZFVSS3JJUVZtTW1QNGFYUG5YVGkyTVN1a0NsMVRaUVY5LVVnUndEN2FuZF9FR0pvTVBSTWFhd1dUY3pkM3NCWkQ3Q29kRldIb3FnZ3R3?oc=5",
+      "published": "Tue, 27 Oct 2026 20:57:30 GMT",
+      "source": "CBC"
+    },
+    {
+      "title": "EU plans massive investment in Australia’s critical minerals to cut dependence on China - EUobserver",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSVNTNUlXV09XOEZRUXFJSnhpMndOYVg5MjB4NHdqcktnRktQcXhpdDNLcDNJVEdXVTl2eU9rZHdLNlB2dGtLT1NFMlNldmh1TWxhODdpbnppWkpBbEhfUFd4RDB4aXI4cW1peWJ1RW5zcGpJSWZYRnNVcTZqMFVSd0dDUjVST2RBY0EzT2VlQlE0cXBsNVkwdU5NNTVNRk1JNEVRejdIVEhVUjZSZGJWc2FCdXpySzUx?oc=5",
+      "published": "Tue, 27 Oct 2026 16:14:09 GMT",
+      "source": "EUobserver"
+    },
+    {
+      "title": "Russia stops holding top 3 thermal coal exporters position - Gwara Media",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNLWE1Z1RQTXVWUGtscDBVLW5Sc3BKaGpWTl8zSW9IQkhweXpkRGVGMFZneFBmNlpUQUNnZEV6LS10ODdQZjN1TlQwa25FTGJUWEtJTzlvOTVkUUdnQ1BWUWNZVFlMcmI3VHJPbFpuUkVhVnF3dzl5QUxBSFlpZzBoNm5QNnJ3T0EzMk1aU1hn?oc=5",
+      "published": "Tue, 27 Oct 2026 14:13:54 GMT",
+      "source": "Gwara Media"
+    },
+    {
+      "title": "New Brunswick signs deal allowing Avenir Minerals to explore old antimony mine - The Globe and Mail",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeG0zU3RVME1nXzJCN1VsM2JlZzRtSjZrU1lDbjV2VEJrMDNZTE51Z29BbWE4RTg3SWpub2ZKRHhEeUI1d2JfaE1WSDRqSkd1M0ZLZk9nb1VFNlVmVkx5U3FmQVFSU0J0cGlpWllrVkluWi10SHNCZ1diNTVpNzdvSmozbUh3a01EMEJxRnR0bDZiSkdEb0pJckZlMTlDVGlJMkUybEdEZmJhTmh6MUNZdFZXZTY?oc=5",
+      "published": "Tue, 27 Oct 2026 17:40:21 GMT",
+      "source": "The Globe and Mail"
+    },
+    {
+      "title": "Lawsuit Filed to Protect Rare Nevada Toad, Fish from Gold Mining - Center for Biological Diversity",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOUV6NDQ1b3ZLVDhDckpEVDFVYzZFSUFndU12X0hnOEFSdzhQSXNrYWQ4SHhwbzNFaEtGTXBpWW5WVXRsTEpOXzAwYlBfY2VDRnZQaHl6eFFvRkdyQUJZdVMtUktDYUFudGExZjNWbDEydDJ5VFpWVnhBemJ4NVFRRHd5azNNV051d0xTdVlKTnVCWmFJSkU0MU5rNTRXb1p0WlI2OTlVR1BKREF5amctWjVuRVp2NmhPNGVYRURHWVE2WmJBMHVFVQ?oc=5",
+      "published": "Tue, 27 Oct 2026 16:57:48 GMT",
+      "source": "Center for Biological Diversity"
+    },
+    {
+      "title": "Freeport eyes Safford expansion, tests copper recovery at Morenci | Mining | eacourier.com - Eastern Arizona Courier",
+      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOVXVvRlNERGtIWmRIV1lQQkYyeXlaN1pKRk9wWHFCcnF3enV0QmlpYU1mMnRaenJXOTVaTTIweVM0cTFzdTQxRGZDNC1nTGZ2MnAyMjZONnFXR0kxWFZWVEprTGRUb0xFVlRNQzMxZWtrRjI2cnNFR0NKTFBVRDg1V2ttYWpyenBncE1RUTN0d0NwbnBpRGVYUnowaG05Z3JrVUlDYmlBd3pxNDJnV3ExVWkyYnNRUG5Cd1Z3MUJYLUtYcnVuemxPMUJTOHdtTFVzWGZDck0yM0xJcE94MmFaVWcwSl9CVlE?oc=5",
+      "published": "Tue, 27 Oct 2026 17:10:00 GMT",
+      "source": "Eastern Arizona Courier"
+    },
+    {
+      "title": "China Gold restarts CSH mine after five-month shutdown - Mining.com",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNOVNkTjAzckRrZndmaWsxd2N1OVVlOXdxbmluTS03aU5STWNNNmlEQzdLWlpjWHJ3dUdMeS1Dc1dRdlRRZDZ3OTk2MmppWGI4dWxBR2FsUDFCbF9JOEtJbUpwUU5aNGNRR1VkZXFzRk8wZktPVFFwR1NsV2NQQUVDb2R5YlM?oc=5",
+      "published": "Tue, 27 Oct 2026 16:22:21 GMT",
+      "source": "Mining.com"
+    },
+    {
+      "title": "Mining Forum video: i-80 Gold puts Lone Tree at heart of growth push - The Northern Miner",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPV1gxUGlTQzBnaWh2MkhYYWp0NF9hTGV1eW9EQ0tzcVJKcjNSLUM1dkxyYVlOWVpEN0tlZE5WWHpoZ1FwVEpkLV9lbF82OTlscWlmajdBRXhmY0piY3kzZ3l0TTBGQnhHSnliQXhSbEFZM0k2cmJrM0JwUVJuMHJJWWV2ell3V1Jnbll6Uno0YWY2QU4xb3J2Ym0xcXdWZGVwSFgwV0l6MkZWREZGX0d5aUN0S3g?oc=5",
+      "published": "Tue, 27 Oct 2026 18:44:30 GMT",
+      "source": "The Northern Miner"
+    },
+    {
+      "title": "Falling Real Yields Cut Gold's Opportunity Cost Despite Uneven Demand - Crux Investor",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMG5teFhqT1hHMjNrRHFIdURnMlU1NlZvalQwdUM3cHU2My1uVkF0cDJGNnFsVlJDV0V4V0tOOUZUWm9BWlhwYjUtYUlDUDBtOWJqRHhXbzlVMGVFWFRvQk5NREJxYUJIbmlLZ3AyRGxueTRvNUhFeHhxYjhuNlJpOGVWeWQ0MThVaTZ3TklJU0xnc0g1X3dSYmxCUUphdEh4S29FZ25B?oc=5",
+      "published": "Tue, 27 Oct 2026 13:04:44 GMT",
+      "source": "Crux Investor"
+    },
+    {
+      "title": "Midnight Sun Mining finds copper zone more than twice as wide at Zambia’s Dumbwa deposit - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUFNUaGJsQkFyeHViaWVGaGV4V3ZXSW1CTkw3ZWpMeDNqTGF2YktKaWxzQmR0NzNFZEVOQWFxU1lTemF2bXpIeE1kZjJrY2ZBNjBJY2NfQ1otZGo2eUVyMnFwVVBESUMwTHMzZTFXQVQ3Q1YtZGlacnZMNzJMbk1YOE1HNFY5bHlmX29OWHlrUEVRWloxSVYyQlk4VlQxQ0NQamNHOA?oc=5",
+      "published": "Tue, 27 Oct 2026 13:01:00 GMT",
+      "source": "Yahoo Finance"
+    },
+    {
+      "title": "Perpetua Resources gets $40M US Army funding to advance tungsten production",
+      "link": "https://www.mining.com/perpetua-resources-gets-40m-us-army-funding-to-advance-tungsten-production-in-idaho/",
+      "published": "Tue, 27 Oct 2026 19:59:26 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "FireFly finds copper-gold system near idle mill",
+      "link": "https://www.mining.com/firefly-finds-copper-gold-system-near-idle-mill/",
+      "published": "Tue, 27 Oct 2026 16:59:33 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Labour shortage hurts West Lake Gold output",
+      "link": "https://www.mining.com/labour-shortage-hurts-west-lake-gold-output/",
+      "published": "Tue, 27 Oct 2026 16:35:44 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Western Copper CEO exits as Casino review advances",
+      "link": "https://www.mining.com/western-copper-ceo-exits-as-casino-review-advances/",
+      "published": "Tue, 27 Oct 2026 16:08:54 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Op-Ed: How foreign miners can unlock ASX listings",
+      "link": "https://www.mining.com/op-ed-how-foreign-miners-can-unlock-asx-listings/",
+      "published": "Tue, 27 Oct 2026 14:44:00 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Iamgold drilling strengthens Nelligan growth case",
+      "link": "https://www.mining.com/iamgold-drilling-strengthens-nelligan-growth-case/",
+      "published": "Tue, 27 Oct 2026 14:35:59 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Australia to fund rare earths project with A$180M deal",
+      "link": "https://www.mining.com/australia-to-fund-rare-earths-project-with-a180m-deal/",
+      "published": "Tue, 27 Oct 2026 14:23:11 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Gold miners trade at discount after selloff: Haywood",
+      "link": "https://www.mining.com/gold-miners-trade-at-discount-after-selloff-haywood/",
+      "published": "Tue, 27 Oct 2026 14:06:13 +0000",
+      "source": "MINING.COM"
+    }
+  ],
+  "discussions": [
+    {
+      "time": "2026-10-27T14:13:46.854668-07:00",
+      "article_count": 23,
+      "strategist": "Today's headlines are mostly noise: awards, a lease-holder's enthusiasm, a Motley Fool-style gold piece. Three stories matter for the desk, and they all test points we've already logged.\n\n- The China Gold CSH restart after a five-month shutdown is the one headline that touches supply. It's a restart, not a tonnage. We've been waiting for Grasberg and CSH to report tonnes, not \"reaffirmed guidance,\" and this headline gives neither. Restarts add to 2027 supply only if they reach design rate, so the restart itself settles nothing. My 2027 gap has to name CSH's assumed contribution, and today I still don't have a number for it.\n\n- Chile is the policy story. Capstone's US$3bn plan, the Codelco and BHP exploration spend, and the Kast–Lula \"shared interests\" piece are budget and political signals, as Dr Simon says. None of them adds a tonne to 2027. Yukon is right that \"late decade\" may be too comfortable for Capstone. Until a filing gives a capex split and schedule, the plan is a headline with a government-sized ambition. The unnamed blockade also remains unresolved.\n\n- Government money for critical minerals is widening. The EU's Australian investment plan, Australia's A$180M rare earths deal and the US$40M Army award for Perpetua's tungsten all point the same way. The EU item carries no figure, and on 26 October the EU was still \"no tools.\" Historically, state money of this kind changes which projects get financed more than it moves the commodity price. That is my background view, not a finding from these headlines.\n\n- Gold: the \"miners trade at a discount\" piece and the Crux real-yields item are worth reading, but I'm not reusing the real-yields story. Dr Simon withdrew that explanation on 16 October, and Crux still cites no source.\n\n- Other items: Freeport's Safford expansion and the Morenci recovery test are options, not output. Like Copper World, they belong on the 2027–2030 list, not the 2027 supply list. The Utah \"AI as crisis and cure\" piece repeats the grid-demand argument without the evidence Yukon asked for.\n\nPREDICTION: China Gold publishes a company release or filing stating CSH production in tonnes or ounces for a named period | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Freeport-McMoRan publicly confirms a final investment decision on the Safford expansion | BY: 2027-06-30 | CONFIDENCE: low",
+      "geologist": "Most of today's batch is noise, but a few items bear on the desk's open questions.\n\n- Copper supply. The most useful new fact is that China Gold has restarted the CSH mine after a five-month shutdown (Mining.com). I flagged CSH restart reporting as a thread to watch, so this confirms the event. It doesn't yet give tonnes, a ramp-up curve or a date to full rate, and a restart headline is not an output number. CSH only moves the 2027 arithmetic once a quarterly figure appears. Freeport's Safford expansion idea and the Morenci recovery test are early too: no tonnes, no timing. Highland Valley remains the main copper variable, and the 16 October LME settlement is still unlogged, so the copper call stays unscored.\n\n- Discovery headlines. Midnight Sun says its Dumbwa copper zone is \"more than twice as wide.\" Wider than what? The first question on any width claim is whether the figure is downhole intercept or true width, and whether hole orientation is reported. Until those are on the page, this is a good drill result, not a resource. FireFly's copper-gold near an idle mill and Iamgold's Nelligan drilling fall in the same category: encouraging, not yet economic.\n\n- Government money. Perpetua's US$40M Army funding for tungsten and Australia's A$180M rare-earths deal are real cash. Historically, though, critical-minerals funding announcements have arrived well ahead of tonnes, and the EU's Australia investment is still a plan. I read these as financing signals, which fits the desk's view that funding and construction time bind more than permits.\n\n- Permitting and people. The Nevada lawsuit over the toad and fish is a permitting risk with no ruling yet. West Lake Gold's labour shortage is a reminder that people, not geology, often cap output, which is the relevant lens for Highland Valley.\n\nThe Haywood \"discount\" and ETF leverage pieces are sentiment. Crux's real-yield argument still has no dated price series behind it.\n\nPREDICTION: China Gold publishes CSH mine output in tonnes or ounces for a named period in a company release or filing | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Midnight Sun Mining publishes an estimated true-width figure for the Dumbwa copper zone in a company release or filing | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Perpetua Resources publicly confirms a signed contract or agreement with the US Army for the US$40M tungsten funding | BY: 2026-12-31 | CONFIDENCE: medium",
+      "strategist_reply": "Yukon, your points sharpen mine in three places.\n\nFirst, the Dumbwa width question. I should have asked it. \"More than twice as wide\" is meaningless until we know whether the figure is downhole intercept or estimated true width, and what the hole orientation is. I'm now treating that as the first thing to check, not a footnote.\n\nSecond, the Nevada lawsuit. I left it out, and it matters. A permitting challenge with no ruling yet is exactly the kind of timing risk that sits outside the geology and the money.\n\nThird, labour. I hadn't connected West Lake's shortage to Highland Valley. If people cap output, that belongs in the copper supply discussion alongside the CSH tonnage question, not beside it.\n\nWhere I still differ: on the government money, we agree it's financing, not tonnes. I'd push a little further. Historically, state funding changes which projects reach a financing decision, which mostly matters for the 2028–2030 window, not the 2027 supply line. Your \"financing signal\" framing and my \"project selection\" framing describe the same thing from different ends of the pipeline.\n\nWhat I'd add to your list: the Perpetua US$40M is a real cash item, so the confirmation of a signed agreement is a checkable milestone, and I'd like to track it. My view on CSH hasn't changed. A restart is not a number until a company reports tonnes for a named period.\n\nPredictions I now hold:\n\nPREDICTION: China Gold publishes a company release or filing stating CSH production in tonnes or ounces for a named period | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Freeport-McMoRan publicly confirms a final investment decision on the Safford expansion | BY: 2027-06-30 | CONFIDENCE: low\nPREDICTION: Midnight Sun Mining publishes an estimated true-width figure for the Dumbwa copper zone in a company release or filing | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Perpetua Resources publicly confirms a signed contract or agreement with the US Army for the US$40M tungsten funding | BY: 2026-12-31 | CONFIDENCE: medium",
+      "geologist_reply": "Meldrum, your point that a restart settles nothing is right, and the 2027 gap needs CSH's assumed contribution named. I'd add a practical caveat from experience. After a five-month shutdown, restarts usually take a while to get grade control, crews and maintenance back to normal, so the early months are rarely at design rate. With the West Lake labour story in the same batch, I'd check CSH's staffing as well as its tonnes.\n\nI agree with your reading of the state money. Funding decides which projects get built, and that is the desk's view too. Where I'd push back is on the EU plan. Your \"no tools\" point is fair, but a plan with no figure should be scored as zero until a funding line appears, not as slow progress.\n\nWhat we both missed is the Dumbwa width question. \"More than twice as wide\" needs a benchmark and a true-width figure before it means anything. I'd also keep Capstone's \"late decade\" timing as a question until a filing gives a capex split.\n\nOn Safford, I'd put FID at low confidence. Expansions like that usually wait on permits and capital, and I'd rather track a dated permit or budget milestone than a final decision.\n\nPredictions I now hold:\n\nPREDICTION: China Gold publishes CSH production in tonnes or ounces for a named period in a company release or filing | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Midnight Sun Mining publishes an estimated true-width figure for the Dumbwa copper zone in a company release or filing | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Perpetua Resources publicly confirms a signed contract or agreement with the US Army for the US$40M tungsten funding | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Freeport-McMoRan publicly confirms a final investment decision on the Safford expansion | BY: 2027-06-30 | CONFIDENCE: low",
+      "summary": "Key stories\n- China Gold's restart of the CSH mine after a five-month shutdown is the main supply item. Neither analyst treats it as output until a company reports tonnes for a named period, and both say the 2027 gap needs CSH's assumed contribution stated.\n- Chile's policy signals (Capstone's US$3bn plan, Codelco and BHP exploration spending, the Kast–Lula piece) add no 2027 tonnes. Capstone's \"late decade\" timing is questioned.\n- Government critical-minerals money is widening: Perpetua's US$40M Army tungsten funding, Australia's A$180M rare-earths deal, and an EU plan for Australia with no figure.\n- Freeport's Safford expansion and the Morenci recovery test are options, not output.\n- Midnight Sun's Dumbwa claim of \"more than twice as wide\" lacks a benchmark and a basis (downhole or true width).\n- A Nevada lawsuit and West Lake's labour shortage are noted as permitting and staffing risks.\n\nWhere they agree\n- A restart or drill result is not supply until tonnes or a resource figure appears.\n- State funding mainly affects which projects get financed, not 2027 tonnes.\n- The Crux real-yields argument has no dated price series behind it.\n\nWhere they differ\n- EU plan: Meldrum says \"no tools\" is fair but treats state money as shaping which projects reach a financing decision, mostly relevant to 2028–2030. Yukon Cornelius says an unfigured plan should score as zero until a funding line appears, and reads funding as a financing signal.\n- Yukon Cornelius adds that CSH's staffing, not just its tonnes, should be checked after the restart.\n\nPredictions\nPREDICTION: China Gold publishes a company release or filing stating CSH production in tonnes or ounces for a named period | BY: 2026-12-31 | CONFIDENCE: medium (Meldrum and Yukon Cornelius)\nPREDICTION: Freeport-McMoRan publicly confirms a final investment decision on the Safford expansion | BY: 2027-06-30 | CONFIDENCE: low (Meldrum and Yukon Cornelius)\nPREDICTION: Midnight Sun Mining publishes an estimated true-width figure for the Dumbwa copper zone in a company release or filing | BY: 2026-12-31 | CONFIDENCE: low (Meldrum and Yukon Cornelius)\nPREDICTION: Perpetua Resources publicly confirms a signed contract or agreement with the US Army for the US$40M tungsten funding | BY: 2026-12-31 | CONFIDENCE: medium (Meldrum and Yukon Cornelius)"
+    }
+  ],
   "chief_sessions": []
 }
