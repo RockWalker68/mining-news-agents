@@ -1,5 +1,118 @@
 {
-  "articles": [],
-  "discussions": [],
+  "articles": [
+    {
+      "title": "$1M from DOE goes toward attracting mining talent - University of Arizona News",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9ja2RwZU5oRXBZR085VXE4YUZ1NUlZMm10dzVKUVh0a3ZnUk9neE9CM3FnZVZPRjdwalVaUnRTU2c0WUUxNFIyMTBnNmZGZjVrNVE4ZU9MUU5tQlJsWVdoZmRQX3ZKVUxmVHpoV0ZieEtKbURFaDRIbDlDcmdKdw?oc=5",
+      "published": "Wed, 28 Oct 2026 20:08:58 GMT",
+      "source": "University of Arizona News"
+    },
+    {
+      "title": "I owe nearly everything I have to mining - Mesabi Tribune",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORzZiRVYyLWpzMmF0aGh3WUdkV2diekpOUG5EN3k0WVIxMHFKWm5xMHJjZXVzNUNzaDJWcnFEU0hiSFp0WlF6bngtejc3ZGl5YXRGVXRtWXNNTmliVDV4ZHJ3MlZOOFQ4cnVUT1FpY1V6WHFXWnFKU1R2ZTFDeXd2blJjNThJd193eWs3bG1qVjBFbHlZTXByajZQQWFCcWxDZnpsd1hsOFQ2eXdiUkwwTDFEeEg5b0Y1RnltYlY3ZUxzYkE?oc=5",
+      "published": "Wed, 28 Oct 2026 18:00:00 GMT",
+      "source": "Mesabi Tribune"
+    },
+    {
+      "title": "IGF Annual Meeting Advances Inclusion, Resilience of Mineral Value Chains - SDG Knowledge Hub",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOX1RRSWdWeEpvMS14Mlp5SHo0R0JjV1REem1pNmZOcDBHWVVCUmJub2lkM3pVTmpKakdFRGx3WC00XzFWdG1PYVF2eVZRd3BEWm02TGFtVlVYMjc0THRTSnZ1dVNjVXZKd3EtRldrSTZZbzhTR0FsRTlWbHVsNWZzQ1JxRGVISXVMRmlQV0IwUnAwNUpOTmxYMktaZUFSazFa?oc=5",
+      "published": "Wed, 28 Oct 2026 20:48:11 GMT",
+      "source": "SDG Knowledge Hub"
+    },
+    {
+      "title": "Pantera Minerals Completes 470 km² Corona Gold Project Acquisition, Clearing Path for WA Exploration - AZoMining",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1scWNxWFI0aDRfSnBvektxdDlhMGxudE9qYnphck9Vald3NGhXaFdzU3JLUnpaMUdnNFVDNkRycmFwTVlzRnM2aGJFUkEydE9zU2RRZTYzcnlJa0NL?oc=5",
+      "published": "Wed, 28 Oct 2026 11:25:00 GMT",
+      "source": "AZoMining"
+    },
+    {
+      "title": "Clashes wound at least 72 soldiers in Chad gold mining region - Arab News",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQT3FXMmJGNGpPMXl1Nkt2REJfbWlQbFNZOGN6N1l6NnVIWUxrZXNHbmNxdUUxZkVhUHVqMlRxU3pmSHpucUw2YU5FSXI0bC1TMnpOajhreFhaZm11SF9CUlRNX3NRU0gzRVY2UC1iS2lGY2FTaS1kUFRMUUFQWVZ3YUpCSFNaRTFTcHdtY3dja01rVEpIYmhnR1NRcHZRc1daV1E?oc=5",
+      "published": "Wed, 28 Oct 2026 17:22:09 GMT",
+      "source": "Arab News"
+    },
+    {
+      "title": "Gold Mining Experience is Nov. 14 and Nov. 28 at Cave Creek Museum - City Sun Times",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOMlpnZmNwcHJlVFhEYmk0enc4UXJyVWN6blR4NUlMZzl0Q0NpQUxlSkF4WkZIUmRuSDNBY2ZSRHFSVEdzcUJFMW5FOHZzaG1fcHVtN3RLd3Y2YXpuVV9CanZRa3FTeXk1dDhIeXlsY2ljY1BaVHF6aWhhN2hzY1llUl9NenlfV1pKMElnOHhRLWdEUmstWXpWWVUwZFBCV0dvaHRvRGhzdlFzLUlMamtFTURvODFhQ3R0QXVKcEZLZUVTVElabXhSOG5JQWNiVFRFb2lsejJZODFISGpTdmlaVkFR?oc=5",
+      "published": "Wed, 28 Oct 2026 20:43:00 GMT",
+      "source": "City Sun Times"
+    },
+    {
+      "title": "Quimbaya Gold Expands Tahami Land Position by 37% to 43,496 Hectares - Yahoo Finance Singapore",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNWUlwNHctLVlPZGlpMDQwLTRuaWU4QlpxOUlDb0FoMXgxRWNpRG1fRVZra2dkbTdNZFFQQjE2bXlpMHFLZHJCb2l1OXUxZUxuV0N4ME5hN2U4b2xpdGhJRU9OZnE1eHVLZW9GVDNxcmN0cG1XY29tdE9BRlpJSkZ6cDlFRGpjenNCVnc?oc=5",
+      "published": "Wed, 28 Oct 2026 16:47:00 GMT",
+      "source": "Yahoo Finance Singapore"
+    },
+    {
+      "title": "Gold dip draws Asian buyers as North American funds lose cash - Mining.com",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTUdIUnRod3FnT2Y3ZEFNeHlJMlNDTlJOTTlXdEhaNzB6bzBaYTY3M0FINTBJb0k2V0Y4QjF2cU1PUGFKMDVfZXF1dFQ5SW5NUnNBRjE3Q0Jiam1wU0wxWC1xNGRveXc5NTNzdmFEdHQwVEEwOXZ1TEpTaHFxX0ZWVjJhRDdMREtKbFZkRld3?oc=5",
+      "published": "Wed, 28 Oct 2026 16:44:27 GMT",
+      "source": "Mining.com"
+    },
+    {
+      "title": "Midnight Sun Mining reports major expansion of Dumbwa copper system in Zambia - Proactive financial news",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPbzRjX2VhOXM0X1VXS1JOVFp2M2FBdTlTNEFZdk8xdUFhSGdKVG1KMXpEWFE3SGhQek5oVmVaTXhYUUtWaEFhZ0dlell1R3dGc3M5NUFJWk1jb0pwTkNxZm4wcWdYVW82cDdWanNsTExUTDdSWGZzU0VEZ1RWM3JrU1VGTVJaZHRhVnJyOEp0Y2JYVGpnRXpzLVdsU3liTkdUTEZhM3N5SDM3Y0duWW5haDU3QVduYnk0TnBZTjM0ekdHbFZDWU02ZlFGQkRlbmNUaElmNlRNWQ?oc=5",
+      "published": "Wed, 28 Oct 2026 19:15:43 GMT",
+      "source": "Proactive financial news"
+    },
+    {
+      "title": "Mining Forum video: Toto Finance pitches new route to copper funding - The Northern Miner",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVkFYZlpIZlJWdlBLZV9uWmxqZW1DQ2xiQmcyb2k0X2VCNVBqWURzUDlXRjZLRlRDaU02TXVEbTZBWEF1a0xqNUdIR2NoUlBTbC1aUnRsM3Q5WEw4QU1UT2hsNk92TEZvVVl0MF9GeEFCMXl4bVBoZ0NJakVZNmFhM0d4MVYxZjNhSlBjV2hSOGVoVS1pVTlHbzNGaW1wNTA4cGNzaEQ1cWhYSmF5M1QxZUU3RE0?oc=5",
+      "published": "Wed, 28 Oct 2026 19:21:19 GMT",
+      "source": "The Northern Miner"
+    },
+    {
+      "title": "Mule Canyon gold resource advances restart plans",
+      "link": "https://www.mining.com/mule-canyon-gold-resource-advances-restart-plans/",
+      "published": "Wed, 28 Oct 2026 19:41:09 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Oil exploration opens door to Brazil offshore potash",
+      "link": "https://www.mining.com/oil-exploration-opens-door-to-brazil-offshore-potash/",
+      "published": "Wed, 28 Oct 2026 18:02:17 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "US offers Constellation up to $5B nuclear loan",
+      "link": "https://www.mining.com/us-offers-constellation-up-to-5b-nuclear-loan/",
+      "published": "Wed, 28 Oct 2026 16:22:26 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "XXIX Metal launches largest drilling campaign in its history",
+      "link": "https://www.mining.com/xxix-metal-launches-largest-drilling-campaign-in-its-history/",
+      "published": "Wed, 28 Oct 2026 16:18:00 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Glencore, CNGR back $380M Brazil nickel mine with $40M",
+      "link": "https://www.mining.com/glencore-cngr-back-380m-brazil-nickel-mine-with-40m/",
+      "published": "Wed, 28 Oct 2026 16:08:00 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Hitachi, Yanmar join forces on Michigan compact equipment manufacturing",
+      "link": "https://www.mining.com/hitachi-yanmar-join-forces-on-michigan-compact-equipment-manufacturing/",
+      "published": "Wed, 28 Oct 2026 15:10:29 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Gold dip draws Asian buyers as North American funds lose cash",
+      "link": "https://www.mining.com/gold-dip-draws-asian-buyers-as-north-american-funds-lose-cash/",
+      "published": "Wed, 28 Oct 2026 14:38:59 +0000",
+      "source": "MINING.COM"
+    }
+  ],
+  "discussions": [
+    {
+      "time": "2026-10-28T13:57:50.965162-07:00",
+      "article_count": 17,
+      "strategist": "Today's batch is thin. Seventeen headlines, one of them repeated, and most are local, promotional, or policy items with no figures. Nothing here moves the copper arithmetic, and I'd rather say so than dress it up.\n\nGold is the cluster worth a look. Mining.com reports Asian buyers stepping in as North American funds sell, and miners trading at a discount after the selloff. That's a flow story, not a price series. Yahoo had gold below $4,100, and Crux's \"above US$4,000\" is still unsourced, so I can't tell you where the metal is. Historically, physical buying cushions dips but doesn't reverse a trend by itself. The miners' discount also fits our earlier point: equities can look cheap for reasons unrelated to the metal.\n\nThe Chad story needs care. Arab News says clashes wounded at least 72 soldiers in a Chadian gold-mining region. That is a wounded count, not the 72 deaths we logged from Sudan on 19–20 October. They are separate events, and I won't merge them. Conflict in artisanal gold zones matters mainly for provenance, which links to the open LBMA dirty-gold story, but the headline gives no site, cause or source.\n\nOn financing, Mining.com reports Glencore and CNGR backing a US$380M Brazil nickel mine with US$40M. I read this as a funding structure, not a supply event. The key question is whether US$380M is capex, project value or something else. The headline doesn't say. Chinese battery-materials money in a Western-listed supply chain is a second-order story to track, but there are no tonnes and no start date.\n\nPolicy items are background. A US offer of up to US$5B to Constellation shows federal balance-sheet support for nuclear power. That helps the energy-transition thesis at the margin, but it isn't a uranium supply item. Mule Canyon's resource advance and Midnight Sun's Dumbwa expansion are exploration-stage leads. Dumbwa's true-width figure is still open on our record.\n\nEverything else (the DOE talent grant, the Mesabi column, the potash and Hitachi-Yanmar items, the drilling programmes) can wait.\n\nCopper watch: the 16 October LME settlement is still unlogged, so the 30 October checkpoint stays blocked. Antamina, Andes Norte and Highland Valley remain timing risks until tonnes are published.\n\nPREDICTION: Glencore or CNGR publicly announces a final investment decision on the US$380M Brazil nickel mine | BY: 2027-06-30 | CONFIDENCE: low\nPREDICTION: Chadian authorities or a major wire service publishes a death toll for the clashes in the Chad gold-mining region | BY: 2026-12-31 | CONFIDENCE: low",
+      "geologist": "The headline list is thin. Most items are promotion, trade-press filler, or land and funding announcements with no tonnes, grades, or dated figures attached. None of it adds a tonne to the 2027 copper arithmetic or moves the Antamina, Andes Norte, Teck, or Grasberg files. The 30 October copper checkpoint stays blocked on the unlogged 16 October LME settlement, and no company release has yet confirmed Gunnison's venue.\n\nGold: items 8 and 17 are the same Mining.com story, so count it once. It says Asian buyers are stepping in as North American funds sell. That is a flow story with no volumes, no price series, and no period. It also doesn't resolve the conflict between the log's unsourced \"above US$4,000\" and Yahoo's \"below $4,100.\" I won't score a gold price view until someone gives me a dated series.\n\nAfrica: \"Clashes wound at least 72 soldiers in Chad gold mining region\" is a different event from the 72-death figure in our Sudan entry. Don't merge them. It's a single headline with a wounded count, so I'd handle it the way we handle Sudan: a conflict and provenance item, not a casualty figure.\n\nProjects and financing:\n- Midnight Sun's \"major expansion\" at Dumbwa repeats a story already in the log. The held true-width prediction stands, and \"major\" is a press-release word, not a measurement.\n- Glencore and CNGR backing a US$380M Brazil nickel mine with US$40M is the most concrete funding item here. The headline doesn't say whether the US$40M is an equity stake, a loan, or a share of the project, so I'd read the release before scoring it.\n- Pantera's 470 km² and Quimbaya's expansion to 43,496 hectares describe ground, not resource. Cheap to announce, and they don't tell us anything about grade or tonnes.\n- XXIX's \"largest drilling campaign\" has no metres or budget.\n\nBackground or promotion: the Constellation nuclear loan, the Hitachi/Yanmar equipment plant, the DOE talent grant, the Toto Finance video, the IGF meeting, the Cave Creek event, and the Mesabi op-ed. Nothing here changes a desk view.\n\nPREDICTION: Glencore or CNGR publicly confirms their US$40M investment in the Brazil nickel mine in a company release or filing | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: A Chadian government body, a UN agency, or a major wire service publishes an official or independently sourced casualty count for the Chad gold-region clashes | BY: 2026-12-31 | CONFIDENCE: low",
+      "strategist_reply": "Yukon, you're right on both counts, and I should have caught them. I wrote \"gold dip\" without noticing items 8 and 17 are the same Mining.com story, and I passed over the gold price conflict instead of flagging it. Counting that story once and refusing to score a gold view without a dated series is the right discipline.\n\nWhere I'd push back is on the Chad prediction. Your wording says \"casualty count,\" but Arab News already reports at least 72 wounded, so a casualty count could resolve on something that already exists. I'd require a death toll from an independent source. The UN, a wire service, or the Chadian government could all plausibly publish one, but a count of injuries wouldn't tell us anything new.\n\nOn Glencore and CNGR, I agree the release should decide the question. I'd keep the FID prediction as a longer, lower-confidence bet on whether the project moves beyond funding.\n\nWhere I think we both missed something: the Toto Finance video on a \"new route to copper funding\" dismissed as promotion. If it describes a structured financing model, it could matter for how mid-tier copper projects get built. It needs a read before we file it as filler.\n\nPREDICTION: Glencore or CNGR publicly confirms their US$40M investment in the Brazil nickel mine in a company release or filing | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Glencore or CNGR publicly announces a final investment decision on the US$380M Brazil nickel mine | BY: 2027-06-30 | CONFIDENCE: low\nPREDICTION: Chadian authorities, a UN agency or a major wire service publishes a death toll (not a wounded count) for the clashes in the Chad gold-mining region | BY: 2026-12-31 | CONFIDENCE: low",
+      "geologist_reply": "Meldrum, your read on the gold flow story is sharper than mine. I'd only flagged that it had no price series, but you're right to add that the discount in miner equities is a separate signal and can be misleading. Equities can look cheap because of sentiment, leverage or the stage of the project, not because the metal has moved. I'd also say the discount claim comes from your reading of the story, not from the headline list, so we should both treat it as unverified until we see the piece.\n\nWhere I see it differently is on the Glencore and CNGR deal. You read US$380M as a funding structure, which is fair, but the more useful question for me is what the nickel is. Laterite and sulphide projects have very different metallurgy, capex and ramp-up risk, and the headline gives us neither. A funding line with no deposit type and no tonnes tells us little about whether the mine will work.\n\nI'd also push back gently on the Chad item. You called the wounded count a conflict and provenance item, and I agree, but I'd be careful about linking it to the LBMA dirty-gold file. Artisanal gold from conflict regions can reach refiners through long chains, and the link is speculation until someone traces a specific shipment.\n\nWhat we both missed: Mule Canyon's \"resource advance\" needs checking for classification (measured, indicated or inferred), cut-off grade and the price assumption behind it. Those three details decide whether it means much.\n\nPredictions I now hold:\n\nPREDICTION: Glencore or CNGR publicly confirms their US$40M investment in the Brazil nickel mine in a company release or filing | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Glencore or CNGR publicly announces a final investment decision on the US$380M Brazil nickel mine | BY: 2027-06-30 | CONFIDENCE: low\nPREDICTION: A Chadian government body, a UN agency, or a major wire service publishes an official or independently sourced casualty count for the Chad gold-region clashes | BY: 2026-12-31 | CONFIDENCE: low\n\nI've narrowed the Chad prediction to \"casualty count\" so it covers both wounded and killed figures, since the headline gives only the former.",
+      "summary": "Key stories:\n- Gold: Mining.com reports Asian buyers stepping in as North American funds sell, with miners trading at a discount. The log's \"above US$4,000\" is unsourced and conflicts with Yahoo's \"below $4,100,\" so no gold price view is scored without a dated series.\n- Chad: Arab News reports at least 72 wounded in clashes in a gold-mining region. This is separate from the 72 deaths logged for Sudan.\n- Brazil nickel: Glencore and CNGR are backing a US$380M mine with US$40M. The headline doesn't show whether this is capex, project value, or an equity stake or loan.\n- Copper: The 30 October checkpoint remains blocked by the unlogged 16 October LME settlement.\n\nPoints of agreement:\n- The batch is thin, and most items lack tonnes, grades, or dated figures.\n- The gold flow story counts once (items 8 and 17 are the same piece).\n- The Chad item is not merged with the Sudan casualty figure.\n- The Glencore/CNGR funding terms need the company release before scoring.\n\nPoints of disagreement:\n- Chad prediction: Meldrum wants an independent death toll, since a wounded count already exists. Yukon Cornelius widened the prediction to any casualty count so it covers wounded and killed figures.\n- Nickel deal: Meldrum reads it as a funding structure. Yukon Cornelius says the deposit type and metallurgy matter more, since they determine capex and ramp-up risk.\n- LBMA link: Meldrum ties the Chad item to the dirty-gold file. Yukon Cornelius calls that speculation until a shipment is traced.\n- Miner discount: Meldrum treats it as a signal that equities can mislead. Yukon Cornelius treats it as unverified until the source piece is read.\n\nPredictions:\n\nPREDICTION: Glencore or CNGR publicly confirms their US$40M investment in the Brazil nickel mine in a company release or filing | BY: 2026-12-31 | CONFIDENCE: medium (Meldrum; Yukon Cornelius)\nPREDICTION: Glencore or CNGR publicly announces a final investment decision on the US$380M Brazil nickel mine | BY: 2027-06-30 | CONFIDENCE: low (Meldrum; Yukon Cornelius)\nPREDICTION: Chadian authorities, a UN agency or a major wire service publishes a death toll (not a wounded count) for the clashes in the Chad gold-mining region | BY: 2026-12-31 | CONFIDENCE: low (Meldrum)\nPREDICTION: A Chadian government body, a UN agency, or a major wire service publishes an official or independently sourced casualty count for the Chad gold-region clashes | BY: 2026-12-31 | CONFIDENCE: low (Yukon Cornelius)"
+    }
+  ],
   "chief_sessions": []
 }
