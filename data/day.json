@@ -1,5 +1,148 @@
 {
-  "articles": [],
-  "discussions": [],
+  "articles": [
+    {
+      "title": "From Resources to Opportunities: Armenia's Mining Sector Looks to the Future - Morningstar",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMk9CYkY5RWJhOC1ZZDBId3E3bG5oTnQwLWJoeGgxQmpqb2FCMlJ6Q0MwNDFmdTlEZGprcjVRZVljWEQtZUtjaHFMbmdsQjN3SWRpem9kQkhXQ05MQ2I2QS1qdnFDTlo3ZlJiejlzOWpsNUVFTE1lX1hicFE3TkNCYnBEbTV0MUFISXI4d0FKbkpKbHBWc2cxczA2cnBYQkJEaU1kQzZfS2dKMWZzb3lucnNKTVh6cGJLc0d6VTBtaHd6TkVtdWRublZfTGZVa1Y5?oc=5",
+      "published": "Thu, 29 Oct 2026 18:22:00 GMT",
+      "source": "Morningstar"
+    },
+    {
+      "title": "Why is there salt under Lake Erie? Explaining Ohio’s salt mine industry - Cleveland.com",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTnNRdXB6UHlnNkFmSTJtUExzX1d2U19DaFNncWpKSERYYUFDQWVaTTdyYl83eW1nSG9SSzFjQThEcXA2aHJyam1iaFI0MVlacEtjZWRJVTFELVYwM3dwM2JLUGR4dWlzTnVqOXVhTHNLYjJTTjl0TTVFMm5jeVpweTJCaHRkbG1hQmI3a0xuUkV3QzlhRWpMTTN4SjBHX0JCOFcyRjgyYkJBNEtvVGV6bDVySdIBxwFBVV95cUxQSWw2ZzJwWmg0b3NHY09jTTNVZmxGdUQ5Q3h5VkMxdmRTXzlRX3pBTVo5blBRN1BNYVhoY1QyM0xpSzE4RnJZSkNlVzNZX2FCZlU1c0N1N2RfTmduRGZPdDhCaWNTRUtRREJoODk4Vk5PRXRHZUVFcmF0Q1JXYWNjamRpRjBGM3dOVy1DRVlGY2NfWFNDd2pWZXA3eGMyQlY3Mlc5VDk2aENGalljYjhBUFJjYWlVcm9POERtak5XM1N2XzMyVk9F?oc=5",
+      "published": "Thu, 29 Oct 2026 19:46:00 GMT",
+      "source": "Cleveland.com"
+    },
+    {
+      "title": "In Suriname’s Amazon, the Wayana community struggling to keep gold miners at bay - news - Mongabay",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaVozUjAzT0k5d29sSHoxUU0xYlBiRUdWcWxEaDd6N2RiaDlGUG5VUmowbDZtdjJHaXlaeXVWNGMwazNLTEpWS3VQUEVNb2VyNHAxVWstSWYtRHl0T2wyQ19XNS1EZGVIQnFZSkpFQ0FTczQteHR6OER3RnMyMkg4bVRZbFBLZzVGYVRLcndqang1VHpSeEpDUXFFV1k1bXFiTk9qNGZVdlg1RlFDVXdqcERPZ9IBuAFBVV95cUxQaEk1MkUzZjRKZms4OS1kMXpxRWlRSHZTdF9xU1o5UzJZNHJDUWItb2pyczliYWtyakt1T3FSNlAtRzNsbDdGZGtYemZSUTFLTGV5ME9xdXVveVMwX3VDLVdVVGh0c1hNcU4yeWV0S3dJZnpTOGdKZ2xzbGFOZWI3Yng4SzVrQ2MtSUNPRkhoVEN0N25lZnRHTG0tQVV4ZnBqRThiLU9BdDl0TmVaWm9zb09Cc25yQ1pW?oc=5",
+      "published": "Thu, 29 Oct 2026 18:50:27 GMT",
+      "source": "news - Mongabay"
+    },
+    {
+      "title": "Without my family’s perseverance to make a living off the land, I wouldn’t be here - Mesabi Tribune",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQN2JBMW1qXzNrZVBkSHdxblh0VVZIN25oUXE3VlcwNG02R0dEYWJ5Yk15NjNvSDctaFRBenNaOTlNMWxldzZfV2dMVUlVNjY0Vk5pM3I0VU5wUkg5STNQVG1GcTA3Ri0zYWVLTlhsYm9pVUpicTlQS2JTVEJOYm40VGRyekxQRmtma3lfUjhtN0NNTE5hX1JiWWZ1azZmVzVGMHZGOXBiWHJCWUtyY29zYXVHa0xHY1dYWWp6blpBZUdYeUpGckpNTUxycUpSb2NZRHVDUEVJOF9KTUhDM0NnOXR2STZHYWUzbkxTZUlUZw?oc=5",
+      "published": "Thu, 29 Oct 2026 16:00:00 GMT",
+      "source": "Mesabi Tribune"
+    },
+    {
+      "title": "UTEP Awarded $1 Million to Help Rebuild America’s Mining Workforce | Newswise - Newswise",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTkJHNWJxUHpzQk5JUUlHU3hhOWZBS21IVHRtTDAyeXJkQ1pHaEJWc1IyeDhNa01yUjBsa1U1RmlzakwxbzNDZHUxejZXY2tlQXJRLTVJdUlfUTBEOUd0dzh5VXZHdGdxb2tVUGpyV2N3YmFPalNGVzFZMGd2V2R2SGVWN3JCLW5kYVVGWm5DNGoxM3ZEMm9Qckk1NVl3OEZY0gGgAUFVX3lxTE5OQkc1YnFQenNCTklRSUdTeGE5ZkFLbUhUdG1MMDJ5cmRDWkdoQlZzUjJ4OE1rTXJSMGxrVTVGaXNqTDFvM0NkdTF6Nldja2VBclEtNUl1SV9RMEQ5R3R3OHlVdkd0Z3Fva1VQanJXY3diYU9qU0ZXMVkwZ3ZXZHZIZVY3ckItbmRhVUZabkM0ajEzdkQyb1BySTU1WXc4Rlg?oc=5",
+      "published": "Thu, 29 Oct 2026 16:55:00 GMT",
+      "source": "Newswise"
+    },
+    {
+      "title": "\"“Backing mining in Argentina is state policy, no matter who’s in power” - BNamericas",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMndQQTVkbG50ZXdUbUpFM01Ib3BZSkVrT0VEa1FrUjJBdGRZMzlvX2Q1QmdBQ1NpQmo0bmRrTE1LaXlMV1czeEFrTlkxLW9RbjBTWDV4TDF6bTEzY19MTTJPblNKTHk1S3VfSS1xMUNoOWE1TDFhdURWVHQyOFhfejAtcmJXRG42NWlVVXZRVWFCS01HTE5zZ3BBSXV6UVJVNEhZaHplM2NSaWs4?oc=5",
+      "published": "Thu, 29 Oct 2026 16:30:34 GMT",
+      "source": "BNamericas"
+    },
+    {
+      "title": "World’s No. 2 Gold Miner Says Diesel Risks Driving Up 2027 Costs - Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZXVLRlp2dzBvbHNHeWJYU3hJQUZJMzM2QVBLNEhKNnA2aW1GbmN6WDZkZVUweTB3TVFtRjh6RTZHT1J4LXV2eXNVS1NUSVdxd080TkZ3RWpoaHhybkVpNGhZdXgwb1BQay1CNTN3eUQ2WGIyLXR5OHpMRmFuNXFGSVRBelJaajQ4WUhNTlJNMGdPellRR29zek9NU2xaMUVzeHBabXYzelFaZW1GNFEyNHg3OEMwSzA?oc=5",
+      "published": "Thu, 29 Oct 2026 17:57:18 GMT",
+      "source": "Bloomberg.com"
+    },
+    {
+      "title": "Cummins announces S29 engine for mining applications - Global Mining Review",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNd0hoaTVMZTJocUlwaDZCVWl0UFdxRG4xdUUzUk9fZWx6Zm9xWFRXS1Jma3ZYaWg1UDN0bzV4TDBISUhFN1Q4YUhsOGxOZlBMQTMxV2dlNjlOckUwS3FtTml6UHZLMEtjQnRhNlNtLTdUeUVheklwTW9JU2dfdWtKaWktcEhfb0VPN3doMVFaTDJjU3Juakh4Y3hTd0dGRElGc3BVMF8taw?oc=5",
+      "published": "Thu, 29 Oct 2026 15:13:35 GMT",
+      "source": "Global Mining Review"
+    },
+    {
+      "title": "Copper mining company looks to start exploratory drilling near Potomac - KPAX News",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQa3NkSDdobGx1SlAybUNJWEdpaUI5YTVDVHFPWmNXR1pKczdDcTFycEFfNG5fQUc5aFZxaFlydHFvcDVRc3cyTTB3UUt6ZmUwS2RGT1hwdHNtYkZGYmtac19tRm84YXRTaXc5OVMxZ3gybjZfYm5CMHJ3MDhIWi1uTFVjU3Q1M1g5MjNaZnh2dC1aOGFjTUE?oc=5",
+      "published": "Thu, 29 Oct 2026 03:53:39 GMT",
+      "source": "KPAX News"
+    },
+    {
+      "title": "A2Gold Sells Bolo Gold Project to Super Gold Mining - IndexBox",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc015R2NhaDZnbEd6Q1oyNk5pMmVmRFZscEtzUDJPdTFPTnc4TEpaR2c1UDJPaUluWW5XWTVpLVZlTlpES0dycV9ySFlld2dwWldFbUNaclBMM09QLWlsNjRYMjV1RWVEOGg5N0pCVGNGeUtRa2RqdUM1STRtOERUSHdEaXdzYy1Y?oc=5",
+      "published": "Thu, 29 Oct 2026 16:21:05 GMT",
+      "source": "IndexBox"
+    },
+    {
+      "title": "Australian Lithium Stocks To Watch In October 2026 - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdkxYZzBBd0IzTFFpV3pmR1hBV1ZRSVMyQ0lYUkN0c2h3ZzI5UkM3aGxRUkJTWGtnUE1OX2U3WjZKaGNDcjFfdE1lLUJUcWNuclRYY1BTRE1jUHg2Sk13elhfSFBiaWg1Ulk5MVY5eW41SVNhQ3g3Qkg5ZXdkREpzY2ZraS0xMnViWHVFckZZckJUUFB5YlBDblNsMG13NGljNkU0LTlDSVdmMGp0M2c?oc=5",
+      "published": "Thu, 29 Oct 2026 18:12:56 GMT",
+      "source": "Yahoo Finance"
+    },
+    {
+      "title": "US copper stockpiles conceal growing global supply crunch - Mining.com",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaHV3LThGSVpqMmM1NDBRbmV2OEdFZEFLaGxmaTdTSWl6Qy1TUHE5S1NvMzJzVmZidnJJdEQyNm1iSjRMdjNPam84N1hYY29jUE9rUkJjT19JREZKdlRIbUdEMlFHRVhRclJHNnR0WUNHejdGRDIwVnpwNXNPdEUwTW80d3lLRUlQ?oc=5",
+      "published": "Thu, 29 Oct 2026 13:01:30 GMT",
+      "source": "Mining.com"
+    },
+    {
+      "title": "Rio Tinto assesses new lithium plant in Argentina, copper opportunities - Mining Weekly",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdmZZS25mOU9jNU9leF83bndGR3FaZVpLZjBmX0ZrY1FGM1V5cV8yaldOWHpmeTBxMnlGa3FJWVM0UjlKTGVPaGpZSjRZT3hlWER3eDIzcjRvTDlBUC1TWFVDb1JMWHJmYnQ4MlpRajl1REhiT2RNT3ZyZmNScm8wdnVyeGFEQVpwMG50UFNMWXdIWGk5b1JfYWpYSzNqLUI4cXdFWWExcnZLMmV4TFpGNVdXeV9mY21QOWc?oc=5",
+      "published": "Thu, 29 Oct 2026 13:57:00 GMT",
+      "source": "Mining Weekly"
+    },
+    {
+      "title": "The White House Should Question Beijing Cutting a Copper Deal in Our Backyard - The National Interest",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQaDY2MlVOWjNsd1BFY2xyNWhFejdtSGlwWlhkc3VBN3FhckhrampsWFpKc0NDaFdyd29zX2hJeThmSU53TUVnNWlPVkNHUng0Sk9RNzh5S29TbGdmRmhNVENlRWY1YjdYTXpMbHV3T3FlamZEbW5EMWw0UmlkMk9TU0FnUmJTbTRXQm9mVWJjbGwzVjl3aVgyN1dLalNzVklTWVY1M2E3VDRYN2xjaUduWldkUlBoN0loeUFteFFSUG5rUQ?oc=5",
+      "published": "Thu, 29 Oct 2026 15:51:42 GMT",
+      "source": "The National Interest"
+    },
+    {
+      "title": "Small cap wrap: Standard Uranium, Pinnacle Silver & Gold, Midnight Sun Mining, New Era Energy & Digital... - Proactive financial news",
+      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQR0hqQjhlQVUxSG1Gdlh4UEp0WV9vVHNwMEVCdWljVkdpaXVuWnVVUmRRS1lrcDdXNEUxaTlTdnhkc2RnUE1YaEJEdnF6T0hfRTRrVzBCZ091a2xnSXdfamh6UmpkQnd4OTA5cHF1R1VRR3NUTWlYdUJrZk1QVXBQWjFoN3ZXZXpJZ1hjSVBGemJQVnhTamxaWU1YQUU1OVdSSC1ZTnViMV8wYUVlY1kteUtKRnBocEQxdndnVWtXZ3RnbERZa1QzU0tQbVVXalpNV3o4eFk4bnpLczFCTmZmYWFjWG4tVW00T3M5bU9KWU5zSG5QQnY3Z2R3?oc=5",
+      "published": "Thu, 29 Oct 2026 19:25:00 GMT",
+      "source": "Proactive financial news"
+    },
+    {
+      "title": "A2GOLD TO SELL BOLO FOR $1.5 MILLION AND UP TO $2.8M IN CONTINGENT PAYMENTS - Investing News Network",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZzVTbWNHTjhubjN6SUdFT0Zhb2lwZ0x4SEJGS2VOazQ5QWZCZzBkUHhJUktuWHNKaTk0VTlQR3dKbXRoZnIyN0FZTERvaHpJeWYtTjhGWjFIZ28wRHctSm9HMEUyT3dHSGRKeS1ldlRwNEJLaEE2dTNTOTM2VHM0Z2F5RUc4dnluWlFYQlJUSGphMUdwVTA2VjY1ZlpSY1MzNHc?oc=5",
+      "published": "Thu, 29 Oct 2026 14:57:22 GMT",
+      "source": "Investing News Network"
+    },
+    {
+      "title": "Morton Salt ceases operations at Ohio mine after water breach",
+      "link": "https://www.mining.com/morton-salt-ceases-operations-at-ohio-mine-after-water-breach/",
+      "published": "Thu, 29 Oct 2026 18:55:16 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Copper, nickel at risk due to El Niño’s disruptions",
+      "link": "https://www.mining.com/copper-nickel-at-risk-due-to-el-ninos-disruptions/",
+      "published": "Thu, 29 Oct 2026 17:05:28 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Rio Tinto pumps $1.4 billion into lithium projects in Argentina",
+      "link": "https://www.mining.com/rio-tinto-pumps-1-4b-into-lithium-projects-in-argentina/",
+      "published": "Thu, 29 Oct 2026 15:10:00 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Eldorado drops as Skouries setbacks cut gold outlook 18%",
+      "link": "https://www.mining.com/eldorado-drops-as-skouries-setbacks-cut-gold-outlook-18/",
+      "published": "Thu, 29 Oct 2026 14:56:43 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "China border checks cut Oyu Tolgoi exports by 70%",
+      "link": "https://www.mining.com/china-border-checks-cut-oyu-tolgoi-exports-by-70/",
+      "published": "Thu, 29 Oct 2026 13:35:30 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Glencore cobalt output sinks 52% under DRC quotas",
+      "link": "https://www.mining.com/glencore-cobalt-output-sinks-52-under-drc-quotas/",
+      "published": "Thu, 29 Oct 2026 13:18:00 +0000",
+      "source": "MINING.COM"
+    }
+  ],
+  "discussions": [
+    {
+      "time": "2026-10-29T13:12:33.582952-07:00",
+      "article_count": 22,
+      "strategist": "Today's batch is mostly noise, but three stories carry real numbers, and they point the same way: policy and logistics are hitting supply before any mine closes.\n\n- Export friction: MINING.COM says China border checks cut Oyu Tolgoi exports by 70%. The headline gives no period and does not separate output from shipments, so for now this is a shipping shock, not a tonnage loss. Background knowledge: Mongolian copper concentrate has historically flowed mostly to China, so this feeds directly into the China October concentrate-import question we already have open. Glencore's 52% cut in cobalt output under DRC quotas is a more durable policy cut, but again the headline gives no base or period. Neither belongs in my 2027 arithmetic yet.\n\n- Lithium, one money figure, two verbs: the 29 October \"fourth-largest mining giant\" item is probably the same US$1.4B that MINING.COM now attributes to Rio Tinto. I'd log that as a probable match, not a confirmed one. The wording has also moved from \"opens\" to \"pumps\" to Mining Weekly's \"assesses,\" and a plant under assessment is not a commissioned plant. Our lithium test stays at commissioning, and I'd expect the investment decision to be the harder hurdle.\n\n- Costs, not prices: Bloomberg quotes an unnamed \"No. 2 gold miner\" warning that diesel could push up 2027 costs. That supports Yukon's cost-first reading, but it is a company warning without figures. It does not change the surplus call, which still turns on tonnes we don't have.\n\n- Copper stays unscored. The US stockpile piece (\"concealing a supply crunch\") is commentary on the same LME stock story as 24 October, and the 16 October LME settlement is still unlogged. That blocks the 30 October checkpoint, and I won't score it on headlines.\n\nOther items worth a line: Eldorado's Skouries setbacks cut its gold outlook by 18%, the first hard guidance cut in the record, though the base year is missing, which matters for the Q3 prediction due 15 November. El Niño risk to copper and nickel is a weather alert with no figures. The KPAX Potomac item repeats 29 October with no company named. Morton Salt, Cummins and the Armenia and Suriname pieces have no bearing on the desk's theses.\n\nPREDICTION: Rio Tinto publishes a company release or filing stating Oyu Tolgoi copper output or export volume in tonnes for a named period | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Rio Tinto publicly confirms a final investment decision on a new lithium plant in Argentina | BY: 2026-12-31 | CONFIDENCE: low",
+      "geologist": "Meldrum, most of this batch is thin, but a few items touch lines already on the books.\n\nCopper is the most important. MINING.COM reports that China border checks cut Oyu Tolgoi exports by 70%. The headline gives no base, no period and no operator statement. Typically, border checks delay trucks rather than stop mine output, so the first question is whether tonnes were lost or are stuck and will ship later. If it's the latter, it shows up as a swing in China's import timing, not a lower 2027 supply figure. That links to our Mongolia thread and the October concentrate-import prediction. I'd score it as timing until a company or customs source gives tonnes. MINING.COM's \"US copper stockpiles conceal\" piece has the same problem: stock levels can't show supply without a period and a base. Copper stays unscored until the 16 October LME settlement is logged.\n\nLithium is now a matching question. Mining.com and Mining Weekly name Rio Tinto behind the US$1.4B Argentina money. Our log had only the unnamed \"fourth-largest mining giant\" from Business Insider Africa. The link comes from press reports, not a company release, so it's a lead. Mining Weekly also says Rio \"assesses\" a new plant, which is not commissioning. The commissioning and commercial-operation predictions stay open, and a release naming the plants would settle both the identity and the stage.\n\nGold: Eldorado's outlook cut of 18% is tied to Skouries setbacks. That is a project delay, consistent with the timing pattern we have been tracking in 2027 guidance. The 18% needs a base, meaning the prior guidance figure, before it means anything. Bloomberg's diesel warning from a major gold miner is a forward cost statement without figures. It supports the view that costs, not prices, drive the story, but it doesn't link to CMOC yet.\n\nAlso worth noting: Glencore's cobalt output down 52% under DRC quotas is a policy-driven cut with no stated base. A2Gold's Bolo sale for US$1.5M plus up to US$2.8M in contingent payments is a small-asset deal and not a market signal. The KPAX Potomac drilling story still doesn't name a company, and the Cleveland.com and Mongabay items are background.\n\nPREDICTION: Rio Tinto publishes a company release or filing naming the Argentine lithium project or projects behind its US$1.4 billion investment | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Rio Tinto or China's customs data publish a tonnage or percentage figure for the Oyu Tolgoi export shortfall for a named period | BY: 2026-11-30 | CONFIDENCE: low\nPREDICTION: Eldorado Gold's Q3 2026 release restates its 2026 gold production guidance and quantifies the Skouries effect as a figure | BY: 2026-11-15 | CONFIDENCE: medium",
+      "strategist_reply": "Yukon, you sharpened my Oyu Tolgoi point. I had called it a shipping shock. You're right that it only becomes a supply question once someone supplies tonnes, and until then it's a timing question for China's import line. I'll drop any 2027 arithmetic from it.\n\nWhere I'd still push: a delay that runs more than a quarter stops being timing. Stuck concentrate eventually gets sold at whatever price the buyer will pay, and that is a margin story even without a tonnage loss.\n\nOn lithium, I agree the Rio match is a press-report lead, and I'll log it that way. I'd add that the stage matters as much as the name. \"Assesses\" and \"commissioning\" are different hurdles.\n\nOn Eldorado, I'm with you that the 18% means nothing without the prior guidance base. Your Q3 prediction is the right test, and I'm adopting it.\n\nWhat we both missed: Rio's quarterly production reporting has historically landed in late October, so the Oyu Tolgoi tonnage could appear within days, not by year-end. I'd check that before the 30 October checkpoint. China's customs data also publishes monthly, which gives us a second independent source for the export shortfall.\n\nHere are the predictions I now hold:\n\nPREDICTION: Rio Tinto publishes a company release or filing stating Oyu Tolgoi copper output or export volume in tonnes for a named period | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Rio Tinto publishes a company release or filing naming the Argentine lithium project or projects behind its US$1.4 billion investment | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Rio Tinto publicly confirms a final investment decision on a new lithium plant in Argentina | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Eldorado Gold's Q3 2026 release restates its 2026 gold production guidance and quantifies the Skouries effect as a figure | BY: 2026-11-15 | CONFIDENCE: medium",
+      "geologist_reply": "Meldrum, your read on the lithium wording is sharper than mine. I had been treating \"pumps\" and \"assesses\" as the same news, and they aren't. A US$1.4B figure can cover several projects at different stages, so the investment decision is a separate hurdle from commissioning, and I agree it's the harder one.\n\nWhere I'd push back is on Rio's stated output. You've set Oyu Tolgoi against a 2027 supply view, but Rio has historically reported its operations in regular operational updates, usually with tonnes for a named period. If that holds, a tonnage figure should arrive through normal reporting even before customs data settles the export question. Your version of the prediction is better than mine, because it's checkable against a document Rio already publishes.\n\nWhat we both underplayed is Eldorado. An 18% cut to a guidance figure is a number, but we don't know whether it reflects lost tonnes or tonnes pushed into later years. A delay at Skouries and a permanent production loss look identical in a headline. The Q3 release should show which one it is, so the base year matters more than either of us has said.\n\nI'd also flag the A2Gold structure. A US$1.5M upfront payment with up to US$2.8M in contingent payments is typical of a deal where the buyer takes on the risk and pays only if milestones are hit. It tells us little about the market, but it's a useful reminder of how small assets change hands.\n\nPredictions, updated:\n\nPREDICTION: Rio Tinto publishes a company release or filing naming the Argentine lithium project or projects behind its US$1.4 billion investment | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Rio Tinto publishes a company release or filing stating Oyu Tolgoi copper output or export volume in tonnes for a named period | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Rio Tinto publicly confirms a final investment decision on a new lithium plant in Argentina | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Eldorado Gold's Q3 2026 release restates its 2026 gold production guidance and quantifies the Skouries effect as a figure | BY: 2026-11-15 | CONFIDENCE: medium",
+      "summary": "Joint findings\n\nThe two analysts agree that most of this batch is noise. The few numbers that matter point to timing and logistics problems, not confirmed supply losses.\n\nKey stories:\n- Oyu Tolgoi: MINING.COM reports China border checks cut exports by 70%, with no base, period, or operator statement. It bears on the open China October concentrate-import question.\n- Lithium: A US$1.4B Argentina investment is linked to Rio Tinto by press reports, not a company release. Mining Weekly says Rio \"assesses\" a plant, which is not commissioning.\n- Eldorado Gold: An 18% guidance cut tied to Skouries setbacks, with no base year given. This matters for the Q3 prediction due 15 November.\n- Glencore: Cobalt output down 52% under DRC quotas, with no stated base.\n- Copper: Unscored until the 16 October LME settlement is logged.\n\nWhere they agree:\n- Headlines without a base, period, or tonnage do not support 2027 supply arithmetic.\n- Rio's Argentina match is a lead, and commissioning and investment decision are separate hurdles.\n\nWhere they disagree:\n- Meldrum argues a Oyu Tolgoi delay lasting more than a quarter becomes a margin story, since stranded concentrate may sell at lower prices. Cornelius did not respond to this point.\n- Meldrum treats the diesel warning as a cost signal that leaves the surplus call unchanged. Cornelius sees it as support for a cost-driven reading.\n\nCurrent predictions (both analysts hold all four; marked by originating analyst):\n\nPREDICTION: Rio Tinto publishes a company release or filing stating Oyu Tolgoi copper output or export volume in tonnes for a named period | BY: 2026-12-31 | CONFIDENCE: medium (Meldrum)\nPREDICTION: Rio Tinto publishes a company release or filing naming the Argentine lithium project or projects behind its US$1.4 billion investment | BY: 2026-12-31 | CONFIDENCE: medium (Yukon Cornelius)\nPREDICTION: Rio Tinto publicly confirms a final investment decision on a new lithium plant in Argentina | BY: 2026-12-31 | CONFIDENCE: low (Meldrum)\nPREDICTION: Eldorado Gold's Q3 2026 release restates its 2026 gold production guidance and quantifies the Skouries effect as a figure | BY: 2026-11-15 | CONFIDENCE: medium (Yukon Cornelius)"
+    }
+  ],
   "chief_sessions": []
 }
