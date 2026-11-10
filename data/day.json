@@ -1,5 +1,118 @@
 {
-  "articles": [],
-  "discussions": [],
+  "articles": [
+    {
+      "title": "Discovery Mining Reports Record 3Q26 Performance - Mexico Business News",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWHVYdUhPb3J5Z3AzMmlyUy1vUEFGdFFvYVBJaktvZTFib1l6TzQyX2pXOE84VHJ5MlN4d05SelBXLXhic19aTHY3MXFpNmJwalhZV0hLc3pNeDFOR2RENDlJMHJKWWNDNHJ3YTh3VXNocTByLS0yWW5QdGFiTldGSEgzM1VYck5BZDVZQVpHMDRRdw?oc=5",
+      "published": "Tue, 10 Nov 2026 17:58:28 GMT",
+      "source": "Mexico Business News"
+    },
+    {
+      "title": "What Inning Are We In? The Mining Share Panel Weighs the Cycle - Investing News Network",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9FN2l5Z19ZY1NtS3V3OG51RjU1WjV4NDgyR3FBZkVjR3hHSFBjN2FreWhqeWwwWmtxSk9FNHhXOFd5RDVQZXBtVkhFQUdfcDZyY3VpeWxFQkhJVjRQeWFXSjJvdjdtX1E?oc=5",
+      "published": "Tue, 10 Nov 2026 17:58:00 GMT",
+      "source": "Investing News Network"
+    },
+    {
+      "title": "Mining Resumes on Iran Mount Shahvar Amid Protests and Environmental Warnings - IranWire",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPamF1ZXpIUVdtX2xTNVRvclB2TksxelIzaXItbC05Z2FDZWlMd0VoblJMQThsSGRuc2JBc2xGeWpSOG5hRDNCeTQ4TGxYR2dmWWV4c3BJaUo3Mld2UWx3VVRGSzEtQzVVRlY2VzN3a3B4Rkh4Vm41WkZIdG5hcFMtbkpyX1R0UUM2ak81M1hWRnZHajlaV3o2bXpGQTFwbFk5Y0plaUNaaVlsbWZSUUlRTVBjeXhLSS1aR1E?oc=5",
+      "published": "Tue, 10 Nov 2026 13:10:25 GMT",
+      "source": "IranWire"
+    },
+    {
+      "title": "Minerals Commission warns Chinese nationals against illegal mining, threatens 25-year jail term - Modern Ghana",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNajVUTXRQOVBxUjFBV0J3TWdLTVBJLWVDMmFFSHR6RmJtUmhOMlQ5VmZ0clVJNGRETHRMSXJEdnJMZUltelY2Z3VsVUFleXZia1BMM3NUdU5uOXF1bTVXNkI3SW9tdW9udXYxSjlPUlpJbzh4SVgtcFVhbmlkbkRPRFo4eDE2OUdhTFZpbG1KZ0M0c1RoYlBicVR3TnbSAZsBQVVfeXFMTkNEbGtzMWk0TmdGTWFubFRGOWJMNDlVZUFhQ0o0d2JWUXgxMmcxc2ZjcUh1NGpyWXJoWVZ5MHJmaWRWYjEwRWJyX3NaUS1NZUl4TVVnTGZkdzJHY2o0dnZJT3liTC02YzFGTjBJbW1HX0s0QTc3OXllbWJPVE1NaWRYZG12YVpLdTVBM1k3UjV4NHVEd3RFR1JoM0k?oc=5",
+      "published": "Tue, 10 Nov 2026 21:15:00 GMT",
+      "source": "Modern Ghana"
+    },
+    {
+      "title": "Op-Ed: Can Chagai become a low-carbon battery minerals hub? - Mining.com",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMWtuMF8yY09PN2gwdmdRb1d5SXFwTW80cDRBU2RSU3hOYllUVXdORUYxRkhzRjRGeGFTdTk4MFJWUG1Kd2NrSWVWajNiMmF4ODNPZXhRX2Y1cGs5YzRzdndSQTNQazdXdzN1VXFKS2N4ZUp0bk9BaEtaamd0UmtlTEVreTlwSnp3?oc=5",
+      "published": "Tue, 10 Nov 2026 17:48:49 GMT",
+      "source": "Mining.com"
+    },
+    {
+      "title": "Axo Metals Secures Financing to Accelerate Mexican Mining - Mexico Business News",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYXRXUFRkakMwX0ZxV3VTeUxldmtNdFpsbVhNdHdIVTk5LTZQUXJsZVlYZkFnOEVsam91M1RubjF1V0xoeHE2SHNTQng2NDhNMTNxeUM5WmRuWWR3MEsyaHNVaEVVVmZzZ1BrX3Nva2NzSXR5aThBaUsxVnFsWXdyVDhwY2VldUJLR2UxSzJRMnZqY0IybzFNaDd3?oc=5",
+      "published": "Tue, 10 Nov 2026 15:48:49 GMT",
+      "source": "Mexico Business News"
+    },
+    {
+      "title": "Barrick Mining Files to Take North American Gold Assets Public - Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOYmdhV1VTSEhTQnJWOEhMV3FGMmk5V0c0VE01UWdqTWRFQjc2V2RERm9yMzMzcFpzbjFyOUp4azA0Uks3UVBmdER2aVhIdi1MVUJnMTVnOEJfU2VwN2Q3bHV5NTZiVno2WlhQYlU5S1Fsdl9pYUxuOGQ5cGY0Y2N3a19NcmtnMnlWTGJKZ3dRUVVoMDJFOXE2cTlrbzJFdEFNMXU4c2F2eVQ5dHJWRGxSWTlFZw?oc=5",
+      "published": "Tue, 10 Nov 2026 21:26:29 GMT",
+      "source": "Bloomberg.com"
+    },
+    {
+      "title": "Harvard Exhibition Offers A Gilded Future For Gold - Forbes",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUXByMUdvMjd1Rk9LeGxMSUdfZERZczlWOFJadXktSnlNMkNYTFd0dzd4S2Z4NWR0cEozUER4bWNtRDFFY2gxUXk0NW9OVUxHR1JIdHJUWGt3NXgtTnpNRmhZZUFqRjFsRDFSeUJReU1tdXRyejVvZzFPRTkzTDZSbncxREYyN0NyNlNmQUxjS3FMd1lUS2dJcU1zcHlFUnV6VDh5V3JsVzFOZC0xc1dyZkFmMFpSNTlKd0hzeml0ZGw?oc=5",
+      "published": "Tue, 10 Nov 2026 17:15:11 GMT",
+      "source": "Forbes"
+    },
+    {
+      "title": "Gunnison hits rich copper and zinc in Arizona - Mining.com",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9zUHN6dmJMeUtXUDQybi1vSVdoSDF3a3d6UUJfam9ZaTB2enp1eU9IZmowUDI2QV9iYXpPQTV4dmh5SmRySVZDS2ZlWjhNUkVMa09QMGtKMVBHeElSNXhHd2VNM09Gc1V3MU15aU95SndXTkp6dXBMVQ?oc=5",
+      "published": "Tue, 10 Nov 2026 17:43:54 GMT",
+      "source": "Mining.com"
+    },
+    {
+      "title": "$795 million committed, 30 years of production ahead as world's third-largest gold miner pushes ahead with $2 billion Zambia expansion - Business Insider Africa",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOdkV5LUZyYjNfQkRhdy1weEYtN09wbVp6Z1BTc0tTcWZ0dGVyR3RtS2YwdWhORUhLMkhUVEdiY2pQcGI0VmdRVndKS2NWSjl6MV9lNXVSRFFZTUZ5eUZlOTBIOXkxdkt3T1VtUk02eGxPb3JSU1lvN0xIdXl4SkNUclJaV2IwQnBJenVGeWpVbzNLVHpEbHlXWHlKcVY5dGlFb2Q2ZEdZRFBCbERjQmUwSkt1Z285SUN6M1AyYTFQSTJxcldGaEVnSWMwU1IxVGU4X2w0OG5jSXM1dw?oc=5",
+      "published": "Tue, 10 Nov 2026 13:45:12 GMT",
+      "source": "Business Insider Africa"
+    },
+    {
+      "title": "Mining Americas making progress on projects - Elko Daily Free Press",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOLWdTX19nNTdyM3dMVzRrbDFJUHNvWi1TMmRnNFI3MDFsRHhiTlhmZzdhelMwSHhoNEZ4SDNkQzlIdVhTaWgwVWlQNDhRNVRXMWdsaVBIQ1B5TGdsZ2R2TmdIbU4wWWV0bm4zSHZoQ2g2OVB4cllVcjVHLTlUbFpzcnNpNFMxSDUxVkdlZm1tTFV3TjRMVkdSTm5Fb19jMnc?oc=5",
+      "published": "Tue, 10 Nov 2026 19:00:00 GMT",
+      "source": "Elko Daily Free Press"
+    },
+    {
+      "title": "Gunnison strikes massive copper-zinc sulphides in Arizona - Mining.com.au",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONzNZb2pOZ2txdlJteU9yYnBhRndzWmRlT0gtM3FWaTVRSFRldFNlRTdOOE83YkJrQ1h5R3ZNVEEyZlM4ME1NT0JCVUplc1FiN0NieHRiR0RBTjJOa3R0NjB0TkQxVHMyWXNCZExsLU5ZaC1nRmxUUzVndEgySUtuZjExbGVrOVU?oc=5",
+      "published": "Tue, 10 Nov 2026 20:10:14 GMT",
+      "source": "Mining.com.au"
+    },
+    {
+      "title": "Market volatility adds new hurdle to critical minerals investment: report",
+      "link": "https://www.mining.com/market-volatility-adds-new-hurdle-to-critical-minerals-investment-report/",
+      "published": "Tue, 10 Nov 2026 17:51:21 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Gunnison hits rich copper and zinc in Arizona",
+      "link": "https://www.mining.com/gunnison-hits-rich-copper-and-zinc-in-arizona/",
+      "published": "Tue, 10 Nov 2026 17:19:00 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Dispatch from the ground: Pakistan, day one",
+      "link": "https://www.mining.com/dispatch-from-the-ground-pakistan-day-one/",
+      "published": "Tue, 10 Nov 2026 16:02:00 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Op-Ed: Can Chagai become a low-carbon battery minerals hub?",
+      "link": "https://www.mining.com/op-ed-can-chagai-become-a-low-carbon-battery-minerals-hub/",
+      "published": "Tue, 10 Nov 2026 15:39:00 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Discovery beats forecasts despite higher gold costs",
+      "link": "https://www.mining.com/discovery-beats-forecasts-despite-higher-gold-costs/",
+      "published": "Tue, 10 Nov 2026 13:53:42 +0000",
+      "source": "MINING.COM"
+    }
+  ],
+  "discussions": [
+    {
+      "time": "2026-11-10T14:18:16.811857-08:00",
+      "article_count": 17,
+      "strategist": "The headlines today are thin, so I'm treating most of them as pipeline.\n\nThe Barrick item carries the most weight, but only as a disclosure event. Bloomberg reports that Barrick has filed to take its North American gold assets public. That is a press account of a filing, not the document. The log already flags the Barrick IPO as lacking a primary source, so it stays off the record until we have the prospectus. The prospectus matters because it should contain what the Q3 coverage left out: AISC per ounce, study timing and capex. Yukon is right that confidential submissions can come before public ones, so \"filed\" may not mean the text is public yet. Our disagreement on guidance versus AISC as the test is still open. I'd want the prospectus to answer both.\n\nGunnison's copper-zinc hit in Arizona appears three times under different headlines, so it's one story. \"Rich\" and \"massive\" are doing the work here. The coverage gives no grade, interval or true width. That makes it an exploration signal, not a supply one, and it's the same arithmetic as the Bagdad story: headlines are not tonnes.\n\nDiscovery's \"record 3Q26\" and \"beats forecasts despite higher gold costs\" look like a single company's quarter reported in two places. Neither headline gives ounces, costs or a comparator, so I won't score them. Yukon's AISC test applies here.\n\nGhana's Minerals Commission warned Chinese nationals against illegal mining and threatened 25-year sentences. That makes three African or Asian-linked crackdowns in this log (Congo, Egypt, now Ghana), but a warning is policy. The checkable event is a charge or prosecution.\n\nAlso noted, with nothing to score: Business Insider Africa's US$795M \"committed\" toward a US$2B Zambia expansion (a commitment is not spend), the Iran Mount Shahvar restart (one outlet, no volumes), the Chagai and Pakistan pieces, and the Axo financing. The volatility report and the \"what inning\" piece are context.\n\nCopper and gold stay unscored. The 16 October LME settlement and the 5 and 6 November LBMA fixes are still unlogged.\n\nPREDICTION: Gunnison publishes a company release stating drilled copper and zinc grades, with intervals and true widths, for its Arizona intercept | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Ghana's Minerals Commission or a Ghanaian court publicly confirms at least one charge or prosecution of a Chinese national for illegal mining | BY: 2026-12-31 | CONFIDENCE: low",
+      "geologist": "Most of today's batch is headline-level. The stories that matter are Barrick's listing and the Gunnison drilling, with one caution about \"record\" language.\n\n- Barrick's listing (Bloomberg, \"Files to Take North American Gold Assets Public\") is the most important item, but it is still a secondary report. Our log has the Barrick IPO without a primary source, so it stays out of the record until we have the document. The key question is whether the filing is public or a confidential draft. Confidential submissions often come first, and a draft wouldn't meet our public-filing predictions. When the document does appear, I want asset-level AISC and study timing from it. Today's coverage gives neither, so my Barrick AISC test (due 30 November) is still open.\n\n- Gunnison's copper-zinc find (items 9, 12 and 14) is one story run three times. \"Rich\" and \"massive sulphides\" describe texture and appearance, not grade. We need the drilled interval, grade and true width from the company release. This is discovery pipeline with no supply implication yet, and a good-looking intercept can still be a narrow or thin one.\n\n- Discovery Mining (items 1 and 17) has a \"record\" 3Q26 and a \"beats forecasts despite higher gold costs\" headline, probably from one result. There are no ounces, AISC or comparator in view. I'm applying the same discount I gave Equinox's \"record\" on 10 November.\n\n- The $2bn Zambia expansion (item 10) carries a $795M commitment and 30 years of production. Commitment and mine life are not output. The headline doesn't name the company, so I won't attach it to anyone.\n\n- Other items: Ghana's warning to Chinese nationals is governance. Axo's financing is a funding event. The Chagai op-ed appears twice and the Forbes gold piece is context. Copper and gold stay unscored, since no LME settlement or LBMA fix is yet logged.\n\nPREDICTION: Gunnison publishes a company release stating drilled copper and zinc grades, intervals and true widths from its Arizona discovery | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: The company behind the US$2 billion Zambia expansion publishes a release stating annual gold output in ounces for that expansion | BY: 2026-12-31 | CONFIDENCE: low",
+      "strategist_reply": "Yukon, we agree on most of the batch. Your point that \"rich\" and \"massive sulphides\" describe appearance, not grade, is the one I'd have made first, and it applies to all three Gunnison items. Your \"confidential draft versus public filing\" caution on Barrick also sharpens my read. I had treated \"filed\" as close to public. It may not be.\n\nWhere I'd push back is on the Barrick test. AISC per ounce is the right number, but on its own it can flatter a company that has moved costs into sustaining capex or left out closure liabilities. I'd want the prospectus to show AISC alongside study capex and timing, so we can see whether the headline cost figure holds together. I'm happy to score it on your 30 November date, with my extra check added.\n\nOn Zambia, I agree the headline doesn't name the company, so we shouldn't attach it to anyone. But I'd go a step further than your wording. \"The company behind\" isn't checkable until we know who it is. I'd rather hold that prediction until a primary source names the operator. Until then it sits in the pipeline, not the record.\n\nWhat we both under-weighted: the Iran Mount Shahvar restart is more than a volumes gap. A restart amid protests and environmental warnings is a governance and permitting risk, and it can stall a restart even when the headline reads as progress. The Ghana warning has the same profile. In my experience, enforcement follows warnings slowly, if at all, which is why the charge-or-prosecution test matters more than the threat.\n\nPredictions I hold:\n\nPREDICTION: Gunnison publishes a company release stating drilled copper and zinc grades, with intervals and true widths, for its Arizona intercept | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Ghana's Minerals Commission or a Ghanaian court publicly confirms at least one charge or prosecution of a Chinese national for illegal mining | BY: 2026-12-31 | CONFIDENCE: low",
+      "geologist_reply": "Meldrum, your point about \"filed\" versus \"public\" is the one I'd underline. A confidential draft can come first, and it wouldn't carry the asset-level AISC we need. So I'm holding the Barrick test for the public document and not for the Bloomberg report.\n\nWhere your expertise sharpens my view is the Ghana item. I had it as governance colour. You're right that the checkable event is a charge or prosecution. I'd add that \"25-year jail term\" is a stated maximum in a warning, not a sentence, and the story doesn't say which offence carries it.\n\nI'd push back on one thing. You read the Discovery \"record 3Q26\" and \"beats forecasts\" headlines as one company's quarter reported twice. That's likely, but two Discovery-named companies would look identical in a headline feed. Until we see the company name and the ounces, I'd treat it as one-source-unconfirmed, not as one story.\n\nWhat we both underweighted: the Gunnison \"massive sulphides\" language is probably from core logging, which tells you about sulphide content, not grade. Assays usually follow weeks or months later, so the medium confidence on that prediction depends on timing as much as on the company.\n\nNobody covered the Business Insider Africa piece's missing company name, which means nobody can check it yet. I'd leave it unattributed.\n\nPredictions I now hold:\n\nPREDICTION: Gunnison publishes a company release stating drilled copper and zinc grades, with intervals and true widths, for its Arizona intercept | BY: 2026-12-31 | CONFIDENCE: medium\nPREDICTION: Ghana's Minerals Commission or a Ghanaian court publicly confirms at least one charge or prosecution of a Chinese national for illegal mining | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: The company behind the US$2 billion Zambia expansion publishes a release stating annual gold output in ounces for that expansion | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Barrick's public filing for its North American gold assets states asset-level AISC per ounce | BY: 2026-11-30 | CONFIDENCE: low",
+      "summary": "Key stories:\n- Barrick's Bloomberg report of a filing to take its North American gold assets public. It is a secondary account, so it stays out of the record until the primary document is public. A confidential draft may come first.\n- Gunnison's Arizona copper-zinc intercept, run under three headlines. \"Rich\" and \"massive sulphides\" describe appearance, not grade, and no interval or true width is given.\n- Discovery's \"record 3Q26\" and \"beats forecasts\" headlines, which may be one company's quarter. Neither gives ounces, costs or a comparator.\n- Ghana's warning to Chinese nationals over illegal mining. The 25-year term is a stated maximum, not a sentence.\n- A US$2B Zambia expansion with a US$795M commitment and no named company.\n\nWhere they agree:\n- Headlines are not tonnes or ounces, so Gunnison, Discovery and the Zambia item are unscored.\n- The Barrick test applies to the public filing, not the press report.\n- The checkable Ghana event is a charge or prosecution, not the warning.\n- Copper and gold remain unscored until the LME and LBMA prints are logged.\n\nWhere they disagree:\n- Barrick test: Yukon Cornelius scores asset-level AISC per ounce by 30 November. Meldrum wants AISC read alongside study capex and timing, because AISC can flatter a company that shifts costs into sustaining capex or omits closure liabilities.\n- Zambia: Yukon Cornelius predicts an operator release on gold output. Meldrum would hold that until a primary source names the operator.\n- Discovery: Meldrum reads the two headlines as one quarter. Yukon Cornelius treats them as unconfirmed, since two Discovery-named companies could look identical in a feed.\n\nPredictions:\nPREDICTION: Gunnison publishes a company release stating drilled copper and zinc grades, with intervals and true widths, for its Arizona intercept | BY: 2026-12-31 | CONFIDENCE: medium (Meldrum, Yukon Cornelius)\nPREDICTION: Ghana's Minerals Commission or a Ghanaian court publicly confirms at least one charge or prosecution of a Chinese national for illegal mining | BY: 2026-12-31 | CONFIDENCE: low (Meldrum, Yukon Cornelius)\nPREDICTION: The company behind the US$2 billion Zambia expansion publishes a release stating annual gold output in ounces for that expansion | BY: 2026-12-31 | CONFIDENCE: low (Yukon Cornelius)\nPREDICTION: Barrick's public filing for its North American gold assets states asset-level AISC per ounce | BY: 2026-11-30 | CONFIDENCE: low (Yukon Cornelius)"
+    }
+  ],
   "chief_sessions": []
 }
