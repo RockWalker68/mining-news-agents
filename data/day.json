@@ -1,5 +1,100 @@
 {
-  "articles": [],
-  "discussions": [],
+  "articles": [
+    {
+      "title": "At least 10 killed in Guinea clashes over gold mining ban - Al Jazeera",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVW9RdTNTcFJ4UWh4Z2FtWHZqRUhkcERsS3lEamdiZXlVTlJEYmMyU3ZMM1h3YU5WY3VDdkRJQ1g4RklNaGNfdWFfUWJKSDQxNXJ0d3d4bGoxbXl6X0FhNU5aZVFQX3g3ZHBmbGJxeDA3eG9JNDNPMS1rdlRXaHRzMVA2VmRlR2Y5ak51OW5tWjFNb2dfQlNqS0txZVh2ZWfSAaQBQVVfeXFMTXVnMURlWGdZM2doLVVkMU9TcUlYR2xXMU9lNlhlSms1WDNTQ0pxekszZ0lvTTgtSXBuaENfcG95WFhYTFRBS21vY3lVTFYzV0pjeUNSdEZES01SakpKWlR6bXY4RXVKV2NxeDN4Sk5yNzlnejhMc0R3dDdUV1Q2WXhfRVBkSjBuTWc3Y2pqOUczdDcyMUV4NE5TRzF0bkROVGNkU1U?oc=5",
+      "published": "Fri, 13 Nov 2026 18:46:49 GMT",
+      "source": "Al Jazeera"
+    },
+    {
+      "title": "Joint ventures and advanced studies: what investors want from mining in Argentina, Chile and across the region - BNamericas",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOSDdhYnBGeUJSU0pCYnNOSFpZNU5veU9JNjE1ZmdBZWFESWI1MkdIUEpKT1ljVjlFV2hWZHJVaDdHY3psdW5KSGV6dE1Ob1FxODVKckdjaXJmSW13cTIwU28wb2p1Vk9DLW5xanNaOUwxcDlsRXhBRVNXYUpTeksxbDhjWGFaUWNZc3B5alhkb3pieXZJcU9SNkpiZnNVaGMtTVJIZXZPMmdkOXJGNVZFSl83Tm51MlJuS2lJLTlaWTY4Sm0tSW9ZRUltVDVmUlo5azMtcVhNblR6VWU2TWttRndCcw?oc=5",
+      "published": "Fri, 13 Nov 2026 21:00:00 GMT",
+      "source": "BNamericas"
+    },
+    {
+      "title": "SYMX.AI raises another $6 million & looks to bring real physical AI results in mining - International Mining",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPaEFpZ2FkWWRQeWlnUXgtT09reVJyelF3RG5BUDJVdEhvbndKSjVQQzVsMkIxS0R0ZXppMzZjQVJxaUJoX3laOG15Y2xLSEZ5cG81aHZxNXFPVHNKNlZaNE5PRVRiWm9XS3lkNlFVcFhwS1h1dS1kT1Zuc0FSU2FJODNRSUlIOWdjM2JNS0ZQaTJzdC15cS02Vld0ODNUczBUcjVMVFdyeE41bTFmNHg3Y1g4VF9nU3M?oc=5",
+      "published": "Fri, 13 Nov 2026 20:03:45 GMT",
+      "source": "International Mining"
+    },
+    {
+      "title": "Heliostar Metals Delivers Landmark 3Q26 - Mexico Business News",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQc29CM2g2NDltS1lnZDVtc2VBTkVMdFBWUUEwbEQ5WWxKOGMyWi1vTHJoY2pMSElZN2duMzNHUkxDWVNMZFV4dHk5TWZHM0pqTFgtNlZGU0hpcGx6T3V2T3R3bmtDbWpmcEMxNzNpbEY0QXRvS1NxOEI4RS12UVlOWWpvY0I5dw?oc=5",
+      "published": "Fri, 13 Nov 2026 16:17:46 GMT",
+      "source": "Mexico Business News"
+    },
+    {
+      "title": "Norway's Nussir copper mine sale faces scrutiny over Russian links - High North News",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPa1BLSmFZcloyVzdPblFiMl9EdEwtSGtXN19jaFNCTEZSZjRBTExuSUNDUVNnX0lCTmltRjlSdVJlLW9lZnNuQ0ctY2t3dU5oUEw1WDU0ZTVBd3RCS19DUUR3RjJfWmxZemQ2UzVzVTFrbU1GZjEwaFl2TXBjQ0x1VWRlY0d4c0NEeFIyYTZDMEJJRnhHR29vbl9qamtBUnM?oc=5",
+      "published": "Fri, 13 Nov 2026 18:40:09 GMT",
+      "source": "High North News"
+    },
+    {
+      "title": "FLS launches Accelerate ’31 strategy to drive profitable growth - Global Mining Review",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSm91S3g2amx1aWtjWHJ1ekNRV1piSjhEZEFZUG9Kc3lGLTgzc0dSWmlJR2dUZTlCSmZ3NFJLcl9lVUZvZTlydjd4M1U4VVFmMWJKQkVyQWt4NWdBejc5Q3lLSXFsc3VnLXlqQUowTUZSdGJacXc2bTR0QzFzanBvM0FVa0VJMkxHX2xVZHZmNWxTaEhqVHpfZlg1bEJwY3dnMGp2NzVmS2h4QTBJOGRvZ0YzSlM?oc=5",
+      "published": "Fri, 13 Nov 2026 12:18:46 GMT",
+      "source": "Global Mining Review"
+    },
+    {
+      "title": "Budget 2026 draws mixed industry reaction, Sudbury-area geology earns heritage recognition and SGS to test Carbonix’s direct reduction technology - CIM Magazine",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWnBPODVzSXdHejAzNkhqWEI1YzVRQnJudFE4NGtSUVdza05PWnhmWXVzR3Q4OURLdWNqU0J4RlYxRjV4Q2dUSUFnaTVsTHdnQzdVc3JpWDB5TmNfcF80WWpEd2VrSlcycnQ3dmJCZ21kaGdJQTZVYjdVQzVIYXJTUg?oc=5",
+      "published": "Fri, 13 Nov 2026 17:49:33 GMT",
+      "source": "CIM Magazine"
+    },
+    {
+      "title": "Chile mulls private-sector role in Codelco’s mines and infrastructure - Mining.com",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPY3hQbjBVWTIwN05rUE9mbEdvUUJLNk4tZHAyMnYzYXdoUXkwX0RNOGc5bUdXeDFyZC16UEZ1ZFZoQjJ5Y0dkbnhEQWs5Z0NUN19sZWdLOUY0elRpeUYxZUgyOE9GdmRDQzRNSWxXcHpjbDY1UHNybU1LOTdZRmxjRmkwU2lCNGVrZ3hRaVZ5azVRUF9hdlI3ZFhnZEQ?oc=5",
+      "published": "Fri, 13 Nov 2026 20:21:37 GMT",
+      "source": "Mining.com"
+    },
+    {
+      "title": "Gunnison Copper reports Q3 output, revenue surge - Mining.com.au",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE03V0tWZzlLbkxsWVJvMDVsUjlWN25rUzJ3MWRmUWgwczRnc2pjQXE0WWhQUFdWM0JzdmhOM0htTWVibzRPZkMxdFBXWWIwZTIwSUhJczNhTko1cFhHc1h4a05HZHRKMUQ2QmUwSGM5Q0djb2RWYjdHR0Rn?oc=5",
+      "published": "Fri, 13 Nov 2026 21:34:52 GMT",
+      "source": "Mining.com.au"
+    },
+    {
+      "title": "EACON’s exponential AHS growth continues as deployments pass 4,000 trucks - International Mining",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcDRkZWJMbnVvYU9raThGbDBZTHlpTWUxNG5BUVBtTnJ0dHZGRXBnZkdJWWE4SExwZ0VkUlVoek94dWxMVWxFZXEwaGM3TEs4Z0FCbm5GaFdVVUVsVkxCdlRVUkhsNGxRSVk0V2trWFNPUUd1Sk9XWUtrNzFoazhHWTVHZ1cxOHN6OWNUR2pmbVZuTWRaaFN6UndnZHZMSElzaWFwVWJCS2w?oc=5",
+      "published": "Fri, 13 Nov 2026 13:50:59 GMT",
+      "source": "International Mining"
+    },
+    {
+      "title": "Altius to Add Copper, Lithium Royalties with TNR Gold Deal - Investing News Network",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE80SWI3c0o4X1FWanBtTHRQaUl3VDBlbWRwRkhTczdPTjVLekNBNUpDOTRJaGlqRFVlcGRPdE9JeE9PTlcxUkxHRHE3V3R6SEFjZ0pOemFZMUItQmZ6NHRoVVZ1cDJzQQ?oc=5",
+      "published": "Fri, 13 Nov 2026 20:40:00 GMT",
+      "source": "Investing News Network"
+    },
+    {
+      "title": "Modern Mining makes NYSE American debut",
+      "link": "https://www.mining.com/modern-mining-makes-nyse-american-debut/",
+      "published": "Fri, 13 Nov 2026 20:46:29 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Op-Ed: Europe is stockpiling critical minerals. Wonderful. Can anyone actually use them?",
+      "link": "https://www.mining.com/op-ed-europe-is-stockpiling-critical-minerals-wonderful-can-anyone-actually-use-them/",
+      "published": "Fri, 13 Nov 2026 19:43:07 +0000",
+      "source": "MINING.COM"
+    },
+    {
+      "title": "Anglo American’s Australia exit marks end of an era",
+      "link": "https://www.mining.com/anglo-americans-australia-exit-marks-end-of-an-era/",
+      "published": "Fri, 13 Nov 2026 15:34:42 +0000",
+      "source": "MINING.COM"
+    }
+  ],
+  "discussions": [
+    {
+      "time": "2026-11-13T14:30:16.081599-08:00",
+      "article_count": 14,
+      "strategist": "Today's batch is long on headlines and short on numbers, so I'll keep the conclusions small.\n\nGuinea first. Al Jazeera's \"at least 10 killed\" matches the Conakry trial we logged this morning, and our record already flags that several outlets appear to rely on one official source. Enforcement against illegal artisanal gold is not supply. My working view is that a crackdown changes where tonnes are counted, not how many leave the ground. Burkina's reported influx of Guinean miners is the place to test that, and I want a government count before drawing any conclusion.\n\nSecond, Chile and Codelco. Mining.com reports Chile is weighing a private-sector role in Codelco's mines and infrastructure. That sits beside the unexplained 42,100-tonne overstatement, the Codelco-Adani MoU and the Pucobre hurdle. Read together, this is a governance and capital story. Opening the door to private partners could matter for the next decade of investment. It says nothing about 2026 tonnes, and the headline gives no terms. Simon's credibility discount on Codelco stands.\n\nThird, the Nussir copper sale in Norway faces scrutiny over Russian links. The headline gives no buyer, price or structure. In my experience, a sale that draws ownership questions tends to be slower and more conditional than a clean one, and the outcome is often decided by the regulator rather than the market. Gunnison's \"Q3 output, revenue surge\" is untestable until we see tonnes, and revenue can rise on price alone.\n\nSmaller items. The Europe stockpiling op-ed makes the point we've been making about DLA: a stockpile is an acquisition authority, not delivered metal. Altius's TNR Gold deal lists copper and lithium royalties, but the consideration matches the US$86M we logged on 11 November, so nothing new there. Anglo American's Australian exit reads as a portfolio story, and the material contains no terms, so I won't score it. Canada's Budget 2026 reaction remains a timing question, as before.\n\nCopper stays unscored until the 16 October LME settlement is logged or a data gap is recorded.\n\nPREDICTION: Guinea's government or a named wire service publishes an official death toll for the Conakry-area gold-mining clashes | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: The sale of Norway's Nussir copper mine is publicly confirmed as completed or formally terminated by the seller or buyer | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Gunnison Copper publishes a Q3 2026 release or MD&A stating copper production for the quarter in pounds or tonnes | BY: 2026-11-30 | CONFIDENCE: medium",
+      "geologist": "Colleagues, today's list is mostly headlines without numbers, so I'll keep this tight and tie each item to what the log already holds.\n\nGuinea is the most serious item. \"At least 10 killed in clashes over gold mining ban\" (Al Jazeera) matches the 13 November log entry: the Conakry trial of more than 1,200 accused and at least 10 deaths. A second named outlet helps, but the log already flagged that several outlets appear to rely on one official source, and this headline doesn't change that. Treat the toll as official-sourced until a count appears. Meldrum is right that this is enforcement, not supply. My view is that the tonnes move to other sites or into smuggling rather than vanishing from the statistics. Burkina's reported arrivals (8 November, one outlet) are the test.\n\nChile and Codelco form a governance thread. \"Chile mulls private-sector role in Codelco's mines and infrastructure\" (Mining.com) sits alongside the Codelco-Adani MoU with no terms, and the 42,100-tonne overstatement with no period or basis. Dr Simon's line holds: this is a governance and capital signal, not a 2026 tonnage event. \"Mulls\" is not a decision, and I'll score nothing until a bill, decree or Codelco statement appears.\n\nNussir (High North News) is a sale facing scrutiny over Russian links. The headline gives no buyer, price or ownership structure, so I can't assess the deal. As background, sanctions-linked ownership questions can delay closings for months, but that's a pattern, not a finding here.\n\nAnglo American's Australia exit, the Modern Mining NYSE American debut and the Altius-TNR royalty expansion are structural news. None has operating figures. A royalty acquisition is a claim on other people's cash flow, not new production.\n\nTwo items need volume figures. Gunnison's \"Q3 output, revenue surge\" could be price-driven, so the test is tonnes or pounds. Heliostar's \"landmark 3Q26\" has no ounces or costs, so it's pipeline until those appear. EACON's 4,000 autonomous trucks is adoption, not output. Autonomy changes cost per tonne, not tonnes produced, so I want cost data before crediting it.\n\nWatch for the Europe stockpiling op-ed. It makes the same point as our DLA thread: acquisition authority is not delivery, and neither is a purchase by itself.\n\nPREDICTION: Gunnison Copper publishes a release or filing stating Q3 2026 production volume in tonnes or pounds, with the prior-year quarter as comparator | BY: 2026-11-30 | CONFIDENCE: medium\nPREDICTION: Norwegian authorities or the seller publicly name the buyer of the Nussir copper mine and state any Russian-linked shareholding | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Chile's government submits a bill to Congress or publishes a decree setting out a private-sector participation model for Codelco mines or infrastructure | BY: 2026-12-31 | CONFIDENCE: low",
+      "strategist_reply": "Yukon, your point that \"mulls\" is not a decision is the one I'd underline. I had the Chile story as a governance signal, but I hadn't put a clear test on it. A bill or decree is a checkable event, so I've adopted your prediction. Your royalty framing also sharpens my Altius note. A royalty is a claim on someone else's cash flow, and it should be scored as capital and deal flow, not production.\n\nWhere I'd push back is on Guinea. You're right that the tonnes probably move rather than vanish, but the smuggling leg is what makes official statistics weak evidence. If the output moves into informal channels, the government count will tell us little about supply either way, so I'd rather judge the Burkina arrivals and any export data than wait for a death toll. The toll still matters for politics and for the reliability of the one-source reporting, which is why I'm keeping the prediction, but I wouldn't tie a supply view to it.\n\nOn Gunnison, I'll take your prior-year comparator. Without it, \"revenue surge\" can't be separated from price, and I'd add that the same test applies to Heliostar's \"landmark 3Q26\": ounces and costs or it's pipeline.\n\nWhat we both underweighted is the Codelco thread. The overstatement, the Adani MoU and Chile's openness to private partners all bear on who finances the next decade of capex, and that is a bigger question than any single quarter.\n\nRevised predictions:\n\nPREDICTION: Guinea's government or a named wire service publishes an official death toll for the Conakry-area gold-mining clashes | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Gunnison Copper publishes a release or filing stating Q3 2026 production volume in tonnes or pounds, with the prior-year quarter as comparator | BY: 2026-11-30 | CONFIDENCE: medium\nPREDICTION: The sale of Norway's Nussir copper mine is publicly confirmed as completed or formally terminated by the seller or buyer | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Norwegian authorities or the seller publicly name the buyer of the Nussir copper mine and state any Russian-linked shareholding | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Chile's government submits a bill to Congress or publishes a decree setting out a private-sector participation model for Codelco mines or infrastructure | BY: 2026-12-31 | CONFIDENCE: low",
+      "geologist_reply": "Meldrum, your regulator point sharpens my view on Nussir. I had the buyer-naming question but not the timing. When a government or regulator raises ownership questions, the process usually follows the regulator's calendar, so a named buyer is more likely by year-end than a completed or terminated sale. I'd keep both predictions.\n\nOn Guinea, we agree that enforcement moves tonnes rather than destroying them. I'd push harder on the death toll. A figure that rests on one official source tends to get revised, sometimes upward, so I'd treat independent confirmation as the real test.\n\nOn Gunnison, your point that revenue can rise on price alone is right, and it's why the test is volume. The headline says \"output,\" so the filing probably has tonnes or pounds, but we need the prior-year comparator to judge it.\n\nWhat we both underweighted: Heliostar's \"landmark 3Q26\" has no ounces or costs, and the SGS test of Carbonix's direct reduction process has no date or result. Neither gets a prediction today. EACON's 4,000 trucks and SYMX.AI's $6 million raise are adoption and funding, not operating results.\n\nPREDICTION: Gunnison Copper publishes a Q3 2026 release or MD&A stating copper production for the quarter in pounds or tonnes, with the prior-year quarter as comparator | BY: 2026-11-30 | CONFIDENCE: medium\nPREDICTION: Guinea's government publishes an official death toll for the Conakry-area gold-mining clashes, or a named wire service reports an independently verified count | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Norwegian authorities or the seller publicly name the buyer of the Nussir copper mine and state any Russian-linked shareholding | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: The sale of Norway's Nussir copper mine is publicly confirmed as completed or formally terminated by the seller or buyer | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Chile's government submits a bill to Congress or publishes a decree setting out a private-sector participation model for Codelco mines or infrastructure | BY: 2026-12-31 | CONFIDENCE: low",
+      "summary": "Key stories:\n- Guinea: At least 10 deaths in clashes over a gold-mining ban, tied to a Conakry trial of more than 1,200 accused. Reporting appears to rest on one official source. The analysts see enforcement as shifting tonnes rather than removing them from supply.\n- Chile and Codelco: Chile is weighing a private-sector role in Codelco's mines and infrastructure. This sits alongside an unexplained 42,100-tonne overstatement and the Adani MoU, and bears on how the next decade of capex is financed.\n- Nussir (Norway): A copper sale faces scrutiny over Russian links. No buyer, price or structure has been disclosed.\n- Gunnison and Heliostar: Both headlines claim strong quarterly results but give no volumes or costs.\n\nPoints of agreement:\n- The headlines lack operating numbers.\n- \"Mulls\" is not a decision.\n- A royalty is a claim on others' cash flow, not new production.\n- Volume, not revenue, is the test for Gunnison.\n- Copper stays unscored until the 16 October LME settlement is logged or a data gap is recorded.\n\nPoints of disagreement:\n- Guinea: Meldrum argues that smuggling makes official tolls weak evidence of supply, so the Burkina arrivals and export data are the better test. Yukon Cornelius argues the death toll still matters as a check on single-source reporting, and that such figures are often revised, so independent confirmation is the real test.\n\nCurrent predictions:\n\nPREDICTION: Guinea's government or a named wire service publishes an official death toll for the Conakry-area gold-mining clashes | BY: 2026-12-31 | CONFIDENCE: low (Meldrum)\nPREDICTION: Guinea's government publishes an official death toll for the Conakry-area gold-mining clashes, or a named wire service reports an independently verified count | BY: 2026-12-31 | CONFIDENCE: low (Yukon Cornelius)\nPREDICTION: Gunnison Copper publishes a release or filing stating Q3 2026 production volume in tonnes or pounds, with the prior-year quarter as comparator | BY: 2026-11-30 | CONFIDENCE: medium (Meldrum; Yukon Cornelius)\nPREDICTION: The sale of Norway's Nussir copper mine is publicly confirmed as completed or formally terminated by the seller or buyer | BY: 2026-12-31 | CONFIDENCE: low (Meldrum; Yukon Cornelius)\nPREDICTION: Norwegian authorities or the seller publicly name the buyer of the Nussir copper mine and state any Russian-linked shareholding | BY: 2026-12-31 | CONFIDENCE: low (Meldrum; Yukon Cornelius)\nPREDICTION: Chile's government submits a bill to Congress or publishes a decree setting out a private-sector participation model for Codelco mines or infrastructure | BY: 2026-12-31 | CONFIDENCE: low (Meldrum; Yukon Cornelius)"
+    }
+  ],
   "chief_sessions": []
 }
