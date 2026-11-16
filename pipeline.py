@@ -70,15 +70,19 @@ FETCH_EVERY_MINUTES = 50             # How often to check the news sources
 MIN_ARTICLES = 5                     # Fewer new headlines than this: wait for the next slot
 
 # The most headlines of each kind handed to the analysts in one discussion.
-MAX_INDUSTRY = 40
-MAX_JUNIORS = 10                     # Junior-company press releases
-MAX_TECH = 15
+# When there are more, North American stories and the three priority groups
+# (below) are kept first.
+MAX_INDUSTRY = 80
+MAX_JUNIORS = 30                     # Junior-company press releases
+MAX_TECH = 20
 MAX_WORLD = 60                       # World headlines Dr I Simon reads per session
 
 POET_TANGENT_CHANCE = 2 / 3          # How often The Rat gets the astrology/lizard/fish nudge
 HISTORY_DAYS = 7                     # Days of The Rat's daily log entries the agents read
 
-EMPTY_DAY = {"articles": [], "discussions": [], "chief_sessions": [], "world": []}
+def empty_day():
+    """A fresh, empty record for a new day."""
+    return {"articles": [], "discussions": [], "chief_sessions": [], "world": []}
 
 
 # ---------------------------------------------------------------------------
@@ -188,13 +192,44 @@ def numbered(articles, start=1):
     return "\n".join(lines)
 
 
+# The headline groups that come first, on the page and in the analysts' lists.
+PRIORITY_GROUPS = ("production", "projects", "exploration")
+
+# Spots a North American headline before the news editor has tagged it.
+NORTH_AMERICA = re.compile(
+    r"\bcanad|ontario|quebec|british columbia|\bb\.c\.|yukon|nunavut|saskatchewan|manitoba|alberta"
+    r"|newfoundland|labrador|northwest territories|nova scotia|new brunswick|\btsx"
+    r"|united states|\bu\.s\.(?!\$)|\bus\b(?!\$)|(?<!latin )(?<!south )(?<!central )america|nevada|arizona|alaska|idaho|montana"
+    r"|utah|minnesota|wyoming|colorado|michigan|south dakota|new mexico|appalachia|west virginia"
+    r"|kentucky|washington|\bnyse",
+    re.IGNORECASE)
+
+
+def priority(article):
+    """Higher numbers come first: North America, then the priority groups."""
+    if article.get("region"):   # Tagged by the news editor
+        north_america = article["region"] == "na"
+    else:
+        north_america = bool(NORTH_AMERICA.search(article["title"]))
+    group = article.get("group") or guess_group(article)
+    return 2 * north_america + (group in PRIORITY_GROUPS)
+
+
+def first_by_priority(articles, limit):
+    """The most important `limit` headlines, highest priority first (newest
+    first within each level)."""
+    return sorted(articles[::-1], key=priority, reverse=True)[:limit]
+
+
 def desk_news(articles):
     """The news as the analysts see it: three labelled lists."""
     def lane(name):
         return [a for a in articles if a.get("lane", "industry") == name]
 
     parts = []
-    industry, juniors, tech = lane("industry")[-MAX_INDUSTRY:], lane("juniors")[-MAX_JUNIORS:], lane("tech")[-MAX_TECH:]
+    industry = first_by_priority(lane("industry"), MAX_INDUSTRY)
+    juniors = first_by_priority(lane("juniors"), MAX_JUNIORS)
+    tech = lane("tech")[-MAX_TECH:]
     if industry:
         parts.append("MINING INDUSTRY NEWS:\n" + numbered(industry))
     if juniors:
@@ -214,7 +249,9 @@ def section(text, label, all_labels):
     start += len(label)
     ends = [lower.find(other.lower(), start) for other in all_labels if other != label]
     ends = [e for e in ends if e != -1]
-    return text[start:min(ends) if ends else len(text)].strip(" *#\n")
+    body = text[start:min(ends) if ends else len(text)]
+    body = re.sub(r"^\*+", "", body)          # Bold marks closing the label itself
+    return re.sub(r"[\s*#]+$", "", body).strip()   # Bold marks opening the next label
 
 
 def bullets(text):
@@ -224,7 +261,9 @@ def bullets(text):
         line = line.strip()
         if line.startswith(("- ", "* ", "• ")):
             items.append(line[2:].strip())
-    return [i for i in items if i.lower().rstrip(".") not in ("nothing new", "none")]
+    if not items:   # No bullet marks: treat each line as an item
+        items = [line.strip() for line in text.splitlines() if line.strip()]
+    return [i for i in items if i.lower().rstrip(".") not in ("nothing new", "none", "none yet")]
 
 
 # ---------------------------------------------------------------------------
@@ -323,11 +362,11 @@ def run_chief(desk, day, world, now, history, morning):
 # Used when the news editor doesn't tag a headline. First match wins.
 GROUP_KEYWORDS = [
     ("safety", r"killed|dead|death|fatal|collapse|air ?strike|clash|illegal|artisanal|spill|toxic|accident|protest|unrest|militant"),
+    ("markets", r"price|forecast|outlook|surplus|deficit|lme|inventor|rally|slump"),
     ("technology", r"battery|batteries|sodium|solid-state|lfp|cathode|recycl|substitut|rare-earth-free|cobalt-free|autonom|data cent|ai |grid|electrif|technolog"),
     ("exploration", r"g/t|drill|intercept|intersect|discover|assay|exploration|soil sampl|geophys"),
-    ("markets", r"price|forecast|outlook|surplus|deficit|lme|inventor|rally|slump|demand"),
     ("projects", r"approv|expansion|construction|restart|first gold|commission|feasib|permit|plant|project"),
-    ("deals_policy", r"acqui|takeover|merger|ipo|financing|placement|stake|bid|tax|royalt|court|law|ban|government|minister|tariff|export|policy|results|profit|earnings"),
+    ("deals_policy", r"acqui|takeover|merger|to buy|\bbuys?\b|\bsale\b|ipo|financing|placement|stake|bid|tax|royalt|court|law|ban|government|minister|tariff|export|policy|results|profit|earnings"),
     ("production", r"output|production|guidance|strike|halt|ramp|jobs|labou?r|cost"),
 ]
 LANE_DEFAULTS = {"juniors": "exploration", "tech": "technology"}
@@ -346,7 +385,7 @@ def guess_group(article):
 def sort_headlines(desk, articles):
     """Ask the news editor to tag each headline with a group and a region,
     and to pick the top stories. Returns the list of top stories."""
-    batch = articles[-150:]   # The most recent 150 are plenty for one morning
+    batch = articles[-300:]   # The most recent 300 are plenty for one morning
     reply = desk.ask("editor", fill(prompts.SORT_HEADLINES, headlines=numbered(batch)))
 
     for match in re.finditer(r"^\s*(\d+)\s*\|\s*([a-z_]+)\s*\|\s*([a-z]+)", reply, re.MULTILINE | re.IGNORECASE):
@@ -511,7 +550,6 @@ SAMPLE_ARTICLES = [
     {"title": "Sample Lithium Closes $8 Million Private Placement", "source": "Junior Mining Network", "link": "#", "lane": "juniors"},
     {"title": "Carmaker to launch sodium-ion battery cars in 2027", "source": "Sample Tech", "link": "#", "lane": "tech"},
     {"title": "Data centre boom strains copper supply for power grids", "source": "Sample Energy", "link": "#", "lane": "tech"},
-    {"title": "Top 5 Mining Stocks to Buy Now", "source": "Sample Tips", "link": "#", "lane": "industry"},
     {"title": "Presidential election in Peru heads to runoff", "source": "Sample World", "link": "#", "lane": "world"},
     {"title": "Shipping costs jump as Red Sea attacks resume", "source": "Sample World", "link": "#", "lane": "world"},
 ]
@@ -522,7 +560,7 @@ def fake_reply(agent, task):
         return ("The grid wants copper, the miners want rain,\nand Chile's strike rolls on again.\n"
                 "A chameleon's tongue is twice its size,\nlike every junior's drill-hole prize.")
     if agent == "editor":
-        return "1 | production | latam\n2 | deals_policy | apac\n3 | projects | africa\n11 | skip | global\nTOP: 1, 3, 9"
+        return "TOP: 1, 3, 9"   # No tags, so the dry run sorts headlines by keyword instead
     if agent == "historian":
         if "restarting its long-term memory" in task:
             return ("INDUSTRY HEALTH:\n- (Dry run) Rebuilt from the old log.\nREGIONAL STORYLINES:\n- (Dry run) Latin America, Chile: ...\n"
@@ -531,7 +569,7 @@ def fake_reply(agent, task):
         return ("EVENTS:\n- (Dry run) Latin America, Chile: the day's events would go here.\n"
                 "DESK VIEWS:\n- (Dry run) Each person's main conclusions.\nTECHNOLOGY NOTES:\n- (Dry run) Sodium-ion: less lithium.\n"
                 "UPCOMING EVENTS:\n- (Dry run) Events ahead.\nPREDICTIONS MADE:\nNone.")
-    if agent == "chief" and "GLOBAL VIEW:" in task:
+    if agent == "chief" and "Now write your conclusions" not in task:
         return ("GLOBAL VIEW:\n(Dry run) Dr I Simon's read of the world news would go here.\n"
                 "DESK REVIEW:\n(Dry run) The review of the analysts' work.\n"
                 "QUESTIONS FOR THE STRATEGIST:\n- (Dry run) A question.\nQUESTIONS FOR THE GEOLOGIST:\n- (Dry run) A question.")
@@ -574,7 +612,7 @@ def main():
     state = load_json(state_file, {})
     inbox = load_json(inbox_file, [])
     world = load_json(world_file, [])
-    day = {**EMPTY_DAY, **load_json(day_file, {})}
+    day = {**empty_day(), **load_json(day_file, {})}
     desk = Desk(dry_run=args.dry_run)
 
     # Which jobs are due this run?
@@ -587,8 +625,7 @@ def main():
     if args.now or not last_fetch or now - datetime.fromisoformat(last_fetch) >= timedelta(minutes=FETCH_EVERY_MINUTES):
         new = fetch_news.fetch_new_articles(data_dir)
         if args.dry_run and not new and not inbox:
-            new = [dict(a) for a in SAMPLE_ARTICLES if not fetch_news.NOISE.search(a["title"])] + \
-                  [dict(a) for a in SAMPLE_ARTICLES if fetch_news.NOISE.search(a["title"])][:1]
+            new = [dict(a) for a in SAMPLE_ARTICLES]
         inbox += [a for a in new if a["lane"] != "world"]
         world = (world + [a for a in new if a["lane"] == "world"])[-MAX_WORLD:]
         save_json(inbox_file, inbox)
@@ -650,7 +687,7 @@ def main():
         if not brief.get("quiet"):
             history = run_history(desk, day, brief, now, history)
             save_json(history_file, history)
-        save_json(day_file, EMPTY_DAY)
+        save_json(day_file, empty_day())
         state["brief"] = now.isoformat()
         save_json(state_file, state)
         print(f"Morning page written to {docs_dir / 'index.html'}")

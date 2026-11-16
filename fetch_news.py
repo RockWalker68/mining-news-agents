@@ -49,44 +49,66 @@ def google_news(query):
 
 SOURCES = [
     # --- Mining industry news ------------------------------------------------
-    {"name": "Google News: mining industry", "lane": "industry", "limit": 12,
+    {"name": "Google News: mining industry", "lane": "industry", "limit": 25,
      "url": "https://news.google.com/rss/search?q=mining+industry&hl=en-US&gl=US&ceid=US:en"},
-    {"name": "Google News: copper, lithium, gold", "lane": "industry", "limit": 12,
+    {"name": "Google News: copper, lithium, gold", "lane": "industry", "limit": 25,
      "url": "https://news.google.com/rss/search?q=copper+OR+lithium+OR+gold+mining&hl=en-US&gl=US&ceid=US:en"},
-    {"name": "Mining.com", "lane": "industry", "limit": 12,
+    {"name": "Mining.com", "lane": "industry", "limit": 20,
      "url": "https://www.mining.com/feed/",
      "backup": google_news("site:mining.com when:2d")},
-    {"name": "Mining Weekly", "lane": "industry", "limit": 12,
+    {"name": "Mining Weekly", "lane": "industry", "limit": 20,
      "url": "https://www.miningweekly.com/page/latest-news/feed",
      "backup": google_news("site:miningweekly.com when:2d")},
-    {"name": "Global Mining Review", "lane": "industry", "limit": 6,
+    {"name": "Global Mining Review", "lane": "industry", "limit": 10,
      "url": google_news("site:globalminingreview.com when:2d")},
 
-    # Regional searches, so the desk hears about more than North America.
-    {"name": "Google News: Africa mining", "lane": "industry", "limit": 6,
+    # --- North America first: the reader is based here --------------------
+    {"name": "The Northern Miner", "lane": "industry", "limit": 20,
+     "url": "https://www.northernminer.com/feed/",
+     "backup": google_news("site:northernminer.com when:2d")},
+    {"name": "Canadian Mining Journal", "lane": "industry", "limit": 15,
+     "url": "https://www.canadianminingjournal.com/feed/",
+     "backup": google_news("site:canadianminingjournal.com when:3d")},
+    {"name": "Google News: Canada mining", "lane": "industry", "limit": 20,
+     "url": google_news('(mine OR mining) (Ontario OR Quebec OR "British Columbia" OR Yukon OR Nunavut OR Saskatchewan OR Manitoba OR Labrador OR "Northwest Territories" OR "Nova Scotia") when:2d')},
+    {"name": "Google News: US mining", "lane": "industry", "limit": 20,
+     "url": google_news('(mine OR mining) (Nevada OR Arizona OR Alaska OR Idaho OR Montana OR Utah OR Minnesota OR Wyoming OR Michigan OR "South Dakota") -bitcoin -crypto when:2d')},
+    {"name": "Google News: North America permits and projects", "lane": "industry", "limit": 15,
+     "url": google_news('(mine OR mining) (permit OR "record of decision" OR "environmental assessment" OR "feasibility study" OR "construction decision" OR "FAST-41") (Canada OR "United States" OR Nevada OR Arizona OR Alaska OR Ontario OR Quebec OR "British Columbia") when:3d')},
+    {"name": "Google News: North America operations", "lane": "industry", "limit": 15,
+     "url": google_news('(mine OR mining) ("commercial production" OR output OR guidance OR restart OR shutdown OR layoffs OR strike) (Canada OR "United States" OR Nevada OR Arizona OR Ontario OR Quebec OR "British Columbia") when:2d')},
+
+    # Regional searches, so the desk hears about the rest of the world too.
+    {"name": "Google News: Africa mining", "lane": "industry", "limit": 10,
      "url": google_news('mining (Africa OR Zambia OR Congo OR Ghana OR Mali OR Guinea OR "South Africa") when:2d')},
-    {"name": "Google News: Latin America mining", "lane": "industry", "limit": 6,
+    {"name": "Google News: Latin America mining", "lane": "industry", "limit": 10,
      "url": google_news("mining (Chile OR Peru OR Brazil OR Argentina OR Mexico OR Ecuador OR Colombia) when:2d")},
-    {"name": "Google News: Asia-Pacific mining", "lane": "industry", "limit": 6,
+    {"name": "Google News: Asia-Pacific mining", "lane": "industry", "limit": 10,
      "url": google_news("mining (Australia OR Indonesia OR China OR Mongolia OR India OR Philippines) when:2d")},
-    {"name": "Google News: Europe and Central Asia mining", "lane": "industry", "limit": 5,
+    {"name": "Google News: Europe and Central Asia mining", "lane": "industry", "limit": 8,
      "url": google_news("mining (Europe OR Sweden OR Serbia OR Kazakhstan OR Uzbekistan OR Saudi OR Greenland) when:2d")},
 
     # --- Junior Mining Network (company press releases) ----------------------
     # This site has no RSS feed, so we read the links off its news page.
-    {"name": "Junior Mining Network", "lane": "juniors", "limit": 15, "kind": "page",
+    {"name": "Junior Mining Network", "lane": "juniors", "limit": 25, "kind": "page",
      "url": "https://www.juniorminingnetwork.com/junior-miner-news",
      "link_pattern": r"/junior-miner-news/.*\d+-[^/]+\.html$",
      "backup": google_news("site:juniorminingnetwork.com when:2d")},
+    {"name": "Newsfile: drill results and resources", "lane": "juniors", "limit": 20,
+     "url": google_news('site:newsfilecorp.com (drill OR drilling OR assays OR intersects OR discovery OR "mineral resource") when:2d')},
+    {"name": "GlobeNewswire: drill results and resources", "lane": "juniors", "limit": 15,
+     "url": google_news('site:globenewswire.com (drill OR drilling OR assays OR intersects OR "mineral resource") (gold OR copper OR silver OR lithium OR uranium OR nickel OR zinc) when:2d')},
+    {"name": "Business Wire / PR Newswire: mining releases", "lane": "juniors", "limit": 10,
+     "url": google_news('(site:businesswire.com OR site:prnewswire.com) (drill OR drilling OR assays OR "mineral resource" OR "feasibility study") (gold OR copper OR silver OR lithium OR uranium) when:2d')},
 
     # --- Technology and demand -----------------------------------------------
-    {"name": "Google News: battery chemistry", "lane": "tech", "limit": 6,
+    {"name": "Google News: battery chemistry", "lane": "tech", "limit": 10,
      "url": google_news('"sodium-ion" OR "solid-state battery" OR "LFP battery" OR "battery chemistry" OR "cathode material" OR "battery recycling" when:2d')},
-    {"name": "Google News: metal substitution", "lane": "tech", "limit": 6,
+    {"name": "Google News: metal substitution", "lane": "tech", "limit": 10,
      "url": google_news('"rare-earth-free" OR "cobalt-free" OR "nickel-free" OR "copper substitution" OR "aluminium instead of copper" OR "aluminum instead of copper" OR "silver thrifting" OR "metal substitution" when:7d')},
-    {"name": "Google News: AI and grid demand for metals", "lane": "tech", "limit": 6,
+    {"name": "Google News: AI and grid demand for metals", "lane": "tech", "limit": 10,
      "url": google_news('("data center" OR "data centre" OR "AI boom" OR "power grid" OR electrification) (copper OR "critical minerals" OR metals OR transformers) when:2d')},
-    {"name": "Google News: energy transition minerals", "lane": "tech", "limit": 6,
+    {"name": "Google News: energy transition minerals", "lane": "tech", "limit": 10,
      "url": google_news('"critical minerals" ("energy transition" OR "electric vehicles" OR batteries OR "clean energy") when:2d')},
 
     # --- World news (read by Dr I Simon) --------------------------------------
@@ -166,7 +188,8 @@ def read_feed(url, limit):
     # Google News sometimes answers with a short error page ("unusual traffic")
     # instead of the feed when many searches arrive at once. Waiting and asking
     # again usually works, so try up to three times before giving up.
-    for wait in (0, 8, 20):
+    waits = (0, 5, 15) if "news.google.com" in url else (0,)
+    for wait in waits:
         if wait:
             time.sleep(wait)
         feed = feedparser.parse(url, agent=BROWSER_AGENT)
@@ -249,6 +272,8 @@ def read_page(source):
 
 def read_source(source):
     """Read one source, falling back to its backup. Returns (articles, note)."""
+    if "news.google.com" in source["url"]:
+        time.sleep(2)   # Space out Google News searches; a quick burst gets refused
     try:
         if source.get("kind") == "page":
             return read_page(source), "ok"

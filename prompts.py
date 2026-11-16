@@ -46,6 +46,10 @@ HEADINGS = ["INDUSTRY HEALTH:", "REGIONAL TRENDS:", "TECHNOLOGY & DEMAND:", "ON 
 _DESK_BRIEF = """
 Who you're writing for: a mining-industry professional who wants to understand the health of the industry, regional trends, and what's coming next, so they can anticipate change in their industry and discuss it with colleagues. They are not an investor. Don't write about share prices, valuations, or what investors should do, and don't frame a story by who gains or loses in the stock market.
 
+What comes first:
+- The reader works in North America. Give North American developments (Canada and the United States) first place and the most depth when they matter, then cover the rest of the world. Where an international story has a real bearing on North American mining, say what it is.
+- Within the news, three kinds of story come first: production and operations, projects and permitting, and exploration and discovery. Markets, deals and policy matter mainly for what they do to those three.
+
 What the desk watches:
 - Industry health: output, costs, investment in new supply, labour, exploration activity, how easily junior companies are raising money, and how long permits are taking.
 - Regional trends: what is changing in each mining region (North America, Latin America, Africa, Europe, the Middle East and Central Asia, Asia-Pacific) and why.
@@ -409,7 +413,7 @@ Reply with one line per headline and nothing else, in this format:
 number | group | region
 
 Then add one final line:
-TOP: the numbers of the three to five most important stories for the mining industry as a whole, most important first, separated by commas.
+TOP: the numbers of the five most important stories for a mining professional based in North America, most important first, separated by commas. Favour production, projects and exploration stories, and favour North American stories when importance is close. Include an international story when it is clearly among the most important for the industry.
 """.strip()
 
 SHORT_SUMMARY = """

@@ -43,7 +43,10 @@ REGIONS = {
     "mideast": "Middle East & Central Asia", "apac": "Asia-Pacific", "global": "Global",
 }
 
-SHOW_PER_GROUP = 5   # Headlines shown in each group before "Show more"
+# Headlines shown in each group before "Show more". The first three groups are
+# the priority ones, so they show more.
+SHOW_PER_GROUP = {"production": 8, "projects": 8, "exploration": 8}
+SHOW_OTHER_GROUPS = 3
 
 
 # ---------------------------------------------------------------------------
@@ -123,10 +126,14 @@ def headlines_section(brief):
         members = [a for a in articles if a.get("group", "production") == key]
         if not members:
             continue
+        # North American headlines lead each group; newest first within each part.
+        members = ([a for a in members if a.get("region") == "na"]
+                   + [a for a in members if a.get("region") != "na"])
+        show = SHOW_PER_GROUP.get(key, SHOW_OTHER_GROUPS)
         chips.append(f'<button class="chip" data-g="{key}"><i class="dot"></i>{esc(label)} <span>{len(members)}</span></button>')
-        items = "".join(headline_item(a, extra=i >= SHOW_PER_GROUP) for i, a in enumerate(members))
-        more = (f'<button class="more">Show {len(members) - SHOW_PER_GROUP} more</button>'
-                if len(members) > SHOW_PER_GROUP else "")
+        items = "".join(headline_item(a, extra=i >= show) for i, a in enumerate(members))
+        more = (f'<button class="more">Show {len(members) - show} more</button>'
+                if len(members) > show else "")
         groups.append(f'<section class="grp" data-g="{key}"><h3><i class="dot"></i>{esc(label)} '
                       f'<span class="n">{len(members)}</span></h3><ul class="links">{items}</ul>{more}</section>')
 
