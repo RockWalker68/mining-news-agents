@@ -199,6 +199,16 @@ When you keep the records, you put the poetry away. You are a careful, exact arc
 
 # --- Two helpers (not among your four agents) ---
 
+CURATOR = f"""
+You are {POET_NAME}, the mine rat of a small mining-industry research desk, in your third job: every morning you put together a personal page for Dan, the desk's reader. It has nothing to do with mining. Dan wants to widen his view of the world and to know what is going on in his own community (Spokane, Washington and Coeur d'Alene, Idaho), so he can get out and take part.
+
+You are a curious, well-travelled rat with good taste, and you know Dan's interests from the notes you're given and from how he has rated past items.
+- Choose only from the numbered items you are given. Never invent an event, a date, a place, a price, or a news story, and never change a date.
+- Prefer the specific and the useful: something Dan could actually go to, do, or learn from. Skip adverts, listicles, sponsored posts, and repeats of the same story.
+- Write in plain, warm English: one line per item, no hype, no exclamation marks.
+- Follow the output format exactly. Plain text only.
+""".strip()
+
 SCRIBE = """
 You are a careful, neutral note-taker for a mining-industry research desk. You summarize discussions accurately and concisely, preserving each person's reasoning and disagreements. Never add opinions, facts, or predictions of your own. Write in plain text and use "- " for bullet points.
 """.strip()
@@ -214,6 +224,7 @@ PERSONAS = {
     "chief": CHIEF,
     "poet": POET,
     "historian": HISTORIAN,
+    "curator": CURATOR,
     "scribe": SCRIBE,
     "editor": EDITOR,
 }
@@ -456,11 +467,11 @@ The reader cares a great deal about these. Somewhere in the poem (and the poem m
 # This block is placed at the top of every first take and every Dr I Simon
 # review, so the desk "remembers" past days.
 HISTORY_BLOCK = """
-{poet_name}'s HISTORY LOG (your desk's memory of past days):
+{poet_name}'s HISTORY LOG (your desk's memory). It runs from the long view to the recent: the year's trends, then monthly summaries, then weekly themes, then the last few days.
 
 {log}
 
-Use this log to connect today's news to earlier events, regional storylines, technology shifts, and the events calendar, and to revisit your desk's earlier conclusions and predictions. Say plainly when new news confirms, weakens, or contradicts them. The log is a record of the past, not today's news.
+Use this log to connect today's news to the year's trends, to themes that are building or fading, to regional storylines and technology shifts, and to events that were expected. Revisit your desk's earlier conclusions and predictions, and say plainly when new news confirms, weakens, or contradicts them. The log is a record of the past, not today's news.
 """.strip()
 
 HISTORY_EMPTY = "{poet_name}'s HISTORY LOG: empty so far. There is no past to draw on yet."
@@ -647,6 +658,7 @@ For context, here are the mining headlines the desk saw recently:
 For each paper, write a block in exactly this format:
 
 PAPER: number
+SUMMARY: one plain sentence (25 words at most) saying what the paper found or did.
 DEPOSIT TYPE: the deposit type(s) it concerns, or "General" if none
 COMMODITIES: the metals or minerals involved
 SETTING: the geologic setting in a few words (tectonic setting, host rocks, age where given)
@@ -656,4 +668,174 @@ NEWS LINK: if a recent headline connects to this paper (same deposit type, distr
 RELEVANCE: high, medium or low, for exploration anywhere in the Lower 48 or Alaska. A paper that matters only for Alaska, or only for the Lower 48, can still be high.
 
 Work only from the abstract for what the paper found; never invent results, locations or numbers it doesn't give. Some papers have no abstract available: for those, work from the title alone, keep each line short, and start SETTING with "(From the title only)".
+""".strip()
+
+
+
+# --- Quick Look: Dr I Simon's two three-sentence updates ----------------------
+
+QUICK_LOOK = """
+It is {now}. Write the two short updates that open the reader's Quick Look page. He reads them in under a minute, before anything else.
+
+WORLD HEADLINES FROM THE LAST 24 HOURS:
+{world}
+
+YOUR GLOBAL VIEW AND CONCLUSIONS FROM THIS MORNING:
+{conclusion}
+
+TODAY'S TOP MINING STORIES:
+{top}
+
+Write exactly this, with each label on its own line:
+
+WORLD:
+Three sentences on the world news. Choose whichever serves today better: an even sweep across the regions of the globe, or a focus on the one to three items that are truly critical. Plain facts first; one clause of "why it matters" where it helps. This update is general world news, so don't force a mining angle.
+
+MINING:
+Three sentences on the mining news, with the same choice: an even sweep across regions, or the critical items. Lead with North America when it matters.
+
+Exactly three sentences each. No bullets, no predictions, nothing after the second update.
+""".strip()
+
+
+# --- The desk's memory: week, month, year --------------------------------------
+
+WEEK_SUMMARY = """
+It is {now}. Write the desk's summary for the week of {label}, from the daily log entries below. This summary replaces the daily entries in the desk's memory, so keep what will still matter in a month.
+
+THE WEEK'S DAILY LOG ENTRIES:
+{entries}
+
+LAST WEEK'S SUMMARY (to judge what is building or fading):
+{previous}
+
+THEME NAMES ALREADY IN USE (reuse the exact name when it's the same theme, so it can be tracked week to week):
+{known}
+
+Write 220–320 words, using exactly these labels, each on its own line, with "- " bullets under each:
+
+MAIN THEMES:
+The three to six main themes of the week, one per line, each in exactly this form:
+- Theme name: what happened this week, with dates [state]
+The theme name is two to five words (for example "Highland Valley strike" or "Indonesia state take"). The state is one word in brackets: [new], [building], [steady], [fading], or [resolved].
+
+REGIONS:
+What moved in each region that mattered this week. Start each with the region or country.
+
+TECHNOLOGY & DEMAND:
+Developments that add or remove demand for a metal.
+
+DESK VIEWS:
+Where {strategist_name}, {geologist_name}, and {chief_name} landed, any disagreement, and any change of mind.
+
+AHEAD:
+Dated events still to come.
+
+If a section has nothing, write "- None."
+""".strip()
+
+MONTH_SUMMARY = """
+It is {now}. Write the desk's summary for {label}, from the weekly summaries below. This summary replaces them in the desk's long-term memory.
+
+THE MONTH'S WEEKLY SUMMARIES:
+{weeks}
+
+Write 250–380 words, using exactly these labels, each on its own line, with "- " bullets under each:
+
+THEMES OF THE MONTH:
+The main themes, each with how it moved across the weeks (started, built, peaked, faded, resolved). Keep the theme names the weekly summaries used.
+
+REGIONAL TRENDS:
+The direction of travel in each region that mattered. Start each with the region or country.
+
+TECHNOLOGY & DEMAND:
+The month's shifts in metal demand from technology, electrification, and substitution.
+
+THE DESK'S RECORD:
+Views the news confirmed or contradicted this month, and changes of mind.
+
+CARRIED FORWARD:
+Open questions and dated events that carry into next month.
+
+If a section has nothing, write "- None."
+""".strip()
+
+YEAR_TREND = """
+It is {now}. Rewrite the desk's account of {year} so far, from the monthly summaries below. This is the top of the desk's memory: the long view that every analysis starts from.
+
+{background}MONTHLY SUMMARIES FOR {year}:
+{months}
+
+Write 300–450 words, using exactly these labels, each on its own line, with "- " bullets under each:
+
+THE YEAR'S MAIN TRENDS:
+The four to seven trends that define the year so far. For each, trace it month by month in one or two sentences, and say where it stands now.
+
+TURNING POINTS:
+The dated events that changed a trend's direction.
+
+REGIONS:
+Each important region's direction over the year. Start each with the region or country.
+
+TECHNOLOGY & DEMAND:
+How the demand picture for metals has shifted over the year.
+
+OPEN QUESTIONS:
+What the year has not yet settled.
+
+Use only what is in the material. If a section has nothing, write "- None."
+""".strip()
+
+YEAR_BACKGROUND = """EARLIER BACKGROUND (the desk's memory from before monthly summaries began; fold what still matters into the account):
+{background}
+
+"""
+
+
+# --- Dan's Tab: The Rat's personal page for the reader ------------------------
+
+DAN_CURATE = """
+It is {now}. Build today's page for Dan.
+
+WHAT DAN WANTS (his standing notes):
+{notes}
+
+HOW DAN HAS RATED PAST ITEMS (5 = cares a lot, 1 = doesn't care):
+{ratings}
+
+THE SECTIONS OF HIS PAGE, AND TODAY'S CANDIDATES FOR EACH:
+{candidates}
+
+For each section, choose up to the number of items shown beside its name, best first. Community events come first on his page: prefer events in the next few weeks that he could actually go to, and include the date exactly as given. For news sections, prefer what is new, significant, and matches his notes and ratings; leave a section short rather than pad it.
+
+Write one line per chosen item, in exactly this format, and nothing else before the last line:
+number | one line (25 words at most) saying what it is and why it might interest Dan
+
+Then add these lines:
+ANIMAL | one playful, true sentence about today's animal, in your own rat's voice, using only these facts: {animal}: {animal_extract}
+PLACE | one sentence on why today's place is worth knowing about, using only these facts: {place}: {place_extract}{weekly}
+""".strip()
+
+DAN_REQUESTS = """
+Dan has sent you messages about what he wants on his page. Turn them into changes.
+
+THE SECTIONS OF HIS PAGE NOW (id: title, with your notes on each):
+{topics}
+
+HIS STANDING NOTES:
+{notes}
+
+DAN'S NEW MESSAGES:
+{messages}
+
+Write one command per line, using only these forms:
+ADD | section title | news search 1; news search 2 | a note on what Dan wants here
+NOTE | section id | a new note that replaces your note on that section
+SEARCH | section id | one more news search for that section
+DROP | section id
+SIZE | section id | a number from 1 to 10 (how many items to show)
+STANDING | a general instruction to follow on every page from now on
+REPLY | one or two sentences to Dan, saying plainly what you changed (he will see this on his page)
+
+A "news search" is a short phrase like the ones typed into a news search box. Change only what his messages ask for. Always end with one REPLY line. If a message asks for something you cannot do with these commands, say so in the REPLY.
 """.strip()

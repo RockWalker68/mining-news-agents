@@ -20,9 +20,13 @@ headlines. Then it does whichever jobs are due (Pacific time):
       A news editor sorts the day's headlines into colored groups and picks
       the top stories. Meldrum and Yukon Cornelius each write a very short
       summary, and The Rat (poet) writes the poem. The morning page is built
-      at docs/index.html. Finally The Rat (as historian) writes the day's
-      log entry and updates the desk's long-term memory in data/history.json,
-      which the other three read before every analysis.
+      at docs/index.html, with Dr I Simon's two three-sentence updates on
+      the Quick Look page (docs/quick.html). The Rat also builds Dan's Tab
+      (docs/dan.html; see dan.py). Finally The Rat (as historian) writes the
+      day's log entry in data/history.json. Each Monday he rolls the past
+      week into a weekly summary, at each month's end the weeks into a
+      monthly summary, and the months into an account of the year. The
+      other three read that memory before every analysis.
 
   Every morning  (2am):
       Government records: new claim packages (more than 100 claims) and BLM
@@ -58,12 +62,13 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+import dan
 import fetch_news
 import gov_watch
 import predictions
 import prompts
 import research
-from page import GROUPS, REGIONS, build_page, build_research_page
+from page import GROUPS, REGIONS, build_dan_page, build_page, build_quick_page, build_research_page
 
 # ---------------------------------------------------------------------------
 # Settings you can change
@@ -83,6 +88,7 @@ CHIEF_MODEL = MODEL                  # Change to "claude-sonnet-5-5" for a stron
 # Length limit for each reply, including the model's thinking. It's a ceiling,
 # not a target: you only pay for what's actually written. Too low = blank replies.
 MAX_TOKENS = 8000
+LONG_TOKENS = 16000                  # For the jobs with long replies: sorting headlines, research, the history log
 
 FETCH_EVERY_MINUTES = 50             # How often to check the news sources
 MIN_ARTICLES = 5                     # Fewer new headlines than this: wait for the next slot
@@ -99,7 +105,9 @@ MAX_TRIAGE = 40                      # Most filings and safety reports screened 
 RESEARCH_PER_DAY = 10                # Papers Yukon Cornelius reads each morning
 
 POET_TANGENT_CHANCE = 2 / 3          # How often The Rat gets the astrology/lizard/fish nudge
-HISTORY_DAYS = 7                     # Days of The Rat's daily log entries the agents read
+HISTORY_DAYS = 7                     # Most daily log entries the agents read (days not yet in a weekly summary)
+HISTORY_WEEKS = 4                    # Most weekly summaries the agents read
+HISTORY_MONTHS = 2                   # Most monthly summaries the agents read
 
 def empty_day():
     """A fresh, empty record for a new day."""
@@ -159,6 +167,7 @@ DISPLAY_NAMES = {
     "strategist": prompts.STRATEGIST_NAME, "geologist": prompts.GEOLOGIST_NAME,
     "chief": prompts.CHIEF_NAME, "poet": prompts.POET_NAME,
     "historian": f"{prompts.POET_NAME} (historian)",
+    "curator": f"{prompts.POET_NAME} (Dan's Tab)",
     "scribe": "the note-taker", "editor": "the news editor",
 }
 
@@ -414,7 +423,7 @@ def sort_headlines(desk, articles):
     """Ask the news editor to tag each headline with a group and a region,
     and to pick the top stories. Returns the list of top stories."""
     batch = articles[-300:]   # The most recent 300 are plenty for one morning
-    reply = desk.ask("editor", fill(prompts.SORT_HEADLINES, headlines=numbered(batch)))
+    reply = desk.ask("editor", fill(prompts.SORT_HEADLINES, headlines=numbered(batch)), max_tokens=LONG_TOKENS)
 
     for match in re.finditer(r"^\s*(\d+)\s*\|\s*([a-z_]+)\s*\|\s*([a-z]+)", reply, re.MULTILINE | re.IGNORECASE):
         number, group, region = int(match[1]), match[2].lower(), match[3].lower()
@@ -458,7 +467,7 @@ def run_referee(desk, ledger, day, now):
     print(f"  {prompts.CHIEF_NAME} ruled on {changed} prediction(s)")
 
 
-def run_brief(desk, day, now, docs_dir, ledger):
+def run_brief(desk, day, now, docs_dir, ledger, history):
     print("Morning brief")
     when = stamp(now)
     brief = {"time": now.isoformat(), "date_label": f"{now:%A, %B} {now.day}",
@@ -501,6 +510,14 @@ def run_brief(desk, day, now, docs_dir, ledger):
             chief_conclusion=chief.get("conclusion", "(No review today.)"),
             tangent=prompts.POEM_TANGENT if tangent else "", claims_hint=claims_hint))
 
+        # Dr I Simon's two three-sentence updates for the Quick Look page.
+        quick = desk.ask("chief", fill(prompts.QUICK_LOOK, now=when,
+            world=numbered(day.get("world", [])[-60:]) or "(No world headlines today.)",
+            conclusion=(chief.get("global_view", "") + "\n\n" + chief.get("conclusion", "")).strip() or "(No review today.)",
+            top=numbered(brief["top"]) or numbered(news_only(day["articles"])[:12])), model=CHIEF_MODEL)
+        brief["quick_world"] = section(quick, "WORLD:", ["WORLD:", "MINING:"])
+        brief["quick_mining"] = section(quick, "MINING:", ["WORLD:", "MINING:"])
+
         # Dr I Simon's takeaways under the four headings. (An older-format
         # session only has a plain list, shown under one heading.)
         brief["sections"] = chief.get("sections") or [["Big takeaways", chief.get("takeaways", [])]]
@@ -525,7 +542,16 @@ def run_brief(desk, day, now, docs_dir, ledger):
     brief["results"] = [i for i in ledger["items"] if i["status"] != "open" and i["author"] in predictions.SCORED][-15:][::-1]
     brief["predictions_today"] = [i for i in ledger["items"] if i["made"] == str(now.date())]
 
-    build_page(brief, docs_dir / "index.html")
+    # The desk's memory, for the "memory" section at the bottom of the Brief.
+    years = history.get("years", {})
+    brief["memory"] = {"year": [max(years), years[max(years)]] if years else None,
+                       "months": [[m["label"], m["text"]] for m in history.get("months", [])[-12:]][::-1],
+                       "weeks": [[w["label"], w["text"]] for w in history.get("weeks", [])[-12:]][::-1],
+                       "first_week_due": None if history.get("weeks") else
+                       str(week_of(now.date())[1] + timedelta(days=1))}
+    brief["themes"] = theme_tracker(history)
+
+    build_page(brief, docs_dir / "brief.html")
     return brief
 
 
@@ -534,16 +560,33 @@ def run_brief(desk, day, now, docs_dir, ledger):
 # ---------------------------------------------------------------------------
 
 def history_text(history, ledger, today):
-    """Turn The Rat's log (and the prediction ledger) into the memory block the other agents read."""
+    """The memory block the agents read before every analysis, from the long
+    view to the recent: the year so far, the latest monthly summaries, the
+    weekly summaries since then, and the days not yet in a weekly summary."""
     names = {k: DISPLAY_NAMES[k] for k in ("strategist", "geologist", "chief")}
-    if not history["long_term"] and not history["entries"] and not ledger["items"]:
+    if not any(history.get(k) for k in ("background", "years", "months", "weeks", "entries")) and not ledger["items"]:
         return fill(prompts.HISTORY_EMPTY)
     parts = []
-    if history["long_term"]:
-        parts.append("LONG-TERM MEMORY:\n" + history["long_term"])
+    years = history.get("years", {})
+    if years:
+        year = max(years)
+        parts.append(f"THE YEAR SO FAR ({year}):\n{years[year]}")
+    elif history.get("background"):
+        parts.append("BACKGROUND (the desk's memory from before weekly summaries began):\n" + history["background"])
+    months = history.get("months", [])[-HISTORY_MONTHS:]
+    for m in months:
+        parts.append(f"--- Monthly summary: {m['label']} ---\n{m['text']}")
+    last_month_end = months[-1]["end"] if months else ""
+    weeks = [w for w in history.get("weeks", []) if w["end"] > last_month_end][-HISTORY_WEEKS:]
+    if not weeks:
+        weeks = history.get("weeks", [])[-1:]
+    for w in weeks:
+        parts.append(f"--- Weekly summary: week of {w['label']} ---\n{w['text']}")
+    last_week_end = history["weeks"][-1]["end"] if history.get("weeks") else ""
+    days = [e for e in history.get("entries", []) if e["date"] > last_week_end][-HISTORY_DAYS:]
+    for e in days or history.get("entries", [])[-2:]:
+        parts.append(f"--- Daily log entry: {e['date_label']} ---\n{e['entry']}")
     parts.append(predictions.memory_block(ledger, names, today))
-    for e in history["entries"][-HISTORY_DAYS:]:
-        parts.append(f"--- Log entry for {e['date_label']} ---\n{e['entry']}")
     return fill(prompts.HISTORY_BLOCK, log="\n\n".join(parts))
 
 
@@ -553,13 +596,15 @@ def restart_history(desk, history, now, history_file):
     The old log is kept, untouched, in data/history_v1_archive.json. The Rat
     reads it once and writes a fresh long-term memory from it. Old daily
     entries and old predictions are not carried over."""
-    if history.get("format") == 2 and not history.get("rebuild_pending"):
+    if history.get("format") == 3:
         return history   # Already done
+    if history.get("format") == 2 and not history.get("rebuild_pending"):
+        return upgrade_history(history, history_file)
 
     archive_file = history_file.parent / "history_v1_archive.json"
     if history.get("format") != 2:
         if not history.get("long_term") and not history.get("entries"):
-            return {"format": 2, "long_term": "", "entries": []}   # Nothing to carry over
+            return upgrade_history({"long_term": "", "entries": []}, history_file)   # Nothing to carry over
         if not archive_file.exists():
             save_json(archive_file, history)
         history = {"format": 2, "long_term": "", "entries": [], "rebuild_pending": True}
@@ -573,7 +618,8 @@ def restart_history(desk, history, now, history_file):
             for e in old.get("entries", [])[-31:])
         memory = desk.ask("historian", fill(prompts.MEMORY_REBUILD,
             now=stamp(now), today=str(now.date()),
-            old_memory=old.get("long_term") or "(empty)", old_events=old_events or "(none)"))
+            old_memory=old.get("long_term") or "(empty)", old_events=old_events or "(none)"),
+            max_tokens=LONG_TOKENS)
         if memory.startswith("["):
             print("  The rebuild didn't work this time. It will be tried again on the next run.")
         else:
@@ -582,6 +628,17 @@ def restart_history(desk, history, now, history_file):
     else:
         history.pop("rebuild_pending", None)
 
+    if history.get("rebuild_pending"):
+        save_json(history_file, history)
+        return history
+    return upgrade_history(history, history_file)
+
+
+def upgrade_history(history, history_file):
+    """One-time step: move to the week / month / year memory. The old long-term
+    memory becomes the 'background' the first yearly account is built from."""
+    history = {"format": 3, "background": history.get("long_term", ""), "entries": history.get("entries", []),
+               "weeks": [], "months": [], "years": {}}
     save_json(history_file, history)
     return history
 
@@ -600,18 +657,119 @@ def run_history(desk, day, brief, now, history):
         geologist_short=brief.get("geologist_short", ""),
         predictions_today="\n".join(
             f"- {DISPLAY_NAMES[i['author']]}: PREDICTION: {i['text']} | BY: {i['by']} | CONFIDENCE: {i['confidence']}"
-            for i in brief.get("predictions_today", [])) or "None."))
+            for i in brief.get("predictions_today", [])) or "None."), max_tokens=LONG_TOKENS)
     if entry.startswith("["):        # The Rat didn't reply; keep the log as it was
         return history
+    history["entries"] = [e for e in history["entries"] if e["date"] != str(now.date())]
     history["entries"].append({"date": str(now.date()), "date_label": brief["date_label"], "entry": entry})
-    history["entries"] = history["entries"][-60:]   # Two months of daily entries is plenty
 
-    # 2. Fold today into the long-term memory (kept short so it never grows out of hand).
-    memory = desk.ask("historian", fill(prompts.MEMORY_UPDATE,
-        now=when, memory=history["long_term"] or "(Empty: this is the first entry.)", entry=entry))
-    if not memory.startswith("["):
-        history["long_term"] = memory
+    # 2. Roll finished weeks into weekly summaries, finished months into monthly
+    #    summaries, and the months into the account of the year.
+    roll_up(desk, history, now)
     return history
+
+
+THEME_STATES = ("new", "building", "steady", "fading", "resolved")
+
+
+def theme_lines(text):
+    """The themes in one weekly summary: [(name, what happened, state)]."""
+    found = []
+    for line in section(text, "MAIN THEMES:", ["MAIN THEMES:", "REGIONS:", "TECHNOLOGY & DEMAND:", "DESK VIEWS:", "AHEAD:"]).splitlines():
+        line = line.strip().lstrip("-*• ").strip()
+        if not line or line.lower().startswith("none"):
+            continue
+        state = re.search(r"\[(\w+)\]\s*\.?$", line)
+        line = line[:state.start()].strip() if state else line
+        split = re.split(r"\s*(?::|—|–| - )\s*", line, maxsplit=1)
+        name, what = (split + [""])[:2]
+        found.append((name.strip(" *").rstrip("."), what.strip(), state[1].lower() if state else ""))
+    return found
+
+
+def theme_tracker(history):
+    """Every theme the weekly summaries have named, with its state each week."""
+    weeks = history.get("weeks", [])[-26:]
+    themes = {}
+    for n, w in enumerate(weeks):
+        for name, what, state in theme_lines(w["text"]):
+            key = re.sub(r"[^a-z0-9]+", " ", name.lower()).strip()
+            t = themes.setdefault(key, {"name": name, "weeks": {}, "latest": "", "first": w["start"]})
+            t["weeks"][n] = state or "steady"
+            t["latest"], t["name"], t["last"] = what, name, w["start"]
+    rows = []
+    for t in themes.values():
+        marks = [t["weeks"].get(n, "") for n in range(len(weeks))]
+        rows.append({"name": t["name"], "marks": marks, "weeks": len(t["weeks"]), "state": marks[-1] or "not seen this week",
+                     "latest": t["latest"], "first": t["first"], "last": t["last"]})
+    rows.sort(key=lambda r: (r["last"], r["weeks"]), reverse=True)
+    return {"weeks": [w["label"] for w in weeks], "rows": rows[:20]}
+
+
+def week_of(day):
+    """The Monday and Sunday of the week containing `day`."""
+    monday = day - timedelta(days=day.weekday())
+    return monday, monday + timedelta(days=6)
+
+
+def roll_up(desk, history, now):
+    today, when = now.date(), stamp(now)
+    weeks, months = history.setdefault("weeks", []), history.setdefault("months", [])
+    years = history.setdefault("years", {})
+
+    # Weeks: every finished week (Monday to Sunday) that has daily entries and no summary yet.
+    done = {w["start"] for w in weeks}
+    pending = {}
+    for e in history["entries"]:
+        monday, sunday = week_of(datetime.fromisoformat(e["date"]).date())
+        if sunday < today and str(monday) not in done:
+            pending.setdefault((monday, sunday), []).append(e)
+    for (monday, sunday), entries in sorted(pending.items())[:2]:      # At most two per run
+        label = f"{monday:%b} {monday.day} to {sunday:%b} {sunday.day}, {sunday.year}"
+        known = sorted({name for w in weeks[-8:] for name, _, _ in theme_lines(w["text"])})
+        text = desk.ask("historian", fill(prompts.WEEK_SUMMARY, now=when, label=label,
+            entries="\n\n".join(f"--- {e['date_label']} ---\n{e['entry']}" for e in entries),
+            previous=weeks[-1]["text"] if weeks else "(None: this is the first weekly summary.)",
+            known="\n".join("- " + k for k in known) or "- None yet."),
+            max_tokens=LONG_TOKENS)
+        if not text.startswith("["):
+            weeks.append({"start": str(monday), "end": str(sunday), "label": label, "text": text})
+            print(f"  weekly summary written: {label}")
+    weeks.sort(key=lambda w: w["start"])
+
+    # Months: every finished month that has weekly summaries (by the week's last day) and no summary yet.
+    done = {m["month"] for m in months}
+    this_month = f"{today:%Y-%m}"
+    waiting = sorted({w["end"][:7] for w in weeks if w["end"][:7] < this_month and w["end"][:7] not in done})
+    if len(pending) > 2:
+        waiting = []          # Weekly summaries are still catching up; the month waits for them
+    for month in waiting[:1]:                                          # At most one per run
+        first = datetime.fromisoformat(month + "-01")
+        label = f"{first:%B %Y}"
+        in_month = [w for w in weeks if w["end"][:7] == month]
+        text = desk.ask("historian", fill(prompts.MONTH_SUMMARY, now=when, label=label,
+            weeks="\n\n".join(f"--- Week of {w['label']} ---\n{w['text']}" for w in in_month)),
+            max_tokens=LONG_TOKENS)
+        if text.startswith("["):
+            break
+        months.append({"month": month, "label": label, "end": in_month[-1]["end"], "text": text})
+        months.sort(key=lambda m: m["month"])
+        print(f"  monthly summary written: {label}")
+
+        # The year: rewritten from all of that year's monthly summaries.
+        year = month[:4]
+        background = history.get("background", "")
+        text = desk.ask("historian", fill(prompts.YEAR_TREND, now=when, year=year,
+            background=fill(prompts.YEAR_BACKGROUND, background=background) if background else "",
+            months="\n\n".join(f"--- {m['label']} ---\n{m['text']}" for m in months if m["month"][:4] == year)),
+            max_tokens=LONG_TOKENS)
+        if not text.startswith("["):
+            years[year] = text
+            history["background"] = ""        # Folded into the account of the year
+            print(f"  account of {year} rewritten")
+
+    history["entries"] = history["entries"][-45:]
+    history["weeks"] = weeks[-60:]
 
 
 # ---------------------------------------------------------------------------
@@ -746,7 +904,7 @@ def run_gov(desk, data_dir, day, inbox, now, msha_due, dry_run):
 # Job 6: Yukon Cornelius reads new research papers (every morning)
 # ---------------------------------------------------------------------------
 
-RESEARCH_LABELS = ["DEPOSIT TYPE:", "COMMODITIES:", "SETTING:", "WHERE IT APPLIES:", "EXPLORATION:", "NEWS LINK:", "RELEVANCE:"]
+RESEARCH_LABELS = ["SUMMARY:", "DEPOSIT TYPE:", "COMMODITIES:", "SETTING:", "WHERE IT APPLIES:", "EXPLORATION:", "NEWS LINK:", "RELEVANCE:"]
 
 
 def run_research(desk, data_dir, docs_dir, day, now, dry_run):
@@ -769,7 +927,8 @@ def run_research(desk, data_dir, docs_dir, day, now, dry_run):
                               f"ABSTRACT: {p['abstract'] or '(not available: judge from the title only)'}"
                               for n, p in enumerate(batch, 1))
         reply = desk.ask("geologist", fill(prompts.RESEARCH_READ, now=stamp(now), papers=papers,
-                                           headlines=numbered(headlines) or "(No headlines today.)"))
+                                           headlines=numbered(headlines) or "(No headlines today.)"),
+                         max_tokens=LONG_TOKENS)
         blocks = re.split(r"(?im)^\s*\**PAPER:\s*", reply)
         for block in blocks[1:]:
             number = re.match(r"\s*(\d+)", block)
@@ -793,6 +952,7 @@ def run_research(desk, data_dir, docs_dir, day, now, dry_run):
     store["pending"] = [p for p in store["pending"] if p["id"] not in done]
     research.save(data_dir, store)
     build_research_page(store["papers"], docs_dir / "research.html", now, len(store["pending"]))
+    return store["papers"]
 
 
 # ---------------------------------------------------------------------------
@@ -857,12 +1017,27 @@ def fake_reply(agent, task):
     if "district, belt or trend" in task:
         return "1 | (Dry run) This location most likely sits on the Battle Mountain-Eureka trend, known for Carlin-type gold."
     if "PAPER: number" in task:
-        return ("PAPER: 1\nDEPOSIT TYPE: Carlin-type gold\nCOMMODITIES: Gold\nSETTING: (dry run) Paleozoic carbonates\n"
+        return ("PAPER: 1\nSUMMARY: (dry run) Fluid inclusions trace the gold-bearing fluids to a deep magmatic source.\nDEPOSIT TYPE: Carlin-type gold\nCOMMODITIES: Gold\nSETTING: (dry run) Paleozoic carbonates\n"
                 "WHERE IT APPLIES: (dry run) Nevada's Carlin and Battle Mountain-Eureka trends.\nEXPLORATION: (dry run) Use the fluid signature as a vector.\n"
                 "NEWS LINK: 6 - (dry run) A Nevada gold deal in the news.\nRELEVANCE: high\n\n"
                 "PAPER: 2\nDEPOSIT TYPE: Porphyry copper\nCOMMODITIES: Copper, molybdenum\nSETTING: (dry run) Continental arc\n"
                 "WHERE IT APPLIES: (dry run) Arizona porphyry belt; Alaska's Pebble district.\nEXPLORATION: (dry run) Screen intrusions with zircon chemistry.\n"
                 "NEWS LINK: None\nRELEVANCE: medium")
+    if "opens the reader's Quick Look page" in task or "open the reader's Quick Look page" in task:
+        return ("WORLD:\n(Dry run) First sentence on the world. Second sentence on the world. Third sentence on the world.\n"
+                "MINING:\n(Dry run) First sentence on mining. Second sentence on mining. Third sentence on mining.")
+    if agent == "curator":
+        return ("1 | (dry run) A trail work party he could join this weekend.\n2 | (dry run) A brewery fundraiser downtown.\n"
+                "4 | (dry run) A local story worth knowing.\n7 | (dry run) A new middleweight ADV bike review.\n"
+                "10 | (dry run) A fisheries decision.\n13 | (dry run) A strong trial result.\n"
+                "ANIMAL | (dry run) A giraffe's shy cousin with a zebra's stockings: my kind of mix-up.\n"
+                "PLACE | (dry run) An island whose dragon's blood trees look like upturned umbrellas.\n"
+                "READ | R1 | (dry run) Two sentences on why this long read is worth his time.\n"
+                "VOLUNTEER | (dry run) Two sentences on what they do and how to help.")
+    if agent == "historian" and "summary for the week of" in task:
+        return "MAIN THEMES:\n- (Dry run) Chile copper: strikes spread [building]\nREGIONS:\n- None.\nTECHNOLOGY & DEMAND:\n- None.\nDESK VIEWS:\n- None.\nAHEAD:\n- None."
+    if agent == "historian" and ("THEMES OF THE MONTH" in task or "THE YEAR'S MAIN TRENDS" in task):
+        return "(Dry run) A monthly or yearly summary would go here."
     if "You are refereeing" in task:
         return "P1 | evidence | (dry run) Headline 3 shows progress but doesn't settle it."
     if agent == "poet":
@@ -969,9 +1144,10 @@ def main():
             return
 
     # The Rat's history log: the desk's memory of past days.
-    history = {"long_term": "", "entries": [], **load_json(history_file, {})}
+    history = {"long_term": "", "entries": [], **load_json(history_file, {"format": 3, "background": ""})}
     history = restart_history(desk, history, now, history_file)
     ledger = load_json(ledger_file, predictions.empty_ledger())
+    predictions.repair(ledger)
     memory = history_text(history, ledger, now.date())
 
     # Every 6 hours: Meldrum + Yukon Cornelius discussion.
@@ -1011,20 +1187,35 @@ def main():
 
     # Every morning: sorted headlines, short summaries, poem, and the page. Then start a new day.
     if brief_due:
-        brief = run_brief(desk, day, now, docs_dir, ledger)
+        brief = run_brief(desk, day, now, docs_dir, ledger, history)
         save_json(ledger_file, ledger)
         save_json(data_dir / "archive" / f"{now.date()}.json", brief)
         try:
-            run_research(desk, data_dir, docs_dir, day, now, args.dry_run)
+            papers = run_research(desk, data_dir, docs_dir, day, now, args.dry_run)
         except Exception as error:   # The research page is a bonus: never let it stop the brief
             print(f"Research digest: FAILED ({error})")
+            papers = load_json(data_dir / "research.json", {}).get("papers", [])
+        build_quick_page(brief, papers, docs_dir / "index.html", now)
+        password = "dry-run" if args.dry_run else os.environ.get("DAN_PASSWORD", "").strip()
+        if not password:
+            print("Dan's Tab: skipped (add the DAN_PASSWORD secret to turn it on; it is never published unlocked)")
+        else:
+            try:
+                print("Dan's Tab")
+                page = dan.build(desk.ask, fill, prompts, data_dir, now, password, args.dry_run)
+                # The status lines stay inside the locked page, not in GitHub's public run log.
+                print(f"  built ({sum(len(s['items']) for s in page['sections'])} items, "
+                      f"{sum('FAILED' in n for n in page['status'])} source(s) failed)")
+                build_dan_page(page, docs_dir / "dan.html", now, password)
+            except Exception as error:   # Dan's Tab is separate from the desk: never let it stop the brief
+                print(f"Dan's Tab: FAILED ({type(error).__name__})")
         if not brief.get("quiet"):
             history = run_history(desk, day, brief, now, history)
             save_json(history_file, history)
         save_json(day_file, empty_day())
         state["brief"] = now.isoformat()
         save_json(state_file, state)
-        print(f"Morning page written to {docs_dir / 'index.html'}")
+        print(f"Pages written to {docs_dir}: index.html (Quick Look), brief.html, research.html, dan.html")
 
     print(f"Done. {desk.calls} agent call(s) this run.")
 

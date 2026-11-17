@@ -54,10 +54,34 @@ def _same(a, b):
     return bool(wa and wb) and len(wa & wb) / len(wa | wb) >= 0.8
 
 
+def fix_deadline(by, made):
+    """A deadline before the day the prediction was made is a typo (e.g. 2025 for
+    2026): move it forward a year at a time until it's in the future."""
+    when, made = date.fromisoformat(by), date.fromisoformat(str(made))
+    while when < made:
+        try:
+            when = when.replace(year=when.year + 1)
+        except ValueError:            # 29 February
+            when = when.replace(year=when.year + 1, day=28)
+    return str(when)
+
+
+def repair(ledger):
+    """Reopen predictions that were closed only because of a deadline typo."""
+    for i in ledger["items"]:
+        if i["by"] < i["made"]:
+            i["by"] = fix_deadline(i["by"], i["made"])
+            if i.get("verdict_note") == "Closed automatically after the deadline.":
+                i["status"] = "open"
+                for key in ("resolved", "verdict_note"):
+                    i.pop(key, None)
+
+
 def add(ledger, author, found, today):
     """Add new predictions, skipping any the same person already made. Returns the new items."""
     added = []
     for p in found:
+        p = dict(p, by=fix_deadline(p["by"], today))
         if any(i["author"] == author and _same(i["text"], p["text"]) for i in ledger["items"]):
             continue
         item = {"id": f"P{ledger['next_id']}", "author": author, "text": p["text"], "by": p["by"],

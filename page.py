@@ -1,32 +1,33 @@
 """
-page.py: turns the morning brief into a phone-friendly web page.
+page.py: turns the desk's work into four phone-friendly pages, with tabs at
+the top to switch between them.
 
-Layout, top to bottom:
-  1. The Rat's poem as the headline
-  2. Top stories (the three to five biggest of the day)
-  3. Today's headlines, sorted into colored groups. Tap a group to see only it.
-  4. Dr I Simon's takeaways under four headings
-  5. Very short summaries from Meldrum and Yukon Cornelius
-  6. Claims, notices & reviews: claim packages over 100 claims, BLM
-     exploration notices, environmental reviews
-  7. Filings & safety: the SEC filings and MSHA reports Dr I Simon chose
-  8. The prediction scorecard
-  9. Tap-to-expand extras: creative angles, the global view, world headlines,
-     and the full discussions
-
-A second page, research.html, lists new economic-geology papers with Yukon
-Cornelius's notes. A tab at the top switches between the two.
+  Brief (index.html)       Dr I Simon's takeaways and the top stories, open.
+                           Everything else is folded up until you tap it:
+                           today's headlines in colored groups, the analysts'
+                           short takes, claims / notices / reviews, filings &
+                           safety, the prediction scorecard, the desk's memory,
+                           and the full discussions.
+  Quick Look (quick.html)  The Rat's poem, Dr I Simon's three-sentence world
+                           and mining updates, high-relevance research papers,
+                           and new claim packages as a short list.
+  Research (research.html) New economic-geology papers with Yukon Cornelius's notes.
+  Dan's Tab (dan.html)     The Rat's personal page: animal and quote of the
+                           day, community events, and Dan's other interests,
+                           with rating buttons and a message box.
 
 Names come from prompts.py. Groups, colors and regions are set just below.
 """
 
 import html
+import json
 import re
 import shutil
 from datetime import datetime
 from pathlib import Path
 from string import Template
 
+import vault
 from prompts import STRATEGIST_NAME as S, GEOLOGIST_NAME as G, CHIEF_NAME as C, POET_NAME as R
 
 # ---------------------------------------------------------------------------
@@ -54,6 +55,20 @@ REGIONS = {
 # the priority ones, so they show more.
 SHOW_PER_GROUP = {"production": 8, "projects": 8, "exploration": 8}
 SHOW_OTHER_GROUPS = 3
+
+# Quick Look: claim packages in these states are listed first, in this order.
+CLAIM_STATE_ORDER = ["WA", "ID", "OR", "WY"]
+
+# The app opens on the first tab (index.html is the address saved on your home screen).
+TABS = [("index.html", "Quick Look"), ("brief.html", "Brief"), ("research.html", "Research"), ("dan.html", "Dan's Tab")]
+
+
+def nav(current):
+    links = ""
+    for page, label in TABS:
+        on = ' class="on"' if page == current else ""
+        links += f'<a{on} href="{page}">{esc(label)}</a>'
+    return links
 
 
 # ---------------------------------------------------------------------------
@@ -93,6 +108,15 @@ def details(title, body):
     return f'<details><summary>{esc(title)}</summary><div class="more-text">{body}</div></details>'
 
 
+def fold(title, body, open=False, note="", anchor=""):
+    """A main section of the Brief that folds up. `note` is a short grey remark beside the title."""
+    if not body:
+        return ""
+    note = f' <span class="n">{esc(note)}</span>' if note else ""
+    return (f'<details class="sec"{" open" if open else ""}{f" id={anchor!r}" if anchor else ""}>'
+            f'<summary><h2>{esc(title)}{note}</h2></summary><div class="sec-body">{body}</div></details>')
+
+
 def short_time(iso):
     t = datetime.fromisoformat(iso)
     return f"{t:%a} {t.hour % 12 or 12}{'am' if t.hour < 12 else 'pm'}"
@@ -115,17 +139,19 @@ def headline_item(article, show_group=False, extra=False):
 # The sections of the page
 # ---------------------------------------------------------------------------
 
+def top_section(brief):
+    if not brief.get("top"):
+        return ""
+    items = "".join(headline_item(a, show_group=True) for a in brief["top"])
+    return fold("Top stories", f'<ul class="links">{items}</ul>', open=True)
+
+
 def headlines_section(brief):
-    """Top stories, then every headline sorted into its colored group."""
+    """Every headline sorted into its colored group."""
     articles = [a for a in brief.get("articles", []) if a.get("group", "production") in GROUPS]
     if not articles:
         return ""
     articles = articles[::-1]   # Newest first
-
-    top = ""
-    if brief.get("top"):
-        items = "".join(headline_item(a, show_group=True) for a in brief["top"])
-        top = f'<section><h2>Top stories</h2><ul class="links">{items}</ul></section>'
 
     chips = [f'<button class="chip on" data-g="all">All <span>{len(articles)}</span></button>']
     groups = []
@@ -144,8 +170,8 @@ def headlines_section(brief):
         groups.append(f'<section class="grp" data-g="{key}"><h3><i class="dot"></i>{esc(label)} '
                       f'<span class="n">{len(members)}</span></h3><ul class="links">{items}</ul>{more}</section>')
 
-    return (f'{top}<details class="headlines" open><summary>Today\'s headlines ({len(articles)})</summary>'
-            f'<div class="chips">{"".join(chips)}</div>{"".join(groups)}</details>')
+    return fold("Today's headlines", f'<div class="headlines"><div class="chips">{"".join(chips)}</div>{"".join(groups)}</div>',
+                note=str(len(articles)))
 
 
 def takeaways_section(brief):
@@ -156,7 +182,7 @@ def takeaways_section(brief):
         for heading, items in brief.get("sections", []) if items)
     if not blocks:   # The headings couldn't be read: show the conclusions as written
         blocks = to_html(brief.get("chief_conclusion", ""))
-    return f"<section><h2>{esc(C)}'s takeaways</h2>{blocks}</section>"
+    return fold(f"{C}'s takeaways", blocks, open=True)
 
 
 def package_item(p, new=False):
@@ -213,7 +239,10 @@ def gov_section(brief):
                        for r in reviews)
         parts.append(f'<h3 class="th">Environmental reviews</h3><ul class="links">{rows}</ul>')
 
-    return f'<section id="claims"><h2>Claims, notices &amp; reviews</h2>{"".join(parts)}</section>'
+    remark = ", ".join(x for x in (f"{len(new)} new package{'s' if len(new) != 1 else ''}" if new else "",
+                                   f"{len(notices)} notice{'s' if len(notices) != 1 else ''}" if notices else "",
+                                   f"{len(reviews)} review{'s' if len(reviews) != 1 else ''}" if reviews else "") if x)
+    return fold("Claims, notices & reviews", "".join(parts), note=remark, anchor="claims")
 
 
 def filings_section(brief):
@@ -225,7 +254,7 @@ def filings_section(brief):
                    + (f' · MSHA mine ID {esc(f["mine_id"])}' if f.get("mine_id") else "")
                    + f'</span><p class="note"><strong>{esc(C)}:</strong> {inline(f.get("takeaway", ""))}</p></li>'
                    for f in picks)
-    return f'<section><h2>Filings &amp; safety</h2><ul class="links">{rows}</ul></section>'
+    return fold("Filings & safety", f'<ul class="links">{rows}</ul>', note=str(len(picks)))
 
 
 def scorecard_section(brief):
@@ -266,7 +295,7 @@ def scorecard_section(brief):
     extra += details(f"Recent results ({len(brief.get('results', []))})", plist(brief.get("results", []), show_verdict=True))
     extra += details(f"{C}'s own predictions ({len(brief.get('chief_predictions', []))}, not scored)",
                      plist(brief.get("chief_predictions", [])))
-    return f'<section><h2>Prediction scorecard</h2>{table}{note}{extra}</section>'
+    return fold("Prediction scorecard", table + note + extra)
 
 
 def extras_section(brief):
@@ -306,7 +335,53 @@ def extras_section(brief):
     if brief.get("gov_notes"):
         extras.append(details("Government data sources: status",
                               "<ul>" + "".join(f"<li>{esc(n)}</li>" for n in brief["gov_notes"]) + "</ul>"))
-    return "".join(extras)
+    return (fold("More from the desk", "".join(extras), note="discussions, screening, sources")
+            + themes_section(brief) + memory_section(brief))
+
+
+THEME_MARKS = {"new": ("✦", "new"), "building": ("▲", "building"), "steady": ("●", "steady"),
+               "fading": ("▼", "fading"), "resolved": ("✓", "resolved"), "": ("·", "not mentioned")}
+
+
+def themes_section(brief):
+    """The theme tracker: each theme the weekly summaries named, week by week."""
+    tracker = brief.get("themes") or {}
+    rows = tracker.get("rows", [])
+    due = (brief.get("memory") or {}).get("first_week_due")
+    if not rows:
+        body = ('<p class="src">The tracker fills in from the weekly summaries. '
+                + (f"The first is written on {esc(due)}." if due else "") + "</p>")
+        return fold("Theme tracker", body)
+    weeks = tracker["weeks"]
+    out = ""
+    for r in rows:
+        marks = "".join(f'<span class="mk mk-{m or "none"}" title="{esc(weeks[n])}: {THEME_MARKS.get(m, THEME_MARKS[""])[1]}">'
+                        f'{THEME_MARKS.get(m, THEME_MARKS[""])[0]}</span>' for n, m in enumerate(r["marks"]))
+        out += (f'<li><strong>{esc(r["name"])}</strong> <span class="src">{r["weeks"]} week{"s" if r["weeks"] != 1 else ""} · '
+                f'{esc(r["state"])}</span><div class="marks">{marks}</div>'
+                + (f'<p class="note">{inline(r["latest"])}</p>' if r.get("latest") else "") + "</li>")
+    key = " ".join(f'<span class="mk mk-{k or "none"}">{v[0]}</span> {v[1]}' for k, v in THEME_MARKS.items())
+    body = (f'<p class="src">One mark per week, oldest on the left ({esc(weeks[0])} to {esc(weeks[-1])}).</p>'
+            f'<ul class="links plain themes">{out}</ul><p class="src">{key}</p>')
+    return fold("Theme tracker", body, note=f"{len(rows)} themes")
+
+
+def memory_section(brief):
+    """The desk's memory as a timeline: the year, then months, then weeks."""
+    memory = brief.get("memory") or {}
+    parts = []
+    if memory.get("year"):
+        parts.append(details(f"{memory['year'][0]} so far", to_html(memory["year"][1])))
+    for label, text in memory.get("months", []):
+        parts.append(details(label, to_html(text)))
+    for label, text in memory.get("weeks", []):
+        parts.append(details(f"Week of {label}", to_html(text)))
+    if not parts:
+        due = memory.get("first_week_due")
+        parts.append('<p class="src">The desk keeps a daily log, rolls each week into a weekly summary, each month into a '
+                     'monthly summary, and the months into an account of the year. '
+                     + (f"The first weekly summary is written on {esc(due)}." if due else "") + "</p>")
+    return fold("The desk's memory", "".join(parts), note="year, months, weeks")
 
 
 # ---------------------------------------------------------------------------
@@ -402,10 +477,43 @@ TEMPLATE = Template("""<!doctype html>
   .quiet { padding: 40px 0; color: var(--muted); font-style: italic; }
   footer { color: var(--muted); font-size: 13px; margin-top: 28px; }
 
-  /* Tabs between the brief and the research page */
-  .tabs { display: flex; gap: 18px; border-bottom: 1px solid var(--line); }
+  /* Tabs between the pages */
+  .tabs { display: flex; gap: 18px; border-bottom: 1px solid var(--line); overflow-x: auto; }
   .tabs a { color: var(--muted); text-decoration: none; font-size: 15px; padding: 10px 0 8px;
-            border-bottom: 2px solid transparent; }
+            border-bottom: 2px solid transparent; white-space: nowrap; }
+
+  /* Main sections that fold up */
+  .sec > summary { list-style-position: outside; margin-left: 18px; }
+  .sec > summary { padding: 14px 0; }
+  .sec > summary h2 { display: inline; margin: 0; line-height: 1.6; }
+  .sec-body { padding-bottom: 14px; }
+  .sec .pair { margin: 4px 0 8px; }
+  .quick { font-size: 18px; line-height: 1.55; margin: 0 0 6px; }
+
+  /* Dan's Tab */
+  .animal { display: flex; gap: 14px; align-items: flex-start; padding: 20px 0 16px; border-bottom: 1px solid var(--line); }
+  .animal img { width: 116px; height: 116px; object-fit: cover; border-radius: 12px; flex: none; }
+  .animal h2 { margin-top: 0; }
+  .animal p { font-size: 15px; margin: 6px 0; }
+  .rat { font-style: italic; }
+  .quote { font-family: "Iowan Old Style", Georgia, serif; font-style: italic; font-size: 20px; line-height: 1.45;
+           margin: 0; padding: 22px 0 20px; border-bottom: 1px solid var(--line); }
+  .reply { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; font-size: 15px; }
+  .rate { display: flex; align-items: center; gap: 6px; margin: 6px 0 14px; }
+  .rate button { font: inherit; font-size: 13px; width: 34px; height: 30px; border-radius: 8px; cursor: pointer;
+                 color: var(--muted); background: var(--card); border: 1px solid var(--line); }
+  .rate button.on { color: var(--bg); background: var(--accent); border-color: var(--accent); }
+  textarea, input[type=password] { width: 100%; font: inherit; font-size: 16px; color: var(--ink); background: var(--card);
+             border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; }
+  .btn { display: inline-block; font: inherit; font-size: 15px; font-weight: 600; color: var(--bg); background: var(--accent);
+         border: 1px solid var(--accent); border-radius: 10px; padding: 8px 14px; cursor: pointer; text-decoration: none; }
+  .btn.ghost { color: var(--accent); background: none; }
+  .lock { padding: 40px 0; }
+  .lock p { margin: 0 0 12px; }
+  .marks { display: flex; gap: 3px; margin: 4px 0 2px; flex-wrap: wrap; }
+  .mk { display: inline-block; width: 18px; text-align: center; font-size: 13px; color: var(--muted); }
+  .mk-new { color: #2f6fb3; } .mk-building { color: #2e7d4f; } .mk-fading { color: #c0392b; } .mk-resolved { color: var(--accent); }
+  .themes li { margin-bottom: 14px; }
   .tabs a.on { color: var(--ink); font-weight: 600; border-color: var(--accent); }
 
   /* Claims, filings and the scorecard */
@@ -472,6 +580,146 @@ $EXTRAS
     });
   }
 
+  // Dan's Tab is locked: the page holds only encrypted text until the password
+  // is entered (once per phone). Ratings and messages are encrypted the same
+  // way before they leave the phone.
+  var b64 = {
+    to: function (bytes) { var s = ""; new Uint8Array(bytes).forEach(function (c) { s += String.fromCharCode(c); }); return btoa(s); },
+    from: function (text) { return Uint8Array.from(atob(text), function (c) { return c.charCodeAt(0); }); }
+  };
+  var deriveKey = function (pass, salt, rounds) {
+    return crypto.subtle.importKey("raw", new TextEncoder().encode(pass), "PBKDF2", false, ["deriveKey"]).then(function (base) {
+      return crypto.subtle.deriveKey({ name: "PBKDF2", salt: salt, iterations: rounds, hash: "SHA-256" },
+                                     base, { name: "AES-GCM", length: 256 }, false, ["encrypt", "decrypt"]);
+    });
+  };
+  var openBox = function (box, pass) {
+    return deriveKey(pass, b64.from(box.salt), box.rounds).then(function (key) {
+      return crypto.subtle.decrypt({ name: "AES-GCM", iv: b64.from(box.iv) }, key, b64.from(box.ct));
+    }).then(function (plain) { return new TextDecoder().decode(plain); });
+  };
+  var sealBox = function (text, pass) {
+    var salt = crypto.getRandomValues(new Uint8Array(16)), iv = crypto.getRandomValues(new Uint8Array(12)), rounds = 310000;
+    return deriveKey(pass, salt, rounds).then(function (key) {
+      return crypto.subtle.encrypt({ name: "AES-GCM", iv: iv }, key, new TextEncoder().encode(text));
+    }).then(function (sealed) {
+      return JSON.stringify({ v: 1, rounds: rounds, salt: b64.to(salt), iv: b64.to(iv), ct: b64.to(sealed) });
+    });
+  };
+  var keep = {
+    get: function (k, d) { try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+    set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+    drop: function (k) { try { localStorage.removeItem(k); } catch (e) {} }
+  };
+
+  var lockBox = document.getElementById("dan-lock");
+  if (lockBox) {
+    var sealedPage = JSON.parse(lockBox.dataset.box);
+    var lockMsg = document.getElementById("dan-lock-msg");
+    var tryOpen = function (pass, remembered) {
+      lockMsg.textContent = "Unlocking...";
+      openBox(sealedPage, pass).then(function (html) {
+        keep.set("danPass", pass);
+        lockBox.hidden = true;
+        var content = document.getElementById("dan-content");
+        content.innerHTML = html;
+        startDan(content.querySelector("#dan"), pass);
+      }).catch(function () {
+        if (remembered) { keep.drop("danPass"); }
+        lockMsg.textContent = remembered ? "The password has changed. Enter the new one." : "That password didn't work.";
+      });
+    };
+    document.getElementById("dan-unlock").addEventListener("click", function () {
+      var field = document.getElementById("dan-pass");
+      if (field.value) { tryOpen(field.value, false); field.value = ""; }
+    });
+    document.getElementById("dan-pass").addEventListener("keydown", function (e) {
+      if (e.key === "Enter") { document.getElementById("dan-unlock").click(); }
+    });
+    if (!window.crypto || !crypto.subtle) {
+      lockMsg.textContent = "This browser can't unlock the page. Open it from its https:// address.";
+    } else if (keep.get("danPass", "")) {
+      tryOpen(keep.get("danPass", ""), true);
+    }
+  }
+
+  function startDan(danBox, pass) {
+    if (!danBox) { return; }
+    var repo = danBox.dataset.repo || (location.hostname.split(".")[0] + "/" + location.pathname.split("/")[1]);
+    var queue = keep.get("danQueue", []), rated = keep.get("danRated", {}), timer = null;
+    var statusLine = document.getElementById("dan-status"), manual = document.getElementById("dan-manual");
+    var say = function (text) { statusLine.textContent = text; };
+
+    var paint = function () {
+      danBox.querySelectorAll(".rate").forEach(function (row) {
+        var score = rated[row.dataset.key] || 0;
+        row.querySelectorAll("button").forEach(function (b) { b.classList.toggle("on", +b.dataset.s <= score); });
+      });
+      var waiting = queue.length && !keep.get("danToken", "");
+      manual.hidden = !waiting;
+      if (waiting) {
+        sealBox(JSON.stringify({ items: queue }), pass).then(function (body) {
+          manual.href = "https://github.com/" + repo + "/issues/new?title=" + encodeURIComponent("[dan] feedback") +
+                        "&body=" + encodeURIComponent(body);
+        });
+        say(queue.length + " item(s) waiting on this phone. Tap “Send via GitHub”, or save a token in Settings to send automatically.");
+      }
+    };
+
+    var send = function (keepalive) {
+      var token = keep.get("danToken", "");
+      if (!queue.length || !token) { paint(); return; }
+      var batch = queue.slice();
+      sealBox(JSON.stringify({ items: batch }), pass).then(function (body) {
+        return fetch("https://api.github.com/repos/" + repo + "/issues", {
+          method: "POST", keepalive: !!keepalive,
+          headers: { "Authorization": "Bearer " + token, "Accept": "application/vnd.github+json", "Content-Type": "application/json" },
+          body: JSON.stringify({ title: "[dan] feedback", body: body })
+        });
+      }).then(function (r) {
+        if (!r.ok) { throw new Error("GitHub said " + r.status); }
+        queue = queue.slice(batch.length); keep.set("danQueue", queue); paint();
+        say("Sent. It will be applied on tomorrow morning's page.");
+      }).catch(function (e) {
+        say("Couldn't send (" + e.message + "). It's saved on this phone and will be tried again.");
+      });
+    };
+    var sendSoon = function () { clearTimeout(timer); timer = setTimeout(send, 20000); };
+
+    danBox.querySelectorAll(".rate button").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var row = button.parentNode, score = +button.dataset.s;
+        rated[row.dataset.key] = score; keep.set("danRated", rated);
+        queue = queue.filter(function (q) { return !(q.t === "rate" && q.key === row.dataset.key); });
+        queue.push({ t: "rate", key: row.dataset.key, topic: row.dataset.topic, title: row.dataset.title, score: score });
+        keep.set("danQueue", queue); paint(); sendSoon();
+      });
+    });
+    document.getElementById("dan-send").addEventListener("click", function () {
+      var box = document.getElementById("dan-ask"), text = box.value.trim();
+      if (!text) { return; }
+      queue.push({ t: "ask", text: text }); keep.set("danQueue", queue); box.value = "";
+      say("Saved."); send();
+    });
+    manual.addEventListener("click", function () {
+      setTimeout(function () { queue = []; keep.set("danQueue", queue); manual.hidden = true;
+                               say("Opened GitHub. Tap “Create” there to send it."); }, 500);
+    });
+    document.getElementById("dan-token-save").addEventListener("click", function () {
+      var value = document.getElementById("dan-token").value.trim();
+      if (value) { keep.set("danToken", value); document.getElementById("dan-token").value = ""; say("Token saved on this phone."); send(); }
+    });
+    document.getElementById("dan-token-clear").addEventListener("click", function () {
+      keep.drop("danToken"); say("Token removed from this phone."); paint();
+    });
+    document.getElementById("dan-forget").addEventListener("click", function () {
+      keep.drop("danPass"); location.reload();
+    });
+    document.addEventListener("visibilitychange", function () { if (document.visibilityState === "hidden") { send(true); } });
+    paint();
+    if (queue.length) { setTimeout(send, 3000); }
+  }
+
   // Home-screen apps on iPhone keep an old copy open in the background.
   // If you come back after 30+ minutes, reload so you see the latest brief.
   var loadedAt = Date.now();
@@ -493,14 +741,8 @@ def build_page(brief, out_path):
     if brief.get("quiet"):
         main = '<p class="quiet">No new mining news in the last 24 hours. The desk is enjoying its coffee.</p>'
     else:
-        main = f"""
-<section class="poem">{esc(brief.get('poem', ''))}<span class="byline">— {esc(R)}</span></section>
-
-{headlines_section(brief)}
-
-{takeaways_section(brief)}
-
-<section class="pair">
+        takes = f"""
+<div class="pair">
   <div class="card">
     <h3>{esc(S)} <span class="role">Strategist</span></h3>
     <p>{inline(brief.get('strategist_short', ''))}</p>
@@ -509,8 +751,9 @@ def build_page(brief, out_path):
     <h3>{esc(G)} <span class="role">Geologist</span></h3>
     <p>{inline(brief.get('geologist_short', ''))}</p>
   </div>
-</section>
-"""
+</div>"""
+        main = (takeaways_section(brief) + top_section(brief) + headlines_section(brief)
+                + fold(f"{S} & {G}: short takes", takes))
     main += gov_section(brief) + filings_section(brief) + scorecard_section(brief)
 
     # One CSS rule per group sets its color (--g) wherever data-g appears.
@@ -519,14 +762,154 @@ def build_page(brief, out_path):
 
     page = TEMPLATE.substitute(
         DATE=esc(brief.get("date_label", "")), MAIN=main, EXTRAS=extras_section(brief),
-        NAV=NAV_BRIEF, FOOTER=f"Updated {updated} Pacific · {brief.get('article_count', 0)} articles reviewed · "
+        NAV=nav("brief.html"), FOOTER=f"Updated {updated} Pacific · {brief.get('article_count', 0)} articles reviewed · "
                               "AI analysis for professional interest, not investment advice.",
         LIGHT_COLORS=light, DARK_COLORS=dark)
     write_page(page, out_path)
 
 
-NAV_BRIEF = '<a class="on" href="index.html">Brief</a><a href="research.html">Research</a>'
-NAV_RESEARCH = '<a href="index.html">Brief</a><a class="on" href="research.html">Research</a>'
+def clock(now):
+    return f"{now.hour % 12 or 12}:{now:%M} {'AM' if now.hour < 12 else 'PM'}"
+
+
+def build_quick_page(brief, papers, out_path, now):
+    """The Quick Look tab: the poem, two three-sentence updates, high-relevance
+    research, and new claim packages as a short list."""
+    parts = []
+    if brief.get("poem"):
+        parts.append(f'<section class="poem">{esc(brief["poem"])}<span class="byline">— {esc(R)}</span></section>')
+    if brief.get("quiet"):
+        parts.append('<p class="quiet">No new mining news in the last 24 hours.</p>')
+    for title, key in (("The world in three sentences", "quick_world"), ("Mining in three sentences", "quick_mining")):
+        if brief.get(key):
+            parts.append(f'<section><h2>{title}</h2><p class="quick">{inline(brief[key])}</p>'
+                         f'<span class="src">— {esc(C)}</span></section>')
+
+    week_ago = str(now.date().fromordinal(now.date().toordinal() - 7))
+    high = [p for p in papers if p.get("relevance") == "high" and p.get("read", "") >= week_ago][:6]
+    if high:
+        rows = "".join(f'<li><a href="{esc(p["link"])}">{esc(p["title"])}</a> <span class="src">{esc(p["journal"])}</span>'
+                       f'<p class="note">{inline(p.get("summary") or p.get("exploration", ""))}</p></li>' for p in high)
+        parts.append(f'<section><h2>High-relevance research</h2><ul class="links plain">{rows}</ul>'
+                     f'<a class="src" href="research.html">All papers on the Research tab</a></section>')
+
+    new_keys = {p["key"] for p in brief.get("claims_new", [])}
+    packages = {p["key"]: p for p in brief.get("claims_new", []) + brief.get("claims_active", [])}.values()
+    order = lambda p: (CLAIM_STATE_ORDER.index(p["state"]) if p["state"] in CLAIM_STATE_ORDER else len(CLAIM_STATE_ORDER),
+                       -p["count"])
+    if packages:
+        rows = "".join(
+            f'<li>{"<span class=badge>New</span> " if p["key"] in new_keys else ""}<strong>{p["count"]} claims</strong> · {esc(p["state"])}'
+            + (f' · <a href="{esc(p["map"])}">map</a>' if p.get("map") else "") + "</li>"
+            for p in sorted(packages, key=order))
+        parts.append(f'<section><h2>Claim packages over 100 claims <span class="n">last 30 days</span></h2>'
+                     f'<ul class="links plain">{rows}</ul><a class="src" href="brief.html#claims">Details on the Brief tab</a></section>')
+    else:
+        parts.append('<section><h2>Claim packages over 100 claims</h2><p class="src">None filed in the last 30 days.</p></section>')
+
+    page = TEMPLATE.substitute(
+        DATE=esc(brief.get("date_label", "")), MAIN="".join(parts), EXTRAS="", NAV=nav("index.html"),
+        FOOTER=f"Updated {clock(now)} Pacific · AI analysis for professional interest, not investment advice.",
+        LIGHT_COLORS="", DARK_COLORS="")
+    write_page(page, out_path)
+    # The Quick Look used to live at quick.html: send any old bookmark to the front page.
+    (out_path.parent / "quick.html").write_text(
+        '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=index.html">'
+        '<a href="index.html">Quick Look</a>', encoding="utf-8")
+
+
+def build_dan_page(data, out_path, now, password):
+    """Dan's Tab: The Rat's personal page, published locked with `password`."""
+    parts = []
+
+    def wiki_card(thing, label):
+        if not thing or not thing.get("name"):
+            return ""
+        image = f'<img src="{esc(thing["image"])}" alt="{esc(thing["name"])}" loading="lazy">' if thing.get("image") else ""
+        extract = thing.get("extract", "")
+        if len(extract) > 340:
+            extract = extract[:340].rsplit(". ", 1)[0] + "."
+        return (f'<section class="animal">{image}<div><h2>{label}</h2><h3>{esc(thing["name"])}'
+                + (f' <span class="role">{esc(thing["tag"])}</span>' if thing.get("tag") else "") + "</h3>"
+                + (f"<p>{esc(extract)}</p>" if extract else "")
+                + (f'<p class="rat">“{esc(thing["rat"])}” <span class="src">— {esc(R)}</span></p>' if thing.get("rat") else "")
+                + f'<a class="src" href="{esc(thing.get("link", "#"))}">Wikipedia</a></div></section>')
+
+    parts.append(wiki_card(data.get("animal"), "Animal of the day"))
+    quote = data.get("quote")
+    if quote:
+        parts.append(f'<blockquote class="quote">{esc(quote["text"])}<span class="byline">— {esc(quote["author"])}'
+                     f' <span class="src">· {esc(quote["source"])}</span></span></blockquote>')
+    reply = data.get("reply")
+    if reply and reply.get("text"):
+        parts.append(f'<p class="reply"><strong>{esc(R)}:</strong> {esc(reply["text"])}</p>')
+
+    for section in data.get("sections", []):
+        rows = ""
+        for item in section["items"]:
+            facts = " · ".join(esc(x) for x in (item.get("when"), item.get("place"), item.get("source")) if x)
+            buttons = "".join(f'<button data-s="{n}" aria-label="Rate {n} of 5">{n}</button>' for n in range(1, 6))
+            rows += (f'<li><a href="{esc(item["link"])}">{esc(item["title"])}</a><br><span class="src">{facts}</span>'
+                     f'<p class="note">{esc(item.get("line", ""))}</p>'
+                     f'<div class="rate" data-key="{esc(item["link"] + item["title"])[:200]}" data-topic="{esc(section["id"])}" '
+                     f'data-title="{esc(item["title"])}"><span class="src">Care?</span>{buttons}</div></li>')
+        body = f'<ul class="links plain">{rows}</ul>' if rows else '<p class="src">Nothing new today.</p>'
+        if section.get("kind") == "events" and data.get("yearly"):
+            yearly = "".join(f'<li><a href="{esc(e["link"])}">{esc(e["name"])}</a> <span class="src">{esc(e["where"])} · '
+                             f'usually {esc(e["when"])}</span></li>' for e in data["yearly"])
+            body += details("Big yearly events this month and next (usual timing; check the date)",
+                            f'<ul class="links plain">{yearly}</ul>')
+        parts.append(f'<section><h2>{esc(section["title"])}</h2>{body}</section>')
+
+        # After the community events: a place on Earth, the week's long read, and a local cause.
+        if section.get("kind") == "events":
+            parts.append(wiki_card(data.get("place"), "One place on Earth"))
+            read = data.get("long_read")
+            if read:
+                parts.append(f'<section><h2>Long read of the week</h2><ul class="links plain"><li>'
+                             f'<a href="{esc(read["link"])}">{esc(read["title"])}</a> <span class="src">{esc(read.get("source", ""))}</span>'
+                             f'<p class="note">{esc(read.get("why", ""))}</p></li></ul></section>')
+            v = data.get("volunteer")
+            if v:
+                news = "".join(f'<li><a href="{esc(a["link"])}">{esc(a["title"])}</a> <span class="src">{esc(a["source"])}</span></li>'
+                               for a in v.get("news", [])[:3])
+                parts.append(f'<section><h2>Volunteer spotlight</h2><p><strong>{esc(v["name"])}</strong> '
+                             f'<span class="src">{esc(v["where"])}</span></p>'
+                             f'<p class="note">{esc(v.get("rat") or v["what"].capitalize() + ".")}</p>'
+                             + (f'<ul class="links plain">{news}</ul>' if news else "")
+                             + f'<a class="src" href="{esc(v["link"])}">Find out how to volunteer</a></section>')
+
+    parts.append(f"""
+<section><h2>Tell {esc(R)} what to change</h2>
+  <textarea id="dan-ask" rows="3" placeholder="More of this, less of that, a new interest to add..."></textarea>
+  <button id="dan-send" class="btn">Send to {esc(R)}</button>
+  <a id="dan-manual" class="btn ghost" hidden target="_blank" rel="noopener">Send via GitHub</a>
+  <p id="dan-status" class="src">Ratings and messages are applied on the next morning's page.</p>
+</section>""")
+    settings = f"""
+<p>To send ratings and messages straight from this page, paste a GitHub token here once. It is kept only on this
+phone. Without one, use “Send via GitHub”, which opens a GitHub page where you tap “Create”.</p>
+<input id="dan-token" type="password" placeholder="GitHub token (starts with github_pat_)" autocomplete="off">
+<button id="dan-token-save" class="btn">Save token</button> <button id="dan-token-clear" class="btn ghost">Remove</button>
+<p>This page is locked with your password, and everything it sends is locked the same way.</p>
+<button id="dan-forget" class="btn ghost">Forget the password on this phone</button>"""
+    extras = details("Settings", settings)
+    if data.get("status"):
+        extras += details("Where today's items came from: status",
+                          "<ul>" + "".join(f"<li>{esc(n)}</li>" for n in data["status"]) + "</ul>")
+
+    inside = (f'<div id="dan" data-repo="{esc(data.get("repo", ""))}">{"".join(parts)}</div>{extras}'
+              f'<p class="src">Chosen by {esc(R)} from public feeds and calendars. Animal and place from Wikipedia. '
+              f'Check event details before you go.</p>')
+    sealed = json.dumps(vault.lock(inside, password))
+    main = (f'<div id="dan-lock" class="lock" data-box="{esc(sealed)}"><p>Dan\'s Tab is locked.</p>'
+            f'<input id="dan-pass" type="password" placeholder="Password" autocomplete="current-password">'
+            f'<button id="dan-unlock" class="btn">Unlock</button><p id="dan-lock-msg" class="src"></p></div>'
+            f'<div id="dan-content"></div>')
+    page = TEMPLATE.substitute(
+        DATE=esc(f"{now:%A, %B} {now.day}"), MAIN=main, EXTRAS="", NAV=nav("dan.html"),
+        FOOTER=f"Updated {clock(now)} Pacific", LIGHT_COLORS="", DARK_COLORS="")
+    write_page(page, out_path)
 
 
 def build_research_page(papers, out_path, now, waiting=0):
@@ -574,7 +957,7 @@ def build_research_page(papers, out_path, now, waiting=0):
             + "</section>")
     updated = f"{now.hour % 12 or 12}:{now:%M} {'AM' if now.hour < 12 else 'PM'}"
     page = TEMPLATE.substitute(
-        DATE=esc(f"{now:%A, %B} {now.day}"), MAIN=main, EXTRAS="", NAV=NAV_RESEARCH,
+        DATE=esc(f"{now:%A, %B} {now.day}"), MAIN=main, EXTRAS="", NAV=nav("research.html"),
         FOOTER=f"Updated {updated} Pacific · {len(papers)} papers · Sources via OpenAlex.",
         LIGHT_COLORS="", DARK_COLORS="")
     write_page(page, out_path)

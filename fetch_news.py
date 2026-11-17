@@ -18,12 +18,14 @@ It prints one line per source, marked "ok", "used backup" or "FAILED". This
 check doesn't touch your data folder, so it is safe to run at any time.
 """
 
+import email.utils
 import json
 import re
 import socket
 import tempfile
 import time
 import urllib.request
+from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import quote_plus, urljoin
@@ -177,6 +179,8 @@ BROWSER_AGENT = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 
 # How many seen articles to remember. Old ones are dropped so the file stays small.
 MAX_SEEN = 12000
+MAX_AGE_DAYS = 7     # Older articles are skipped. News searches often return old pages
+                     # (a July permit story, a 2025 press release) alongside new ones.
 
 
 # ---------------------------------------------------------------------------
@@ -329,6 +333,22 @@ def same_story(words_a, words_b):
 # The function pipeline.py calls
 # ---------------------------------------------------------------------------
 
+def too_old(published):
+    """True if the article's date is known and older than MAX_AGE_DAYS."""
+    if not published:
+        return False
+    try:
+        when = email.utils.parsedate_to_datetime(published)
+    except (TypeError, ValueError):
+        try:
+            when = datetime.fromisoformat(published.replace("Z", "+00:00"))
+        except ValueError:
+            return False
+    if when.tzinfo is None:
+        when = when.replace(tzinfo=timezone.utc)
+    return datetime.now(timezone.utc) - when > timedelta(days=MAX_AGE_DAYS)
+
+
 def fetch_new_articles(data_dir=Path("data"), report=True):
     """Read every source and return only articles we haven't seen before."""
     data_dir.mkdir(parents=True, exist_ok=True)
@@ -347,6 +367,8 @@ def fetch_new_articles(data_dir=Path("data"), report=True):
                 continue
             seen_set.update((link, key))
             seen += [link, key]
+            if too_old(article.get("published", "")):
+                continue   # Remembered as seen, but too old to count as news
             text = f"{article['title']} {article['source']}"
             if source["lane"] != "world" and NOISE.search(text):
                 continue   # Remembered as seen, but never shown to the agents

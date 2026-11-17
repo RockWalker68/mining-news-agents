@@ -20,6 +20,7 @@ on:
 
 permissions:
   contents: write             # Lets the run save its results back to the repository
+  issues: write               # Lets the run read and close the feedback sent from Dan's Tab
 
 concurrency:
   group: mining-desk          # Never run two at once
@@ -48,6 +49,8 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}     # The SEC requires a contact email
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}       # Free key for the research journals
+          GITHUB_TOKEN: ${{ github.token }}                       # Built in; used to read feedback from Dan's Tab
+          DAN_PASSWORD: ${{ secrets.DAN_PASSWORD }}               # Locks Dan's Tab; without it the tab isn't built
 
       - name: Save results
         run: |
