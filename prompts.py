@@ -65,7 +65,7 @@ How to handle facts:
 - This is analysis for professional interest, not investment advice.
 - Write in plain text. Use "- " for bullet points. Do not use # headings, bold, or tables.
 
-Predictions are about real-world industry events: a policy being enacted, a project reaching a milestone, a strike or dispute ending, a technology being adopted, a commodity price moving. Never predict what a document, press release, or filing will or won't say, and never predict a share price. Make a prediction only when you hold a real view. Put each on its own line in exactly this format:
+Predictions are about real-world industry events: a policy being enacted, a project reaching a milestone, a strike or dispute ending, a technology being adopted, a commodity price moving. Never predict what a document, press release, or filing will or won't say, and never predict a share price. Make predictions only when a task asks for them, and only when you hold a real view. They are tracked and scored, so make each one specific enough that the news can settle it by its deadline. Put each on its own line in exactly this format:
 PREDICTION: [specific, checkable event] | BY: [YYYY-MM-DD] | CONFIDENCE: [low/medium/high]
 """.strip()
 
@@ -142,7 +142,8 @@ How you work:
 - Ask questions your analysts can answer from their own expertise and reasoning. They cannot look anything up, so never ask them to check, verify, or find something.
 - Commit to a view. A reader should finish your takeaways knowing what you think is happening and what to expect, with your confidence stated. Avoid conclusions that only say more information is needed.
 - Then expand creatively: second-order effects, links across commodities and regions, how a world event or a technology shift could reshape demand for a metal, and the questions nobody is asking yet. Label how speculative each idea is.
-- Keep the desk's records tidy. When your analysts make overlapping predictions, you issue one clear version.
+- You referee your analysts' predictions. Judge them fairly and strictly, from the news the desk has seen and nothing else.
+- You decide which company filings and mine-safety reports are worth the reader's attention.
 
 Your voice: calm, clear, and decisive. You write for a busy reader who will see your takeaways first thing in the morning and may repeat them to colleagues that day, so every sentence earns its place.
 
@@ -249,7 +250,7 @@ Developments that add or remove demand for particular metals, including the AI b
 ON THE HORIZON:
 Events to expect in the coming weeks and months, and what would change your view.
 
-Group related stories together and skip anything that doesn't matter. If a section has nothing new, write "Nothing new." and move on. Aim for 300–450 words in total. If you hold a real view on how something will turn out, finish with one or two predictions in the required format. Otherwise make none.
+Group related stories together and skip anything that doesn't matter. If a section has nothing new, write "Nothing new." and move on. Aim for 300–450 words in total. If there are GOVERNMENT RECORDS (claim packages, exploration notices, environmental reviews, company filings, or safety reports), cover the ones that matter where they fit. Don't make predictions here; you'll make them in the morning brief.
 """.strip()
 
 REPLY = """
@@ -289,9 +290,6 @@ REGIONAL TRENDS:
 TECHNOLOGY & DEMAND:
 ON THE HORIZON:
 WHERE THEY DISAGREE:
-PREDICTIONS:
-
-Under PREDICTIONS, copy each different prediction once, exactly as written, followed by who made it in brackets. If two predictions describe the same event, keep only the clearer one. If there are none, write "None."
 """.strip()
 
 # This block is placed at the top of each first take, so the analysts hear
@@ -380,7 +378,7 @@ GLOBAL BRIEFING:
 A short paragraph of 80–120 words for your analysts to read before their next discussions: the world events they should keep in mind and how each could reach mining. No bullets.
 
 PREDICTIONS:
-Up to three predictions in the required format. These are the desk's official predictions, so merge any overlapping ones from your analysts into one clear version. If none are worth making, write "None."
+Up to three predictions of your own, in the required format, each with your honest confidence level. These are yours alone; your analysts make and are scored on their own. Don't repeat a prediction you have already made (see the desk's open predictions in the history log). If none are worth making, write "None."
 
 Every bullet should state a view a reader could repeat to a colleague. If a section has nothing worth saying, write one bullet: "- Nothing new."
 """.strip()
@@ -421,7 +419,11 @@ It is {now}. Here are your desk's discussion summaries from the last 24 hours:
 
 {summaries}
 
-For the morning brief, write a very short summary of today's mining news and what you make of it, in your own voice: 2–3 sentences and no more than 60 words. Say what it means for the industry. No bullet points and no predictions.
+For the morning brief, write a very short summary of today's mining news and what you make of it, in your own voice: 2–3 sentences and no more than 60 words. Say what it means for the industry. No bullet points.
+
+Then, on new lines, you may add up to two new predictions in the required format. Your predictions are tracked and scored by {chief_name}, so make them specific, checkable from the news, and honest about confidence. Don't repeat or reword your open predictions:
+{own_open}
+If you have no new prediction worth making, add nothing after the summary.
 """.strip()
 
 POEM = """
@@ -436,10 +438,17 @@ Here is what your three colleagues concluded about the last 24 hours of mining n
 {chief_name} (the Chief Analyst) concluded:
 {chief_conclusion}
 
-Write today's poem about the day's main theme, drawing on all three. At most six lines.{tangent}
+Write today's poem about the day's main theme, drawing on all three. At most six lines.{tangent}{claims_hint}
 """.strip()
 
 POEM_TANGENT = "\n\nToday, work in a strange tie to astrology or a little-known (but true) fact about lizards or fish."
+
+# Added to the poem task when a big new claim package has been filed.
+POEM_CLAIMS_HINT = """
+
+Big news for the reader today: new claim packages of more than 100 claims have been filed:
+{packages}
+The reader cares a great deal about these. Somewhere in the poem (and the poem may still run to at most six lines), slip in a playful, unmistakable hint that they should check the Claims section today: a rat who smelled fresh stakes in the ground, new pegs and posts, someone quietly tying up a lot of ground. Be creative about it, but don't name the companies or numbers outright; the hint should make them curious enough to look."""
 
 
 # --- Each morning: The Rat updates the history log -------------------------
@@ -489,7 +498,7 @@ UPCOMING EVENTS:
 Events the news or the desk expects, with dates where known.
 
 PREDICTIONS MADE:
-{chief_name}'s predictions from today, copied exactly. If none, write "None."
+{predictions_today}
 
 If a section has nothing, write "- None."
 """.strip()
@@ -520,11 +529,7 @@ Upcoming events in date order, with what to watch for. Remove events once they h
 THE DESK'S VIEWS:
 How each person's views have developed, including changes of mind. Start each bullet with the person's name.
 
-OPEN PREDICTIONS:
-Predictions whose BY date is today or later, copied exactly, each followed by (date made). Keep at most ten. If there are more, keep the most significant.
-
-RESULTS:
-Predictions whose BY date has passed, each with one of: came true, did not happen, or unclear, judged only from news the desk has seen. Keep the ten most recent.
+Predictions are kept in a separate ledger, so don't include them here.
 
 If you are over the limit, shorten the oldest material first. Never write that something was omitted.
 """.strip()
@@ -564,4 +569,91 @@ Write "- None yet."
 
 RESULTS:
 Write "- None yet."
+""".strip()
+
+
+# --- Each morning: Dr I Simon referees the analysts' predictions ------------
+
+REFEREE = """
+It is {now}. Today is {today}. You are refereeing the open predictions of {strategist_name} and {geologist_name}.
+
+THE OPEN PREDICTIONS:
+{open_predictions}
+
+THE NEWS THE DESK SAW IN THE LAST 24 HOURS:
+{headlines}
+
+For each prediction, decide from this news (and any EVIDENCE SO FAR listed with it) only. You cannot look anything up, and you must not use your own background knowledge of what has happened. Write one line for each prediction where something changed, in exactly this format:
+ID | verdict | one sentence of reasons, naming the headline number(s) you relied on
+
+Verdicts:
+evidence        today's news bears on it but doesn't settle it yet (note what it shows)
+came true       the news shows it happened (at any time before or on its BY date)
+did not happen  the news clearly shows it did not or cannot happen by its BY date
+no evidence     only for a prediction whose BY date is before {today}: the desk's news never settled it
+
+Be strict. A headline that only makes something more likely is "evidence", not "came true". If nothing in today's news bears on a prediction and its BY date hasn't passed, write no line for it. If there is nothing to report at all, write "None."
+""".strip()
+
+
+# --- Daily: company filings and mine-safety reports -------------------------
+
+TRIAGE = """
+It is {now}. Below are new SEC 8-K filings from mining companies and new MSHA mine-safety reports (fatal or serious accidents and imminent-danger orders). Most won't matter to the desk.
+
+{items}
+
+From your expertise, decide which are worth {chief_name}'s attention for a mining-industry professional: things that change a mine's or company's operations, a project's prospects, the industry's safety record, or a regional trend. Routine or administrative items (ordinary financing paperwork, minor agreements, a single injury with no wider significance) should be dropped. Be selective.
+
+Write one line per item, in exactly this format, and nothing else:
+number | KEEP or DROP | one short reason
+""".strip()
+
+FILINGS_DECISION = """
+It is {now}. Your analysts screened today's new SEC 8-K filings and MSHA safety reports. These are the items at least one of them wants you to see, with their reasons:
+
+{items}
+
+Decide which belong in the morning brief. Write one line per item, in exactly this format, and nothing else:
+number | PAGE or DROP | one sentence: for PAGE, what it means for the industry (your takeaway, for the reader); for DROP, why not
+""".strip()
+
+
+# --- Daily: claim packages ---------------------------------------------------
+
+CLAIMS_NOTE = """
+New mining-claim packages of more than 100 claims have been filed in the United States (federal land via the BLM, or Alaska state land via the Alaska DNR):
+
+{packages}
+
+For each package, write one line in exactly this format:
+number | your note
+
+In your note (two sentences at most), say from your background knowledge which mining district, belt or trend the location most likely falls in, and what deposit types and commodities are typically explored for there. Make clear this is your reading of the location, not something the record states. Don't guess who filed it unless the record names the claimant.
+""".strip()
+
+
+# --- Daily: Yukon Cornelius reads new research papers ------------------------
+
+RESEARCH_READ = """
+It is {now}. Here are new papers from economic-geology journals, with their abstracts:
+
+{papers}
+
+For context, here are the mining headlines the desk saw recently:
+
+{headlines}
+
+For each paper, write a block in exactly this format:
+
+PAPER: number
+DEPOSIT TYPE: the deposit type(s) it concerns, or "General" if none
+COMMODITIES: the metals or minerals involved
+SETTING: the geologic setting in a few words (tectonic setting, host rocks, age where given)
+WHERE IT APPLIES: the belts, districts or terranes in the Lower 48 states or in Alaska where the findings could apply, and why. A match in either one is enough: name Lower 48 places, Alaska places, or both, whichever genuinely fit, and never stretch a paper to cover both. Draw on your background knowledge and say so where you do. If it has little bearing on either, say that plainly.
+EXPLORATION: one or two sentences on what an explorer working in the places you named could do differently because of this paper.
+NEWS LINK: if a recent headline connects to this paper (same deposit type, district, commodity or method), give the headline number and one sentence on the link. Otherwise write "None".
+RELEVANCE: high, medium or low, for exploration anywhere in the Lower 48 or Alaska. A paper that matters only for Alaska, or only for the Lower 48, can still be high.
+
+Work only from the abstract for what the paper found; never invent results, locations or numbers it doesn't give. Some papers have no abstract available: for those, work from the title alone, keep each line short, and start SETTING with "(From the title only)".
 """.strip()

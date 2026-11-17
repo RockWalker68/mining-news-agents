@@ -24,6 +24,18 @@ headlines. Then it does whichever jobs are due (Pacific time):
       log entry and updates the desk's long-term memory in data/history.json,
       which the other three read before every analysis.
 
+  Every morning  (2am):
+      Government records: new claim packages (more than 100 claims) and BLM
+      exploration notices, environmental reviews, and SEC 8-K filings from
+      mining companies. Once a week (Saturday) also MSHA's safety reports.
+      Meldrum and Yukon Cornelius screen the filings and safety reports, and
+      Dr I Simon decides which reach the brief. Yukon Cornelius notes the
+      likely district and deposit types for each new claim package.
+
+  With the morning brief, Dr I Simon referees Meldrum's and Yukon
+  Cornelius's predictions (data/predictions.json), and Yukon Cornelius reads
+  new economic-geology papers for the Research page (docs/research.html).
+
 The 3am start leaves room for GitHub's scheduling delays, so the brief is
 ready by 6am. If a run is late or skipped, the next one catches up.
 
@@ -39,6 +51,7 @@ How to run it:
 
 import argparse
 import json
+import os
 import random
 import re
 from datetime import datetime, timedelta
@@ -46,8 +59,11 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import fetch_news
+import gov_watch
+import predictions
 import prompts
-from page import GROUPS, REGIONS, build_page
+import research
+from page import GROUPS, REGIONS, build_page, build_research_page
 
 # ---------------------------------------------------------------------------
 # Settings you can change
@@ -58,6 +74,8 @@ TIMEZONE = ZoneInfo("America/Los_Angeles")   # Handles daylight saving automatic
 DISCUSSION_HOURS = [3, 9, 15, 21]    # Meldrum + Yukon Cornelius talk (every 6 hours)
 CHIEF_HOURS = [3, 15]                # Dr I Simon's session (every 12 hours)
 BRIEF_HOURS = [3]                    # Morning brief and page
+GOV_HOURS = [2]                      # Government records (claims, reviews, filings)
+MSHA_DAY = 5                         # MSHA's files update Friday afternoon, so read them Saturday (Mon=0)
 
 MODEL = "claude-haiku-5-5"           # Model for every agent
 CHIEF_MODEL = MODEL                  # Change to "claude-sonnet-5-5" for a stronger Chief
@@ -77,12 +95,17 @@ MAX_JUNIORS = 30                     # Junior-company press releases
 MAX_TECH = 20
 MAX_WORLD = 60                       # World headlines Dr I Simon reads per session
 
+MAX_TRIAGE = 40                      # Most filings and safety reports screened in one day
+RESEARCH_PER_DAY = 10                # Papers Yukon Cornelius reads each morning
+
 POET_TANGENT_CHANCE = 2 / 3          # How often The Rat gets the astrology/lizard/fish nudge
 HISTORY_DAYS = 7                     # Days of The Rat's daily log entries the agents read
 
 def empty_day():
     """A fresh, empty record for a new day."""
-    return {"articles": [], "discussions": [], "chief_sessions": [], "world": []}
+    return {"articles": [], "discussions": [], "chief_sessions": [], "world": [],
+            "claims_new": [], "claims_active": [], "notices": [], "reviews": [], "filings": [],
+            "triage_log": [], "gov_notes": []}
 
 
 # ---------------------------------------------------------------------------
@@ -230,6 +253,7 @@ def desk_news(articles):
     industry = first_by_priority(lane("industry"), MAX_INDUSTRY)
     juniors = first_by_priority(lane("juniors"), MAX_JUNIORS)
     tech = lane("tech")[-MAX_TECH:]
+    gov = lane("gov")[-40:]
     if industry:
         parts.append("MINING INDUSTRY NEWS:\n" + numbered(industry))
     if juniors:
@@ -237,6 +261,10 @@ def desk_news(articles):
                      "drilling and money are going, not one by one):\n" + numbered(juniors, len(industry) + 1))
     if tech:
         parts.append("TECHNOLOGY AND DEMAND NEWS:\n" + numbered(tech, len(industry) + len(juniors) + 1))
+    if gov:
+        parts.append("GOVERNMENT RECORDS (new claim packages, exploration notices, environmental reviews, "
+                     "and the company filings and safety reports " + prompts.CHIEF_NAME + " chose for the brief):\n"
+                     + numbered(gov, len(industry) + len(juniors) + len(tech) + 1))
     return "\n\n".join(parts)
 
 
@@ -410,7 +438,27 @@ def sort_headlines(desk, articles):
     return top
 
 
-def run_brief(desk, day, now, docs_dir):
+def news_only(articles):
+    """Headlines without the government records (those have their own section)."""
+    return [a for a in articles if a.get("lane") != "gov"]
+
+
+def run_referee(desk, ledger, day, now):
+    names = {"strategist": prompts.STRATEGIST_NAME, "geologist": prompts.GEOLOGIST_NAME}
+    waiting = [i for i in predictions.open_items(ledger) if i["author"] in predictions.SCORED]
+    if not waiting:
+        return
+    lines = "\n".join(f"{i['id']} ({names[i['author']]}, made {i['made']}): {i['text']} | BY: {i['by']} "
+                       f"| CONFIDENCE: {i['confidence']}"
+                       + (f" | EVIDENCE SO FAR: {'; '.join(e['note'] for e in i['evidence'][-3:])}" if i["evidence"] else "")
+                       for i in waiting)
+    reply = desk.ask("chief", fill(prompts.REFEREE, now=stamp(now), today=str(now.date()),
+                                   open_predictions=lines, headlines=numbered(day["articles"][-250:])), model=CHIEF_MODEL)
+    changed = predictions.apply_referee(ledger, reply, now.date())
+    print(f"  {prompts.CHIEF_NAME} ruled on {changed} prediction(s)")
+
+
+def run_brief(desk, day, now, docs_dir, ledger):
     print("Morning brief")
     when = stamp(now)
     brief = {"time": now.isoformat(), "date_label": f"{now:%A, %B} {now.day}",
@@ -423,21 +471,35 @@ def run_brief(desk, day, now, docs_dir):
         chief = day["chief_sessions"][-1] if day["chief_sessions"] else {}
 
         # The news editor sorts the headlines into groups and picks the top stories.
-        brief["top"] = sort_headlines(desk, day["articles"])
+        brief["top"] = sort_headlines(desk, news_only(day["articles"]))
 
-        # Meldrum and Yukon Cornelius each write a very short summary...
-        brief["strategist_short"] = desk.ask("strategist", fill(prompts.SHORT_SUMMARY,
-            now=when, summaries=summaries))
-        brief["geologist_short"] = desk.ask("geologist", fill(prompts.SHORT_SUMMARY,
-            now=when, summaries=summaries))
+        # Dr I Simon referees the analysts' open predictions against today's news.
+        run_referee(desk, ledger, day, now)
+
+        # Meldrum and Yukon Cornelius each write a very short summary, and may
+        # add up to two new predictions (tracked in the ledger).
+        for agent in ("strategist", "geologist"):
+            reply = desk.ask(agent, fill(prompts.SHORT_SUMMARY, now=when, summaries=summaries,
+                                         own_open=predictions.as_lines(predictions.open_items(ledger, agent))))
+            predictions.add(ledger, agent, predictions.parse(reply), now.date())
+            brief[f"{agent}_short"] = predictions.strip_predictions(reply)
+
+        # Dr I Simon's own predictions from today's sessions go in the ledger too.
+        for session in day["chief_sessions"]:
+            found = predictions.parse(section(session["conclusion"], "PREDICTIONS:", CONCLUSION_LABELS))
+            predictions.add(ledger, "chief", found, now.date())
 
         # ...then The Rat reads all three agents' work and writes the poem.
         tangent = random.random() < POET_TANGENT_CHANCE
+        claims_hint = ""
+        if day["claims_new"]:
+            claims_hint = prompts.POEM_CLAIMS_HINT.format(packages="\n".join(
+                f"- {p['count']} claims in {p['state']} ({p['source']})" for p in day["claims_new"]))
         brief["poem"] = desk.ask("poet", fill(prompts.POEM,
             strategist_short=brief["strategist_short"],
             geologist_short=brief["geologist_short"],
             chief_conclusion=chief.get("conclusion", "(No review today.)"),
-            tangent=prompts.POEM_TANGENT if tangent else ""))
+            tangent=prompts.POEM_TANGENT if tangent else "", claims_hint=claims_hint))
 
         # Dr I Simon's takeaways under the four headings. (An older-format
         # session only has a plain list, shown under one heading.)
@@ -448,8 +510,20 @@ def run_brief(desk, day, now, docs_dir):
 
     brief["discussions"] = day["discussions"]
     brief["chief_sessions"] = day["chief_sessions"]
-    brief["articles"] = day["articles"]
+    brief["articles"] = news_only(day["articles"])
     brief["world"] = day.get("world", [])
+
+    # Government records, filings and safety reports.
+    for key in ("claims_new", "claims_active", "notices", "reviews", "filings", "triage_log", "gov_notes"):
+        brief[key] = day[key]
+
+    # The prediction scorecard.
+    predictions.expire_quietly(ledger, now.date())
+    brief["scorecard"] = predictions.scorecard(ledger)
+    brief["open_predictions"] = [i for i in predictions.open_items(ledger) if i["author"] in predictions.SCORED]
+    brief["chief_predictions"] = predictions.open_items(ledger, "chief")
+    brief["results"] = [i for i in ledger["items"] if i["status"] != "open" and i["author"] in predictions.SCORED][-15:][::-1]
+    brief["predictions_today"] = [i for i in ledger["items"] if i["made"] == str(now.date())]
 
     build_page(brief, docs_dir / "index.html")
     return brief
@@ -459,13 +533,15 @@ def run_brief(desk, day, now, docs_dir):
 # Job 4: The Rat keeps the history log (every morning, after the brief)
 # ---------------------------------------------------------------------------
 
-def history_text(history):
-    """Turn The Rat's log into the memory block the other agents read."""
-    if not history["long_term"] and not history["entries"]:
+def history_text(history, ledger, today):
+    """Turn The Rat's log (and the prediction ledger) into the memory block the other agents read."""
+    names = {k: DISPLAY_NAMES[k] for k in ("strategist", "geologist", "chief")}
+    if not history["long_term"] and not history["entries"] and not ledger["items"]:
         return fill(prompts.HISTORY_EMPTY)
     parts = []
     if history["long_term"]:
         parts.append("LONG-TERM MEMORY:\n" + history["long_term"])
+    parts.append(predictions.memory_block(ledger, names, today))
     for e in history["entries"][-HISTORY_DAYS:]:
         parts.append(f"--- Log entry for {e['date_label']} ---\n{e['entry']}")
     return fill(prompts.HISTORY_BLOCK, log="\n\n".join(parts))
@@ -521,7 +597,10 @@ def run_history(desk, day, brief, now, history):
         summaries="\n\n".join(d["summary"] for d in day["discussions"]),
         chief_conclusions="\n\n".join(c["conclusion"] for c in day["chief_sessions"]) or "(No review today.)",
         strategist_short=brief.get("strategist_short", ""),
-        geologist_short=brief.get("geologist_short", "")))
+        geologist_short=brief.get("geologist_short", ""),
+        predictions_today="\n".join(
+            f"- {DISPLAY_NAMES[i['author']]}: PREDICTION: {i['text']} | BY: {i['by']} | CONFIDENCE: {i['confidence']}"
+            for i in brief.get("predictions_today", [])) or "None."))
     if entry.startswith("["):        # The Rat didn't reply; keep the log as it was
         return history
     history["entries"].append({"date": str(now.date()), "date_label": brief["date_label"], "entry": entry})
@@ -533,6 +612,187 @@ def run_history(desk, day, brief, now, history):
     if not memory.startswith("["):
         history["long_term"] = memory
     return history
+
+
+# ---------------------------------------------------------------------------
+# Job 5: government records (every morning, before the discussion)
+# ---------------------------------------------------------------------------
+
+def numbered_replies(reply, words=None):
+    """Read lines like '3 | KEEP | reason' -> {3: ('KEEP', 'reason')}, or '3 | note' -> {3: ('', 'note')}."""
+    found = {}
+    for line in (reply or "").splitlines():
+        parts = [p.strip() for p in line.strip().lstrip("-* ").split("|")]
+        if len(parts) < 2 or not parts[0].rstrip(".").isdigit():
+            continue
+        number = int(parts[0].rstrip("."))
+        if words:
+            verdict = parts[1].upper()
+            if verdict in words:
+                found[number] = (verdict, " | ".join(parts[2:]))
+        else:
+            found[number] = ("", " | ".join(parts[1:]))
+    return found
+
+
+def gov_article(title, source, link, kind):
+    """A government record, in the same shape as a headline, for the analysts' discussion."""
+    return {"title": title, "source": source, "link": link or "#", "lane": "gov", "kind": kind}
+
+
+def describe_record(number, item):
+    if item["id"].startswith("SEC-"):
+        return (f"{number}. SEC 8-K: {item['company']} ({item.get('sic_name', '')}), filed {item['date']}. "
+                f"Items: {item['items']}.\n   Excerpt: {item.get('text', '')[:1200]}")
+    return (f"{number}. MSHA {item['kind']}, {item['date']}: {item['mine']} mine ({item.get('commodity', '')}, "
+            f"{item['state']}), operator {item['operator']}. {item.get('detail', '')[:400]}")
+
+
+def record_title(item):
+    if item["id"].startswith("SEC-"):
+        return f"{item['company']}: 8-K filing ({item['items']})"
+    return f"{item['kind']} at {item['mine']} ({item['state']})"
+
+
+def run_triage(desk, items, now, day, inbox):
+    """Meldrum and Yukon Cornelius screen the filings and safety reports;
+    Dr I Simon decides which go in the brief."""
+    print(f"Filings and safety reports: {len(items)} to screen")
+    S, G = prompts.STRATEGIST_NAME, prompts.GEOLOGIST_NAME
+    listing = "\n\n".join(describe_record(n, item) for n, item in enumerate(items, 1))
+    s = desk.ask("strategist", fill(prompts.TRIAGE, now=stamp(now), items=listing))
+    g = desk.ask("geologist", fill(prompts.TRIAGE, now=stamp(now), items=listing))
+    sv, gv = numbered_replies(s, ("KEEP", "DROP")), numbered_replies(g, ("KEEP", "DROP"))
+    kept = [n for n in range(1, len(items) + 1) if "KEEP" in (sv.get(n, ("",))[0], gv.get(n, ("",))[0])]
+
+    c = ""
+    if kept:
+        listing = "\n\n".join(
+            describe_record(n, items[n - 1])
+            + f"\n   {S}: {' - '.join(sv.get(n, ('no view', '')))}\n   {G}: {' - '.join(gv.get(n, ('no view', '')))}"
+            for n in kept)
+        c = desk.ask("chief", fill(prompts.FILINGS_DECISION, now=stamp(now), items=listing), model=CHIEF_MODEL)
+        cv = numbered_replies(c, ("PAGE", "DROP"))
+        for n in kept:
+            verdict, takeaway = cv.get(n, ("", ""))
+            if verdict == "PAGE":
+                item = dict(items[n - 1], takeaway=takeaway, title=record_title(items[n - 1]))
+                item.pop("text", None)
+                day["filings"].append(item)
+                inbox.append(gov_article(f"{item['title']}. {prompts.CHIEF_NAME}: {takeaway}",
+                                         "SEC" if item["id"].startswith("SEC-") else "MSHA", item["link"], "filing"))
+    print(f"  kept by the analysts: {len(kept)}, chosen for the brief: {sum(1 for f in day['filings'] if f.get('takeaway'))}")
+    day["triage_log"].append({"time": now.isoformat(), "count": len(items), "listing": listing,
+                              "strategist": s, "geologist": g, "chief": c})
+
+
+def run_gov(desk, data_dir, day, inbox, now, msha_due, dry_run):
+    print("Government records")
+    if dry_run:
+        claims, notices, reviews, filings, msha = sample_gov()
+    else:
+        claims = gov_watch.watch_claims(data_dir)
+        notices = gov_watch.watch_notices(data_dir)
+        reviews = gov_watch.watch_reviews(data_dir)
+        filings = gov_watch.watch_8k(data_dir, os.environ.get("SEC_CONTACT_EMAIL", "").strip())
+        msha = gov_watch.watch_msha(data_dir) if msha_due else {"new": [], "notes": ["MSHA: checked on Saturdays"]}
+    notes = claims["notes"] + notices["notes"] + reviews["notes"] + filings["notes"] + msha["notes"]
+    for note in notes:
+        print("  " + note)
+    day["gov_notes"] = notes
+
+    # New claim packages: Yukon Cornelius notes the likely district and deposit types.
+    new = claims["new"]
+    if new:
+        listing = "\n".join(
+            f"{n}. {p['source']}, {p['state']}: claims named '{p['name']}'"
+            + (f" (claimant: {p['claimant']})" if p.get("claimant") else "")
+            + f", {p['count']} claims, about {p['acres']} acres, filed {p['first']} to {p['last']}"
+            + (f", centred near latitude {p['lat']}, longitude {p['lon']}" if p.get("lat") is not None else "")
+            + (f" ({p['town']})" if p.get("town") else "")
+            for n, p in enumerate(new, 1))
+        notes_by_number = numbered_replies(desk.ask("geologist", fill(prompts.CLAIMS_NOTE, packages=listing)))
+        for n, p in enumerate(new, 1):
+            p["note"] = notes_by_number.get(n, ("", ""))[1]
+            p["found"] = str(now.date())
+        day["claims_new"] += new
+        inbox += [gov_article(f"New claim package: {p['count']} claims named '{p['name']}' in {p['state']} "
+                              f"({p['source']}, filed {p['first']} to {p['last']})", "Government records", p["map"], "claims")
+                  for p in new]
+    day["claims_active"] = claims["active"]
+
+    # Exploration notices: one line for the analysts, the full list for the page.
+    if notices["new"]:
+        day["notices"] += notices["new"]
+        by_state = {}
+        for n in notices["new"]:
+            by_state[n["state"]] = by_state.get(n["state"], 0) + 1
+        inbox.append(gov_article("New BLM exploration notices (under 5 acres): " + ", ".join(
+            f"{count} in {state}" for state, count in sorted(by_state.items(), key=lambda x: -x[1])),
+            "Government records", "", "notices"))
+
+    # Environmental reviews.
+    for r in reviews["new"]:
+        day["reviews"].append(r)
+        inbox.append(gov_article(f"Environmental review ({r['state'] or 'US'}): {r['title']}", r["source"], r["link"], "review"))
+
+    # Filings and safety reports: screened by the analysts, decided by Dr I Simon.
+    items = (filings["new"] + msha["new"])[:MAX_TRIAGE]
+    if items:
+        run_triage(desk, items, now, day, inbox)
+
+
+# ---------------------------------------------------------------------------
+# Job 6: Yukon Cornelius reads new research papers (every morning)
+# ---------------------------------------------------------------------------
+
+RESEARCH_LABELS = ["DEPOSIT TYPE:", "COMMODITIES:", "SETTING:", "WHERE IT APPLIES:", "EXPLORATION:", "NEWS LINK:", "RELEVANCE:"]
+
+
+def run_research(desk, data_dir, docs_dir, day, now, dry_run):
+    print("Research digest")
+    if dry_run:
+        store = {"seen": [], "pending": [dict(p) for p in SAMPLE_PAPERS], "papers": []}
+        note = f"Research (dry run): {len(store['pending'])} sample paper(s)"
+    else:
+        store, note = research.collect(data_dir, os.environ.get("OPENALEX_API_KEY", "").strip())
+    print("  " + note)
+
+    waiting = sorted(store["pending"], key=lambda p: p.get("date", ""), reverse=True)
+    # Papers with abstracts first; many publishers don't share abstracts, so those are read from the title.
+    batch = ([p for p in waiting if p.get("abstract")] + [p for p in waiting if not p.get("abstract")])[:RESEARCH_PER_DAY]
+    no_abstract = []
+
+    if batch:
+        headlines = first_by_priority([a for a in day["articles"] if a.get("lane") in ("industry", "juniors")], 80)
+        papers = "\n\n".join(f"{n}. {p['title']} ({p['journal']}, {p['date']})\n"
+                              f"ABSTRACT: {p['abstract'] or '(not available: judge from the title only)'}"
+                              for n, p in enumerate(batch, 1))
+        reply = desk.ask("geologist", fill(prompts.RESEARCH_READ, now=stamp(now), papers=papers,
+                                           headlines=numbered(headlines) or "(No headlines today.)"))
+        blocks = re.split(r"(?im)^\s*\**PAPER:\s*", reply)
+        for block in blocks[1:]:
+            number = re.match(r"\s*(\d+)", block)
+            if not number or not 1 <= int(number[1]) <= len(batch):
+                continue
+            p = batch[int(number[1]) - 1]
+            for label in RESEARCH_LABELS:
+                p[label.rstrip(":").lower().replace(" & ", "_").replace(" ", "_")] = section(block, label, RESEARCH_LABELS)
+            p["relevance"] = (p.get("relevance") or "").split()[0].lower().strip(".") if p.get("relevance") else ""
+            link = re.search(r"\d+", p.get("news_link", "")) if p.get("news_link", "").lower() not in ("", "none", "none.") else None
+            if link and 1 <= int(link[0]) <= len(headlines):
+                article = headlines[int(link[0]) - 1]
+                p["news"] = {"title": article["title"], "link": article.get("link", "#"),
+                             "why": re.sub(r"(?i)^\s*(headline\s*)?(number\s*)?#?\d+\s*[-–—:,.)]*\s*", "", p["news_link"]).strip()}
+        for p in batch:
+            p["read"] = str(now.date())
+            p["title_only"] = not p.get("abstract")
+
+    done = {p["id"] for p in batch + no_abstract}
+    store["papers"] = [p for p in batch + no_abstract] + [p for p in store["papers"] if p["id"] not in done]
+    store["pending"] = [p for p in store["pending"] if p["id"] not in done]
+    research.save(data_dir, store)
+    build_research_page(store["papers"], docs_dir / "research.html", now, len(store["pending"]))
 
 
 # ---------------------------------------------------------------------------
@@ -555,7 +815,56 @@ SAMPLE_ARTICLES = [
 ]
 
 
+SAMPLE_PAPERS = [
+    {"id": "W1", "title": "Sample: Fluid evolution in a Carlin-type gold system, north-central Nevada", "journal": "Economic Geology",
+     "date": "2026-11-10", "authors": "A. Sample, B. Example", "link": "#", "abstract": "Sample abstract about Carlin-type gold."},
+    {"id": "W2", "title": "Sample: Porphyry copper fertility indicators in zircon from a continental arc", "journal": "Mineralium Deposita",
+     "date": "2026-11-08", "authors": "C. Sample", "link": "#", "abstract": "Sample abstract about porphyry copper."},
+]
+
+
+def sample_gov():
+    claims = {"new": [{"key": "dry1", "source": "BLM (federal land)", "state": "NV", "name": "Sample Ridge", "claimant": "",
+                       "count": 164, "acres": 3388, "first": "2026-11-02", "last": "2026-11-09", "lat": 40.95, "lon": -116.2,
+                       "map": "#", "serials": "NV105000001 to NV105000164", "type": "lode"}],
+              "notes": ["BLM federal claims (dry run): sample data"]}
+    claims["active"] = list(claims["new"]) + [{"key": "dry2", "source": "Alaska DNR (state land)", "state": "AK",
+        "name": "Sample Creek", "claimant": "Sample Exploration Llc", "count": 212, "acres": 33920, "first": "2026-10-20",
+        "last": "2026-10-28", "lat": 63.1, "lon": -150.3, "map": "#", "serials": "", "type": "state claim"}]
+    for pkg in claims["active"]:
+        pkg["town"] = gov_watch.nearest_town(pkg["lat"], pkg["lon"])
+        pkg["lookup"] = gov_watch.MLRS_LOOKUP if pkg["source"].startswith("BLM") else ""
+    notices = {"new": [{"serial": "NV105099999", "name": "Sample Notice", "state": "NV", "created": "2026-11-12",
+                        "status": "Filed", "acres": 4.5, "map": "#",
+                        "town": gov_watch.nearest_town(39.5, -117.1)}], "notes": ["BLM notices (dry run)"]}
+    reviews = {"new": [{"id": "FR-dry", "title": "Notice of Intent To Prepare an Environmental Impact Statement for the Sample Gold Mine",
+                        "link": "#", "date": "2026-11-12", "source": "Federal Register · Bureau of Land Management", "state": "NV",
+                        "summary": ""}], "notes": ["Reviews (dry run)"]}
+    filings = {"new": [{"id": "SEC-dry", "company": "Sample Mining Corp", "cik": "1", "date": "2026-11-13", "sic": "1040",
+                        "sic_name": "Gold and Silver Ores", "items": "2.05 Closure or layoff costs", "link": "#",
+                        "text": "Item 2.05 The company will place its Sample mine on care and maintenance."}], "notes": ["SEC (dry run)"]}
+    msha = {"new": [{"id": "ACC-dry", "kind": "Fatal accident", "date": "2026-11-05", "mine": "Sample", "operator": "Sample Operator",
+                     "state": "NV", "commodity": "Gold Ore", "coal_metal": "M", "detail": "Powered haulage. Sample narrative.",
+                     "mine_id": "2600000", "link": "#"}], "notes": ["MSHA (dry run)"]}
+    return claims, notices, reviews, filings, msha
+
+
 def fake_reply(agent, task):
+    if "KEEP or DROP" in task:
+        return "1 | KEEP | (dry run) A closure matters for the region.\n2 | KEEP | (dry run) A fatality is significant."
+    if "PAGE or DROP" in task:
+        return "1 | PAGE | (dry run) The closure removes a mid-sized Nevada producer.\n2 | PAGE | (dry run) A haulage fatality."
+    if "district, belt or trend" in task:
+        return "1 | (Dry run) This location most likely sits on the Battle Mountain-Eureka trend, known for Carlin-type gold."
+    if "PAPER: number" in task:
+        return ("PAPER: 1\nDEPOSIT TYPE: Carlin-type gold\nCOMMODITIES: Gold\nSETTING: (dry run) Paleozoic carbonates\n"
+                "WHERE IT APPLIES: (dry run) Nevada's Carlin and Battle Mountain-Eureka trends.\nEXPLORATION: (dry run) Use the fluid signature as a vector.\n"
+                "NEWS LINK: 6 - (dry run) A Nevada gold deal in the news.\nRELEVANCE: high\n\n"
+                "PAPER: 2\nDEPOSIT TYPE: Porphyry copper\nCOMMODITIES: Copper, molybdenum\nSETTING: (dry run) Continental arc\n"
+                "WHERE IT APPLIES: (dry run) Arizona porphyry belt; Alaska's Pebble district.\nEXPLORATION: (dry run) Screen intrusions with zircon chemistry.\n"
+                "NEWS LINK: None\nRELEVANCE: medium")
+    if "You are refereeing" in task:
+        return "P1 | evidence | (dry run) Headline 3 shows progress but doesn't settle it."
     if agent == "poet":
         return ("The grid wants copper, the miners want rain,\nand Chile's strike rolls on again.\n"
                 "A chameleon's tongue is twice its size,\nlike every junior's drill-hole prize.")
@@ -583,7 +892,8 @@ def fake_reply(agent, task):
                 "GLOBAL BRIEFING:\n(Dry run) World events the analysts should keep in mind before their next discussions.\n"
                 "PREDICTIONS:\nPREDICTION: (dry run example) | BY: 2027-01-31 | CONFIDENCE: low")
     if "60 words" in task:
-        return f"(Dry run) A very short summary from the {agent} would go here: two or three sentences on the day's news."
+        return (f"(Dry run) A very short summary from the {agent} would go here: two or three sentences on the day's news.\n"
+                f"PREDICTION: (dry run) A {agent} prediction | BY: 2027-03-31 | CONFIDENCE: medium")
     return (f"INDUSTRY HEALTH:\n(Dry run) The {agent}'s reply would go here.\nREGIONAL TRENDS:\n- A point\n"
             "TECHNOLOGY & DEMAND:\n- Another point\nON THE HORIZON:\n- A third point")
 
@@ -607,6 +917,7 @@ def main():
     world_file = data_dir / "world.json"      # World headlines waiting for Dr I Simon
     day_file = data_dir / "day.json"          # Everything since the last morning brief
     history_file = data_dir / "history.json"  # The Rat's log
+    ledger_file = data_dir / "predictions.json"   # Every prediction, and how it turned out
 
     now = datetime.now(TIMEZONE)
     state = load_json(state_file, {})
@@ -619,6 +930,10 @@ def main():
     discussion_due = args.now or is_due(state, "discussion", now, DISCUSSION_HOURS)
     chief_due = args.now or is_due(state, "chief", now, CHIEF_HOURS)
     brief_due = args.now or is_due(state, "brief", now, BRIEF_HOURS)
+    gov_due = args.now or is_due(state, "gov", now, GOV_HOURS)
+    last_msha = state.get("msha")
+    msha_due = gov_due and (args.now or not last_msha or (now.weekday() == MSHA_DAY and last_msha[:10] != str(now.date()))
+                            or now - datetime.fromisoformat(last_msha) > timedelta(days=8))
 
     # About once an hour: fetch news. Mining news goes to the inbox, world news to Dr I Simon's pile.
     last_fetch = state.get("fetch")
@@ -636,14 +951,28 @@ def main():
     else:
         print(f"{stamp(now)}: news was checked recently. Waiting: {len(inbox)} mining, {len(world)} world.")
 
-    if not (discussion_due or chief_due or brief_due):
+    if not (discussion_due or chief_due or brief_due or gov_due):
         print("No jobs due.")
         return
+
+    # Every morning (2am): government records. New items join the inbox for the next discussion.
+    if gov_due:
+        run_gov(desk, data_dir, day, inbox, now, msha_due, args.dry_run)
+        save_json(inbox_file, inbox)
+        save_json(day_file, day)
+        state["gov"] = now.isoformat()
+        if msha_due:
+            state["msha"] = now.isoformat()
+        save_json(state_file, state)
+        if not (discussion_due or chief_due or brief_due):
+            print(f"Done. {desk.calls} agent call(s) this run.")
+            return
 
     # The Rat's history log: the desk's memory of past days.
     history = {"long_term": "", "entries": [], **load_json(history_file, {})}
     history = restart_history(desk, history, now, history_file)
-    memory = history_text(history)
+    ledger = load_json(ledger_file, predictions.empty_ledger())
+    memory = history_text(history, ledger, now.date())
 
     # Every 6 hours: Meldrum + Yukon Cornelius discussion.
     if discussion_due:
@@ -682,8 +1011,13 @@ def main():
 
     # Every morning: sorted headlines, short summaries, poem, and the page. Then start a new day.
     if brief_due:
-        brief = run_brief(desk, day, now, docs_dir)
+        brief = run_brief(desk, day, now, docs_dir, ledger)
+        save_json(ledger_file, ledger)
         save_json(data_dir / "archive" / f"{now.date()}.json", brief)
+        try:
+            run_research(desk, data_dir, docs_dir, day, now, args.dry_run)
+        except Exception as error:   # The research page is a bonus: never let it stop the brief
+            print(f"Research digest: FAILED ({error})")
         if not brief.get("quiet"):
             history = run_history(desk, day, brief, now, history)
             save_json(history_file, history)

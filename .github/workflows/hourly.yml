@@ -28,7 +28,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - name: Get the code
         uses: actions/checkout@v7
@@ -46,6 +46,8 @@ jobs:
         run: python pipeline.py ${{ inputs.now && '--now' || '' }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}     # The SEC requires a contact email
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}       # Free key for the research journals
 
       - name: Save results
         run: |

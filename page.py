@@ -7,8 +7,15 @@ Layout, top to bottom:
   3. Today's headlines, sorted into colored groups. Tap a group to see only it.
   4. Dr I Simon's takeaways under four headings
   5. Very short summaries from Meldrum and Yukon Cornelius
-  6. Tap-to-expand extras: creative angles, the global view, world headlines,
+  6. Claims, notices & reviews: claim packages over 100 claims, BLM
+     exploration notices, environmental reviews
+  7. Filings & safety: the SEC filings and MSHA reports Dr I Simon chose
+  8. The prediction scorecard
+  9. Tap-to-expand extras: creative angles, the global view, world headlines,
      and the full discussions
+
+A second page, research.html, lists new economic-geology papers with Yukon
+Cornelius's notes. A tab at the top switches between the two.
 
 Names come from prompts.py. Groups, colors and regions are set just below.
 """
@@ -152,6 +159,116 @@ def takeaways_section(brief):
     return f"<section><h2>{esc(C)}'s takeaways</h2>{blocks}</section>"
 
 
+def package_item(p, new=False):
+    kind = "lode claims" if p.get("type") == "lode" else "claims"
+    where = f'<a href="{esc(p["map"])}">map</a>' if p.get("map") and p["map"] != "#" else ""
+    if p.get("claimant"):
+        who = f" · claimant {esc(p['claimant'])}"
+    elif p.get("lookup"):
+        first_serial = (p.get("serials") or "").split(" to ")[0]
+        who = (f' · claimant: <a href="{esc(p["lookup"])}">look up in MLRS</a> '
+               f'<span class="src">(serial {esc(first_serial)})</span>')
+    else:
+        who = ""
+    town = f'<br><span class="src">{esc(p["town"])}</span>' if p.get("town") else ""
+    note = f'<p class="note"><strong>{esc(G)}:</strong> {inline(p["note"])}</p>' if p.get("note") else ""
+    badge = '<span class="badge">New</span> ' if new else ""
+    return (f'<li class="pkg">{badge}<strong>{p["count"]} {kind}</strong> · “{esc(p["name"])}” · {esc(p["state"])}{who}'
+            f'<br><span class="src">{esc(p["source"])} · filed {esc(p["first"])} to {esc(p["last"])} · '
+            f'about {p["acres"]:,} acres{" · " + where if where else ""}</span>{town}{note}</li>')
+
+
+def gov_section(brief):
+    """Claim packages, exploration notices and environmental reviews."""
+    new = brief.get("claims_new", [])
+    new_keys = {p["key"] for p in new}
+    older = [p for p in brief.get("claims_active", []) if p["key"] not in new_keys]
+    parts = []
+
+    if new or older:
+        items = "".join(package_item(p, new=True) for p in new) + "".join(package_item(p) for p in older)
+        parts.append(f'<h3 class="th">Claim packages over 100 claims <span class="n">last 30 days</span></h3>'
+                     f'<ul class="links">{items}</ul>')
+    else:
+        parts.append('<h3 class="th">Claim packages over 100 claims</h3><p class="src">None filed in the last 30 days.</p>')
+
+    notices = brief.get("notices", [])
+    if notices:
+        rows = "".join(f'<li>{esc(n["state"])} · {esc(n["name"]) or "(unnamed)"} '
+                       f'<span class="src">{esc(n["serial"])} · {esc(n["created"])}'
+                       + (f' · {esc(n["town"])}' if n.get("town") else "")
+                       + (f' · <a href="{esc(n["map"])}">map</a>' if n.get("map") and n["map"] != "#" else "")
+                       + "</span></li>" for n in sorted(notices, key=lambda n: n["state"]))
+        by_state = {}
+        for n in notices:
+            by_state[n["state"]] = by_state.get(n["state"], 0) + 1
+        counts = ", ".join(f"{c} in {st}" for st, c in sorted(by_state.items(), key=lambda x: -x[1]))
+        parts.append(details(f"New BLM exploration notices ({len(notices)}): {counts}", f'<ul class="links plain">{rows}</ul>'))
+
+    reviews = brief.get("reviews", [])
+    if reviews:
+        rows = "".join(f'<li class="hl" data-g="projects"><a href="{esc(r["link"])}">{esc(r["title"])}</a> '
+                       f'<span class="src">{esc(r["source"])}{" · " + esc(r["date"]) if r.get("date") else ""}</span>'
+                       + (f' <span class="tag">{esc(r["state"])}</span>' if r.get("state") else "") + "</li>"
+                       for r in reviews)
+        parts.append(f'<h3 class="th">Environmental reviews</h3><ul class="links">{rows}</ul>')
+
+    return f'<section id="claims"><h2>Claims, notices &amp; reviews</h2>{"".join(parts)}</section>'
+
+
+def filings_section(brief):
+    picks = brief.get("filings", [])
+    if not picks:
+        return ""
+    rows = "".join(f'<li class="hl" data-g="{"safety" if f["id"].startswith(("ACC-", "107A-")) else "deals_policy"}">'
+                   f'<a href="{esc(f["link"])}">{esc(f["title"])}</a> <span class="src">{esc(f["date"])}'
+                   + (f' · MSHA mine ID {esc(f["mine_id"])}' if f.get("mine_id") else "")
+                   + f'</span><p class="note"><strong>{esc(C)}:</strong> {inline(f.get("takeaway", ""))}</p></li>'
+                   for f in picks)
+    return f'<section><h2>Filings &amp; safety</h2><ul class="links">{rows}</ul></section>'
+
+
+def scorecard_section(brief):
+    card = brief.get("scorecard")
+    if not card:
+        return ""
+    names = {"strategist": S, "geologist": G}
+
+    def rate(row):
+        return f'{row["hit_rate"]}%' if row["hit_rate"] is not None else "–"
+
+    def by_conf(row, level):
+        hits, misses = row["by_confidence"][level]
+        return f"{hits}/{hits + misses}" if hits + misses else "–"
+
+    head = "".join(f"<th>{esc(names[a])}</th>" for a in card)
+    rows = [("Came true", lambda r: r["came true"]), ("Did not happen", lambda r: r["did not happen"]),
+            ("No evidence", lambda r: r["no evidence"]), ("Still open", lambda r: r["open"]),
+            ("Hit rate", rate), ("High confidence", lambda r: by_conf(r, "high")),
+            ("Medium confidence", lambda r: by_conf(r, "medium")), ("Low confidence", lambda r: by_conf(r, "low"))]
+    body = "".join(f"<tr><td>{label}</td>" + "".join(f"<td>{fn(card[a])}</td>" for a in card) + "</tr>"
+                   for label, fn in rows)
+    table = f'<table class="score"><tr><th></th>{head}</tr>{body}</table>'
+    note = ('<p class="src">Hit rate counts only predictions the news settled. “No evidence” is never counted as a miss. '
+            'Confidence rows show hits out of settled predictions.</p>')
+
+    def plist(items, show_verdict=False):
+        out = ""
+        for i in items:
+            who = esc({"strategist": S, "geologist": G, "chief": C}.get(i["author"], ""))
+            verdict = (f' <span class="tag">{esc(i["status"])}</span><br><span class="src">{esc(i.get("verdict_note", ""))}</span>'
+                       if show_verdict else "")
+            out += (f'<li><strong>{who}:</strong> {esc(i["text"])} <span class="src">by {esc(i["by"])} · '
+                    f'{esc(i["confidence"])} confidence</span>{verdict}</li>')
+        return f'<ul class="plain">{out}</ul>' if out else '<p class="src">None.</p>'
+
+    extra = details(f"Open predictions ({len(brief.get('open_predictions', []))})", plist(brief.get("open_predictions", [])))
+    extra += details(f"Recent results ({len(brief.get('results', []))})", plist(brief.get("results", []), show_verdict=True))
+    extra += details(f"{C}'s own predictions ({len(brief.get('chief_predictions', []))}, not scored)",
+                     plist(brief.get("chief_predictions", [])))
+    return f'<section><h2>Prediction scorecard</h2>{table}{note}{extra}</section>'
+
+
 def extras_section(brief):
     """Everything that is collapsed by default."""
     extras = []
@@ -179,6 +296,16 @@ def extras_section(brief):
                 f"<h4>{esc(S)}'s reply</h4>{to_html(d['strategist_reply'])}"
                 f"<h4>{esc(G)}'s reply</h4>{to_html(d['geologist_reply'])}")
         extras.append(details(f"{S} & {G} · {short_time(d['time'])} ({d['article_count']} articles)", body))
+
+    for t in brief.get("triage_log", []):
+        body = (f"<h4>What was screened</h4>{to_html(t['listing'])}"
+                f"<h4>{esc(S)}</h4>{to_html(t['strategist'])}<h4>{esc(G)}</h4>{to_html(t['geologist'])}"
+                + (f"<h4>{esc(C)}</h4>{to_html(t['chief'])}" if t.get("chief") else ""))
+        extras.append(details(f"How filings and safety reports were screened · {short_time(t['time'])} ({t['count']} items)", body))
+
+    if brief.get("gov_notes"):
+        extras.append(details("Government data sources: status",
+                              "<ul>" + "".join(f"<li>{esc(n)}</li>" for n in brief["gov_notes"]) + "</ul>"))
     return "".join(extras)
 
 
@@ -274,6 +401,31 @@ TEMPLATE = Template("""<!doctype html>
   .headlines { border-top: none; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
   .quiet { padding: 40px 0; color: var(--muted); font-style: italic; }
   footer { color: var(--muted); font-size: 13px; margin-top: 28px; }
+
+  /* Tabs between the brief and the research page */
+  .tabs { display: flex; gap: 18px; border-bottom: 1px solid var(--line); }
+  .tabs a { color: var(--muted); text-decoration: none; font-size: 15px; padding: 10px 0 8px;
+            border-bottom: 2px solid transparent; }
+  .tabs a.on { color: var(--ink); font-weight: 600; border-color: var(--accent); }
+
+  /* Claims, filings and the scorecard */
+  .pkg { border-left: 3px solid var(--accent); padding-left: 10px; margin-bottom: 14px; }
+  .badge { font-size: 11px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+           color: var(--bg); background: var(--accent); border-radius: 4px; padding: 1px 6px; }
+  .note { font-size: 14px; margin: 6px 0 0; }
+  .score { width: 100%; border-collapse: collapse; font-size: 14px; margin: 6px 0 8px; }
+  .score th, .score td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); }
+  .score td + td, .score th + th { text-align: right; }
+
+  /* Research page */
+  .paper { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+           padding: 14px 16px; margin: 0 0 14px; font-size: 15px; }
+  .paper h3 { font-size: 16px; line-height: 1.35; margin-bottom: 4px; }
+  .paper h3 a { color: var(--ink); }
+  .paper p { margin: 8px 0 0; }
+  .paper .k { font-weight: 600; }
+  .newslink { border-left: 3px solid var(--accent); padding-left: 10px; }
+  .newslink a, .pkg a, .note a, .src a { color: var(--ink); }
 </style>
 </head>
 <body>
@@ -282,9 +434,10 @@ TEMPLATE = Template("""<!doctype html>
   <span class="brand">Mining Desk</span>
   <span class="date">$DATE</span>
 </header>
+<nav class="tabs">$NAV</nav>
 $MAIN
 $EXTRAS
-<footer>Updated $UPDATED Pacific · $COUNT articles reviewed · AI analysis for professional interest, not investment advice.</footer>
+<footer>$FOOTER</footer>
 </main>
 <script>
   // Tap a colored chip to show only that group of headlines.
@@ -302,6 +455,20 @@ $EXTRAS
     });
     box.querySelectorAll(".more").forEach(function (button) {
       button.addEventListener("click", function () { button.parentNode.classList.add("open"); });
+    });
+  }
+
+  // Research page: tap a chip to filter the papers.
+  var papers = document.querySelector(".papers");
+  if (papers) {
+    papers.querySelectorAll(".chip").forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        var f = chip.dataset.f;
+        papers.querySelectorAll(".chip").forEach(function (c) { c.classList.toggle("on", c === chip); });
+        papers.querySelectorAll(".paper").forEach(function (card) {
+          card.hidden = f !== "all" && (" " + card.dataset.tags + " ").indexOf(" " + f + " ") < 0;
+        });
+      });
     });
   }
 
@@ -344,6 +511,7 @@ def build_page(brief, out_path):
   </div>
 </section>
 """
+    main += gov_section(brief) + filings_section(brief) + scorecard_section(brief)
 
     # One CSS rule per group sets its color (--g) wherever data-g appears.
     light = " ".join(f'[data-g="{k}"] {{ --g: {v[1]}; }}' for k, v in GROUPS.items())
@@ -351,9 +519,68 @@ def build_page(brief, out_path):
 
     page = TEMPLATE.substitute(
         DATE=esc(brief.get("date_label", "")), MAIN=main, EXTRAS=extras_section(brief),
-        UPDATED=updated, COUNT=brief.get("article_count", 0),
+        NAV=NAV_BRIEF, FOOTER=f"Updated {updated} Pacific · {brief.get('article_count', 0)} articles reviewed · "
+                              "AI analysis for professional interest, not investment advice.",
         LIGHT_COLORS=light, DARK_COLORS=dark)
+    write_page(page, out_path)
 
+
+NAV_BRIEF = '<a class="on" href="index.html">Brief</a><a href="research.html">Research</a>'
+NAV_RESEARCH = '<a href="index.html">Brief</a><a class="on" href="research.html">Research</a>'
+
+
+def build_research_page(papers, out_path, now, waiting=0):
+    """The Research tab: new economic-geology papers with Yukon Cornelius's notes."""
+    chips_wanted = [("all", "All"), ("news", "Linked to news"), ("high", "High relevance"), ("alaska", "Alaska")]
+    cards = []
+    counts = {key: 0 for key, _ in chips_wanted}
+    for p in papers:
+        tags = ["all"]
+        if p.get("news"):
+            tags.append("news")
+        if p.get("relevance") == "high":
+            tags.append("high")
+        where = p.get("where_it_applies") or p.get("us_alaska", "")
+        if "alaska" in (where + p.get("title", "")).lower():
+            tags.append("alaska")
+        for t in tags:
+            counts[t] += 1
+        facts = " · ".join(esc(x) for x in (p.get("deposit_type"), p.get("commodities")) if x)
+        rel = f' <span class="tag">{esc(p["relevance"])} relevance</span>' if p.get("relevance") else ""
+        if p.get("title_only"):
+            rel += ' <span class="tag">title only</span>'
+        news = ""
+        if p.get("news"):
+            news = (f'<p class="newslink"><span class="k">In the news:</span> <a href="{esc(p["news"]["link"])}">'
+                    f'{esc(p["news"]["title"])}</a><br>{inline(p["news"].get("why", ""))}</p>')
+        body = ""
+        for value, label in ((p.get("setting"), "Setting"), (where, "Where it applies"), (p.get("exploration"), "For explorers")):
+            if value:
+                body += f'<p><span class="k">{label}:</span> {inline(value)}</p>'
+        cards.append(
+            f'<article class="paper" data-tags="{" ".join(tags)}">'
+            f'<h3><a href="{esc(p["link"])}">{esc(p["title"])}</a></h3>'
+            f'<span class="src">{esc(p["journal"])} · {esc(p["date"])}{" · " + esc(p["authors"]) if p.get("authors") else ""}</span>'
+            f'{"<p>" + facts + rel + "</p>" if facts or rel else ""}{body}{news}</article>')
+
+    chips = "".join(f'<button class="chip{" on" if key == "all" else ""}" data-f="{key}">{label} <span>{counts[key]}</span></button>'
+                    for key, label in chips_wanted)
+    intro = (f'<p class="src">New papers from economic-geology journals, read by {esc(G)} for what they mean for '
+             f'exploration in the Lower 48 or Alaska. His notes on location and applicability draw on his background '
+             f'knowledge; the findings come from each paper\'s abstract.'
+             + (f" {waiting} more waiting to be read." if waiting else "") + "</p>")
+    main = (f'<section class="papers"><h2>Research</h2>{intro}<div class="chips">{chips}</div>'
+            + ("".join(cards) or '<p class="quiet">No papers yet. They appear after the next morning run.</p>')
+            + "</section>")
+    updated = f"{now.hour % 12 or 12}:{now:%M} {'AM' if now.hour < 12 else 'PM'}"
+    page = TEMPLATE.substitute(
+        DATE=esc(f"{now:%A, %B} {now.day}"), MAIN=main, EXTRAS="", NAV=NAV_RESEARCH,
+        FOOTER=f"Updated {updated} Pacific · {len(papers)} papers · Sources via OpenAlex.",
+        LIGHT_COLORS="", DARK_COLORS="")
+    write_page(page, out_path)
+
+
+def write_page(page, out_path):
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(page, encoding="utf-8")
 
