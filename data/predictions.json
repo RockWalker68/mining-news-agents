@@ -1,5 +1,5 @@
 {
-  "next_id": 9,
+  "next_id": 14,
   "items": [
     {
       "id": "P1",
@@ -78,6 +78,56 @@
       "by": "2026-12-31",
       "confidence": "low",
       "made": "2026-11-16",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P9",
+      "author": "strategist",
+      "text": "Panama and First Quantum publicly announce an agreed timetable for the Cobre Panama restart",
+      "by": "2027-06-30",
+      "confidence": "low",
+      "made": "2026-11-17",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P10",
+      "author": "geologist",
+      "text": "Panama and First Quantum publicly announce an agreed timetable for restarting Cobre Panama operations",
+      "by": "2027-06-30",
+      "confidence": "low",
+      "made": "2026-11-17",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P11",
+      "author": "chief",
+      "text": "Highland Valley labour dispute settled by a publicly announced signed agreement",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-17",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P12",
+      "author": "chief",
+      "text": "Panama government or First Quantum publicly announces a dated Cobre Panama restart timetable",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-17",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P13",
+      "author": "chief",
+      "text": "China publishes a multi-year general export licence framework covering antimony, tungsten or rare earths",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-17",
       "status": "open",
       "evidence": []
     }
