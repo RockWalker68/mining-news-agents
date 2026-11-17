@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Mining Desk">
+<meta name="theme-color" content="#f6f1e7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16130f" media="(prefers-color-scheme: dark)">
+<title>Mining Desk</title>
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg: #f6f1e7; --ink: #241f19; --muted: #7a6f60; --card: #fffaf0;
+    --line: #e2d8c6; --accent: #b0602a;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16130f; --ink: #ece4d6; --muted: #a39683; --card: #211c16;
+            --line: #3a3128; --accent: #e08a4c; }
+    
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    padding: env(safe-area-inset-top) 16px calc(32px + env(safe-area-inset-bottom));
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  header { padding: 20px 0 6px; display: flex; justify-content: space-between;
+           align-items: baseline; border-bottom: 1px solid var(--line); }
+  .brand { font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 13px; }
+  .date { color: var(--muted); font-size: 14px; }
+  .poem {
+    font-family: "Iowan Old Style", Georgia, serif; font-style: italic;
+    font-size: 23px; line-height: 1.45; white-space: pre-line;
+    padding: 28px 0 24px; border-bottom: 1px solid var(--line);
+  }
+  .byline { display: block; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-style: normal; font-size: 14px; color: var(--muted); margin-top: 12px; }
+  h2 { font-size: 13px; letter-spacing: .08em; text-transform: uppercase;
+       color: var(--accent); margin: 24px 0 10px; }
+  h3 { font-size: 15px; margin: 0 0 6px; }
+  h4 { font-size: 14px; color: var(--accent); margin: 18px 0 4px; }
+  ul { padding-left: 20px; margin: 8px 0; }
+  li { margin: 0 0 8px; }
+  .th { margin: 18px 0 2px; }
+  .takeaways li { margin-bottom: 10px; }
+  .lbl { font-weight: 600; margin: 14px 0 2px; }
+
+  /* Headlines: each has a colored bar for its group */
+  .links { list-style: none; padding: 0; font-size: 15px; }
+  .links a { color: var(--ink); }
+  .hl { border-left: 3px solid var(--g); padding-left: 10px; margin-bottom: 10px; }
+  .plain li { margin-bottom: 10px; }
+  .src { color: var(--muted); font-size: 13px; }
+  .tag { font-size: 11px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted);
+         border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; white-space: nowrap; }
+  .g-text { color: var(--g); border-color: var(--g); }
+  .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%;
+         background: var(--g); margin-right: 6px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 2px 0 6px; }
+  .chip { font: inherit; font-size: 13px; color: var(--ink); background: var(--card);
+          border: 1px solid var(--line); border-radius: 999px; padding: 5px 10px; cursor: pointer; }
+  .chip span, .n { color: var(--muted); font-weight: 400; font-size: 13px; }
+  .chip.on { border-color: var(--ink); font-weight: 600; }
+  .grp { padding-top: 14px; }
+  .grp h3 { margin-bottom: 8px; }
+  .grp:not(.open) .extra { display: none; }
+  .grp.open .more { display: none; }
+  .more { font: inherit; font-size: 13px; color: var(--accent); background: none; border: 0;
+          padding: 0 0 4px 13px; cursor: pointer; }
+
+  .pair { display: grid; gap: 12px; margin: 24px 0; }
+  @media (min-width: 560px) { .pair { grid-template-columns: 1fr 1fr; } }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+          padding: 14px 16px; font-size: 16px; }
+  .card p { margin: 0; }
+  .role { color: var(--muted); font-weight: 400; font-size: 13px; margin-left: 4px; }
+  details { border-top: 1px solid var(--line); }
+  details:last-of-type { border-bottom: 1px solid var(--line); }
+  summary { cursor: pointer; padding: 14px 0; font-weight: 600; font-size: 15px; }
+  .more-text { font-size: 15px; padding-bottom: 16px; }
+  .headlines { border-top: none; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+  .quiet { padding: 40px 0; color: var(--muted); font-style: italic; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 28px; }
+
+  /* Tabs between the pages */
+  .tabs { display: flex; gap: 18px; border-bottom: 1px solid var(--line); overflow-x: auto; }
+  .tabs a { color: var(--muted); text-decoration: none; font-size: 15px; padding: 10px 0 8px;
+            border-bottom: 2px solid transparent; white-space: nowrap; }
+
+  /* Main sections that fold up */
+  .sec > summary { list-style-position: outside; margin-left: 18px; }
+  .sec > summary { padding: 14px 0; }
+  .sec > summary h2 { display: inline; margin: 0; line-height: 1.6; }
+  .sec-body { padding-bottom: 14px; }
+  .sec .pair { margin: 4px 0 8px; }
+  .quick { font-size: 18px; line-height: 1.55; margin: 0 0 6px; }
+
+  /* Dan's Tab */
+  .animal { display: flex; gap: 14px; align-items: flex-start; padding: 20px 0 16px; border-bottom: 1px solid var(--line); }
+  .animal img { width: 116px; height: 116px; object-fit: cover; border-radius: 12px; flex: none; }
+  .animal h2 { margin-top: 0; }
+  .animal p { font-size: 15px; margin: 6px 0; }
+  .rat { font-style: italic; }
+  .quote { font-family: "Iowan Old Style", Georgia, serif; font-style: italic; font-size: 20px; line-height: 1.45;
+           margin: 0; padding: 22px 0 20px; border-bottom: 1px solid var(--line); }
+  .reply { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; font-size: 15px; }
+  .rate { display: flex; align-items: center; gap: 6px; margin: 6px 0 14px; }
+  .rate button { font: inherit; font-size: 13px; width: 34px; height: 30px; border-radius: 8px; cursor: pointer;
+                 color: var(--muted); background: var(--card); border: 1px solid var(--line); }
+  .rate button.on { color: var(--bg); background: var(--accent); border-color: var(--accent); }
+  textarea, input[type=password] { width: 100%; font: inherit; font-size: 16px; color: var(--ink); background: var(--card);
+             border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; }
+  .btn { display: inline-block; font: inherit; font-size: 15px; font-weight: 600; color: var(--bg); background: var(--accent);
+         border: 1px solid var(--accent); border-radius: 10px; padding: 8px 14px; cursor: pointer; text-decoration: none; }
+  .btn.ghost { color: var(--accent); background: none; }
+  .lock { padding: 40px 0; }
+  .lock p { margin: 0 0 12px; }
+  .marks { display: flex; gap: 3px; margin: 4px 0 2px; flex-wrap: wrap; }
+  .mk { display: inline-block; width: 18px; text-align: center; font-size: 13px; color: var(--muted); }
+  .mk-new { color: #2f6fb3; } .mk-building { color: #2e7d4f; } .mk-fading { color: #c0392b; } .mk-resolved { color: var(--accent); }
+  .themes li { margin-bottom: 14px; }
+  .tabs a.on { color: var(--ink); font-weight: 600; border-color: var(--accent); }
+
+  /* Claims, filings and the scorecard */
+  .pkg { border-left: 3px solid var(--accent); padding-left: 10px; margin-bottom: 14px; }
+  .badge { font-size: 11px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+           color: var(--bg); background: var(--accent); border-radius: 4px; padding: 1px 6px; }
+  .note { font-size: 14px; margin: 6px 0 0; }
+  .score { width: 100%; border-collapse: collapse; font-size: 14px; margin: 6px 0 8px; }
+  .score th, .score td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); }
+  .score td + td, .score th + th { text-align: right; }
+
+  /* Research page */
+  .paper { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+           padding: 14px 16px; margin: 0 0 14px; font-size: 15px; }
+  .paper h3 { font-size: 16px; line-height: 1.35; margin-bottom: 4px; }
+  .paper h3 a { color: var(--ink); }
+  .paper p { margin: 8px 0 0; }
+  .paper .k { font-weight: 600; }
+  .newslink { border-left: 3px solid var(--accent); padding-left: 10px; }
+  .newslink a, .pkg a, .note a, .src a { color: var(--ink); }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <span class="brand">Mining Desk</span>
+  <span class="date">Monday, November 16</span>
+</header>
+<nav class="tabs"><a href="index.html">Quick Look</a><a href="brief.html">Brief</a><a class="on" href="research.html">Research</a><a href="dan.html">Dan&#x27;s Tab</a></nav>
+<section class="papers"><h2>Research</h2><p class="src">New papers from economic-geology journals, read by Yukon Cornelius for what they mean for exploration in the Lower 48 or Alaska. His notes on location and applicability draw on his background knowledge; the findings come from each paper's abstract. 59 more waiting to be read.</p><div class="chips"><button class="chip on" data-f="all">All <span>10</span></button><button class="chip" data-f="news">Linked to news <span>6</span></button><button class="chip" data-f="high">High relevance <span>1</span></button><button class="chip" data-f="alaska">Alaska <span>10</span></button></div><article class="paper" data-tags="all alaska"><h3><a href="https://doi.org/10.1144/geochem2026-027">A perspective on data science and geochemistry for tomorrow&#x27;s resources</a></h3><span class="src">Geochemistry: Exploration, Environment, Analysis · 2026-11-13 · McLean Trott, Matthew I. Leybourne, Juan Carlos Ordóñez-Calderón et al.</span><p>General · General (applies across metals) <span class="tag">medium relevance</span></p><p><span class="k">Setting:</span> Not specific; regional exploration through deposit-scale characterization and mine closure</p><p><span class="k">Where it applies:</span> Lower 48 and Alaska alike. These are methods, not a geology, so they fit any district with a good legacy geochemical database, such as the sediment and soil surveys common in both regions. Background: many older Lower 48 and Alaska exploration datasets are sitting unused, so this approach has real practical value.</p><p><span class="k">For explorers:</span> An explorer with a large soil, stream-sediment, or rock-geochemistry dataset could use multivariate and machine-learning workflows to rank anomalies and find pathfinder combinations. The paper also argues for planning geochemical data for reclamation and closure from the start.</p></article><article class="paper" data-tags="all alaska"><h3><a href="https://doi.org/10.1016/j.oregeorev.2026.107666">A rare type of uranium mineralization in the Husab uranium deposit, Namibia: glimmerite-type uranium mineralization</a></h3><span class="src">Ore Geology Reviews · 2026-11-10 · Zhou Haoyu, Guanglai Li, Huaifeng Zhang et al.</span><p>Alaskite-type uranium; glimmerite-type uranium veins · Uranium (U3O8), with fluorine and rare earths in apatite <span class="tag">low relevance</span></p><p><span class="k">Setting:</span> Namibian Damara orogen granitic intrusions, Neoproterozoic to Cambrian age (background)</p><p><span class="k">Where it applies:</span> Little direct bearing on the Lower 48 or Alaska. Alaskite-type uranium is rare in both regions, and I know of no glimmerite-type mineralization there.</p><p><span class="k">For explorers:</span> Lower 48 and Alaska explorers are unlikely to change their programs because of this paper. The one transferable idea is that biotite and apatite chemistry can help fingerprint magmatic uranium enrichment in peraluminous granites.</p></article><article class="paper" data-tags="all news high alaska"><h3><a href="https://doi.org/10.1016/j.gexplo.2026.108275">Zircon–apatite fingerprints of porphyry Cu(Au) fertility in Georgetown granitoids, NE Queensland</a></h3><span class="src">Journal of Geochemical Exploration · 2026-11-07 · Jonghyun Lee, Ioan V. Sanislav, Helen A. McCoy-West et al.</span><p>Porphyry Cu(Au) · Copper, gold <span class="tag">high relevance</span></p><p><span class="k">Setting:</span> Permian and Carboniferous granitoids, Georgetown region, NE Queensland; Tasman/ Thomson-type orogenic belt (background)</p><p><span class="k">Where it applies:</span> Lower 48 Laramide and Cordilleran porphyry belts in Arizona, New Mexico, Nevada, Utah, and Montana are the best match, since the method targets oxidized, hydrous arc magmas. Alaska&#x27;s Alaska Range and Aleutian-related porphyry systems also fit the method, though the match is less direct.</p><p><span class="k">For explorers:</span> Explorers working in Laramide or Alaska arc granites could collect zircon and apatite from intrusions and rank them by the Eu/Eu* and ZCFI thresholds before committing to drilling. This is a cheap way to prioritize intrusions when whole-rock data are altered.</p><p class="newslink"><span class="k">In the news:</span> <a href="https://www.northernminer.com/news/freeport-strikes-110m-deal-for-bc-copper-stake/1003897770/">Freeport strikes $110M deal for BC copper stake</a><br>(Freeport&#x27;s $110M deal for a BC copper stake): same porphyry copper deposit type, though in British Columbia, so the link is to the target style rather than to the place.</p></article><article class="paper" data-tags="all news alaska"><h3><a href="https://doi.org/10.5382/econgeo.5275">Supergene Enrichment of Rare Earth Elements in Weathered Carbonatite Systems: Insights from the Sokli Deposit, Northeastern Finland</a></h3><span class="src">Economic Geology · 2026-11-06 · Martin Yan Hei Li, Martin Smith, Sam Broom-Fendley et al.</span><p>Carbonatite-hosted REE (weathered carbonatite / phoscorite P-Nb-REE) · Rare earth elements, niobium, phosphate <span class="tag">medium relevance</span></p><p><span class="k">Setting:</span> Paleoproterozoic carbonatite-phoscorite complex in northeastern Finland with a deep, karstic weathering profile</p><p><span class="k">Where it applies:</span> Lower 48 carbonatite REE systems, especially Bear Lodge in Wyoming and Mountain Pass in California. Carbonatite complexes in Missouri and Colorado are also relevant. Alaska has little bearing. Background: weathered carbonatite caps are a known enrichment process in these districts.</p><p><span class="k">For explorers:</span> Explorers on carbonatites in the Lower 48 should map weathering profiles and track which REE minerals survive or dissolve at each stage, rather than sampling fresh rock only. Drilling tests should also cover the phosphatic crust and the karst collapse zones where the enrichment accumulates.</p><p class="newslink"><span class="k">In the news:</span> <a href="https://www.northernminer.com/news/from-the-archives-mountain-pass-the-mine-that-brought-tv-to-life/1003897598/">From the archives: Mountain Pass, the mine that brought TV to life</a><br>(From the archives: Mountain Pass): the same carbonatite REE deposit type, though the headline is historical and does not address weathering.</p></article><article class="paper" data-tags="all news alaska"><h3><a href="https://doi.org/10.1016/j.oregeorev.2026.107660">Pyrite trace-element evolution and constraints on lithium sources in the Pingqiao hydrothermal fluorite-cookeite deposit, SW China</a></h3><span class="src">Ore Geology Reviews · 2026-11-06 · Zhenzhong Xiang, Lin Ye, Shiyu Liu et al.</span><p>Hydrothermal fluorite-cookeite lithium deposit (low-temperature hydrothermal, with pyrite trace-element vectoring) · Lithium, fluorite, with pyrite trace elements (Au, As, Sb, Ni, Co, Se) <span class="tag">low relevance</span></p><p><span class="k">Setting:</span> Mesozoic low-temperature hydrothermal system at the margin of the Youjiang and Sichuan-Yunnan-Guizhou provinces, SW China</p><p><span class="k">Where it applies:</span> Little direct bearing on the Lower 48 or Alaska. The Carlin-type comparison is useful background for Nevada, since it shows that absent Au-As-Sb in pyrite is a meaningful negative signal.</p><p><span class="k">For explorers:</span> Nevada Carlin-trend explorers can use the paper&#x27;s pyrite-generation approach, separating sedimentary from hydrothermal pyrite, and treat missing Au-As-Sb in pyrite as evidence against ore-stage gold. The lithium part does not transfer.</p><p class="newslink"><span class="k">In the news:</span> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNYlNCWUN3UTNzRVp3b1lRdTF3bDVaMmNZSGxINnZJdFRMcmRQRkUxM1h3NmFJY1c5TE1ZMEJGNkZKTWZHeTBqSkdSaEdtdGFuUXNxWExSc25mb2w3TnNpdVdSTnZMMmxGSjQtc2ZMdlhtWFMxQ2hnTjkxUjVBcXNxZXRtdGNZODV1OG5N?oc=5">Lithium X2 files PFS report for Nevada North Lithium Project</a><br>(Lithium X2 PFS for Nevada North): both are lithium projects, but the Nevada project is a clay-hosted system, so the connection is thin.</p></article><article class="paper" data-tags="all alaska"><h3><a href="https://doi.org/10.1016/j.oregeorev.2026.107649">Association-dissociation behavior of MgSO4 solution at high temperature and pressure: Constraints from in situ Raman quantitative experiments</a></h3><span class="src">Ore Geology Reviews · 2026-11-06 · Zimeng Li, Richen Zhong, Hao Cui et al.</span><p>General · General (magnesium and sulfate in hydrothermal fluids) <span class="tag">low relevance</span></p><p><span class="k">Setting:</span> Laboratory physical chemistry of hydrothermal and planetary-ocean brines</p><p><span class="k">Where it applies:</span> Little bearing on Lower 48 or Alaska exploration. It may help modelling of hot sulfate-bearing ore fluids in porphyry and epithermal systems, and the paper says extrapolation to natural fluids should be cautious.</p><p><span class="k">For explorers:</span> Explorers would not change field practice based on this paper. It may help a geochemist or modeller interpret fluid speciation in a fluid-inclusion or ore-solubility model.</p></article><article class="paper" data-tags="all alaska"><h3><a href="https://doi.org/10.1016/j.oregeorev.2026.107629">Unraveling the hydrothermal evolution and exploration vectors of IOA system in the Xiangshannan-Dadiantang deposit, Ningwu District: Insights from SWIR spectroscopy and mineral chemistry</a></h3><span class="src">Ore Geology Reviews · 2026-11-04 · Wencheng Zhang, Fangyue Wang, Taofa Zhou et al.</span><p>Iron oxide-apatite (IOA) magnetite deposit with chlorite alteration vectoring · Iron (magnetite), with apatite, and trace Mg, Ca, Zn in magnetite <span class="tag">medium relevance</span></p><p><span class="k">Setting:</span> Ningwu volcanic basin, eastern China; Mesozoic intrusion-related iron ore, with alteration of volcanic and intrusive host rock</p><p><span class="k">Where it applies:</span> Lower 48 IOA districts in the Pea Ridge and Pilot Knob area of Missouri, and the Adirondacks in New York, are the best match. Background: SWIR (portable spectrometer) alteration mapping is routine in both the Lower 48 and Alaska, but the Alaska match for IOA is weak.</p><p><span class="k">For explorers:</span> Explorers in Missouri or the Adirondacks could collect SWIR spectra on chlorite-bearing alteration and test whether the Mg-OH shift and IC values track high-TFe zones. Chlorite chemistry from drill core would add a second check.</p></article><article class="paper" data-tags="all news alaska"><h3><a href="https://doi.org/10.1016/j.oregeorev.2026.107604">Sandstone-hosted uranium mineralization in the Lower Cretaceous aeolian red beds: A case study from the Jingchuan deposit in the southwestern Ordos Basin, China</a></h3><span class="src">Ore Geology Reviews · 2026-11-03 · Yin Chen, Michel Cuney, Julien Mercadier et al.</span><p>Sandstone-hosted uranium (roll-front style, red-bed hosted) · Uranium, with iron sulfides, titanium oxides, and phosphates <span class="tag">medium relevance</span></p><p><span class="k">Setting:</span> Lower Cretaceous aeolian red-bed sandstones of the Ordos Basin, northern China; hydrocarbon-associated reducing systems</p><p><span class="k">Where it applies:</span> Lower 48 sandstone-hosted uranium belts are the main match: the Wyoming Powder River and Wind River basins, the Colorado Plateau, and the Texas Gulf Coast. Background: roll-front deposits in these basins also depend on redox fronts and hydrocarbon-driven reduction. Alaska has little bearing.</p><p><span class="k">For explorers:</span> Lower 48 roll-front explorers could sample for Ti-oxide, clay, and sulfide associations and run sulfur isotopes to find reduction-related signals. These tests would help locate the redox front and pick out where uranium fixed.</p><p class="newslink"><span class="k">In the news:</span> <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE8tNEM3MHlLOEQ4XzVQdUVLTDNCR2tqb1FxckpxaEZ6YTlxSEJWN0tvLWE4RGVlcmNrUFBtXzBpWGpva3RVR0RKelBpTDVYVzVBZXFBb1psVVR3dw?oc=5">Is the AI boom pushing uranium mining in Saskatchewan?</a><br>(Is the AI boom pushing uranium mining in Saskatchewan?): the link is demand for uranium, not deposit type, since Saskatchewan deposits are unconformity-type.</p></article><article class="paper" data-tags="all news alaska"><h3><a href="https://doi.org/10.1016/j.oregeorev.2026.107658">Y-shaped faults and their control on orogenic gold mineralization: Field survey and particle flow code (PFC) numerical simulation on the Dongkeng deposit in South China</a></h3><span class="src">Ore Geology Reviews · 2026-11-03 · JiaJian LU, Yi Zheng, Xi Chen et al.</span><p>Orogenic gold (brittle-ductile shear-zone hosted) · Gold <span class="tag">medium relevance</span></p><p><span class="k">Setting:</span> Brittle-ductile shear zone with NW-trending structures and a subordinate fault to the regional NE-trending Wuchuan-Sihui fault; Cathaysia Block, South China</p><p><span class="k">Where it applies:</span> Alaska&#x27;s orogenic gold belts, including the Juneau gold belt and the Tintina-related belt of interior Alaska, are a good match, since the structural controls are similar. Lower 48 orogenic gold districts such as the Mother Lode in California and the Carolina slate belt fit the same logic.</p><p><span class="k">For explorers:</span> Alaska and Lower 48 explorers could map subordinate and splay faults in addition to the main shear, and target dilation zones where stress alternates. The paper supports drilling the splay and jog structures before the main fault plane.</p><p class="newslink"><span class="k">In the news:</span> <a href="https://news.google.com/rss/articles/CBMiqAJBVV95cUxPaEpobG90eHRGaFl2ZExubExUWkFyQ2hlcV9uTVFFb2pkbmd0MjVlSWd3MVdySlJDMHVxVVV0YTV4R3Q3WWk3eklCVGJOTlNJZUVfTHQ5VF9UMG5FUFo3blB1S2loLUZXRFlsV1ptM0RjaDh5NVktRDZoYjhfa2x3YmtSaS1SUGhldDRxeDYwR2J4OVpmc0R3c05FWko4SVE3NmJrb2R3UzFYSWtmM2lHNUlXTHRaWnJFYjVVc2xaR3VxUlVPMGNhWC1YMHUwc005aFNEeHVXallpdjA0dnJyUFR5c0s0ZU5TeFVlclFoX3IxV0ZzLVUzQW1maDViNThXLVo3RjlJZUJkN0lPM2h6MnlYSGpsNnV2NnViWUJmSnNyb2hlLXRsRA?oc=5">FXG steps out new gold at Treasure Creek</a><br>(FXG steps out new gold at Treasure Creek): a new Alaska gold step-out. The headline does not give the deposit type, so the structural link is only a suggestion.</p></article><article class="paper" data-tags="all news alaska"><h3><a href="https://doi.org/10.1016/j.oregeorev.2026.107657">Lithium cycling in the source-to-sink system of a typical salt lake in the Western Kunlun: multi-isotopic constraints and end-member quantification</a></h3><span class="src">Ore Geology Reviews · 2026-11-01 · Yanji Li, Miao Weiliang, Maoyong He et al.</span><p>Salt-lake (brine) lithium, with pegmatite lithium as the source · Lithium, boron, strontium <span class="tag">medium relevance</span></p><p><span class="k">Setting:</span> Quaternary closed salt-lake basins on the Qinghai-Xizang Plateau, Western Kunlun, China</p><p><span class="k">Where it applies:</span> Lower 48 brine lithium in Clayton Valley, Nevada, and the Smackover Formation brines of Arkansas and Texas, are the closest matches. The isotope tracers (δ7Li, δ11B, 87Sr/86Sr) apply directly. Alaska has little bearing.</p><p><span class="k">For explorers:</span> Brine explorers in Nevada or Arkansas could use Li, B, and Sr isotopes to separate deep-fluid inputs from surface recharge before drilling. Sampling springs and the terminal basin for end-member fingerprints would help rank brine sources.</p><p class="newslink"><span class="k">In the news:</span> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNYlNCWUN3UTNzRVp3b1lRdTF3bDVaMmNZSGxINnZJdFRMcmRQRkUxM1h3NmFJY1c5TE1ZMEJGNkZKTWZHeTBqSkdSaEdtdGFuUXNxWExSc25mb2w3TnNpdVdSTnZMMmxGSjQtc2ZMdlhtWFMxQ2hnTjkxUjVBcXNxZXRtdGNZODV1OG5N?oc=5">Lithium X2 files PFS report for Nevada North Lithium Project</a><br>(Lithium X2 PFS for Nevada North): a Nevada lithium project. Brine and clay systems differ, but the source-tracing method could help the project&#x27;s hydrological work.</p></article></section>
+
+<footer>Updated 7:51 PM Pacific · 10 papers · Sources via OpenAlex.</footer>
+</main>
+<script>
+  // Tap a colored chip to show only that group of headlines.
+  var box = document.querySelector(".headlines");
+  if (box) {
+    box.querySelectorAll(".chip").forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        var g = chip.dataset.g;
+        box.querySelectorAll(".chip").forEach(function (c) { c.classList.toggle("on", c === chip); });
+        box.querySelectorAll(".grp").forEach(function (s) {
+          s.hidden = g !== "all" && s.dataset.g !== g;
+          s.classList.toggle("open", g !== "all");
+        });
+      });
+    });
+    box.querySelectorAll(".more").forEach(function (button) {
+      button.addEventListener("click", function () { button.parentNode.classList.add("open"); });
+    });
+  }
+
+  // Research page: tap a chip to filter the papers.
+  var papers = document.querySelector(".papers");
+  if (papers) {
+    papers.querySelectorAll(".chip").forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        var f = chip.dataset.f;
+        papers.querySelectorAll(".chip").forEach(function (c) { c.classList.toggle("on", c === chip); });
+        papers.querySelectorAll(".paper").forEach(function (card) {
+          card.hidden = f !== "all" && (" " + card.dataset.tags + " ").indexOf(" " + f + " ") < 0;
+        });
+      });
+    });
+  }
+
+  // Dan's Tab is locked: the page holds only encrypted text until the password
+  // is entered (once per phone). Ratings and messages are encrypted the same
+  // way before they leave the phone.
+  var b64 = {
+    to: function (bytes) { var s = ""; new Uint8Array(bytes).forEach(function (c) { s += String.fromCharCode(c); }); return btoa(s); },
+    from: function (text) { return Uint8Array.from(atob(text), function (c) { return c.charCodeAt(0); }); }
+  };
+  var deriveKey = function (pass, salt, rounds) {
+    return crypto.subtle.importKey("raw", new TextEncoder().encode(pass), "PBKDF2", false, ["deriveKey"]).then(function (base) {
+      return crypto.subtle.deriveKey({ name: "PBKDF2", salt: salt, iterations: rounds, hash: "SHA-256" },
+                                     base, { name: "AES-GCM", length: 256 }, false, ["encrypt", "decrypt"]);
+    });
+  };
+  var openBox = function (box, pass) {
+    return deriveKey(pass, b64.from(box.salt), box.rounds).then(function (key) {
+      return crypto.subtle.decrypt({ name: "AES-GCM", iv: b64.from(box.iv) }, key, b64.from(box.ct));
+    }).then(function (plain) { return new TextDecoder().decode(plain); });
+  };
+  var sealBox = function (text, pass) {
+    var salt = crypto.getRandomValues(new Uint8Array(16)), iv = crypto.getRandomValues(new Uint8Array(12)), rounds = 310000;
+    return deriveKey(pass, salt, rounds).then(function (key) {
+      return crypto.subtle.encrypt({ name: "AES-GCM", iv: iv }, key, new TextEncoder().encode(text));
+    }).then(function (sealed) {
+      return JSON.stringify({ v: 1, rounds: rounds, salt: b64.to(salt), iv: b64.to(iv), ct: b64.to(sealed) });
+    });
+  };
+  var keep = {
+    get: function (k, d) { try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+    set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+    drop: function (k) { try { localStorage.removeItem(k); } catch (e) {} }
+  };
+
+  var lockBox = document.getElementById("dan-lock");
+  if (lockBox) {
+    var sealedPage = JSON.parse(lockBox.dataset.box);
+    var lockMsg = document.getElementById("dan-lock-msg");
+    var tryOpen = function (pass, remembered) {
+      lockMsg.textContent = "Unlocking...";
+      openBox(sealedPage, pass).then(function (html) {
+        keep.set("danPass", pass);
+        lockBox.hidden = true;
+        var content = document.getElementById("dan-content");
+        content.innerHTML = html;
+        startDan(content.querySelector("#dan"), pass);
+      }).catch(function () {
+        if (remembered) { keep.drop("danPass"); }
+        lockMsg.textContent = remembered ? "The password has changed. Enter the new one." : "That password didn't work.";
+      });
+    };
+    document.getElementById("dan-unlock").addEventListener("click", function () {
+      var field = document.getElementById("dan-pass");
+      if (field.value) { tryOpen(field.value, false); field.value = ""; }
+    });
+    document.getElementById("dan-pass").addEventListener("keydown", function (e) {
+      if (e.key === "Enter") { document.getElementById("dan-unlock").click(); }
+    });
+    if (!window.crypto || !crypto.subtle) {
+      lockMsg.textContent = "This browser can't unlock the page. Open it from its https:// address.";
+    } else if (keep.get("danPass", "")) {
+      tryOpen(keep.get("danPass", ""), true);
+    }
+  }
+
+  function startDan(danBox, pass) {
+    if (!danBox) { return; }
+    var repo = danBox.dataset.repo || (location.hostname.split(".")[0] + "/" + location.pathname.split("/")[1]);
+    var queue = keep.get("danQueue", []), rated = keep.get("danRated", {}), timer = null;
+    var statusLine = document.getElementById("dan-status"), manual = document.getElementById("dan-manual");
+    var say = function (text) { statusLine.textContent = text; };
+
+    var paint = function () {
+      danBox.querySelectorAll(".rate").forEach(function (row) {
+        var score = rated[row.dataset.key] || 0;
+        row.querySelectorAll("button").forEach(function (b) { b.classList.toggle("on", +b.dataset.s <= score); });
+      });
+      var waiting = queue.length && !keep.get("danToken", "");
+      manual.hidden = !waiting;
+      if (waiting) {
+        sealBox(JSON.stringify({ items: queue }), pass).then(function (body) {
+          manual.href = "https://github.com/" + repo + "/issues/new?title=" + encodeURIComponent("[dan] feedback") +
+                        "&body=" + encodeURIComponent(body);
+        });
+        say(queue.length + " item(s) waiting on this phone. Tap “Send via GitHub”, or save a token in Settings to send automatically.");
+      }
+    };
+
+    var send = function (keepalive) {
+      var token = keep.get("danToken", "");
+      if (!queue.length || !token) { paint(); return; }
+      var batch = queue.slice();
+      sealBox(JSON.stringify({ items: batch }), pass).then(function (body) {
+        return fetch("https://api.github.com/repos/" + repo + "/issues", {
+          method: "POST", keepalive: !!keepalive,
+          headers: { "Authorization": "Bearer " + token, "Accept": "application/vnd.github+json", "Content-Type": "application/json" },
+          body: JSON.stringify({ title: "[dan] feedback", body: body })
+        });
+      }).then(function (r) {
+        if (!r.ok) { throw new Error("GitHub said " + r.status); }
+        queue = queue.slice(batch.length); keep.set("danQueue", queue); paint();
+        say("Sent. It will be applied on tomorrow morning's page.");
+      }).catch(function (e) {
+        say("Couldn't send (" + e.message + "). It's saved on this phone and will be tried again.");
+      });
+    };
+    var sendSoon = function () { clearTimeout(timer); timer = setTimeout(send, 20000); };
+
+    danBox.querySelectorAll(".rate button").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var row = button.parentNode, score = +button.dataset.s;
+        rated[row.dataset.key] = score; keep.set("danRated", rated);
+        queue = queue.filter(function (q) { return !(q.t === "rate" && q.key === row.dataset.key); });
+        queue.push({ t: "rate", key: row.dataset.key, topic: row.dataset.topic, title: row.dataset.title, score: score });
+        keep.set("danQueue", queue); paint(); sendSoon();
+      });
+    });
+    document.getElementById("dan-send").addEventListener("click", function () {
+      var box = document.getElementById("dan-ask"), text = box.value.trim();
+      if (!text) { return; }
+      queue.push({ t: "ask", text: text }); keep.set("danQueue", queue); box.value = "";
+      say("Saved."); send();
+    });
+    manual.addEventListener("click", function () {
+      setTimeout(function () { queue = []; keep.set("danQueue", queue); manual.hidden = true;
+                               say("Opened GitHub. Tap “Create” there to send it."); }, 500);
+    });
+    document.getElementById("dan-token-save").addEventListener("click", function () {
+      var value = document.getElementById("dan-token").value.trim();
+      if (value) { keep.set("danToken", value); document.getElementById("dan-token").value = ""; say("Token saved on this phone."); send(); }
+    });
+    document.getElementById("dan-token-clear").addEventListener("click", function () {
+      keep.drop("danToken"); say("Token removed from this phone."); paint();
+    });
+    document.getElementById("dan-forget").addEventListener("click", function () {
+      keep.drop("danPass"); location.reload();
+    });
+    document.addEventListener("visibilitychange", function () { if (document.visibilityState === "hidden") { send(true); } });
+    paint();
+    if (queue.length) { setTimeout(send, 3000); }
+  }
+
+  // Home-screen apps on iPhone keep an old copy open in the background.
+  // If you come back after 30+ minutes, reload so you see the latest brief.
+  var loadedAt = Date.now();
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible" && Date.now() - loadedAt > 30 * 60 * 1000) {
+      location.reload();
+    }
+  });
+</script>
+</body>
+</html>

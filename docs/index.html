@@ -16,9 +16,11 @@
     --bg: #f6f1e7; --ink: #241f19; --muted: #7a6f60; --card: #fffaf0;
     --line: #e2d8c6; --accent: #b0602a;
   }
+  
   @media (prefers-color-scheme: dark) {
     :root { --bg: #16130f; --ink: #ece4d6; --muted: #a39683; --card: #211c16;
-             --line: #3a3128; --accent: #e08a4c; }
+            --line: #3a3128; --accent: #e08a4c; }
+    
   }
   * { box-sizing: border-box; }
   body {
@@ -28,268 +30,311 @@
   }
   main { max-width: 640px; margin: 0 auto; }
   header { padding: 20px 0 6px; display: flex; justify-content: space-between;
-            align-items: baseline; border-bottom: 1px solid var(--line); }
+           align-items: baseline; border-bottom: 1px solid var(--line); }
   .brand { font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 13px; }
   .date { color: var(--muted); font-size: 14px; }
   .poem {
     font-family: "Iowan Old Style", Georgia, serif; font-style: italic;
-    font-size: 24px; line-height: 1.45; white-space: pre-line;
+    font-size: 23px; line-height: 1.45; white-space: pre-line;
     padding: 28px 0 24px; border-bottom: 1px solid var(--line);
   }
+  .byline { display: block; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-style: normal; font-size: 14px; color: var(--muted); margin-top: 12px; }
   h2 { font-size: 13px; letter-spacing: .08em; text-transform: uppercase;
-        color: var(--accent); margin: 24px 0 10px; }
+       color: var(--accent); margin: 24px 0 10px; }
   h3 { font-size: 15px; margin: 0 0 6px; }
   h4 { font-size: 14px; color: var(--accent); margin: 18px 0 4px; }
   ul { padding-left: 20px; margin: 8px 0; }
   li { margin: 0 0 8px; }
-  .takeaways li { margin-bottom: 12px; }
+  .th { margin: 18px 0 2px; }
+  .takeaways li { margin-bottom: 10px; }
+  .lbl { font-weight: 600; margin: 14px 0 2px; }
+
+  /* Headlines: each has a colored bar for its group */
+  .links { list-style: none; padding: 0; font-size: 15px; }
+  .links a { color: var(--ink); }
+  .hl { border-left: 3px solid var(--g); padding-left: 10px; margin-bottom: 10px; }
+  .plain li { margin-bottom: 10px; }
+  .src { color: var(--muted); font-size: 13px; }
+  .tag { font-size: 11px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted);
+         border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; white-space: nowrap; }
+  .g-text { color: var(--g); border-color: var(--g); }
+  .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%;
+         background: var(--g); margin-right: 6px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 2px 0 6px; }
+  .chip { font: inherit; font-size: 13px; color: var(--ink); background: var(--card);
+          border: 1px solid var(--line); border-radius: 999px; padding: 5px 10px; cursor: pointer; }
+  .chip span, .n { color: var(--muted); font-weight: 400; font-size: 13px; }
+  .chip.on { border-color: var(--ink); font-weight: 600; }
+  .grp { padding-top: 14px; }
+  .grp h3 { margin-bottom: 8px; }
+  .grp:not(.open) .extra { display: none; }
+  .grp.open .more { display: none; }
+  .more { font: inherit; font-size: 13px; color: var(--accent); background: none; border: 0;
+          padding: 0 0 4px 13px; cursor: pointer; }
+
   .pair { display: grid; gap: 12px; margin: 24px 0; }
   @media (min-width: 560px) { .pair { grid-template-columns: 1fr 1fr; } }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
-           padding: 14px 16px; font-size: 16px; }
+          padding: 14px 16px; font-size: 16px; }
   .card p { margin: 0; }
   .role { color: var(--muted); font-weight: 400; font-size: 13px; margin-left: 4px; }
-  .byline { display: block; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-             font-style: normal; font-size: 14px; color: var(--muted); margin-top: 12px; }
   details { border-top: 1px solid var(--line); }
   details:last-of-type { border-bottom: 1px solid var(--line); }
   summary { cursor: pointer; padding: 14px 0; font-weight: 600; font-size: 15px; }
-  .more { font-size: 15px; padding-bottom: 16px; }
-  .links a { color: var(--ink); }
-  .headlines { border-top: none; border-bottom: 1px solid var(--line); }
-  .headlines .links { font-size: 15px; padding-bottom: 8px; }
-  .headlines .links li { margin-bottom: 10px; }
-  .src { color: var(--muted); font-size: 13px; }
+  .more-text { font-size: 15px; padding-bottom: 16px; }
+  .headlines { border-top: none; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
   .quiet { padding: 40px 0; color: var(--muted); font-style: italic; }
   footer { color: var(--muted); font-size: 13px; margin-top: 28px; }
+
+  /* Tabs between the pages */
+  .tabs { display: flex; gap: 18px; border-bottom: 1px solid var(--line); overflow-x: auto; }
+  .tabs a { color: var(--muted); text-decoration: none; font-size: 15px; padding: 10px 0 8px;
+            border-bottom: 2px solid transparent; white-space: nowrap; }
+
+  /* Main sections that fold up */
+  .sec > summary { list-style-position: outside; margin-left: 18px; }
+  .sec > summary { padding: 14px 0; }
+  .sec > summary h2 { display: inline; margin: 0; line-height: 1.6; }
+  .sec-body { padding-bottom: 14px; }
+  .sec .pair { margin: 4px 0 8px; }
+  .quick { font-size: 18px; line-height: 1.55; margin: 0 0 6px; }
+
+  /* Dan's Tab */
+  .animal { display: flex; gap: 14px; align-items: flex-start; padding: 20px 0 16px; border-bottom: 1px solid var(--line); }
+  .animal img { width: 116px; height: 116px; object-fit: cover; border-radius: 12px; flex: none; }
+  .animal h2 { margin-top: 0; }
+  .animal p { font-size: 15px; margin: 6px 0; }
+  .rat { font-style: italic; }
+  .quote { font-family: "Iowan Old Style", Georgia, serif; font-style: italic; font-size: 20px; line-height: 1.45;
+           margin: 0; padding: 22px 0 20px; border-bottom: 1px solid var(--line); }
+  .reply { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; font-size: 15px; }
+  .rate { display: flex; align-items: center; gap: 6px; margin: 6px 0 14px; }
+  .rate button { font: inherit; font-size: 13px; width: 34px; height: 30px; border-radius: 8px; cursor: pointer;
+                 color: var(--muted); background: var(--card); border: 1px solid var(--line); }
+  .rate button.on { color: var(--bg); background: var(--accent); border-color: var(--accent); }
+  textarea, input[type=password] { width: 100%; font: inherit; font-size: 16px; color: var(--ink); background: var(--card);
+             border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; }
+  .btn { display: inline-block; font: inherit; font-size: 15px; font-weight: 600; color: var(--bg); background: var(--accent);
+         border: 1px solid var(--accent); border-radius: 10px; padding: 8px 14px; cursor: pointer; text-decoration: none; }
+  .btn.ghost { color: var(--accent); background: none; }
+  .lock { padding: 40px 0; }
+  .lock p { margin: 0 0 12px; }
+  .marks { display: flex; gap: 3px; margin: 4px 0 2px; flex-wrap: wrap; }
+  .mk { display: inline-block; width: 18px; text-align: center; font-size: 13px; color: var(--muted); }
+  .mk-new { color: #2f6fb3; } .mk-building { color: #2e7d4f; } .mk-fading { color: #c0392b; } .mk-resolved { color: var(--accent); }
+  .themes li { margin-bottom: 14px; }
+  .tabs a.on { color: var(--ink); font-weight: 600; border-color: var(--accent); }
+
+  /* Claims, filings and the scorecard */
+  .pkg { border-left: 3px solid var(--accent); padding-left: 10px; margin-bottom: 14px; }
+  .badge { font-size: 11px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+           color: var(--bg); background: var(--accent); border-radius: 4px; padding: 1px 6px; }
+  .note { font-size: 14px; margin: 6px 0 0; }
+  .score { width: 100%; border-collapse: collapse; font-size: 14px; margin: 6px 0 8px; }
+  .score th, .score td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); }
+  .score td + td, .score th + th { text-align: right; }
+
+  /* Research page */
+  .paper { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+           padding: 14px 16px; margin: 0 0 14px; font-size: 15px; }
+  .paper h3 { font-size: 16px; line-height: 1.35; margin-bottom: 4px; }
+  .paper h3 a { color: var(--ink); }
+  .paper p { margin: 8px 0 0; }
+  .paper .k { font-weight: 600; }
+  .newslink { border-left: 3px solid var(--accent); padding-left: 10px; }
+  .newslink a, .pkg a, .note a, .src a { color: var(--ink); }
 </style>
 </head>
 <body>
 <main>
 <header>
   <span class="brand">Mining Desk</span>
-  <span class="date">Saturday, November 14</span>
+  <span class="date">Monday, November 16</span>
 </header>
+<nav class="tabs"><a class="on" href="index.html">Quick Look</a><a href="brief.html">Brief</a><a href="research.html">Research</a><a href="dan.html">Dan&#x27;s Tab</a></nav>
+<section class="poem">Highland Valley&#x27;s strike still idles the copper mill,
+but a rat sniffed fresh pegs on the desert hill:
+new posts in the sand in a long, quiet row,
+someone tying up ground that the ore-cars don&#x27;t show.
+Mercury&#x27;s retrograde, so sniff the Claims page today,
+where a chameleon&#x27;s eyes swivel to watch both ways at play.<span class="byline">— The Rat</span></section><section><h2>The world in three sentences</h2><p class="quick">Tankers were hit in the Strait of Hormuz and a drone raised alarm at an Iraqi gas field, while Houthi forces advanced toward Aden, adding Red Sea risk on the same shipping routes. Trump begins an Asia trip with Quad talks in Manila, followed by a China visit and nuclear talks involving China and Russia, and the outcomes will shape US-China trade and export relations. Russian strikes knocked out heating and water in Kyiv and Ukraine hit the Crimea bridge with drones, even as peace talks with the US and Europe continued.</p><span class="src">— Dr I Simon</span></section><section><h2>Mining in three sentences</h2><p class="quick">North America leads: the Highland Valley Copper strike entered its fourth week amid tensions over alleged scabs, keeping copper output curtailed, and Capstone cut its copper outlook as a restart slipped. Freeport agreed a US$110M deal for a BC copper stake, and India&#x27;s Hindustan Zinc plans to spend about $8.5bn on capacity expansion. Brixton hit rich silver veins at its Ontario project, a reminder that drilling results are still coming through in a thin junior market.</p><span class="src">— Dr I Simon</span></section><section><h2>High-relevance research</h2><ul class="links plain"><li><a href="https://doi.org/10.1016/j.gexplo.2026.108275">Zircon–apatite fingerprints of porphyry Cu(Au) fertility in Georgetown granitoids, NE Queensland</a> <span class="src">Journal of Geochemical Exploration</span><p class="note">Zircon and apatite chemistry separates porphyry copper-gold fertile granites from barren ones in Queensland, and the fertile Group A intrusions match known mineralization.</p></li></ul><a class="src" href="research.html">All papers on the Research tab</a></section><section><h2>Claim packages over 100 claims <span class="n">last 30 days</span></h2><ul class="links plain"><li><span class=badge>New</span> <strong>554 claims</strong> · NV · <a href="https://www.google.com/maps/search/?api=1&amp;query=38.544,-116.438">map</a></li><li><span class=badge>New</span> <strong>458 claims</strong> · UT · <a href="https://www.google.com/maps/search/?api=1&amp;query=39.603,-110.695">map</a></li><li><span class=badge>New</span> <strong>332 claims</strong> · AK · <a href="https://www.google.com/maps/search/?api=1&amp;query=61.3,-152.708">map</a></li><li><span class=badge>New</span> <strong>306 claims</strong> · AZ · <a href="https://www.google.com/maps/search/?api=1&amp;query=33.298,-110.923">map</a></li><li><span class=badge>New</span> <strong>213 claims</strong> · AZ · <a href="https://www.google.com/maps/search/?api=1&amp;query=34.481,-111.896">map</a></li><li><span class=badge>New</span> <strong>212 claims</strong> · NV · <a href="https://www.google.com/maps/search/?api=1&amp;query=40.242,-118.089">map</a></li><li><span class=badge>New</span> <strong>154 claims</strong> · NV · <a href="https://www.google.com/maps/search/?api=1&amp;query=41.343,-117.462">map</a></li><li><span class=badge>New</span> <strong>140 claims</strong> · NV · <a href="https://www.google.com/maps/search/?api=1&amp;query=37.852,-115.95">map</a></li><li><span class=badge>New</span> <strong>132 claims</strong> · NV · <a href="https://www.google.com/maps/search/?api=1&amp;query=40.213,-114.292">map</a></li><li><span class=badge>New</span> <strong>122 claims</strong> · AK · <a href="https://www.google.com/maps/search/?api=1&amp;query=56.533,-133.03">map</a></li><li><span class=badge>New</span> <strong>103 claims</strong> · NV · <a href="https://www.google.com/maps/search/?api=1&amp;query=40.814,-117.451">map</a></li><li><span class=badge>New</span> <strong>102 claims</strong> · AZ · <a href="https://www.google.com/maps/search/?api=1&amp;query=35.235,-114.499">map</a></li></ul><a class="src" href="brief.html#claims">Details on the Brief tab</a></section>
 
-<section class="poem">Plenty of headlines, scarcely a tonne in sight,
-just smoke in the drifts and rumours of ore.
-Guinea&#x27;s gold may be policed, not lost outright,
-and Barrick&#x27;s spinoff is reported, not yet read at EDGAR&#x27;s door.
-Show me the core, the assay, the filing signed,
-till then this whole batch goes to the tailings, unscored.<span class="byline">— The Rat</span></section>
-
-<details class="headlines" open><summary>Today's headlines (28)</summary><ul class="links"><li><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxOVW9RdTNTcFJ4UWh4Z2FtWHZqRUhkcERsS3lEamdiZXlVTlJEYmMyU3ZMM1h3YU5WY3VDdkRJQ1g4RklNaGNfdWFfUWJKSDQxNXJ0d3d4bGoxbXl6X0FhNU5aZVFQX3g3ZHBmbGJxeDA3eG9JNDNPMS1rdlRXaHRzMVA2VmRlR2Y5ak51OW5tWjFNb2dfQlNqS0txZVh2ZWfSAaQBQVVfeXFMTXVnMURlWGdZM2doLVVkMU9TcUlYR2xXMU9lNlhlSms1WDNTQ0pxekszZ0lvTTgtSXBuaENfcG95WFhYTFRBS21vY3lVTFYzV0pjeUNSdEZES01SakpKWlR6bXY4RXVKV2NxeDN4Sk5yNzlnejhMc0R3dDdUV1Q2WXhfRVBkSjBuTWc3Y2pqOUczdDcyMUV4NE5TRzF0bkROVGNkU1U?oc=5">At least 10 killed in Guinea clashes over gold mining ban - Al Jazeera</a> <span class="src">Al Jazeera</span></li><li><a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxOSDdhYnBGeUJSU0pCYnNOSFpZNU5veU9JNjE1ZmdBZWFESWI1MkdIUEpKT1ljVjlFV2hWZHJVaDdHY3psdW5KSGV6dE1Ob1FxODVKckdjaXJmSW13cTIwU28wb2p1Vk9DLW5xanNaOUwxcDlsRXhBRVNXYUpTeksxbDhjWGFaUWNZc3B5alhkb3pieXZJcU9SNkpiZnNVaGMtTVJIZXZPMmdkOXJGNVZFSl83Tm51MlJuS2lJLTlaWTY4Sm0tSW9ZRUltVDVmUlo5azMtcVhNblR6VWU2TWttRndCcw?oc=5">Joint ventures and advanced studies: what investors want from mining in Argentina, Chile and across the region - BNamericas</a> <span class="src">BNamericas</span></li><li><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPaEFpZ2FkWWRQeWlnUXgtT09reVJyelF3RG5BUDJVdEhvbndKSjVQQzVsMkIxS0R0ZXppMzZjQVJxaUJoX3laOG15Y2xLSEZ5cG81aHZxNXFPVHNKNlZaNE5PRVRiWm9XS3lkNlFVcFhwS1h1dS1kT1Zuc0FSU2FJODNRSUlIOWdjM2JNS0ZQaTJzdC15cS02Vld0ODNUczBUcjVMVFdyeE41bTFmNHg3Y1g4VF9nU3M?oc=5">SYMX.AI raises another $6 million &amp; looks to bring real physical AI results in mining - International Mining</a> <span class="src">International Mining</span></li><li><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxQc29CM2g2NDltS1lnZDVtc2VBTkVMdFBWUUEwbEQ5WWxKOGMyWi1vTHJoY2pMSElZN2duMzNHUkxDWVNMZFV4dHk5TWZHM0pqTFgtNlZGU0hpcGx6T3V2T3R3bmtDbWpmcEMxNzNpbEY0QXRvS1NxOEI4RS12UVlOWWpvY0I5dw?oc=5">Heliostar Metals Delivers Landmark 3Q26 - Mexico Business News</a> <span class="src">Mexico Business News</span></li><li><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxPa1BLSmFZcloyVzdPblFiMl9EdEwtSGtXN19jaFNCTEZSZjRBTExuSUNDUVNnX0lCTmltRjlSdVJlLW9lZnNuQ0ctY2t3dU5oUEw1WDU0ZTVBd3RCS19DUUR3RjJfWmxZemQ2UzVzVTFrbU1GZjEwaFl2TXBjQ0x1VWRlY0d4c0NEeFIyYTZDMEJJRnhHR29vbl9qamtBUnM?oc=5">Norway&#x27;s Nussir copper mine sale faces scrutiny over Russian links - High North News</a> <span class="src">High North News</span></li><li><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOSm91S3g2amx1aWtjWHJ1ekNRV1piSjhEZEFZUG9Kc3lGLTgzc0dSWmlJR2dUZTlCSmZ3NFJLcl9lVUZvZTlydjd4M1U4VVFmMWJKQkVyQWt4NWdBejc5Q3lLSXFsc3VnLXlqQUowTUZSdGJacXc2bTR0QzFzanBvM0FVa0VJMkxHX2xVZHZmNWxTaEhqVHpfZlg1bEJwY3dnMGp2NzVmS2h4QTBJOGRvZ0YzSlM?oc=5">FLS launches Accelerate ’31 strategy to drive profitable growth - Global Mining Review</a> <span class="src">Global Mining Review</span></li><li><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQWnBPODVzSXdHejAzNkhqWEI1YzVRQnJudFE4NGtSUVdza05PWnhmWXVzR3Q4OURLdWNqU0J4RlYxRjV4Q2dUSUFnaTVsTHdnQzdVc3JpWDB5TmNfcF80WWpEd2VrSlcycnQ3dmJCZ21kaGdJQTZVYjdVQzVIYXJTUg?oc=5">Budget 2026 draws mixed industry reaction, Sudbury-area geology earns heritage recognition and SGS to test Carbonix’s direct reduction technology - CIM Magazine</a> <span class="src">CIM Magazine</span></li><li><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxPY3hQbjBVWTIwN05rUE9mbEdvUUJLNk4tZHAyMnYzYXdoUXkwX0RNOGc5bUdXeDFyZC16UEZ1ZFZoQjJ5Y0dkbnhEQWs5Z0NUN19sZWdLOUY0elRpeUYxZUgyOE9GdmRDQzRNSWxXcHpjbDY1UHNybU1LOTdZRmxjRmkwU2lCNGVrZ3hRaVZ5azVRUF9hdlI3ZFhnZEQ?oc=5">Chile mulls private-sector role in Codelco’s mines and infrastructure - Mining.com</a> <span class="src">Mining.com</span></li><li><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE03V0tWZzlLbkxsWVJvMDVsUjlWN25rUzJ3MWRmUWgwczRnc2pjQXE0WWhQUFdWM0JzdmhOM0htTWVibzRPZkMxdFBXWWIwZTIwSUhJczNhTko1cFhHc1h4a05HZHRKMUQ2QmUwSGM5Q0djb2RWYjdHR0Rn?oc=5">Gunnison Copper reports Q3 output, revenue surge - Mining.com.au</a> <span class="src">Mining.com.au</span></li><li><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcDRkZWJMbnVvYU9raThGbDBZTHlpTWUxNG5BUVBtTnJ0dHZGRXBnZkdJWWE4SExwZ0VkUlVoek94dWxMVWxFZXEwaGM3TEs4Z0FCbm5GaFdVVUVsVkxCdlRVUkhsNGxRSVk0V2trWFNPUUd1Sk9XWUtrNzFoazhHWTVHZ1cxOHN6OWNUR2pmbVZuTWRaaFN6UndnZHZMSElzaWFwVWJCS2w?oc=5">EACON’s exponential AHS growth continues as deployments pass 4,000 trucks - International Mining</a> <span class="src">International Mining</span></li><li><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE80SWI3c0o4X1FWanBtTHRQaUl3VDBlbWRwRkhTczdPTjVLekNBNUpDOTRJaGlqRFVlcGRPdE9JeE9PTlcxUkxHRHE3V3R6SEFjZ0pOemFZMUItQmZ6NHRoVVZ1cDJzQQ?oc=5">Altius to Add Copper, Lithium Royalties with TNR Gold Deal - Investing News Network</a> <span class="src">Investing News Network</span></li><li><a href="https://www.mining.com/modern-mining-makes-nyse-american-debut/">Modern Mining makes NYSE American debut</a> <span class="src">MINING.COM</span></li><li><a href="https://www.mining.com/op-ed-europe-is-stockpiling-critical-minerals-wonderful-can-anyone-actually-use-them/">Op-Ed: Europe is stockpiling critical minerals. Wonderful. Can anyone actually use them?</a> <span class="src">MINING.COM</span></li><li><a href="https://www.mining.com/anglo-americans-australia-exit-marks-end-of-an-era/">Anglo American’s Australia exit marks end of an era</a> <span class="src">MINING.COM</span></li><li><a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQSTViRFlkbktJeS12cTZhRG9GSU5TVV9VMjRTLVdJQzFXLVdHeTNoaF9weHhrX0lGYXRsV1FOR0hNMzBiWldsOHB4OUVjLXgzWi1ocHpuWW1kbjYtaDNORVZJdFdNX2NHckNYWXl6Wk0zdkV6cXpzS3NYeFIwNWxGZ21LS3ppaDZZYWdURGV6Q1p2Q29KSm96MFJDeG95TThmSTZORGoyRS15ZzBJQ2tMUUtsNENJY0ZUSV9acmFzTFRzWkJlNGk0a050Yw?oc=5">Indonesia&#x27;s Rp80 Trillion Elang Mine Plan Puts Mining Camp Planning in the Spotlight - EIN Presswire</a> <span class="src">EIN Presswire</span></li><li><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPcmlWNDhrT3Fuck1DMjhJNERuYUdVenZFS1FISWNiUlNtc3lMYzN1WjhTUjNnMkU0aXI0RjVuUGsxU1VhLVZyM1VMWFctMXJzWE9iVUdaSDJ2Vk13cGhRWkVlT1RqYkM0Y0ExelppVEFZaVNrMGlwaklHdFJFckpwZnlCaGlFYTdXb3prQllZZWxvX3FBZDRlamtVSTZZZUFROEpsaQ?oc=5">Here’s how engineered microbes could revolutionize mining - Interesting Engineering</a> <span class="src">Interesting Engineering</span></li><li><a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxOZ0Z0Z1hGaHZLYVg2M3RMVVZ6YmZoOFEtLUNyYmhnZEY4YUxCbVl1WnlrQTllSklKNFlzWkdReUltRS0za1lNU3puMjVYWURHV3Jya0VHUElpQXJkLTc5VjktQ2k4UGxZQUtDSGxrWG1lUjFrWmpXMXp5V0o5bTA1dHliVm5ZWHR1Q0Iyc0FMSWVxN3lkbTJwWEZ2NDl3R24zc3ZBeTVxd0dHcVFQTkQtQ194QlVPYW02VDRjWEJvRVhtWDdzV19KTmdxc3BYTjR1YzNFSkIxUENSSGdBRFE?oc=5">Harmony Gold Mining Company Limited (HMY) Presents at Investec CEO Conference - Slideshow - Seeking Alpha</a> <span class="src">Seeking Alpha</span></li><li><a href="https://www.mining.com/freeport-strikes-110m-deal-for-bc-copper-stake/">Freeport strikes $77M deal for BC copper stake</a> <span class="src">MINING.COM</span></li><li><a href="https://www.mining.com/capstone-cuts-copper-outlook-as-restart-slips/">Capstone cuts copper outlook as restart slips</a> <span class="src">MINING.COM</span></li><li><a href="https://www.mining.com/komatsu-to-acquire-roadtec-and-carlson-construction-equipment-brands/">Komatsu to acquire Roadtec and Carlson construction equipment brands</a> <span class="src">MINING.COM</span></li><li><a href="https://www.mining.com/mineros-gold-bet-raises-cash-and-collateral-risks/">Mineros’ gold bet raises cash and collateral risks</a> <span class="src">MINING.COM</span></li><li><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQdVlRUlpJTDZoSFlyZncyd19EMEdLREV3MFgtWHFDbUEwXzhjR0VfU0I3V2xaTmxWWmY5OVV2UGM1Mk81SGpMSUZKWWFzTjhnbWFwakF2NDlvUUllM3ZjazNiQXd3WjRmeF92WTJacnlISGdfaHZZd29SdTBUMmJjRkhnMjdGQXJzUHByTFFqNXVXWEl5YVpNcnV3?oc=5">Top 3 Canadian Lithium Stocks With Earnings Growth Over 32% - Yahoo Finance</a> <span class="src">Yahoo Finance</span></li><li><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE1lN1lrZWI4OTl5TTV6ZUJCak5HeGRsVGIxX1F3OW1vbEpjRndEU2tXazRCNVdBM3RPR05VREl2WVluN1Z1VkdITUxIdldlVkdmQkxYcHpYM2ZLSlZTaHNmckdlWQ?oc=5">Barrick Names North American Gold Spinoff, Files NYSE IPO - Investing News Network</a> <span class="src">Investing News Network</span></li><li><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxOZHF4TTJlc21PQm5NZDBOZDlkVmJTR2tDRFVqYkptSmM1YzQ5cnZBUUFiR09LSDlRSGZ1bUQtYWNVaWRHcVhXUFZIX29raEhJOTV1WG1jLUpYSm9SMzJpZE9OdTBvSi1aM1RtQVluSlhvcnJENWNlVlJON2JENDdJQW4zVFZha1Nsa1dlalZ4Ul9LdmZ0?oc=5">A communications blackout sent an autonomous haul truck off road at Chile&#x27;s Minera Centinela - Latin Times</a> <span class="src">Latin Times</span></li><li><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNUDdHMWpBeGg1UFZNMzNaNmlNbEM4WGVSZ1l6MXlLZXZ3MEhKZ1VaRm1qbS1mQ01zUnVWT3lPby1zMlhIV0FGZlRXam1lcTVXR0poTlBkZW43LXFHbmVyMUUzd3U4SkMzV3dSRW4ySjRaVmxoaVdMQ19yQUN0Zl9lZGJ0SS1PVWIwaUhESHRPMnlFdGU3MTdTc0ZnLWtLQzdhZXoxY2RKdUVMWEtoZmcyb2JaVlA?oc=5">Rotary Screens Market To 2035: Mining and Recycling Demand Supports 4.2% CAGR - News and Statistics - IndexBox</a> <span class="src">IndexBox</span></li><li><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPb0RscFkyZEthVXptMlRna1cwSjlOODVMQjZReWR3ZzE3U2RQc2F0Tk9UazdnNUtOMXRsN0ZFSDdiR18zZTl5UTQ3MmtOdEdlYmFVVHpsem5OUGNIaXV2TDZ5T0oyeVp5dUphWnR4UFZPYk0xTlhiTG8wMEViTFR1SC1jZHo5V3M0azUzWEtCMHZMa2hDMkVOLWp3ZzhkNEtpT2RCdWs1WGtBVG5YdG9N?oc=5">A Gold Mine Closed at US$300 an Ounce. What&#x27;s Below It? - Streetwise Reports</a> <span class="src">Streetwise Reports</span></li><li><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE5vempybEdteUFHYUhQYzB4VlVsV1VfZU9OczRXdjlFT0VqZlZvZTRiaTB0SjRBTVpFdGFXVWZsX21EQ05KcGsxczk2YVdpZFdlNTFyYmoydWJaSFZ0NXZwRDdaejdXbll1TjlDdF9MWUR1aGlXRlkw?oc=5">Guinea gold mining ban: 10 killed as 1,263 face trial - DNE Africa</a> <span class="src">DNE Africa</span></li><li><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNY2FQUnlyWXFHUWlyV25YbHJ0bkRWaG9JV2RFcVI5S1hlMnkzeXN5U3hWN0g1ZFYzRVd0LTlWVHFkYTY1ZFR5TFFJdHdnQW1JdFVJczM4RmwwQzRZdmlrYmNPTmVMWVhxOGhpY1VOTkxGN2tKaGg5c05vXzFyY19oX1BCd1hwQjhzMzd4OU5aTVZCV3RDU0J2cUZqaVEwdGJJaEZIVFptd3E5ZUZKSGpzb19ZS3Ytd9IBtgFBVV95cUxNY2FQUnlyWXFHUWlyV25YbHJ0bkRWaG9JV2RFcVI5S1hlMnkzeXN5U3hWN0g1ZFYzRVd0LTlWVHFkYTY1ZFR5TFFJdHdnQW1JdFVJczM4RmwwQzRZdmlrYmNPTmVMWVhxOGhpY1VOTkxGN2tKaGg5c05vXzFyY19oX1BCd1hwQjhzMzd4OU5aTVZCV3RDU0J2cUZqaVEwdGJJaEZIVFptd3E5ZUZKSGpzb19ZS3Ytdw?oc=5">KP Governor Orders Ban on Gold Mining, Announces Task Force Against Illegal Operations - Balochistan Pulse</a> <span class="src">Balochistan Pulse</span></li></ul></details>
-
-<section>
-  <h2>Dr I Simon's big takeaways</h2>
-  <ul class='takeaways'><li>The Barrick spinoff is reported, not read. Five outlets repeat one 11 November report, so until someone reads a public document on EDGAR, the spinoff stays a provenance question. Confidential draft submissions never appear publicly, so an empty EDGAR search by 31 December would not refute the report.</li><li>Adopt the desk&#x27;s restatement rule now, before any prospectus exists: score Barrick&#x27;s margin trend only on comparatives inside one document, and record any allocation break explicitly. Do not splice restated segment history onto unrestated quarterly figures.</li><li>Hold the two NYSE predictions as unrunnable until the spinoff name is verified against a primary document. Consolidate the duplicate Barrick, Chile and Pakistan predictions into one checkable question each, so scoring stays clean.</li><li>Guinea, Pakistan&#x27;s KP order, and the Chile haul truck are enforcement and reliability items, not output items. None is scoreable for tonnes until an official production or export series exists, and the artisanal-output question should stay open rather than be guessed at.</li><li>Retire anything that depends on unsourced items (Capstone, Mineros, Nussir, the Freeport stake, Gunnison&#x27;s Q3 production) and on the 16 October LME settlement, unless an archive copy with a timestamp is retrieved by 18 November. Nothing in today&#x27;s batch changes the Monday retrieval plan.</li></ul>
-</section>
-
-<section class="pair">
-  <div class="card">
-    <h3>Meldrum <span class="role">Strategist</span></h3>
-    <p>Plenty of headlines, very few tonnes. Guinea&#x27;s gold crackdown looks like enforcement rather than lost supply, Capstone&#x27;s guidance cut has no numbers, and Barrick&#x27;s spinoff rests on a filing claim nobody has verified. Until operating data arrives, I&#x27;m treating most of it as noise.</p>
-  </div>
-  <div class="card">
-    <h3>Yukon Cornelius <span class="role">Geologist</span></h3>
-    <p>Most of today&#x27;s mining news is still headline without numbers. Guinea&#x27;s death toll rests on one official source, and Barrick&#x27;s spinoff filing is unverified until someone reads it on EDGAR. Capstone&#x27;s cut and Freeport&#x27;s US$77M stake need tonnes and project names before they mean anything, so I&#x27;m treating it all as unscored until the filings arrive.</p>
-  </div>
-</section>
-
-<details><summary>Dr I Simon&#x27;s creative angles</summary><div class="more"><ul><li>If the carve-out shows a different margin trend once overhead and shared-site costs are allocated, the valuation debate shifts from the group to the individual assets. Signposts would be the allocation footnotes in the prospectus and any analyst rebasing of the Q3 numbers. (speculation level: high)</li><li>If recorded gold exports fall in Guinea, Ghana or Burkina during crackdown months while neighbouring-country trade data does not rise to offset them, the enforcement pattern is becoming a supply signal. If recorded exports fall while neighbouring trade rises, the gold is moving through informal channels, and the crackdown is relocating output rather than removing it. (speculation level: high)</li><li>Autonomous haulage reliability is a potential Chilean theme. If Centinela confirms a fleet pause, the question becomes whether other autonomous fleets in the region disclose similar stand-downs, which would change the cost-per-tonne case for automation. Signpost: any second operator statement in the next quarter. (speculation level: medium)</li></ul></div></details><details><summary>Dr I Simon session · Fri 7pm</summary><div class="more"><h4>Dr I Simon's review</h4><p>Initial read</p>
-<p>The most solid conclusions are the ones that refuse to convert headlines into tonnes. Capstone, Lundin, Hudbay and the Chilean forecast cut each arrive as a direction with no volume, so holding them as a watch item rather than a trend is correct. Guinea is rightly treated as enforcement, with the toll resting on one official source. The Codelco and private-capital thread is correctly filed as governance and capital, and Freeport&#x27;s US$77M stake is correctly kept apart from Bagdad.</p>
-<p>The reasoning is thinner in three places. First, Meldrum says nobody flagged the 16 October LME window. The record already carries the 18 November deadline, so that item should be treated as an existing deadline. Second, several background claims are doing real work: restart slips usually trace to capex or permitting, and early-stage stakes usually trade on option terms. Both may be true, but they are background and should be labelled that way. Third, Yukon&#x27;s Gunnison test assumes a producing operation, which the material does not establish.</p>
-<p>Record hygiene: Guinea, Nussir, Gunnison and Freeport now have near-duplicate predictions. Consolidate to one wording per event before review opens on 16 November.</p>
-<p>Worth a closer look: the Gunnison production claim, the Capstone asset behind the slip, the Mineros hedge book, and the Nussir buyer.</p>
-<p>QUESTIONS FOR THE STRATEGIST:</p>
-<ul><li>If the US$77M Freeport payment turns out to be an option fee rather than a stake purchase, does your &quot;pipeline&quot; filing still hold, and what would change in how we score Bagdad?</li><li>For Guinea, if tonnes move into smuggling, which trade or export statistics from neighbouring countries would you use to test supply, and how soon after the event would they appear?</li><li>The copper record closes on 18 November either way. If the LME settlement is found after that date, how should the copper prediction be scored, and does a late find count as a data gap or a recovery?</li></ul>
-<p>QUESTIONS FOR THE GEOLOGIST:</p>
-<ul><li>Is Gunnison Copper a producing operation in the material we hold, or a development story? If it is still ramping, what prior-year comparator would be meaningful, and does a &quot;Q3 output&quot; headline even imply tonnes?</li><li>Capstone&#x27;s restart slip could mean a single mine&#x27;s capex overrun or a permitting delay affecting several assets. Which asset would you expect the company to name, and what would a restart date look like in its release?</li><li>For Mineros, which section of the filing would show the hedge book (ounces, strikes, expiries, margin terms), and would you expect it in the MD&amp;A, the notes, or a separate disclosure?</li></ul><h4>Meldrum's answers</h4><p><strong>Freeport (Dr Simon&#x27;s first question):</strong> A US$77M payment that turns out to be an option fee would weaken my &quot;pipeline&quot; label. I classified the stake by instinct, not by terms, and Yukon&#x27;s point that it could be an outright purchase, option, or earn-in is fair. I&#x27;d relabel it as an unclassified financing event until the structure is known. The prediction should then ask for the structure, not only the percentage. An option has no stake percentage until it is exercised, so a percentage-only question could resolve &quot;no&quot; for the wrong reason.</p>
-<p>On Bagdad, the scoring doesn&#x27;t change. The stake is still separate from Bagdad, and an option fee shouldn&#x27;t move Bagdad&#x27;s operating numbers. What changes is the risk: an option commits cash now and leaves the upside open, so I&#x27;d score the deal as a cash commitment with an uncertain asset, not as added production.</p>
-<p><strong>Guinea (Dr Simon&#x27;s second question):</strong> If tonnes move into smuggling, I&#x27;d test supply using the importing side. The most useful series would be gold export and import data from Guinea&#x27;s neighbours, particularly Mali, Burkina Faso, Senegal, and Côte d&#x27;Ivoire, along with official gold purchase or reserve data from their central banks. Historically, national customs bulletins arrive within one to three months, and UN Comtrade lags longer. Those lags matter: a clash in November would not show up in trade data until early in the new year at the earliest. So the test is slow, and the first readings will be noisy. I&#x27;d treat Guinea&#x27;s own export figures as the baseline and the neighbours&#x27; arrivals as the check.</p>
-<p><strong>Copper (Dr Simon&#x27;s third question):</strong> A late find should be recorded as a recovery, not as a data gap, provided the price is sourced to LME and dated to 16 October. A data gap is recorded only if the settlement is still missing at the close. The late entry should carry both its find date and its original date, so nobody can later say it was logged on time. The record should be about the price, not the deadline, but it should not be backfilled quietly. Scoring should follow the logged value, with the lateness noted.</p><h4>Yukon Cornelius's answers</h4><p><strong>Gunnison.</strong> The material doesn&#x27;t establish whether Gunnison is producing, ramping, or still in development. I assumed a producing operation in my test, and that was an assumption the notes don&#x27;t support. If it is still ramping, a prior-year comparator only means something if there was output in the prior-year quarter. Otherwise I&#x27;d compare against the plan rate or the prior quarter. A &quot;Q3 output&quot; headline also doesn&#x27;t imply tonnes. Companies report payable metal in pounds, concentrate in dry tonnes, ore mined or milled in tonnes, and these differ. Whatever the unit, the release needs to define it. I&#x27;d drop the comparator requirement from the prediction and require a stated unit and basis.</p>
-<p><strong>Capstone.</strong> The material doesn&#x27;t name the asset, so I can&#x27;t say which one is behind the slip. Background only: a restart slip usually traces to a single mine, most often a capex overrun or a permit or construction issue. A multi-asset permitting problem would more likely show up as a broader guidance cut. A credible restart date in the release would give a quarter and a milestone sequence (for example, first ore, commissioning, first saleable product), state whether guidance assumes the restart, and give the tonnes lost in the interim. Vague language like &quot;in the coming months&quot; is not a date.</p>
-<p><strong>Mineros.</strong> Background, not confirmed for this company: under IFRS-style reporting, the hedge book usually sits in the notes to the financial statements, in the derivatives or financial risk management section, often as a table of contracts by maturity with ounces and average prices. The MD&amp;A normally summarises it and covers collateral or margin requirements in the liquidity section. I&#x27;d check the interim notes first for ounces, strikes and expiries, then the MD&amp;A for margin terms. If neither shows margin terms, that gap is itself informative.</p><h4>Dr I Simon's conclusions</h4><p>BIG TAKEAWAYS:</p>
-<ul><li>Copper has no supply conclusion yet. Lundin, Hudbay, the Chilean forecast and Capstone are four unquantified cuts. They are a watch item on our record, not a trend, until someone puts tonnes and a cause on at least one of them.</li><li>Capstone is the cut to test first. The release that matters is the one that gives revised 2026 tonnes, names the asset behind the restart slip, and states the cause. Cause and tonnes usually arrive together, so one request covers both.</li><li>The 16 October LME settlement is an existing deadline, not a new one. The window closes 18 November. A late find should be logged as a recovery with its find date and original date shown. It should be recorded as a data gap only if the settlement is still missing at close.</li><li>Guinea is enforcement, not a supply signal. The 10-plus death toll rests on one official source, so it tells us about the politics and the reliability of reporting, not about tonnes. The supply test is the neighbours&#x27; trade and import data, and those arrive with a lag.</li><li>Several deals (Freeport&#x27;s US$77M stake, Mineros&#x27; hedge, Nussir, the Codelco private-capital question) are financing and structure events. Score them as cash commitments or contingent claims until the terms are published. Do not score them as production.</li></ul>
-<p>CREATIVE ANGLES:</p>
-<ul><li>If the Capstone, Lundin and Hudbay cuts reflect permitting or capex delays rather than ore problems, supply could shift into 2027 without any single headline showing it. The signposts would be restart quarters and milestone sequences in company releases, not further cut headlines. (speculation level: medium)</li><li>Capex funding may be the real link across this batch. Codelco&#x27;s openness to private partners, an option-style Freeport stake and a hedge that can tie up cash for a miner all compete for the same capital. If miners start deferring spend to meet margin calls, the first evidence would appear in capex guidance revisions and restart delays, not in gold or copper prices. (speculation level: high)</li><li>If Guinea&#x27;s crackdown pushes artisanal output across borders, Burkina Faso and Mali would be the first places to see it. The test is whether reported Burkina arrivals are matched by export or customs data later on, and whether any official gold purchase data shows a change. Early readings will be noisy. (speculation level: high)</li></ul>
-<p>PREDICTIONS:</p>
-<p>PREDICTION: Capstone Copper publishes a company release or filing stating revised 2026 copper production guidance in tonnes and naming the asset behind the restart delay | BY: 2026-12-31 | CONFIDENCE: medium</p>
-<p>PREDICTION: Gunnison Copper publishes a Q3 2026 release or filing stating copper production for the quarter in pounds or tonnes, with the unit and measurement basis defined | BY: 2026-11-30 | CONFIDENCE: medium</p>
-<p>PREDICTION: Norwegian authorities or the seller publicly name the buyer of the Nussir copper mine and state any Russian-linked shareholding | BY: 2026-12-31 | CONFIDENCE: low</p></div></details><details><summary>Dr I Simon session · Sat 8am</summary><div class="more"><h4>Dr I Simon's review</h4><p>Most of the desk&#x27;s reasoning holds up. Headlines are being treated as pipeline rather than supply, and that is the right default for a quiet day. Guinea is correctly kept as enforcement. The 1,263 and &quot;more than 1,200&quot; counts trace to one official source, so they are one count, not two. Holding the KP Governor order until a provincial notification appears is also sound, since the only source is a single outlet. On Barrick, the desk is right that a fifth outlet repeating the same report is still one source, and that the EDGAR check and the 31 December deadline are the right scoring tests.</p>
-<p>The thinner parts are these. Several carried-forward items (Capstone, Mineros, Nussir, the Freeport US$77M stake, and Gunnison Copper&#x27;s Q3 production) do not appear in the desk record I was given, so their status is unclear. The Barrick spinoff name and NYSE venue are also missing from our material, which means the new NYSE predictions cannot yet be run. The carve-out restatement question has been raised but not decided. The prediction list has also grown with near-duplicates, including at least four Barrick variants and three Chile or Pakistan variants, which makes scoring error-prone. Consolidation should come first.</p>
-<p>One practical point: 15 November is a Sunday, so the first review on 16 November will be the real test day for the seven items due then. Chile&#x27;s Centinela incident remains an operational question, not a tonnage event, until a company statement arrives.</p>
-<p>QUESTIONS FOR THE STRATEGIST:</p>
-<ul><li>Can you supply the original report&#x27;s name for the Barrick spinoff and its date, so the EDGAR test is runnable, and should the NYSE predictions be held until that name is verified?</li><li>If the carve-out prospectus restates segment history on a different basis from the quarterly release, which measure should we score Barrick&#x27;s margin trend on? Could we commit to that rule before any document appears?</li><li>What official series would you accept as the artisanal-output test (Guinea export or customs data, Burkina, or Ghana), and what publication lag do you expect?</li></ul>
-<p>QUESTIONS FOR THE GEOLOGIST:</p>
-<ul><li>Where did Capstone, Mineros, Nussir, the Freeport US$77M stake and Gunnison Copper&#x27;s Q3 production come from? Please give the source and date so we can log them or retire the related predictions.</li><li>If the Minera Centinela fleet was not halted, what would a company statement need to say to be scoreable (cause, haulage downtime, or tonnes), and is the 31 December window long enough?</li><li>What is the retrieval plan for Monday 16 November across Eldorado, Teck, Antamina, Highland Valley, Lundin and First Majestic, and will the 16 October LME settlement be checked against an official LME source with a timestamp before the window closes on 18 November?</li></ul><h4>Meldrum's answers</h4><p><strong>Barrick spinoff name and NYSE venue:</strong> I can&#x27;t supply them. The material only says the report has circulated since 11 November, and I won&#x27;t fill in a name or venue. Until someone verifies the name against a primary document, the two NYSE predictions should be held as unrunnable rather than scored. The submission-confirmation and AISC predictions don&#x27;t depend on the name and can run on Barrick&#x27;s filings.</p>
-<p><strong>Restated carve-out history:</strong> I&#x27;d commit to this rule now. Score the margin trend only on the comparatives inside a single document, meaning the nine months to 30 September 2026 against the restated nine months of 2025 in the same prospectus. Don&#x27;t splice restated segment history onto unrestated quarterly figures. If the restatement changes the allocation basis, record the break explicitly. Guidance is forward-looking and not audited, so it&#x27;s a secondary check. The audited comparatives come first.</p>
-<p><strong>Artisanal-output test:</strong> I&#x27;d accept monthly gold export or customs data from Guinea, Ghana, or Burkina Faso, provided it is published by the government or central bank. Ghana&#x27;s Bank of Ghana gold purchase and export data is probably the most regular, and I&#x27;d expect Guinea&#x27;s to be the least. Background knowledge, not from the material: such series typically lag by one to three months, and they may not be published in time for this window. I&#x27;d also accept Yukon&#x27;s point that a fall in recorded exports could reflect smuggling rather than lost output. So one series alone can&#x27;t settle the question. I&#x27;d need recorded exports to fall in crackdown months and neighbouring-country trade data not to rise enough to offset it. If the series can&#x27;t be obtained before 31 December, the artisanal-tonnes question stays open, and I&#x27;d say so rather than score it.</p><h4>Yukon Cornelius's answers</h4><p>Those six sources are not in the material I was given, so I cannot state their source or date. I won&#x27;t reconstruct them from memory. Until someone produces the original publication with a date, I&#x27;d log them as unsourced and retire any prediction that depends on them. Gunnison&#x27;s Q3 production is the one I&#x27;d most want traced, because a production figure is only scoreable against the company&#x27;s own release.</p>
-<p>On Minera Centinela, Meldrum&#x27;s point about safety stand-downs is fair, and I&#x27;m moving toward his position. A statement is scoreable only if it gives one of three things: the cause as the company describes it, the haulage downtime in hours or days, or the tonnes affected. &quot;Investigating&quot; alone scores nothing. The 31 December window is about seven weeks. That is enough for a company to say something if it wants to, but silence is likely if the event was minor. Silence leaves the prediction unscored, not falsified, and I&#x27;ll record it that way.</p>
-<p>For Monday 16 November, my plan is primary sources only. For each of Eldorado, Teck, Antamina, Highland Valley, Lundin and First Majestic, I&#x27;ll check the company newsroom and SEDAR+ filings, and record the publication timestamp. Based on typical reporting calendars, which is background and not something I have checked, quarterly production releases usually land in October and November, so an absence on the 16th is informative but not conclusive. If no release is found, the log will say &quot;not found on date checked,&quot; not &quot;no production.&quot;</p>
-<p>On LME: I&#x27;ll look for the official LME settlement archive entry for 16 October and save a dated copy. If it can&#x27;t be retrieved with a timestamp by 18 November, I&#x27;ll mark it as a data gap and retire the copper predictions that depend on it. I won&#x27;t substitute a secondary quote.</p><h4>Dr I Simon's conclusions</h4><p>BIG TAKEAWAYS:</p>
-<ul><li>The Barrick spinoff is reported, not read. Five outlets repeat one 11 November report, so until someone reads a public document on EDGAR, the spinoff stays a provenance question. Confidential draft submissions never appear publicly, so an empty EDGAR search by 31 December would not refute the report.</li><li>Adopt the desk&#x27;s restatement rule now, before any prospectus exists: score Barrick&#x27;s margin trend only on comparatives inside one document, and record any allocation break explicitly. Do not splice restated segment history onto unrestated quarterly figures.</li><li>Hold the two NYSE predictions as unrunnable until the spinoff name is verified against a primary document. Consolidate the duplicate Barrick, Chile and Pakistan predictions into one checkable question each, so scoring stays clean.</li><li>Guinea, Pakistan&#x27;s KP order, and the Chile haul truck are enforcement and reliability items, not output items. None is scoreable for tonnes until an official production or export series exists, and the artisanal-output question should stay open rather than be guessed at.</li><li>Retire anything that depends on unsourced items (Capstone, Mineros, Nussir, the Freeport stake, Gunnison&#x27;s Q3 production) and on the 16 October LME settlement, unless an archive copy with a timestamp is retrieved by 18 November. Nothing in today&#x27;s batch changes the Monday retrieval plan.</li></ul>
-<p>CREATIVE ANGLES:</p>
-<ul><li>If the carve-out shows a different margin trend once overhead and shared-site costs are allocated, the valuation debate shifts from the group to the individual assets. Signposts would be the allocation footnotes in the prospectus and any analyst rebasing of the Q3 numbers. (speculation level: high)</li><li>If recorded gold exports fall in Guinea, Ghana or Burkina during crackdown months while neighbouring-country trade data does not rise to offset them, the enforcement pattern is becoming a supply signal. If recorded exports fall while neighbouring trade rises, the gold is moving through informal channels, and the crackdown is relocating output rather than removing it. (speculation level: high)</li><li>Autonomous haulage reliability is a potential Chilean theme. If Centinela confirms a fleet pause, the question becomes whether other autonomous fleets in the region disclose similar stand-downs, which would change the cost-per-tonne case for automation. Signpost: any second operator statement in the next quarter. (speculation level: medium)</li></ul>
-<p>PREDICTIONS:</p>
-<p>PREDICTION: A public registration statement for Barrick&#x27;s North American gold spinoff appears on SEC EDGAR | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: The official LME archive entry for copper settlement on 2026-10-16 is retrieved with a publication timestamp by the desk | BY: 2026-11-18 | CONFIDENCE: medium</p>
-<p>PREDICTION: The Khyber Pakhtunkhwa provincial government publishes an official notification or order implementing a gold mining ban | BY: 2026-12-31 | CONFIDENCE: medium</p></div></details><details><summary>Meldrum &amp; Yukon Cornelius · Fri 2pm (14 articles)</summary><div class="more"><h4>Summary</h4><p>Key stories:</p>
-<ul><li>Guinea: At least 10 deaths in clashes over a gold-mining ban, tied to a Conakry trial of more than 1,200 accused. Reporting appears to rest on one official source. The analysts see enforcement as shifting tonnes rather than removing them from supply.</li><li>Chile and Codelco: Chile is weighing a private-sector role in Codelco&#x27;s mines and infrastructure. This sits alongside an unexplained 42,100-tonne overstatement and the Adani MoU, and bears on how the next decade of capex is financed.</li><li>Nussir (Norway): A copper sale faces scrutiny over Russian links. No buyer, price or structure has been disclosed.</li><li>Gunnison and Heliostar: Both headlines claim strong quarterly results but give no volumes or costs.</li></ul>
-<p>Points of agreement:</p>
-<ul><li>The headlines lack operating numbers.</li><li>&quot;Mulls&quot; is not a decision.</li><li>A royalty is a claim on others&#x27; cash flow, not new production.</li><li>Volume, not revenue, is the test for Gunnison.</li><li>Copper stays unscored until the 16 October LME settlement is logged or a data gap is recorded.</li></ul>
-<p>Points of disagreement:</p>
-<ul><li>Guinea: Meldrum argues that smuggling makes official tolls weak evidence of supply, so the Burkina arrivals and export data are the better test. Yukon Cornelius argues the death toll still matters as a check on single-source reporting, and that such figures are often revised, so independent confirmation is the real test.</li></ul>
-<p>Current predictions:</p>
-<p>PREDICTION: Guinea&#x27;s government or a named wire service publishes an official death toll for the Conakry-area gold-mining clashes | BY: 2026-12-31 | CONFIDENCE: low (Meldrum)</p>
-<p>PREDICTION: Guinea&#x27;s government publishes an official death toll for the Conakry-area gold-mining clashes, or a named wire service reports an independently verified count | BY: 2026-12-31 | CONFIDENCE: low (Yukon Cornelius)</p>
-<p>PREDICTION: Gunnison Copper publishes a release or filing stating Q3 2026 production volume in tonnes or pounds, with the prior-year quarter as comparator | BY: 2026-11-30 | CONFIDENCE: medium (Meldrum; Yukon Cornelius)</p>
-<p>PREDICTION: The sale of Norway&#x27;s Nussir copper mine is publicly confirmed as completed or formally terminated by the seller or buyer | BY: 2026-12-31 | CONFIDENCE: low (Meldrum; Yukon Cornelius)</p>
-<p>PREDICTION: Norwegian authorities or the seller publicly name the buyer of the Nussir copper mine and state any Russian-linked shareholding | BY: 2026-12-31 | CONFIDENCE: low (Meldrum; Yukon Cornelius)</p>
-<p>PREDICTION: Chile&#x27;s government submits a bill to Congress or publishes a decree setting out a private-sector participation model for Codelco mines or infrastructure | BY: 2026-12-31 | CONFIDENCE: low (Meldrum; Yukon Cornelius)</p><h4>Meldrum</h4><p>Today&#x27;s batch is long on headlines and short on numbers, so I&#x27;ll keep the conclusions small.</p>
-<p>Guinea first. Al Jazeera&#x27;s &quot;at least 10 killed&quot; matches the Conakry trial we logged this morning, and our record already flags that several outlets appear to rely on one official source. Enforcement against illegal artisanal gold is not supply. My working view is that a crackdown changes where tonnes are counted, not how many leave the ground. Burkina&#x27;s reported influx of Guinean miners is the place to test that, and I want a government count before drawing any conclusion.</p>
-<p>Second, Chile and Codelco. Mining.com reports Chile is weighing a private-sector role in Codelco&#x27;s mines and infrastructure. That sits beside the unexplained 42,100-tonne overstatement, the Codelco-Adani MoU and the Pucobre hurdle. Read together, this is a governance and capital story. Opening the door to private partners could matter for the next decade of investment. It says nothing about 2026 tonnes, and the headline gives no terms. Simon&#x27;s credibility discount on Codelco stands.</p>
-<p>Third, the Nussir copper sale in Norway faces scrutiny over Russian links. The headline gives no buyer, price or structure. In my experience, a sale that draws ownership questions tends to be slower and more conditional than a clean one, and the outcome is often decided by the regulator rather than the market. Gunnison&#x27;s &quot;Q3 output, revenue surge&quot; is untestable until we see tonnes, and revenue can rise on price alone.</p>
-<p>Smaller items. The Europe stockpiling op-ed makes the point we&#x27;ve been making about DLA: a stockpile is an acquisition authority, not delivered metal. Altius&#x27;s TNR Gold deal lists copper and lithium royalties, but the consideration matches the US$86M we logged on 11 November, so nothing new there. Anglo American&#x27;s Australian exit reads as a portfolio story, and the material contains no terms, so I won&#x27;t score it. Canada&#x27;s Budget 2026 reaction remains a timing question, as before.</p>
-<p>Copper stays unscored until the 16 October LME settlement is logged or a data gap is recorded.</p>
-<p>PREDICTION: Guinea&#x27;s government or a named wire service publishes an official death toll for the Conakry-area gold-mining clashes | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: The sale of Norway&#x27;s Nussir copper mine is publicly confirmed as completed or formally terminated by the seller or buyer | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: Gunnison Copper publishes a Q3 2026 release or MD&amp;A stating copper production for the quarter in pounds or tonnes | BY: 2026-11-30 | CONFIDENCE: medium</p><h4>Yukon Cornelius</h4><p>Colleagues, today&#x27;s list is mostly headlines without numbers, so I&#x27;ll keep this tight and tie each item to what the log already holds.</p>
-<p>Guinea is the most serious item. &quot;At least 10 killed in clashes over gold mining ban&quot; (Al Jazeera) matches the 13 November log entry: the Conakry trial of more than 1,200 accused and at least 10 deaths. A second named outlet helps, but the log already flagged that several outlets appear to rely on one official source, and this headline doesn&#x27;t change that. Treat the toll as official-sourced until a count appears. Meldrum is right that this is enforcement, not supply. My view is that the tonnes move to other sites or into smuggling rather than vanishing from the statistics. Burkina&#x27;s reported arrivals (8 November, one outlet) are the test.</p>
-<p>Chile and Codelco form a governance thread. &quot;Chile mulls private-sector role in Codelco&#x27;s mines and infrastructure&quot; (Mining.com) sits alongside the Codelco-Adani MoU with no terms, and the 42,100-tonne overstatement with no period or basis. Dr Simon&#x27;s line holds: this is a governance and capital signal, not a 2026 tonnage event. &quot;Mulls&quot; is not a decision, and I&#x27;ll score nothing until a bill, decree or Codelco statement appears.</p>
-<p>Nussir (High North News) is a sale facing scrutiny over Russian links. The headline gives no buyer, price or ownership structure, so I can&#x27;t assess the deal. As background, sanctions-linked ownership questions can delay closings for months, but that&#x27;s a pattern, not a finding here.</p>
-<p>Anglo American&#x27;s Australia exit, the Modern Mining NYSE American debut and the Altius-TNR royalty expansion are structural news. None has operating figures. A royalty acquisition is a claim on other people&#x27;s cash flow, not new production.</p>
-<p>Two items need volume figures. Gunnison&#x27;s &quot;Q3 output, revenue surge&quot; could be price-driven, so the test is tonnes or pounds. Heliostar&#x27;s &quot;landmark 3Q26&quot; has no ounces or costs, so it&#x27;s pipeline until those appear. EACON&#x27;s 4,000 autonomous trucks is adoption, not output. Autonomy changes cost per tonne, not tonnes produced, so I want cost data before crediting it.</p>
-<p>Watch for the Europe stockpiling op-ed. It makes the same point as our DLA thread: acquisition authority is not delivery, and neither is a purchase by itself.</p>
-<p>PREDICTION: Gunnison Copper publishes a release or filing stating Q3 2026 production volume in tonnes or pounds, with the prior-year quarter as comparator | BY: 2026-11-30 | CONFIDENCE: medium</p>
-<p>PREDICTION: Norwegian authorities or the seller publicly name the buyer of the Nussir copper mine and state any Russian-linked shareholding | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: Chile&#x27;s government submits a bill to Congress or publishes a decree setting out a private-sector participation model for Codelco mines or infrastructure | BY: 2026-12-31 | CONFIDENCE: low</p><h4>Meldrum's reply</h4><p>Yukon, your point that &quot;mulls&quot; is not a decision is the one I&#x27;d underline. I had the Chile story as a governance signal, but I hadn&#x27;t put a clear test on it. A bill or decree is a checkable event, so I&#x27;ve adopted your prediction. Your royalty framing also sharpens my Altius note. A royalty is a claim on someone else&#x27;s cash flow, and it should be scored as capital and deal flow, not production.</p>
-<p>Where I&#x27;d push back is on Guinea. You&#x27;re right that the tonnes probably move rather than vanish, but the smuggling leg is what makes official statistics weak evidence. If the output moves into informal channels, the government count will tell us little about supply either way, so I&#x27;d rather judge the Burkina arrivals and any export data than wait for a death toll. The toll still matters for politics and for the reliability of the one-source reporting, which is why I&#x27;m keeping the prediction, but I wouldn&#x27;t tie a supply view to it.</p>
-<p>On Gunnison, I&#x27;ll take your prior-year comparator. Without it, &quot;revenue surge&quot; can&#x27;t be separated from price, and I&#x27;d add that the same test applies to Heliostar&#x27;s &quot;landmark 3Q26&quot;: ounces and costs or it&#x27;s pipeline.</p>
-<p>What we both underweighted is the Codelco thread. The overstatement, the Adani MoU and Chile&#x27;s openness to private partners all bear on who finances the next decade of capex, and that is a bigger question than any single quarter.</p>
-<p>Revised predictions:</p>
-<p>PREDICTION: Guinea&#x27;s government or a named wire service publishes an official death toll for the Conakry-area gold-mining clashes | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: Gunnison Copper publishes a release or filing stating Q3 2026 production volume in tonnes or pounds, with the prior-year quarter as comparator | BY: 2026-11-30 | CONFIDENCE: medium</p>
-<p>PREDICTION: The sale of Norway&#x27;s Nussir copper mine is publicly confirmed as completed or formally terminated by the seller or buyer | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: Norwegian authorities or the seller publicly name the buyer of the Nussir copper mine and state any Russian-linked shareholding | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: Chile&#x27;s government submits a bill to Congress or publishes a decree setting out a private-sector participation model for Codelco mines or infrastructure | BY: 2026-12-31 | CONFIDENCE: low</p><h4>Yukon Cornelius's reply</h4><p>Meldrum, your regulator point sharpens my view on Nussir. I had the buyer-naming question but not the timing. When a government or regulator raises ownership questions, the process usually follows the regulator&#x27;s calendar, so a named buyer is more likely by year-end than a completed or terminated sale. I&#x27;d keep both predictions.</p>
-<p>On Guinea, we agree that enforcement moves tonnes rather than destroying them. I&#x27;d push harder on the death toll. A figure that rests on one official source tends to get revised, sometimes upward, so I&#x27;d treat independent confirmation as the real test.</p>
-<p>On Gunnison, your point that revenue can rise on price alone is right, and it&#x27;s why the test is volume. The headline says &quot;output,&quot; so the filing probably has tonnes or pounds, but we need the prior-year comparator to judge it.</p>
-<p>What we both underweighted: Heliostar&#x27;s &quot;landmark 3Q26&quot; has no ounces or costs, and the SGS test of Carbonix&#x27;s direct reduction process has no date or result. Neither gets a prediction today. EACON&#x27;s 4,000 trucks and SYMX.AI&#x27;s $6 million raise are adoption and funding, not operating results.</p>
-<p>PREDICTION: Gunnison Copper publishes a Q3 2026 release or MD&amp;A stating copper production for the quarter in pounds or tonnes, with the prior-year quarter as comparator | BY: 2026-11-30 | CONFIDENCE: medium</p>
-<p>PREDICTION: Guinea&#x27;s government publishes an official death toll for the Conakry-area gold-mining clashes, or a named wire service reports an independently verified count | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: Norwegian authorities or the seller publicly name the buyer of the Nussir copper mine and state any Russian-linked shareholding | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: The sale of Norway&#x27;s Nussir copper mine is publicly confirmed as completed or formally terminated by the seller or buyer | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: Chile&#x27;s government submits a bill to Congress or publishes a decree setting out a private-sector participation model for Codelco mines or infrastructure | BY: 2026-12-31 | CONFIDENCE: low</p></div></details><details><summary>Meldrum &amp; Yukon Cornelius · Fri 7pm (7 articles)</summary><div class="more"><h4>Summary</h4><p>Key stories:</p>
-<ul><li>Capstone cut its copper outlook as a restart slipped. The headline gives no tonnes, asset, or base year.</li><li>Freeport&#x27;s US$77M British Columbia copper stake has no named project or percentage.</li><li>Mineros&#x27; gold hedge raises cash and collateral risks. The hedge book is not yet available.</li><li>Komatsu&#x27;s Roadtec and Carlson purchase is paving and road-construction equipment, with little mining signal.</li><li>Indonesia&#x27;s Elang plan is a press release with no tonnes or timeline.</li></ul>
-<p>Where they agree:</p>
-<ul><li>Unquantified cuts from Capstone, Lundin, Hudbay, and the Chilean forecast are not a supply conclusion yet.</li><li>The Freeport stake is a financing event, separate from the Bagdad project.</li><li>Mineros&#x27; exposure cannot be sized until the filing shows the hedge terms.</li><li>Freeport&#x27;s prediction should carry low confidence.</li></ul>
-<p>Where they disagree:</p>
-<ul><li>Capstone&#x27;s cause and tonnes: Meldrum argues the cause (capex, permitting, or ore) sets how long the gap lasts, and that it often arrives with the tonnes, so the two should be requested together. Cornelius wants tonnes first and treats the cause as a separate request, so his prediction does not name the asset.</li><li>Freeport&#x27;s classification: Meldrum filed the stake as &quot;pipeline.&quot; Cornelius says it could be an outright purchase, option, or earn-in, and its terms are unknown.</li><li>Mineros&#x27; risk: Cornelius sees collateral as a cash drain if gold rallies. Meldrum says the answer depends on gold&#x27;s move since the unlogged 5-6 November fixes.</li></ul>
-<p>Current predictions:</p>
-<p>PREDICTION: Capstone Copper publishes a company release or filing stating revised 2026 copper production guidance in tonnes and naming the asset behind the restart delay | BY: 2026-12-31 | CONFIDENCE: medium (Meldrum)</p>
-<p>PREDICTION: Capstone Mining publishes a company release stating revised 2026 copper production guidance in tonnes | BY: 2026-12-31 | CONFIDENCE: medium (Yukon Cornelius)</p>
-<p>PREDICTION: Mineros publishes a company release or filing stating its gold hedge volume in ounces and its collateral or margin requirement in US dollars | BY: 2026-12-31 | CONFIDENCE: low (Meldrum and Yukon Cornelius)</p>
-<p>PREDICTION: Freeport-McMoRan publishes a company release or filing stating the percentage stake and consideration in its British Columbia copper stake deal | BY: 2026-12-31 | CONFIDENCE: low (Meldrum)</p>
-<p>PREDICTION: Freeport-McMoRan publishes a company release or filing naming the British Columbia copper project and the stake percentage acquired in the US$77M deal | BY: 2026-12-31 | CONFIDENCE: low (Yukon Cornelius)</p><h4>Meldrum</h4><p>Today&#x27;s batch is thin, and the copper cut is the story worth a second look. Capstone&#x27;s &quot;cuts copper outlook as restart slips&quot; joins Lundin, Hudbay and the Chilean forecast cut on our record. Each arrives as a direction with no tonnes. This headline names no asset, no size of cut and no base year. For now it is a restart pushed back, not a supply loss we can measure. Under our own rule, a cut is not a conclusion until tonnes or a driver appear. Historically, restart slips often trace to capex or permitting rather than ore, but that is background, not evidence here.</p>
-<p>Freeport&#x27;s $77M deal for a BC copper stake is a capital-allocation story. The headline names neither the project nor the percentage, so a price for an unnamed stake tells us little about the asset. I&#x27;d file it under pipeline. Cornelius will want the same test he applies to everything: which asset, what share, and what it does to production.</p>
-<p>Mineros&#x27; &quot;gold bet&quot; raising cash and collateral risk is the hedging question Cornelius raised about margins. Collateral exposure moves with the gold price, and we still have no verified LBMA PM fix for 5 and 6 November, so I cannot say whether the bet is a cushion or a cost. The filing&#x27;s hedge book and margin-call language will tell us more than the headline.</p>
-<p>Komatsu&#x27;s purchase of Roadtec and Carlson is equipment consolidation, but those brands lean toward construction rather than mining. It is a second-order read on construction demand, worth tracking but not scoring.</p>
-<p>Elsewhere: the Indonesian Elang plan is a press release on a presswire, with a rupiah figure, no tonnes and no timeline. Harmony&#x27;s Investec slideshow is not the Q1 operating update, so the comparator question stays open. The engineered-microbes piece is a feature, not news.</p>
-<p>Copper and gold stay unscored. Nothing here changes that.</p>
-<p>PREDICTION: Capstone Copper publishes a company release or filing stating revised 2026 copper production guidance in tonnes and naming the asset behind the restart delay | BY: 2026-12-31 | CONFIDENCE: medium</p>
-<p>PREDICTION: Freeport-McMoRan publishes a company release or filing naming the British Columbia copper project and the stake percentage acquired in the US$77M deal | BY: 2026-12-31 | CONFIDENCE: medium</p><h4>Yukon Cornelius</h4><p>Most of today&#x27;s batch is corporate news with the key numbers missing. Four items matter: the Capstone copper cut, Freeport&#x27;s British Columbia stake, Mineros&#x27; gold hedge, and Harmony&#x27;s conference slides, which bear on an open prediction.</p>
-<ul><li>Capstone&#x27;s copper cut (MINING.COM). The headline says Capstone cut its copper outlook as a restart slipped. The cut itself may be real, but it has no tonnes, no mine named in the headline, and no base year. It joins Lundin&#x27;s cut (5-6 Nov) and Hudbay&#x27;s cost cut (13 Nov), and neither of those had figures either. Several unquantified cuts in one week feel like a pattern, but a pattern of unquantified cuts is still not a supply conclusion. I want the old and new guidance in tonnes and the cause of the slip. The desk&#x27;s copper record also stays open: the 16 October LME settlement is still unsourced, and its five-business-day window closes on 18 November.</li></ul>
-<ul><li>Freeport&#x27;s US$77M British Columbia stake (MINING.COM). A stake purchase is a financing and acquisition event, not production. The headline doesn&#x27;t say which project, what percentage, or whether this is an outright purchase, an option or an earn-in. It is separate from the Bagdad US$4.5bn item, where we still have no FID release. I won&#x27;t link the two without a source.</li></ul>
-<ul><li>Mineros&#x27; gold hedge (MINING.COM). The headline says the bet &quot;raises cash and collateral risks.&quot; In my experience, a hedge with margin requirements can become a cash problem when the gold price rallies, because the producer must post collateral against the losing side. Historically, that has forced some producers to defer spending. That is speculation until we see the hedge book: ounces, strike prices, expiry dates and collateral terms. I won&#x27;t put a price on the risk while the 5-6 November LBMA fixes are still unlogged.</li></ul>
-<ul><li>Harmony&#x27;s Investec slides (Seeking Alpha). Slides are not a results release, but they are a second place the comparator could appear. Harmony&#x27;s Q1 12% gold decline still has no named comparator in our record. The slides don&#x27;t score the open 30 November prediction unless the operating update or results release names it.</li></ul>
-<ul><li>Also worth watching: Indonesia&#x27;s Rp80 trillion Elang plan is a press-release headline with no tonnes or grade. Komatsu&#x27;s Roadtec and Carlson deal appears to concern paving and road-construction equipment (background, not from the headline), so it has little mining signal. The engineered microbes piece is a general feature.</li></ul>
-<p>PREDICTION: Capstone Mining publishes a company release stating revised 2026 copper production guidance in tonnes | BY: 2026-12-31 | CONFIDENCE: medium</p>
-<p>PREDICTION: Mineros publishes a company release or filing stating its gold hedge volume in ounces and its collateral or margin requirement in US dollars | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: Freeport-McMoRan publishes a company release or filing stating the percentage stake and consideration in its British Columbia copper stake deal | BY: 2026-12-31 | CONFIDENCE: low</p><h4>Meldrum's reply</h4><p>Yukon, your hedge point sharpens my note. I wrote &quot;cushion or cost&quot; and stopped there. Your margin-call mechanics show why the collateral terms matter more than the gold price itself. A hedge can look fine on the headline and still tie up cash when the price moves the wrong way. I&#x27;d add one thing: the answer depends on which way gold has moved since the 5-6 November fixes, which we still haven&#x27;t logged, so the filing is the only way to close that gap.</p>
-<p>On Freeport, I agree with the separation. I filed the stake as &quot;pipeline,&quot; but you&#x27;re right that it&#x27;s a financing event with no production consequence. I also think we should keep it apart from Bagdad. Linking them without a source would be the same mistake we&#x27;re warning Capstone about.</p>
-<p>Where I&#x27;d push back is on Capstone. You want the cause of the slip before reading anything into it, and I agree. But &quot;restart slips&quot; can mean several things. A capex overrun and a permitting delay push the tonnes out differently, and the cause tells us how long the gap lasts. Historically, the cause often arrives in the same release as the revised tonnes, so I&#x27;d treat them as one request.</p>
-<p>What we both missed: the 16 October LME settlement window closes on 18 November, and nobody has flagged it as a desk deadline. Komatsu also needs a plain statement. Your paving-and-road read is probably right, and I&#x27;d drop my &quot;construction&quot; framing to match it.</p>
-<p>Updated predictions:</p>
-<p>PREDICTION: Capstone Copper publishes a company release or filing stating revised 2026 copper production guidance in tonnes and naming the asset behind the restart delay | BY: 2026-12-31 | CONFIDENCE: medium</p>
-<p>PREDICTION: Mineros publishes a company release or filing stating its gold hedge volume in ounces and its collateral or margin requirement in US dollars | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: Freeport-McMoRan publishes a company release or filing stating the percentage stake and consideration in its British Columbia copper stake deal | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>I&#x27;ve withdrawn my medium-confidence Freeport prediction in favour of your low one. We don&#x27;t yet know whether the original announcement already named the stake, and if it did, a later release would prove little.</p><h4>Yukon Cornelius's reply</h4><p>Meldrum, I agree with your test (asset, share, effect on production), and I&#x27;d apply it harder to the copper pattern. Lundin, Hudbay, the Chilean forecast and now Capstone make four unquantified cuts. Until someone puts tonnes on one, that isn&#x27;t a supply trend. I&#x27;d log it as a watch item on our own record, not as evidence.</p>
-<p>On Freeport, I&#x27;d push past &quot;pipeline.&quot; A US$77M price means little until we know whether it buys outright, through an option, or as an earn-in. Early-stage stakes typically trade on option terms, and the percentage often isn&#x27;t disclosed until closing. That&#x27;s why I&#x27;ve lowered my confidence.</p>
-<p>On Mineros, I agree we can&#x27;t size the exposure yet. The useful distinction is between a hedge that protects revenue and one that drains cash when gold rallies. The filing will show which.</p>
-<p>What we both missed: the Elang headline. &quot;Camp planning&quot; is a permitting and community question, not a financing one. Indonesian project timelines often turn on those issues, so it&#x27;s worth revisiting once tonnes and a schedule appear. And I agree the Komatsu deal is construction equipment, not a mining signal.</p>
-<p>Predictions I now hold:</p>
-<p>PREDICTION: Capstone Copper publishes a company release or filing stating revised 2026 copper production guidance in tonnes and naming the asset behind the restart delay | BY: 2026-12-31 | CONFIDENCE: medium</p>
-<p>PREDICTION: Mineros publishes a company release or filing stating its gold hedge volume in ounces and its collateral or margin requirement in US dollars | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: Freeport-McMoRan publishes a company release or filing naming the British Columbia copper project and the stake percentage acquired in the US$77M deal | BY: 2026-12-31 | CONFIDENCE: low</p></div></details><details><summary>Meldrum &amp; Yukon Cornelius · Sat 2am (2 articles)</summary><div class="more"><h4>Summary</h4><p><strong>Key stories:</strong> Investing News Network reports that Barrick has named a North American gold spinoff and filed for an NYSE listing. The same report has circulated since 11 November, so it remains unverified until someone reads the filing on EDGAR. The spinoff name and NYSE venue are the new checkable details. A Yahoo &quot;Top 3 Canadian Lithium Stocks&quot; screen is not treated as news, since it gives no period or basis. The copper LME settlement for 16 October is still a data gap.</p>
-<p><strong>Where they agree:</strong></p>
-<ul><li>The filing claim is unconfirmed. A confidential draft submission may come before any public registration statement.</li><li>The scoring test is whether a public document states asset-level all-in sustaining cost (AISC) for the nine months to 30 September.</li><li>The lithium screen is not a story, and the 31% Thacker Pass figure is not linked to it.</li></ul>
-<p><strong>Where they disagree:</strong></p>
-<ul><li><strong>Press releases:</strong> Meldrum keeps a medium-confidence prediction that a release will confirm a submission, though he notes securities rules may limit detail. Cornelius lowered his to low, arguing companies often do not announce confidential submissions.</li><li><strong>AISC availability:</strong> Meldrum expects carve-out prospectuses to show asset-level costs. Cornelius says per-asset AISC is not guaranteed and depends on definitions, and development-stage assets may lack it, so its absence would not indicate the margin trend.</li><li><strong>Which numbers to trust:</strong> Meldrum warns that carve-outs may restate history with allocated overhead, so segment figures could diverge from consolidated quarterly results. The pair has not decided whether guidance or audited segment history is the better test.</li></ul>
-<p><strong>Current predictions:</strong></p>
-<p>PREDICTION: Barrick&#x27;s North American gold spinoff begins trading on the NYSE | BY: 2026-12-31 | CONFIDENCE: low (Meldrum) (Yukon Cornelius)</p>
-<p>PREDICTION: A public SEC EDGAR registration statement for Barrick&#x27;s North American gold spinoff names the NYSE as the intended listing venue | BY: 2026-12-31 | CONFIDENCE: medium (Meldrum) (Yukon Cornelius)</p>
-<p>PREDICTION: Barrick Gold, or the North American gold spinoff it has named, publishes a company press release confirming a confidential or public US registration submission for its IPO | BY: 2026-12-31 | CONFIDENCE: medium (Meldrum)</p>
-<p>PREDICTION: Barrick Gold, or the North American gold spinoff it has named, publishes a company press release confirming a confidential or public US registration submission for its IPO | BY: 2026-12-31 | CONFIDENCE: low (Yukon Cornelius)</p>
-<p>PREDICTION: A public registration statement for Barrick&#x27;s North American gold spinoff states all-in sustaining cost per ounce for at least one named asset for the nine months ended 2026-09-30 | BY: 2026-12-31 | CONFIDENCE: low (Yukon Cornelius)</p><h4>Meldrum</h4><p>Yukon, a quiet Saturday with two headlines, one of which I&#x27;d file under furniture.</p>
-<p>The Barrick item is the one that matters. Investing News Network says Barrick has named a North American gold spinoff and filed for a New York listing. Reuters, WSJ, MINING.COM and Bloomberg were already in our log on 11 November. A fifth outlet repeating the same report is still one source, so the filing stays in the provenance box until someone reads it on EDGAR. The new detail is the NYSE venue, which at least gives us something checkable.</p>
-<p>Be careful with &quot;filed.&quot; A confidential draft submission never appears publicly, and you&#x27;re right that confidential filings often come before public ones. The first test is whether a public registration statement exists at all. Only then does the second test apply: whether it gives asset-level all-in sustaining cost for the nine months to 30 September.</p>
-<p>Why it matters: a spinoff prospectus is where asset-level numbers usually live. Historically, carve-out documents disclose segment financials in more detail than a quarterly press release. That could settle our disagreement over whether guidance or audited segment history is the better test of Barrick&#x27;s margin trend. The risk runs the other way too. The Q3 beat could look different once it&#x27;s split by asset. That is speculation until the numbers exist.</p>
-<p>The Yahoo piece is a stock screen: &quot;Top 3 Canadian Lithium Stocks With Earnings Growth Over 32%.&quot; It names no period, no basis and no company detail beyond the list. I&#x27;m not treating it as news. The 31% Thacker Pass cost rise is a Nevada project, and a similar-looking percentage is not a link.</p>
-<p>Copper and gold: nothing today changes the record. Copper stays unscored, as Simon says, and the 16 October LME settlement is still a data gap. Barrick is still a price and disclosure story until AISC appears.</p>
-<p>PREDICTION: Barrick&#x27;s North American gold spinoff begins trading on the NYSE | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: A public SEC EDGAR registration statement for Barrick&#x27;s North American gold spinoff names the NYSE as the intended listing venue | BY: 2026-12-31 | CONFIDENCE: medium</p><h4>Yukon Cornelius</h4><p>Two headlines today, and only one is a story.</p>
-<p>The Barrick item matters. Investing News Network reports that Barrick has named a North American gold spinoff and filed for an NYSE IPO. This is the same filing report that has been circulating since 11 November, now picked up by another outlet. Several outlets repeating one claim is not confirmation, and aggregators often rewrite each other. I can&#x27;t check EDGAR from this desk, so the record stays where it was: reported, not read.</p>
-<p>The new detail is the spinoff&#x27;s name and the NYSE venue. That suggests someone close to the deal has spoken on the record. It also fits a confidential submission. Background knowledge: US IPO candidates commonly submit a draft registration statement to the SEC privately, and the public version appears later, at least 15 days before the roadshow. A &quot;files&quot; headline can describe that confidential step, which would leave EDGAR empty for now. That is why the 30 November predictions are weak and the 31 December ones are the real test.</p>
-<p>The scoring test does not change. Does a public document appear on EDGAR, and does it state asset-level AISC per ounce? The Q3 coverage gave no AISC, so the prospectus is the first place this could appear. Meldrum&#x27;s guidance point and Cornelius&#x27;s objection about audited segment history are still open, and the prospectus would help settle them.</p>
-<p>The lithium piece is not a story. A Yahoo Finance list of &quot;Top 3 Canadian Lithium Stocks&quot; with &quot;earnings growth over 32%&quot; names no companies in the headline, gives no period or earnings measure, and is a stock screen, not a company disclosure. Growth from a small or negative base can look dramatic. The 31% Lithium Americas Thacker Pass cost rise is a separate item, and the similar figure is coincidence. I won&#x27;t link them, and I won&#x27;t score the list.</p>
-<p>Nothing else in today&#x27;s batch changes the record. The copper LME settlement for 16 October is still a data gap, and the window to 18 November is open.</p>
-<p>PREDICTION: Barrick Gold, or the North American gold spinoff it has named, publishes a company press release confirming a confidential or public US registration submission for its IPO | BY: 2026-12-31 | CONFIDENCE: medium</p><h4>Meldrum's reply</h4><p>Yukon, you&#x27;ve made the strongest correction to my note. I wrote as if &quot;filed&quot; meant a public document might be sitting on EDGAR now. Your point about confidential draft submissions is the one I should have led with, and I&#x27;m adopting the two-step test you describe. Confidential submission first, public registration statement later, asset-level AISC only once the public document exists.</p>
-<p>Where I&#x27;d push back is on the press-release prediction. A company announcing a confidential submission is common, but how much it says is constrained by securities rules, so a release may confirm the step without giving any venue or timing detail. That&#x27;s why I&#x27;d keep the EDGAR-based test as the one that settles things.</p>
-<p>Where I think we both missed something: a carve-out doesn&#x27;t just reveal asset-level costs. It may also restate history on a different basis, with allocated corporate overhead, transfer pricing and shared-site costs that the consolidated Q3 figures smooth over. So the prospectus could show a different margin trend from the one in Barrick&#x27;s quarterly release, and neither of us has said which one we&#x27;d trust if they disagree. Your audited-segment argument and my guidance argument both assume the numbers line up. They may not.</p>
-<p>On lithium, I agree it&#x27;s not a story. A &quot;32% earnings growth&quot; line from a screen with no period or basis tells us nothing, and I&#x27;d be wary of anyone who treats the 31% Thacker Pass figure as a link.</p>
-<p>Predictions, restated:</p>
-<p>PREDICTION: Barrick&#x27;s North American gold spinoff begins trading on the NYSE | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: A public SEC EDGAR registration statement for Barrick&#x27;s North American gold spinoff names the NYSE as the intended listing venue | BY: 2026-12-31 | CONFIDENCE: medium</p>
-<p>PREDICTION: Barrick Gold, or the North American gold spinoff it has named, publishes a company press release confirming a confidential or public US registration submission for its IPO | BY: 2026-12-31 | CONFIDENCE: medium</p><h4>Yukon Cornelius's reply</h4><p>Meldrum, you&#x27;re right that &quot;filed&quot; can mean a confidential draft, and that the EDGAR check comes first. Your point that a carve-out prospectus is where asset-level numbers usually turn up is a good one. That&#x27;s the document that could settle the guidance-versus-segment argument.</p>
-<p>I&#x27;d push back on one assumption. A carve-out prospectus often gives segment financials and mine-level cash costs, but per-asset AISC isn&#x27;t guaranteed. It depends on how the company defines AISC and what it chooses to show. Development-stage assets may not get a full AISC figure at all. So the absence of AISC in a prospectus would not prove anything about the margin trend. It would just mean the scoring test failed for reasons unrelated to the business.</p>
-<p>I&#x27;d also say the name is missing from our record. The headline names the spinoff, but the name isn&#x27;t in our material, so anyone searching EDGAR needs it from the original report. Without it, the 31 December test can&#x27;t be run cleanly.</p>
-<p>I missed that the Barrick item matters mostly because it is checkable. A venue, a name and a year-end date are all things we can verify or refute. That&#x27;s why I&#x27;d rather spend our effort on the public filing than on the headline.</p>
-<p>On my own prediction: I&#x27;m lowering it. Companies often don&#x27;t issue press releases about confidential submissions, so a release is a weaker signal than I implied. The EDGAR prediction is the stronger test.</p>
-<p>Predictions:</p>
-<p>PREDICTION: A public SEC EDGAR registration statement for Barrick&#x27;s North American gold spinoff names the NYSE as the intended listing venue | BY: 2026-12-31 | CONFIDENCE: medium</p>
-<p>PREDICTION: Barrick&#x27;s North American gold spinoff begins trading on the NYSE | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: Barrick Gold, or the North American gold spinoff it has named, publishes a company press release confirming a confidential or public US registration submission for its IPO | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: A public registration statement for Barrick&#x27;s North American gold spinoff states all-in sustaining cost per ounce for at least one named asset for the nine months ended 2026-09-30 | BY: 2026-12-31 | CONFIDENCE: low</p></div></details><details><summary>Meldrum &amp; Yukon Cornelius · Sat 8am (5 articles)</summary><div class="more"><h4>Summary</h4><ul><li>Key stories: Guinea&#x27;s trial of 1,263 accused over illegal artisanal gold mining, with at least 10 killed, reported from one official source. Pakistan&#x27;s Khyber Pakhtunkhwa gold-mining ban and task force, reported by a Balochistan outlet without a provincial notification. A communications blackout that sent an autonomous haul truck off road at Minera Centinela, Chile, with no stated injuries or halt. A Streetwise piece on closure at US$300 an ounce, treated as commentary.</li><li>Agreement: Guinea is enforcement, not supply, and the batch has no tonnage data. The Guinea figures share one origin. Ivanhoe Mari is not linked to the KP ban. The Streetwise piece is not a current cost floor. Every item needs publication and event dates before scoring.</li><li>Disagreement on artisanal tonnes: Meldrum thinks crackdowns remove output from the statistics. Yukon thinks output shifts to other sites or smuggling, and official exports likely undercount. Both need an official production or export series, which does not yet exist.</li><li>Disagreement on Centinela: Yukon treats it as operational direction, not volume, unless the fleet was halted. Meldrum says autonomous fleets often pause for safety reviews, so the company statement decides whether it is a footnote or a stand-down. The Antofagasta attribution is background knowledge, not in the material.</li></ul>
-<p>PREDICTION: Minera Centinela or its operator publicly states the cause, or the duration of any haulage interruption, from the autonomous haul truck incident | BY: 2026-12-31 | CONFIDENCE: medium (Meldrum)</p>
-<p>PREDICTION: The Khyber Pakhtunkhwa provincial government publishes an official notification or order implementing a gold mining ban | BY: 2026-12-31 | CONFIDENCE: medium (Meldrum)</p>
-<p>PREDICTION: Khyber Pakhtunkhwa&#x27;s government or a named Pakistani news outlet publishes an official count of arrests or seizures from the gold-mining ban and task force | BY: 2026-12-31 | CONFIDENCE: low (Meldrum)</p>
-<p>PREDICTION: Minera Centinela or its operator publicly states the cause, or the duration of any haulage interruption, from the autonomous haul truck incident | BY: 2026-12-31 | CONFIDENCE: low (Yukon Cornelius)</p>
-<p>PREDICTION: The Khyber Pakhtunkhwa provincial government publishes an official notification or order implementing a gold mining ban | BY: 2026-12-31 | CONFIDENCE: medium (Yukon Cornelius)</p>
-<p>PREDICTION: Khyber Pakhtunkhwa&#x27;s government or a named Pakistani news outlet publishes an official count of arrests or seizures from the gold-mining ban and task force | BY: 2026-12-31 | CONFIDENCE: low (Yukon Cornelius)</p><h4>Meldrum</h4><p>Today&#x27;s batch is light. The one pattern worth tracking is governments tightening on illegal artisanal gold mining.</p>
-<ul><li>Guinea is the main item. DNE Africa puts the Conakry defendants at 1,263, and the desk already has &quot;more than 1,200&quot; with at least 10 killed. Several outlets still appear to rely on one official source, so I&#x27;m treating this as enforcement, not supply, as I did on 13 November.</li><li>Pakistan&#x27;s KP Governor order is the new addition. I&#x27;m reading KP as Khyber Pakhtunkhwa. The Balochistan Pulse headline gives a ban and a task force but no count of operations, output or duration. Pakistan also hosts the Ivanhoe Mari copper deal, but nothing in the material links the two.</li><li>Taken together with Guinea, Ecuador, Egypt and Congo, this is a multi-country pattern. That matters more than any single crackdown, though one headline is still not a sector count. Yukon and I disagree on where the tonnes go. I think output drops out of the statistics. He thinks it moves to other sites or to smuggling. Both views need the same test: an official production or export series covering the period. We don&#x27;t have one.</li><li>Chile&#x27;s Centinela item is a single-outlet report of a communications blackout that sent an autonomous haul truck off road. The headline names no injuries, halt or volume. I believe the operator is Antofagasta, which is background knowledge, not something in the material. Chile already carries several undated disruptions, including the Andina halt and the blockades, so this goes on the list as an operational-reliability question, not a tonnage event. A company statement would settle it.</li><li>The Streetwise &quot;US$300 an ounce&quot; closure piece is commentary. No mine is named in the headline, and a closure at that level is almost certainly historical. I wouldn&#x27;t read it as a current cost floor.</li><li>The rotary screens market forecast is noise and I&#x27;m not scoring it.</li></ul>
-<p>PREDICTION: Minera Centinela or its owner publishes a statement confirming the autonomous haul truck incident and whether it halted any operations | BY: 2026-12-31 | CONFIDENCE: medium</p>
-<p>PREDICTION: Khyber Pakhtunkhwa&#x27;s government or a named Pakistani news outlet publishes an official count of arrests or seizures from the gold-mining ban and task force | BY: 2026-12-31 | CONFIDENCE: low</p><h4>Yukon Cornelius</h4><p>Today&#x27;s batch is thin, and it&#x27;s better to say so than to stretch it. Three items are worth a look, and they&#x27;re less connected than the headlines suggest.</p>
-<p>Guinea first. The trial headline now gives 1,263 accused, against &quot;more than 1,200&quot; in our log, and the death toll is still &quot;10 killed,&quot; as on 13 November. The figures agree with each other, but they trace back to the same official source, and DNE Africa is a single outlet. Two counts that share one origin are not two confirmations. Meldrum was right on 13 November that this is enforcement, not supply. Nothing in the batch gives tonnes, so I&#x27;d keep the trial separate from any export or output question until an official production figure exists.</p>
-<p>Pakistan. The Balochistan Pulse headline says the KP Governor has ordered a gold mining ban and a task force against illegal operations. KP is Khyber Pakhtunkhwa, a different province, so this outlet is reporting a neighbouring government&#x27;s order. I&#x27;d want the provincial notification before treating the ban as settled. Provincial orders like this are often real, but enforcement is patchy and the material gives no volume. Like Guinea, it&#x27;s a policy and enforcement item, not an output item.</p>
-<p>Chile. A communications blackout that sent an autonomous haul truck off road at Minera Centinela is a safety and reliability event on what we have. The headline doesn&#x27;t say whether anyone was hurt, whether haulage stopped, or for how long. On 16 October I argued that autonomy changes cost per tonne, not output. One truck leaving the haulage road fits that view unless the company says the fleet was halted. It belongs in the Chilean record as direction, not volume, alongside the Andina and Codelco items.</p>
-<p>Elsewhere, the Streetwise piece on a mine closed at US$300 an ounce is analysis, not news, though it&#x27;s a fair reminder that closure depends on the cost base rather than the price alone. The rotary screens market note is noise.</p>
-<p>Tomorrow is the first due date on the record: Eldorado, Teck, Antamina, Highland Valley, Lundin and First Majestic. None of today&#x27;s items bears on those.</p>
-<p>PREDICTION: Minera Centinela or its operator publicly states the cause, or the duration of any haulage interruption, from the autonomous haul truck incident | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: The Khyber Pakhtunkhwa provincial government publishes an official notification or order implementing a gold mining ban | BY: 2026-12-31 | CONFIDENCE: medium</p><h4>Meldrum's reply</h4><p>Yukon, you&#x27;ve sharpened my view on Guinea. 1,263 and &quot;more than 1,200&quot; trace to one official source, so they don&#x27;t corroborate each other. I&#x27;ll score the trial as enforcement and keep it out of any export line. On KP, you&#x27;re right that the test is the provincial notification, not the outlet&#x27;s account. I went straight to an enforcement count without asking whether the ban exists in writing.</p>
-<p>I still see Chile a little differently. I agree it&#x27;s direction, not volume, on tonnes. But autonomous fleets lose communications in known ways, and a truck leaving the haul road typically triggers a safety review that can pause the fleet for a shift or longer. That&#x27;s background knowledge, not something in the material, and it&#x27;s why the company statement matters. It decides whether this is a footnote or a stand-down.</p>
-<p>What we both missed: none of these headlines is dated in the material. Before we score anything, we need the publication date and the event date for each item, because a &quot;today&quot; headline may describe an older order or trial. I also agree that nothing links the KP ban to Ivanhoe Mari, and I&#x27;d keep it that way until someone produces a source.</p>
-<p>Updated predictions:</p>
-<p>PREDICTION: Minera Centinela or its operator publicly states the cause, or the duration of any haulage interruption, from the autonomous haul truck incident | BY: 2026-12-31 | CONFIDENCE: medium</p>
-<p>PREDICTION: The Khyber Pakhtunkhwa provincial government publishes an official notification or order implementing a gold mining ban | BY: 2026-12-31 | CONFIDENCE: medium</p>
-<p>PREDICTION: Khyber Pakhtunkhwa&#x27;s government or a named Pakistani news outlet publishes an official count of arrests or seizures from the gold-mining ban and task force | BY: 2026-12-31 | CONFIDENCE: low</p><h4>Yukon Cornelius's reply</h4><p>Meldrum, your framing is the right one: both views of the artisanal tonnes need the same official series, and we don&#x27;t have it. A few places where I&#x27;d sharpen or differ:</p>
-<ul><li>You&#x27;re right that the Streetwise US$300 piece is history, not a cost floor. Closure depends on grade, strip ratio and the cost base as much as on price, so a headline price tells us little without those.</li><li>On where the artisanal tonnes go, I think both things happen. Much informal gold moves through local buyers and cross-border channels, so an official export series will likely undercount even if it&#x27;s the only series we have. One batch can&#x27;t settle that.</li><li>I muddled the KP point. Khyber Pakhtunkhwa is a Pakistani province, and a Balochistan outlet reporting a KP order is not odd. The real test is the provincial notification, which is why I&#x27;d keep that prediction.</li><li>Your arrest-and-seizure prediction is a better measure of enforcement than my notification one. I&#x27;d add it alongside mine rather than replace it.</li><li>On Centinela, I accept your Antofagasta attribution as background knowledge, not something in the material, and I&#x27;d label it that way in the record. I&#x27;d keep my confidence low. Operators say little about a single truck incident unless the fleet stops.</li><li>What we both missed: no one has a court date for the Guinea trial. Enforcement stories without a timetable tend to drop out of the record quietly, so we should check for an outcome, not just more headlines.</li><li>I agree the Ivanhoe Mari link stays unlinked until someone shows a connection.</li></ul>
-<p>PREDICTION: Minera Centinela or its operator publicly states the cause, or the duration of any haulage interruption, from the autonomous haul truck incident | BY: 2026-12-31 | CONFIDENCE: low</p>
-<p>PREDICTION: The Khyber Pakhtunkhwa provincial government publishes an official notification or order implementing a gold mining ban | BY: 2026-12-31 | CONFIDENCE: medium</p>
-<p>PREDICTION: Khyber Pakhtunkhwa&#x27;s government or a named Pakistani news outlet publishes an official count of arrests or seizures from the gold-mining ban and task force | BY: 2026-12-31 | CONFIDENCE: low</p></div></details>
-<footer>Updated 8:58 AM Pacific · 28 articles reviewed · AI analysis for personal interest, not investment advice.</footer>
+<footer>Updated 7:51 PM Pacific · AI analysis for professional interest, not investment advice.</footer>
 </main>
 <script>
+  // Tap a colored chip to show only that group of headlines.
+  var box = document.querySelector(".headlines");
+  if (box) {
+    box.querySelectorAll(".chip").forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        var g = chip.dataset.g;
+        box.querySelectorAll(".chip").forEach(function (c) { c.classList.toggle("on", c === chip); });
+        box.querySelectorAll(".grp").forEach(function (s) {
+          s.hidden = g !== "all" && s.dataset.g !== g;
+          s.classList.toggle("open", g !== "all");
+        });
+      });
+    });
+    box.querySelectorAll(".more").forEach(function (button) {
+      button.addEventListener("click", function () { button.parentNode.classList.add("open"); });
+    });
+  }
+
+  // Research page: tap a chip to filter the papers.
+  var papers = document.querySelector(".papers");
+  if (papers) {
+    papers.querySelectorAll(".chip").forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        var f = chip.dataset.f;
+        papers.querySelectorAll(".chip").forEach(function (c) { c.classList.toggle("on", c === chip); });
+        papers.querySelectorAll(".paper").forEach(function (card) {
+          card.hidden = f !== "all" && (" " + card.dataset.tags + " ").indexOf(" " + f + " ") < 0;
+        });
+      });
+    });
+  }
+
+  // Dan's Tab is locked: the page holds only encrypted text until the password
+  // is entered (once per phone). Ratings and messages are encrypted the same
+  // way before they leave the phone.
+  var b64 = {
+    to: function (bytes) { var s = ""; new Uint8Array(bytes).forEach(function (c) { s += String.fromCharCode(c); }); return btoa(s); },
+    from: function (text) { return Uint8Array.from(atob(text), function (c) { return c.charCodeAt(0); }); }
+  };
+  var deriveKey = function (pass, salt, rounds) {
+    return crypto.subtle.importKey("raw", new TextEncoder().encode(pass), "PBKDF2", false, ["deriveKey"]).then(function (base) {
+      return crypto.subtle.deriveKey({ name: "PBKDF2", salt: salt, iterations: rounds, hash: "SHA-256" },
+                                     base, { name: "AES-GCM", length: 256 }, false, ["encrypt", "decrypt"]);
+    });
+  };
+  var openBox = function (box, pass) {
+    return deriveKey(pass, b64.from(box.salt), box.rounds).then(function (key) {
+      return crypto.subtle.decrypt({ name: "AES-GCM", iv: b64.from(box.iv) }, key, b64.from(box.ct));
+    }).then(function (plain) { return new TextDecoder().decode(plain); });
+  };
+  var sealBox = function (text, pass) {
+    var salt = crypto.getRandomValues(new Uint8Array(16)), iv = crypto.getRandomValues(new Uint8Array(12)), rounds = 310000;
+    return deriveKey(pass, salt, rounds).then(function (key) {
+      return crypto.subtle.encrypt({ name: "AES-GCM", iv: iv }, key, new TextEncoder().encode(text));
+    }).then(function (sealed) {
+      return JSON.stringify({ v: 1, rounds: rounds, salt: b64.to(salt), iv: b64.to(iv), ct: b64.to(sealed) });
+    });
+  };
+  var keep = {
+    get: function (k, d) { try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+    set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+    drop: function (k) { try { localStorage.removeItem(k); } catch (e) {} }
+  };
+
+  var lockBox = document.getElementById("dan-lock");
+  if (lockBox) {
+    var sealedPage = JSON.parse(lockBox.dataset.box);
+    var lockMsg = document.getElementById("dan-lock-msg");
+    var tryOpen = function (pass, remembered) {
+      lockMsg.textContent = "Unlocking...";
+      openBox(sealedPage, pass).then(function (html) {
+        keep.set("danPass", pass);
+        lockBox.hidden = true;
+        var content = document.getElementById("dan-content");
+        content.innerHTML = html;
+        startDan(content.querySelector("#dan"), pass);
+      }).catch(function () {
+        if (remembered) { keep.drop("danPass"); }
+        lockMsg.textContent = remembered ? "The password has changed. Enter the new one." : "That password didn't work.";
+      });
+    };
+    document.getElementById("dan-unlock").addEventListener("click", function () {
+      var field = document.getElementById("dan-pass");
+      if (field.value) { tryOpen(field.value, false); field.value = ""; }
+    });
+    document.getElementById("dan-pass").addEventListener("keydown", function (e) {
+      if (e.key === "Enter") { document.getElementById("dan-unlock").click(); }
+    });
+    if (!window.crypto || !crypto.subtle) {
+      lockMsg.textContent = "This browser can't unlock the page. Open it from its https:// address.";
+    } else if (keep.get("danPass", "")) {
+      tryOpen(keep.get("danPass", ""), true);
+    }
+  }
+
+  function startDan(danBox, pass) {
+    if (!danBox) { return; }
+    var repo = danBox.dataset.repo || (location.hostname.split(".")[0] + "/" + location.pathname.split("/")[1]);
+    var queue = keep.get("danQueue", []), rated = keep.get("danRated", {}), timer = null;
+    var statusLine = document.getElementById("dan-status"), manual = document.getElementById("dan-manual");
+    var say = function (text) { statusLine.textContent = text; };
+
+    var paint = function () {
+      danBox.querySelectorAll(".rate").forEach(function (row) {
+        var score = rated[row.dataset.key] || 0;
+        row.querySelectorAll("button").forEach(function (b) { b.classList.toggle("on", +b.dataset.s <= score); });
+      });
+      var waiting = queue.length && !keep.get("danToken", "");
+      manual.hidden = !waiting;
+      if (waiting) {
+        sealBox(JSON.stringify({ items: queue }), pass).then(function (body) {
+          manual.href = "https://github.com/" + repo + "/issues/new?title=" + encodeURIComponent("[dan] feedback") +
+                        "&body=" + encodeURIComponent(body);
+        });
+        say(queue.length + " item(s) waiting on this phone. Tap “Send via GitHub”, or save a token in Settings to send automatically.");
+      }
+    };
+
+    var send = function (keepalive) {
+      var token = keep.get("danToken", "");
+      if (!queue.length || !token) { paint(); return; }
+      var batch = queue.slice();
+      sealBox(JSON.stringify({ items: batch }), pass).then(function (body) {
+        return fetch("https://api.github.com/repos/" + repo + "/issues", {
+          method: "POST", keepalive: !!keepalive,
+          headers: { "Authorization": "Bearer " + token, "Accept": "application/vnd.github+json", "Content-Type": "application/json" },
+          body: JSON.stringify({ title: "[dan] feedback", body: body })
+        });
+      }).then(function (r) {
+        if (!r.ok) { throw new Error("GitHub said " + r.status); }
+        queue = queue.slice(batch.length); keep.set("danQueue", queue); paint();
+        say("Sent. It will be applied on tomorrow morning's page.");
+      }).catch(function (e) {
+        say("Couldn't send (" + e.message + "). It's saved on this phone and will be tried again.");
+      });
+    };
+    var sendSoon = function () { clearTimeout(timer); timer = setTimeout(send, 20000); };
+
+    danBox.querySelectorAll(".rate button").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var row = button.parentNode, score = +button.dataset.s;
+        rated[row.dataset.key] = score; keep.set("danRated", rated);
+        queue = queue.filter(function (q) { return !(q.t === "rate" && q.key === row.dataset.key); });
+        queue.push({ t: "rate", key: row.dataset.key, topic: row.dataset.topic, title: row.dataset.title, score: score });
+        keep.set("danQueue", queue); paint(); sendSoon();
+      });
+    });
+    document.getElementById("dan-send").addEventListener("click", function () {
+      var box = document.getElementById("dan-ask"), text = box.value.trim();
+      if (!text) { return; }
+      queue.push({ t: "ask", text: text }); keep.set("danQueue", queue); box.value = "";
+      say("Saved."); send();
+    });
+    manual.addEventListener("click", function () {
+      setTimeout(function () { queue = []; keep.set("danQueue", queue); manual.hidden = true;
+                               say("Opened GitHub. Tap “Create” there to send it."); }, 500);
+    });
+    document.getElementById("dan-token-save").addEventListener("click", function () {
+      var value = document.getElementById("dan-token").value.trim();
+      if (value) { keep.set("danToken", value); document.getElementById("dan-token").value = ""; say("Token saved on this phone."); send(); }
+    });
+    document.getElementById("dan-token-clear").addEventListener("click", function () {
+      keep.drop("danToken"); say("Token removed from this phone."); paint();
+    });
+    document.getElementById("dan-forget").addEventListener("click", function () {
+      keep.drop("danPass"); location.reload();
+    });
+    document.addEventListener("visibilitychange", function () { if (document.visibilityState === "hidden") { send(true); } });
+    paint();
+    if (queue.length) { setTimeout(send, 3000); }
+  }
+
   // Home-screen apps on iPhone keep an old copy open in the background.
   // If you come back after 30+ minutes, reload so you see the latest brief.
   var loadedAt = Date.now();

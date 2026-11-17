@@ -1,0 +1,85 @@
+{
+  "next_id": 9,
+  "items": [
+    {
+      "id": "P1",
+      "author": "strategist",
+      "text": "The Highland Valley Copper strike ends with a ratified new labour agreement",
+      "by": "2026-12-31",
+      "confidence": "medium",
+      "made": "2026-11-16",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P2",
+      "author": "geologist",
+      "text": "The Highland Valley Copper strike ends, with a tentative or ratified labour agreement announced by the company or the union",
+      "by": "2026-12-31",
+      "confidence": "medium",
+      "made": "2026-11-16",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P3",
+      "author": "chief",
+      "text": "Indonesia's government publishes an official regulation or decree stating a numeric change to mining royalty rates or the state's ownership share in mining companies",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-16",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P4",
+      "author": "chief",
+      "text": "Chile's government or Codelco publicly names at least one specific Codelco mine or infrastructure asset for private-sector participation, in an official government or company statement",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-16",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P5",
+      "author": "chief",
+      "text": "Codelco publicly states the period and basis for the 42,100-tonne production overstatement in an official company statement or filing",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-16",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P6",
+      "author": "chief",
+      "text": "A tentative agreement ending the Highland Valley Copper strike is publicly announced",
+      "by": "2026-12-31",
+      "confidence": "medium",
+      "made": "2026-11-16",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P7",
+      "author": "chief",
+      "text": "Lithium Americas publicly announces revised Thacker Pass financing terms under its DOE loan amendment",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-16",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P8",
+      "author": "chief",
+      "text": "Nova Minerals publicly announces the start of construction at its Alaska antimony project",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-16",
+      "status": "open",
+      "evidence": []
+    }
+  ]
+}
