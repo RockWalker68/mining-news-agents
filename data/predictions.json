@@ -1,5 +1,5 @@
 {
-  "next_id": 14,
+  "next_id": 24,
   "items": [
     {
       "id": "P1",
@@ -9,7 +9,12 @@
       "confidence": "medium",
       "made": "2026-11-16",
       "status": "open",
-      "evidence": []
+      "evidence": [
+        {
+          "date": "2026-11-18",
+          "note": "A CBC headline reports Highland Valley Copper was ordered to stop using replacement workers, which pressures the company toward a deal, but no tentative or ratified agreement appears in today's news, and the headline gives no figures."
+        }
+      ]
     },
     {
       "id": "P2",
@@ -19,7 +24,12 @@
       "confidence": "medium",
       "made": "2026-11-16",
       "status": "open",
-      "evidence": []
+      "evidence": [
+        {
+          "date": "2026-11-18",
+          "note": "The same CBC headline (Highland Valley Copper ordered to stop using replacement workers) bears on a tentative or ratified agreement without showing one yet, and it gives no figures."
+        }
+      ]
     },
     {
       "id": "P3",
@@ -89,7 +99,12 @@
       "confidence": "low",
       "made": "2026-11-17",
       "status": "open",
-      "evidence": []
+      "evidence": [
+        {
+          "date": "2026-11-18",
+          "note": "The Northern Miner's \"Panama authorizes First Quantum restart talks\" shows talks are authorized, but it is not an agreed timetable, and the headline gives no figures."
+        }
+      ]
     },
     {
       "id": "P10",
@@ -99,7 +114,12 @@
       "confidence": "low",
       "made": "2026-11-17",
       "status": "open",
-      "evidence": []
+      "evidence": [
+        {
+          "date": "2026-11-18",
+          "note": "The Northern Miner's \"Panama authorizes First Quantum restart talks\" shows the talks are authorized, but it does not yet show a publicly announced timetable, and the headline gives no figures."
+        }
+      ]
     },
     {
       "id": "P11",
@@ -128,6 +148,106 @@
       "by": "2026-12-31",
       "confidence": "low",
       "made": "2026-11-17",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P14",
+      "author": "strategist",
+      "text": "Codelco publicly explains the 42,100-tonne production overstatement",
+      "by": "2027-03-31",
+      "confidence": "medium",
+      "made": "2026-11-18",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P15",
+      "author": "strategist",
+      "text": "Indonesia issues the implementing decree for its state-share requirement on mining",
+      "by": "2027-06-30",
+      "confidence": "low",
+      "made": "2026-11-18",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P16",
+      "author": "geologist",
+      "text": "Codelco publicly explains the cause of its 42,100-tonne production overstatement",
+      "by": "2027-06-30",
+      "confidence": "medium",
+      "made": "2026-11-18",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P17",
+      "author": "geologist",
+      "text": "China publicly announces multi-year export licence terms for tungsten, antimony or rare earths",
+      "by": "2027-06-30",
+      "confidence": "low",
+      "made": "2026-11-18",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P18",
+      "author": "chief",
+      "text": "The Highland Valley strike ends with a signed agreement between the operator and the striking workers",
+      "by": "2026-12-31",
+      "confidence": "medium",
+      "made": "2026-11-18",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P19",
+      "author": "chief",
+      "text": "The American Samoa deep-sea mineral lease sale is not held by 2026-12-31",
+      "by": "2026-12-31",
+      "confidence": "medium",
+      "made": "2026-11-18",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P20",
+      "author": "chief",
+      "text": "China publishes multi-year export licence terms covering tungsten, antimony or rare earths by 2026-12-31",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-18",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P21",
+      "author": "chief",
+      "text": "A US government appeal or stay motion against the Hawaii federal ruling on the Pacific seabed plan is publicly filed",
+      "by": "2026-12-31",
+      "confidence": "medium",
+      "made": "2026-11-18",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P22",
+      "author": "chief",
+      "text": "Indonesia publishes a numeric decree setting the state-share requirement for mining companies",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-18",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P23",
+      "author": "chief",
+      "text": "China publishes multi-year export licences covering antimony or tungsten",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-18",
       "status": "open",
       "evidence": []
     }
