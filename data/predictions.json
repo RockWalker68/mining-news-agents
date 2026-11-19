@@ -1,5 +1,5 @@
 {
-  "next_id": 24,
+  "next_id": 33,
   "items": [
     {
       "id": "P1",
@@ -13,6 +13,10 @@
         {
           "date": "2026-11-18",
           "note": "A CBC headline reports Highland Valley Copper was ordered to stop using replacement workers, which pressures the company toward a deal, but no tentative or ratified agreement appears in today's news, and the headline gives no figures."
+        },
+        {
+          "date": "2026-11-19",
+          "note": "Today's HR Law Canada item (news 15) says Teck is barred from using newly promoted supervisors during the B.C. copper strike, which adds pressure toward a deal, but no tentative or ratified agreement appears and the headline gives no figures."
         }
       ]
     },
@@ -28,6 +32,10 @@
         {
           "date": "2026-11-18",
           "note": "The same CBC headline (Highland Valley Copper ordered to stop using replacement workers) bears on a tentative or ratified agreement without showing one yet, and it gives no figures."
+        },
+        {
+          "date": "2026-11-19",
+          "note": "The same HR Law Canada item (news 15) shows added pressure on Highland Valley Copper to settle, but neither a tentative nor a ratified agreement is reported, and the headline gives no figures."
         }
       ]
     },
@@ -248,6 +256,96 @@
       "by": "2026-12-31",
       "confidence": "low",
       "made": "2026-11-18",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P24",
+      "author": "strategist",
+      "text": "The American Samoa deep-sea mineral lease sale is postponed or halted, by court order or government action, before 2026-12-31",
+      "by": "2026-12-31",
+      "confidence": "medium",
+      "made": "2026-11-19",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P25",
+      "author": "geologist",
+      "text": "The US federal government files a notice of appeal against the Hawaii ruling on the Pacific seabed mineral leasing plan",
+      "by": "2027-03-31",
+      "confidence": "medium",
+      "made": "2026-11-19",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P26",
+      "author": "geologist",
+      "text": "Spot gold trades above US$4,000 per ounce on at least one day",
+      "by": "2027-06-30",
+      "confidence": "low",
+      "made": "2026-11-19",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P27",
+      "author": "chief",
+      "text": "The US government files a notice of appeal against the Hawaii federal court ruling on the Pacific seabed plan",
+      "by": "2026-12-15",
+      "confidence": "medium",
+      "made": "2026-11-19",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P28",
+      "author": "chief",
+      "text": "Teck and striking workers at Highland Valley announce a tentative agreement that ends the strike",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-19",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P29",
+      "author": "chief",
+      "text": "The benchmark LME three-month copper price settles below US$13,000 per tonne on 2026-12-31",
+      "by": "2026-12-31",
+      "confidence": "medium",
+      "made": "2026-11-19",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P30",
+      "author": "chief",
+      "text": "No federal statute restoring the Boundary Waters mining moratorium is enacted",
+      "by": "2026-12-31",
+      "confidence": "high",
+      "made": "2026-11-19",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P31",
+      "author": "chief",
+      "text": "Spot gold does not close above US$4,000 per ounce on any trading day between 2026-11-20 and 2026-12-31",
+      "by": "2026-12-31",
+      "confidence": "medium",
+      "made": "2026-11-19",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P32",
+      "author": "chief",
+      "text": "Kenya's government signs a final contract with the US consortium for the Mrima Hill rare-earths and niobium deposit",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-19",
       "status": "open",
       "evidence": []
     }
