@@ -1,1 +1,380 @@
-[]
+[
+  {
+    "title": "This is a remarkable diplomatic moment for China's Xi - but it comes with pitfalls",
+    "link": "https://www.bbc.co.uk/news/articles/cr9d75we51j1o?at_medium=RSS&at_campaign=rss",
+    "published": "Thu, 19 Nov 2026 04:42:52 GMT",
+    "source": "BBC News",
+    "lane": "world"
+  },
+  {
+    "title": "Dozens missing after boat carrying 100 migrants sinks off Senegal's coast",
+    "link": "https://www.bbc.co.uk/news/articles/c58j484089ewo?at_medium=RSS&at_campaign=rss",
+    "published": "Thu, 19 Nov 2026 09:02:52 GMT",
+    "source": "BBC News",
+    "lane": "world"
+  },
+  {
+    "title": "Survivors of Uganda's deadly landslide seek justice at the UN",
+    "link": "https://www.bbc.co.uk/news/articles/c920xgxp5785o?at_medium=RSS&at_campaign=rss",
+    "published": "Thu, 19 Nov 2026 09:21:54 GMT",
+    "source": "BBC News",
+    "lane": "world"
+  },
+  {
+    "title": "Elon Musk says record $446m spending on US midterms was 'pretty foolish'",
+    "link": "https://www.bbc.co.uk/news/articles/cm9q8j2z3gg8o?at_medium=RSS&at_campaign=rss",
+    "published": "Thu, 19 Nov 2026 02:59:06 GMT",
+    "source": "BBC News",
+    "lane": "world"
+  },
+  {
+    "title": "Ukraine strikes Crimean Bridge for third time in a week ahead of US-China-Russia summit",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUzRFcTV3RC1acloyenJ5UXlCQjNfZ0tieEg5NXpGX3NObnlVMzVTR1BDX3VsNWlhOEZKak1ja3JGU3hBMTI3cjJsRlpGWTNhRm1iSkc4U1JHeUdBYXFYdVpjWW9maWJ6MTdMOEw5ZG1YRUJyTkctVGxlTk1hT0VKY2lGNDdGS0w3ZnRJdUQxUzBHeU9KNHdUODBNMEllMDR5Y1NZaFhsd1ZNYzh6ZmZTS0p3S0pCckJ4REUwYnJIN3NsUQ?oc=5",
+    "published": "Thu, 19 Nov 2026 07:10:00 GMT",
+    "source": "Reuters",
+    "lane": "world"
+  },
+  {
+    "title": "Ukraine was main topic at Trump-Putin meeting, Kremlin says",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNDJ3ZUp3ZjhsQ01rN3VaRGlJNkx3SVpycUdaVENpLUtwT01aQmJ0c01ielVrbW0zcUtjVHlMbjlXc1IxaFFCYnhyWHpoY19vY0N0MVk5dXplemZKM0hSaWpIMndSMzBoZ3lndFpyeEhhUE5pTWVlRWpjMDhDYXpmNEJqZVRiMXgzWVRtNHE4cE1LNE1sWTNSM0lRQ2w5cU00MDE5dmdn?oc=5",
+    "published": "Thu, 19 Nov 2026 06:38:00 GMT",
+    "source": "Reuters",
+    "lane": "world"
+  },
+  {
+    "title": "South Korea becomes fourth country globally to hit $1 trillion exports on AI chip boom",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQYjJyUW83NEllOTVXWDNHUnY0UW85MjF2dzVVQ1NxOVBGaW1EY0trbjRZZU5zZWFLUnZnQ1RGUkhiM3ZmZVA2VUxZNm5UQlpJR2F2OXotX0EzOUJJdHNkZlhCUXVnM2xqaEZ1Zmh6R19sSmUyelZzSVJSSkVTZHBvd2ZUQkNJOFZPaEZ6amhLd1BGWlcxd2M4N0pLa0J5Z28taFE2M293Z1puMWViY3FhZDh6WXd4SjFsNzg0dkZ3?oc=5",
+    "published": "Thu, 19 Nov 2026 06:29:00 GMT",
+    "source": "Reuters",
+    "lane": "world"
+  },
+  {
+    "title": "Violence rises in Bangladesh as Hasina supporters escalate protests, fuelling instability",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxObnh2NW55dVlOaU1GVkducTZmZ0QzZWNsRTdsRXNDVzgzRkFtdV9faGVFVnhKQ0VkMWVSMWlraV9sby1KemZvRFNsS2o2dHNWNVRmUE5Ecmo5VXlabkJweHZuQWFqamFFZGx5elpsa2hiU05IVkVYbjVSeHRCNmlwdUNrNzl4c3FwUE15SDlNRklyeXoyRHdITTZvdmpiMFpnRDA2NXZhdkJkZ3FHbjFnTFFhUDluNFF6TmlTOHloSjZjOFhVVmJuOQ?oc=5",
+    "published": "Thu, 19 Nov 2026 05:58:00 GMT",
+    "source": "Reuters",
+    "lane": "world"
+  },
+  {
+    "title": "Gold recoups from 14-month low, tighter Fed outlook caps gains",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZ0RVRVVhd0g1djYyRGpzbTcyZXFtSXd3cTV1T0REekJaYm9FOTlzblJzU3hlMmsxSkF0UmtzZ1gwWVFiUzI3VXdGNzJLTndoZC1oVkpXSnRmZ0ZmNkEybVRFSnhIVzFCNnlTS2hQRGV2bnNGTHVsaUZ5RmllU0otWWcxV2wwejMwcXpTOWFxam1xb2dRMXMyQ1c0T0RkZy1SX09YR3lYdmxkQQ?oc=5",
+    "published": "Thu, 19 Nov 2026 06:53:00 GMT",
+    "source": "Reuters",
+    "lane": "world"
+  },
+  {
+    "title": "Denmark ratifies Trump deal over Greenland",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPLV9HMkljSnNmOWZWZGFRQWEzUTRpMEg3bXpXSllFdERYS0VNLVV3bnEzN1ZZeG85b3VWb2gzaXFLMldWejVlNGhfWlNqazFtUDQ1cDdJeVVGWTlac0xvVWlwRnZIU0NnNURrX2s1XzRXQmZtWGlxcUxRQUY3QTVKOWVfNDQ5dW5FOENXUV80Z0dSNTB1TTV6dE5TT09PYWs4X0E?oc=5",
+    "published": "Thu, 19 Nov 2026 05:02:00 GMT",
+    "source": "Reuters",
+    "lane": "world"
+  },
+  {
+    "title": "Lenovo posts 48% revenue jump on AI-related sales, beating estimates",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPakF2dUtyWGhnNzlUeGQ4cWxIb3hGSjFWWU5Qb05STXdtelBYV1ppOE1nX05nbDdvbmk0ekNNYmJnODFHYndqVXRlX2dkWW9ucldzdFBCdTVIcW01WjhaR08tVjFrMHhxZnFCR0taQV9pY2pnMFh2X0RVX2ItZENzcjB2TVJ2RXZBNXdfRDNTOVQ2Z2FFSmM1cGhQVTNad1FneE9PRHNNTUp4ZHpBZVd4Zw?oc=5",
+    "published": "Thu, 19 Nov 2026 05:47:00 GMT",
+    "source": "Reuters",
+    "lane": "world"
+  },
+  {
+    "title": "Houthi missile threat towards Riyadh causes damage, Saudi-led coalition says",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUUVVMURmUjNxMHVQNThNQkRiUElQbkhnNVJNdkdVejBqLVVIRU1hUl9DWDhpYlFVWUtFZlo5dGNOSnFqTFU5VE93bXdGY3NaOEVmSERoWlJNOWhQN25NN3E1bGF1MEprczBsWFlkOHBDTUVLM21CSFJydjFzUFFaM2ozQU8wSTdnSENadVQ2UTNmSWhOMFBHNE1ZaDB5MURkMFM0cHZuU1BySDl0ZlQ2aDBEUEdmNUE5MnNzTnl2T2VBaV9sWUQ2Zg?oc=5",
+    "published": "Thu, 19 Nov 2026 03:19:00 GMT",
+    "source": "Reuters",
+    "lane": "world"
+  },
+  {
+    "title": "In South Korea's make-or-break college exam, even a shirt button can raise suspicion",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNa0k5T1o4dEJmT3VOYkozNEpiNFg2dmZ0aklxdWdWcU51S0RGNkFobDFHVmRRcFRIVDM5a0dMa0JIVklmMXpiNEtITWpwUE9aQ1FQU3RzZk53QVpIMlVkcWQyRkZnaUpDeC1vT3B0amlHR0lOLVpReE5ZV1RTdzI5a2ROQlJ1SkZWSTlITnVOdlRzNVNtQlF1NzdZWFByTVhuYU9pdkk1ZjNqcnVNeVVCUWsxNjZlLXViQ1UxeGdIZlV1UjQtSG0tYnh3eGQ?oc=5",
+    "published": "Thu, 19 Nov 2026 04:20:00 GMT",
+    "source": "Reuters",
+    "lane": "world"
+  },
+  {
+    "title": "Japan says PM Takaichi, Putin held talks at APEC summit in China",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOGFYWEJrZkpsMjh1dWNROWxsODdhQzUxYmR2WEhqNFIxRjNLM2l6QWlNZ2lHSlFIeGhQQnJBQTN4MGNpVXBIVkxSU1lLOVZkTk9LRXJfb0RDeXJKaFM5X245bFg5WnQ0WEtQQktxSzhGbjNPMVNFRmNLb25zM1JqcUE1Z1dFSXRjSjJUS1hzZXpEREFiejN4V1dWc05kbnA5Yi1sUjBUcjU?oc=5",
+    "published": "Thu, 19 Nov 2026 03:25:00 GMT",
+    "source": "Reuters",
+    "lane": "world"
+  },
+  {
+    "title": "Nuclear arms and ending wars in Iran and Ukraine will top the agenda at Trump-Xi-Putin meeting",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZko0TjU0LUdSMUxlTkNVcnJsSThoSFo5Y2ZuamRVQ2tidnZQa2M5N1o0dlpndmptSGxNTGhYYS1IUXVKMjZibjFPcWVURHJRaHNfclhIMHlSVFdIN3VkZUxFVEo5Z1JoZFR0bkdHOUd1UUNuNXRCVDBKUlhPaGItcmVfY09NQ1U5WmhHYzRNZHdtWDVVay1JalhlNA?oc=5",
+    "published": "Thu, 19 Nov 2026 09:09:00 GMT",
+    "source": "AP News",
+    "lane": "world"
+  },
+  {
+    "title": "Cincinnati Zoo trying to shake loose Fiona the hippo after she swallowed a hat",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQWZGc1M5VlU3LU01dEhuVXE2TXp6ekxhOXpob2p2ZzEtQnJQLW0xcGh4UVNRTm94Y3pYOWZldjd3cFFvZmJweDJNOW9Ic2Nad3ZqWXZGWUZQcFdIVFdPOWJ0RjNvRm1feTNHek5rQkhxLVZOZmp1OTc2NW9wWkxvRzJkcC1nUkFMTDl4ZjctY2hqNWd1?oc=5",
+    "published": "Wed, 18 Nov 2026 23:06:00 GMT",
+    "source": "AP News",
+    "lane": "world"
+  },
+  {
+    "title": "Anthropic to debut on Wall Street with a $1.5 trillion valuation in the biggest IPO of all time",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeVVmSzl3dVBhbDdFbTMtTUl2LWVHU1FRb2hvYzJZNWdFU0ZDTmU3NFBVNDVWQXNXQlk2QmkzblN4MUplLWVGc1NheHNRZVpZTHZ1eG9OME53SUNtOExJQzNFSTJpLUw0cWxnSjR4VWlXLWZhZUZsc0dna1J6bmxZTTNBb0l2LUpq?oc=5",
+    "published": "Wed, 18 Nov 2026 22:49:32 GMT",
+    "source": "AP News",
+    "lane": "world"
+  },
+  {
+    "title": "After a 13-year wait, ‘Grand Theft Auto VI’ arrives with enormous hype and expectations",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPNU5oVy1LNFdSWUFIbTV3RkNqQlJNWWdlb3pJNUxOV3ZRMU02TjFOV0VBUGVoRDhLOEU0SHpSTl9YMEwtN1pVSV9rQ0I0cUZvRFptd1NGUks3ci0zekpiSmZKMmJobUZfcTZpS1YyVkZCbVR4U3RKQ1F6TUlXU2x5VmdDZ2V1empCQVViM3NNVDhPc1NtMU5IeENVZWlNQQ?oc=5",
+    "published": "Thu, 19 Nov 2026 04:08:00 GMT",
+    "source": "AP News",
+    "lane": "world"
+  },
+  {
+    "title": "Tech outages are piling up, and AI is raising the stakes. Could this be the new normal?",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRzA5RWNfellCVEVsUGMyVm1kc255MGVnZHNDcEVIcmdUX29IbEFPakdnYUUxTFFvZGFORUwwRU5pWlpsV1RXbVN6anRoOEZSdHYtS3VFdXlZczYtS3gwNU9UcXViNlFhWHdnR1N0NEZFVFhseEpKWTlYOGhPOUgxbENJYVhWSlhBVXF1aGNVR3BLckU?oc=5",
+    "published": "Thu, 19 Nov 2026 05:01:00 GMT",
+    "source": "AP News",
+    "lane": "world"
+  },
+  {
+    "title": "North Korea expanding uranium enrichment facility, UN nuclear watchdog says",
+    "link": "https://www.aljazeera.com/news/2026/11/19/north-korea-expanding-uranium-enrichment-facility-un-nuclear-watchdog-says?traffic_source=rss",
+    "published": "Thu, 19 Nov 2026 09:16:47 +0000",
+    "source": "Al Jazeera – Breaking News, World News and Video from Al Jazeera",
+    "lane": "world"
+  },
+  {
+    "title": "Kenya’s marathon champion Peres Jepchirchir gets three-year ban for doping",
+    "link": "https://www.aljazeera.com/sports/2026/11/19/kenyas-marathon-champion-peres-jepchirchir-gets-three-year-ban-for-doping?traffic_source=rss",
+    "published": "Thu, 19 Nov 2026 09:06:36 +0000",
+    "source": "Al Jazeera – Breaking News, World News and Video from Al Jazeera",
+    "lane": "world"
+  },
+  {
+    "title": "Trump meets Putin and Xi as trilateral US, Russia, China talks begin",
+    "link": "https://www.aljazeera.com/news/2026/11/19/trump-meets-putin-and-xi-ahead-of-us-russia-china-trilateral-talks?traffic_source=rss",
+    "published": "Thu, 19 Nov 2026 08:32:10 +0000",
+    "source": "Al Jazeera – Breaking News, World News and Video from Al Jazeera",
+    "lane": "world"
+  },
+  {
+    "title": "Is Trump helping rehabilitate Putin on the world stage?",
+    "link": "https://www.aljazeera.com/video/newsfeed/2026/11/19/is-trump-helping-rehabilitate-putin-on-the-world-stage?traffic_source=rss",
+    "published": "Thu, 19 Nov 2026 08:31:14 +0000",
+    "source": "Al Jazeera – Breaking News, World News and Video from Al Jazeera",
+    "lane": "world"
+  },
+  {
+    "title": "Saudi-led coalition intercepts Houthi missiles targeting Riyadh and south",
+    "link": "https://www.aljazeera.com/news/2026/11/19/saudi-led-coalition-intercepts-houthi-missiles-targeting-riyadh-and-south?traffic_source=rss",
+    "published": "Thu, 19 Nov 2026 08:19:17 +0000",
+    "source": "Al Jazeera – Breaking News, World News and Video from Al Jazeera",
+    "lane": "world"
+  },
+  {
+    "title": "Why is Pete Hegseth strengthening US military ties with Venezuela?",
+    "link": "https://www.aljazeera.com/news/2026/11/19/why-is-pete-hegseth-strengthening-us-military-ties-with-venezuela?traffic_source=rss",
+    "published": "Thu, 19 Nov 2026 07:52:30 +0000",
+    "source": "Al Jazeera – Breaking News, World News and Video from Al Jazeera",
+    "lane": "world"
+  },
+  {
+    "title": "Is the AI bubble bursting just as Anthropic goes public?",
+    "link": "https://www.dw.com/en/is-the-ai-bubble-bursting-just-as-anthropic-goes-public/a-79896537?maca=en-rss-en-world-4025-rdf",
+    "published": "",
+    "source": "World | Deutsche Welle",
+    "lane": "world"
+  },
+  {
+    "title": "🔴 Live: Historic trilateral Xi-Putin-Trump summit ends in Shenzhen, China",
+    "link": "https://www.france24.com/en/asia-pacific/20261119-xi-trump-putin-talks-live-china-us-russia-leaders-hold-landmark-three-way-meeting",
+    "published": "Thu, 19 Nov 2026 10:04:28 GMT",
+    "source": "France 24 - International breaking news, top stories and headlines",
+    "lane": "world"
+  },
+  {
+    "title": "Infantino to face France's Diallo and Japan's Tashima in FIFA presidential election",
+    "link": "https://www.france24.com/en/sport/20261119-infantino-to-face-france-s-diallo-and-japan-s-tashima-in-fifa-presidential-election",
+    "published": "Thu, 19 Nov 2026 09:39:22 GMT",
+    "source": "© Beata Zawrzel, AP",
+    "lane": "world"
+  },
+  {
+    "title": "France: Seven masculinists stand trial in Paris",
+    "link": "https://www.france24.com/en/video/20261119-france-seven-masculinists-stand-trial-in-paris",
+    "published": "Thu, 19 Nov 2026 09:09:39 GMT",
+    "source": "France 24 - International breaking news, top stories and headlines",
+    "lane": "world"
+  },
+  {
+    "title": "Xi Jinping, Donald Trump and Vladimir Putin begin unprecedented summit in China",
+    "link": "https://www.france24.com/en/xi-jinping-donald-trump-and-vladimir-putin-begin-unprecedented-summit-in-china",
+    "published": "Thu, 19 Nov 2026 09:07:17 GMT",
+    "source": "France 24 - International breaking news, top stories and headlines",
+    "lane": "world"
+  },
+  {
+    "title": "South Korea tightens security for national exam over AI cheating scandal",
+    "link": "https://www.france24.com/en/south-korea-tightens-security-for-national-exam-over-ai-cheating-scandal",
+    "published": "Thu, 19 Nov 2026 08:55:02 GMT",
+    "source": "France 24 - International breaking news, top stories and headlines",
+    "lane": "world"
+  },
+  {
+    "title": "One in four women globally unable to refuse sex within marriage, says UN",
+    "link": "https://www.theguardian.com/global-development/2026/nov/19/women-girls-rights-rape-sexual-violence-africa-marriage-unfpa",
+    "published": "Thu, 19 Nov 2026 04:00:16 GMT",
+    "source": "World news | The Guardian",
+    "lane": "world"
+  },
+  {
+    "title": "Takaichi gets different welcome at APEC in China | NHK WORLD-JAPAN News",
+    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1mczBwYVNaVGxtM3RZTGpieXZNaVdPdkRiX3RKOThZeUI1NGx4dE1qbE1SNFllNmxvajhCTjVPRkxVNGM0V1VjYlNhMkFreDlYbEhseE12ZHliaGhVVEU3MUN5Yw?oc=5",
+    "published": "Thu, 19 Nov 2026 01:08:39 GMT",
+    "source": "NHKニュース",
+    "lane": "world"
+  },
+  {
+    "title": "Peruvian President Keiko Fujimori to begin Japan visit | NHK WORLD-JAPAN News",
+    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1LTmUxdU9qTVo2aGhJakpKS1A5YzBvZF9DU202dFlBY2NmbjRUVWN6aEtBczlZaGw5bTNjSl82OXFuM2NJdlZsbFBnMThBZXlaOUZEdnVjcy1yUWFIVHFVakNtdw?oc=5",
+    "published": "Wed, 18 Nov 2026 22:36:28 GMT",
+    "source": "NHKニュース",
+    "lane": "world"
+  },
+  {
+    "title": "EU eyes additional 45 billion euro loan for Ukraine",
+    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBqWElLdmJUVWp5MDJhX3VlQXN0QkxWak9VR1pwRTBYLXk4UXVuVnhvTmQ0QXFQek1qX2JubFVlWXViZDMwdWpTYkJnTldqXzh0RmJoYTY5eFZ6VWNlVG9wbmZoOA?oc=5",
+    "published": "Thu, 19 Nov 2026 03:59:28 GMT",
+    "source": "NHKニュース",
+    "lane": "world"
+  },
+  {
+    "title": "November Tournament day11 - GRAND SUMO Highlights - TV - NHK WORLD - English",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9YX2FuUWlkUFdOSjh5RmlHOGhoV2NVS29jUmphZHlzVmZaN1pxM212WXZKQml4UWF2Wl9CWUZXamVsTWJNX1NBXzZTQnhJWGdpVHA0alJMeWRReXQ3SldieGFvUXBKSmdRLWQzNldNTGoxN2pwazhVVnhMbw?oc=5",
+    "published": "Thu, 19 Nov 2026 02:15:23 GMT",
+    "source": "NHKニュース",
+    "lane": "world"
+  },
+  {
+    "title": "Albanese tells Putin to end Ukraine war 'now'",
+    "link": "https://www.abc.net.au/news/2026-11-19/albanese-tells-putin-to-end-ukraine-war-now/107406348",
+    "published": "Thu, 19 Nov 2026 09:36:33 +0000",
+    "source": "Just In",
+    "lane": "world"
+  },
+  {
+    "title": "Kimberley man who whipped and beat partner to death jailed for 10 years",
+    "link": "https://www.abc.net.au/news/2026-11-19/wa-craig-rastus-sentenced-manslaughter-derby/107400406",
+    "published": "Thu, 19 Nov 2026 08:37:09 +0000",
+    "source": "Just In",
+    "lane": "world"
+  },
+  {
+    "title": "'Does it come with a chef?' rental price causes a stir within community",
+    "link": "https://www.abc.net.au/news/2026-11-19/expensive-rental-causes-backlash-in-wa-city/107403896",
+    "published": "Thu, 19 Nov 2026 08:00:58 +0000",
+    "source": "Just In",
+    "lane": "world"
+  },
+  {
+    "title": "Almost-forgotten Australian author uncovered in biography that just won $40K",
+    "link": "https://www.abc.net.au/news/2026-11-19/nib-literary-award-susan-wyndham-the-woman-in-the-watch-tower/107350650",
+    "published": "Thu, 19 Nov 2026 08:00:00 +0000",
+    "source": "Just In",
+    "lane": "world"
+  },
+  {
+    "title": "Sydney Marathon winner banned for three years, stripped of title",
+    "link": "https://www.abc.net.au/news/2026-11-19/sydney-marathon-winner-peres-jepchirchir-three-year-doping-ban/107405856",
+    "published": "Thu, 19 Nov 2026 07:41:31 +0000",
+    "source": "Just In",
+    "lane": "world"
+  },
+  {
+    "title": "South Korea's top court overturns charges against ex-prime minister for his role in martial law",
+    "link": "https://www.cbc.ca/news/world/south-korea-overturns-charges-against-ex-prime-minister-9.7427717?cmp=rss",
+    "published": "Thu, 19 Nov 2026 04:50:40 EST",
+    "source": "CBC | World News",
+    "lane": "world"
+  },
+  {
+    "title": "IMF’s Georgieva at APEC: countries must “quickly prepare” for artificial intelligence",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPblJsYWYyalEtMEhDWmJXVHVLa0dxMGVDdGpwcHd4ajNyUHpnYmd0YXkyQndocVVoYUlxaWw5ZEQyYnA4UUVoZjlJS1J3Y1FSbE9BMmJtLXFwN2ZuQlNxV1BjRDdfVmtOU2VEZHlQUXFwQkhBOVU1cHU0MzZxTmJVZkpHT0Q1X2JHdzFPd3lKdHJFdkh6U25yRF9lRDI3VGR6Q2wyOHV5aVdpcEc5SW5RS2FHMXVyS3AxNy1F?oc=5",
+    "published": "Thu, 19 Nov 2026 03:36:00 GMT",
+    "source": "MercoPress",
+    "lane": "world"
+  },
+  {
+    "title": "Anthropic, maker of Claude, debuts on Nasdaq after the largest IPO in history",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPU1hCR0tJakRsc3lGRjFGMTI1MXZPeVZQR1JKemRyNVNYZFdYaWhUSmY3V2Y1X3loaFg0aHA4STdmRUp2Y0NPenplbFRVSzZvb2VOa1BpLVJwWWJQS0VpR3pMTmhBalZwU0RBUEo2RWNQSEtzMlZ6UXZZNlBlZUU0QjJscnNibDJDOF83cXZWaG9BT1JrN1RQOVRNQ1hXRlZwRmY1aFIxR3c1SEh3WHNQMmd3?oc=5",
+    "published": "Thu, 19 Nov 2026 03:14:00 GMT",
+    "source": "MercoPress",
+    "lane": "world"
+  },
+  {
+    "title": "US and Venezuela restore military cooperation with Hegseth’s surprise visit",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWXNSUzVwUU1VOFl2WGhhTFVqR2lqcEV4M3VzVVAzSGwwaVd4NGNkaTUtYmdLRkc0UWRTVDhRdGJKb05zeEpjLWpzNHg2QXpFanFXODBxVnRwTDU3aUN0RDYzYzM0ZEhzTVVjbFl5cmxZeDRuajRPVEYxMVFvUUhlSTEtdWc2cjBvX2R3ajd1MTQ4LW5MdW83cVlWRnJFd3BXellTeWJuT2d1UW1nTWNjMWRn?oc=5",
+    "published": "Thu, 19 Nov 2026 03:26:00 GMT",
+    "source": "MercoPress",
+    "lane": "world"
+  },
+  {
+    "title": "‘You thought you’re untouchable:’ KZN mom killed after posts about commission witnesses",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQZ0RvSjJzOFFJclg1MjJVV1ZIWjlwdFpfVkdlWG1zZ2VxbTVCTVFHRElTVnBWOW9sM1FqbFVmSUdIWk9kbHZVcmlHZmd1TFhTWWFPem9fcTh0WW1feWxUdDAxQzdiZjVsNU5Yc09CeWVONFlJQ1M0MDZQQkJZTExPS3pUWXpURC1vZ0dIX244enl4MXYzUjc1Z3BxaVFnVlJNNjhRa0toS1E1SWFTLTlSeU50bTlsTG5DTXEyb0t6QzlBeTZlOVRGenhJMUFzZw?oc=5",
+    "published": "Wed, 18 Nov 2026 22:40:04 GMT",
+    "source": "Daily Maverick",
+    "lane": "world"
+  },
+  {
+    "title": "The smoke and mirrors of the coalition talks",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZ0cwSndhSEc3OHNoVV9acmlnRG1MNjVHdW5STDRvdGlRQnEwTzJUNGJCaTFoSjZRdEdraVB0NWFDWWRROWZRNERwYll6a3JBbEctUHp3UVFSWkNwWlRUN3Q3dWVNYUZxM0VXX3ZXQk9PLWdieWJvQnFFdGtIZTBlZlFYSEtKRjF0UkdiMlRSc3hyOXJTcUl0NXpQaXM?oc=5",
+    "published": "Wed, 18 Nov 2026 20:19:23 GMT",
+    "source": "Daily Maverick",
+    "lane": "world"
+  },
+  {
+    "title": "Musk says he felt ‘pretty foolish’ about scale of midterm spending after Republican rout",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMktkT1dEcXB5dWVNd2Z0ZTRKeFk5ODRidEpvS2RVc3hOS05PRnlzcTdzZWNTY29LWHN2MnI1aElBMHQ1OHlPVHFOVTJtUHZjWGFPWkQtbHFpMWswaVVVWVZXOFFlenZyY3RUUXNsNG5MNExvZE9WV3lySDQwcFVTdWpZTmhjOGVlVnhXenFzR1FHVGNIYjR6NmhxTTRocXBrVlBrbHB4SGd6a2h2TUZUZGhzZ1N0STJFblFiYzUzSDRmV052YkZ6RExfN0oyVFJWVTdKVg?oc=5",
+    "published": "Thu, 19 Nov 2026 02:52:36 GMT",
+    "source": "Daily Maverick",
+    "lane": "world"
+  },
+  {
+    "title": "Fiji declares state of disaster amid El Nino-driven drought",
+    "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxORjJzT2lVNXJkZkFMN0hwMUtuQmZ3MVBWY1FNT3VhUmltQXVMRHFGRXdTdEVkRW1FWnZVX0JIVmVmSFFKNGh4VjJYWjFHNkxMRjlmVEhTWkdrOC0yY2l0T1pZRDlzaE9fTWVERW9VS1dTRXVuR2Fqdlp3UTQ3YXZ5ODBWSFVsVWZOdE5IeUduRkwwc2gtZnFPMEU4aDZmX1k3ZHNDZGZYSWFMajJCY19yQndNVUdnNGZaNGlfR3l4NWE0VHFPdXNhV2Q3UE1RaHNQNmVHejBsQ0VkUTJMeVczQlRZajRvWXAwNjlVVE9RWU9fT2tsdnUtWVA1M2FwN2FtVFE5SlR4b2NQNE9XTk91M0lRbC11TzVmUWc?oc=5",
+    "published": "Thu, 19 Nov 2026 02:52:36 GMT",
+    "source": "Daily Maverick",
+    "lane": "world"
+  },
+  {
+    "title": "APEC live: Takaichi says Japan's position on Taiwan remains the same",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPNzBLUlhLSGFNenczS1YyQmJvWGp5LXBVTFM2Wk1PLW1YZC1naVVZUmZuR2tBaldhYnlkQzFKVVFyT0hlajZnRktkb2psdEYwZXJhYlRBdHItQ1BqYWhubDB3OExkZHRqMW9uZkE3ZUd4RlV5dHRacFdVMlV6WWI2TFJvbWdjd3M4amlFTlNEVWl3SkFiTHNkVzFrSHdHbE5YZHdwUm1FMDIybW00Qk5CWW1XLU1fYWJ1UFRqYnZGQVd0cTVFQWR4bHhB?oc=5",
+    "published": "Thu, 19 Nov 2026 08:28:00 GMT",
+    "source": "Nikkei Asia",
+    "lane": "world"
+  },
+  {
+    "title": "Trump touts 'balanced' China ties as Xi highlights stability",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOWWNCdmpydDI3bW9HTlZEY3ZaUVlhQlZxN25qN2IxQUVTWTdoM0Nzbk1jRjMyN0g5QnVEQ3hEaFhIQ2xraGd6dmVZeTVIbC0xZURONzRwNm1Tbk56U05TUjlvSWQteWlnb29YbzVjRGNQemNjWjNTYllPdW5hZlI3UDNxUUdnYWo3SXdrX0hVU185V3VzN0E4Ukt5ZDh5bXdmX1Jpc2gtVXRPWi1xb2RzUGQtZ3ZIRlFwMi1Rbw?oc=5",
+    "published": "Thu, 19 Nov 2026 05:50:00 GMT",
+    "source": "Nikkei Asia",
+    "lane": "world"
+  },
+  {
+    "title": "Trump's historic meeting with Xi, Putin headlines Asia trip",
+    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOMnRnd3JfRFFyYXRrUjBISk0xTDFhOU5xLWtSZ1F2anRPRUlSU0RSeUh3SUJwSHQzNW80RnE1dk12S0s5eHFLTlU2M0xCUTcwVW9PdXlJY3Q5SU1UWmlWU3ROSDVybTE4Z3dTUWZwOHljblRsVmlHVU5aNWVCY29tUURFMmt1dHN6Q1FPSEZJaFBzT0dVeHVQU0EyQVJtVFo3aUlTWmJPNDg3dENIOGZpTnZqdnI4V2hZOUJqRjExaEw2SnRaUnRuN25UQ29TMDBzRWRpVzRENzVIMmNLQldENjZrcms2UQ?oc=5",
+    "published": "Thu, 19 Nov 2026 00:45:00 GMT",
+    "source": "The Jakarta Post",
+    "lane": "world"
+  },
+  {
+    "title": "The art of picking a vice president: Prabowo’s succession tightrope",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMjNGeF85ZFhtX3lhSUxBWWZkMFZTVlZQSjg3VzY3dkNNSlpjSUNaUUY3RVQ4aGFDb0VOaUJSdGwwMUhFclNKbDRRb2NlbnZob1lDTDRkZTBuZlJmekJMUk9zUk1LTHZHakNBdWQtZEw0SEFTOHpBS2dvOXBPa3lFLS1ocUxkU3dWZEJEMHRoTnlRQWFzVm54VHlZcDJlcXpTMkNMV19yWlNwdUZwMTBPLUVvNFBidw?oc=5",
+    "published": "Thu, 19 Nov 2026 01:25:49 GMT",
+    "source": "The Jakarta Post",
+    "lane": "world"
+  },
+  {
+    "title": "BREAKING: House passes long-awaited asset forfeiture law amid transparency concerns - Politics",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZHZtZ0YxYTRGUi1BNEVBUFVDemhqb2g2M1Zod05maldRdTNVWVZmWHhSX0gweTVvVGU1MWZCZThpYldWNXoxRW9ZT003YUUzeGU1ZUgxWTIwVV9kTVlZREYzQU5iM0JpV0I0eGt2S1ljRkZOVHRmSVB5bk1qcEV4ak0yamZHbmY1bHc5TEUtVWRQWHdOcG8xT0NhWlVKRFhiU1VFTVBadTJGcC1fLTNheEZyOS1yNXRsZUZicDIyN2R5VnRBOVNWLTlGMDZmbG8?oc=5",
+    "published": "Thu, 19 Nov 2026 04:42:33 GMT",
+    "source": "The Jakarta Post",
+    "lane": "world"
+  }
+]

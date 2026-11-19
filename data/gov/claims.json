@@ -63449,6 +63449,4096 @@
    "status": "Filed",
    "lat": 34.3786,
    "lon": -112.3271
+  },
+  "NV106851341": {
+   "name": "ML 51",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3344,
+   "lon": -114.5623
+  },
+  "NV106851339": {
+   "name": "ML 49",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3416,
+   "lon": -114.5503
+  },
+  "NV106851338": {
+   "name": "ML 48",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3348,
+   "lon": -114.5547
+  },
+  "NV106851328": {
+   "name": "ML 38",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3345,
+   "lon": -114.5649
+  },
+  "NV106851346": {
+   "name": "ML 56",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3271,
+   "lon": -114.5626
+  },
+  "NV106851340": {
+   "name": "ML 50",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3389,
+   "lon": -114.5519
+  },
+  "NV106851335": {
+   "name": "ML 45",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3344,
+   "lon": -114.5623
+  },
+  "NV106851329": {
+   "name": "ML 39",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3418,
+   "lon": -114.5599
+  },
+  "NV106851342": {
+   "name": "ML 52",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3303,
+   "lon": -114.5624
+  },
+  "NV106851331": {
+   "name": "ML 41",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3378,
+   "lon": -114.5607
+  },
+  "NV106851327": {
+   "name": "ML 37",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3348,
+   "lon": -114.5696
+  },
+  "NV106851325": {
+   "name": "ML 35",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3348,
+   "lon": -114.5696
+  },
+  "NV106851343": {
+   "name": "ML 53",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3311,
+   "lon": -114.57
+  },
+  "NV106851333": {
+   "name": "ML 43",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3344,
+   "lon": -114.5623
+  },
+  "NV106851345": {
+   "name": "ML 55",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3278,
+   "lon": -114.57
+  },
+  "NV106851337": {
+   "name": "ML 47",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3344,
+   "lon": -114.5623
+  },
+  "NV106851332": {
+   "name": "ML 42",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3384,
+   "lon": -114.5564
+  },
+  "NV106851344": {
+   "name": "ML 54",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3271,
+   "lon": -114.5626
+  },
+  "NV106851336": {
+   "name": "ML 46",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3348,
+   "lon": -114.5547
+  },
+  "NV106851326": {
+   "name": "ML 36",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3345,
+   "lon": -114.5649
+  },
+  "NV106851334": {
+   "name": "ML 44",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3348,
+   "lon": -114.5547
+  },
+  "NV106851330": {
+   "name": "ML 40",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3416,
+   "lon": -114.5552
+  },
+  "AK106830238": {
+   "name": "ROC 4524",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.6249
+  },
+  "AK106830237": {
+   "name": "ROC 4523",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.6249
+  },
+  "AK106830236": {
+   "name": "ROC 4522",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.6249
+  },
+  "AK106830234": {
+   "name": "ROC 4520",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.6399
+  },
+  "NM106872721": {
+   "name": "SILVER CROSS #1",
+   "state": "NM",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 33.1388,
+   "lon": -107.2953
+  },
+  "NM106872720": {
+   "name": "SILVER CROSS #1",
+   "state": "NM",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 33.1533,
+   "lon": -107.2953
+  },
+  "AK106830233": {
+   "name": "ROC 4519",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.6399
+  },
+  "AK106830232": {
+   "name": "ROC 4518",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.6399
+  },
+  "AK106830231": {
+   "name": "ROC 4517",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.6399
+  },
+  "AK106830230": {
+   "name": "ROC 4516",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2882,
+   "lon": -152.6485
+  },
+  "AK106830229": {
+   "name": "ROC 4515",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.655
+  },
+  "AK106830228": {
+   "name": "ROC 4514",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.655
+  },
+  "OR106869413": {
+   "name": "Last Stand",
+   "state": "OR",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 80.0,
+   "status": "Filed",
+   "lat": 42.3806,
+   "lon": -123.5912
+  },
+  "AK106830227": {
+   "name": "ROC 4513",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.655
+  },
+  "AK106830224": {
+   "name": "ROC 4510",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.67
+  },
+  "AK106830223": {
+   "name": "ROC 4509",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.67
+  },
+  "AK106830222": {
+   "name": "ROC 4508",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.67
+  },
+  "OR106873193": {
+   "name": "West Fork Gold",
+   "state": "OR",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 80.0,
+   "status": "Filed",
+   "lat": 42.0448,
+   "lon": -123.7472
+  },
+  "NV106848144": {
+   "name": "MP920",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5197,
+   "lon": -117.3029
+  },
+  "NV106848143": {
+   "name": "MP919",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 160.0,
+   "status": "Filed",
+   "lat": 38.5197,
+   "lon": -117.3034
+  },
+  "NV106848142": {
+   "name": "MP918",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5267,
+   "lon": -117.3024
+  },
+  "NV106848141": {
+   "name": "MP917",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5267,
+   "lon": -117.3024
+  },
+  "NV106848140": {
+   "name": "MP916",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5267,
+   "lon": -117.3024
+  },
+  "NV106848139": {
+   "name": "MP915",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 147.45,
+   "status": "Filed",
+   "lat": 38.5267,
+   "lon": -117.3024
+  },
+  "NV106848138": {
+   "name": "MP914",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5042,
+   "lon": -117.311
+  },
+  "NV106848137": {
+   "name": "MP913",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5042,
+   "lon": -117.311
+  },
+  "AZ106870695": {
+   "name": "SQ-07-2026",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3128,
+   "lon": -112.601
+  },
+  "AZ106870694": {
+   "name": "SQ-04-2026",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3133,
+   "lon": -112.5971
+  },
+  "AZ106870691": {
+   "name": "EDGE-324",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 120.0,
+   "status": "Filed",
+   "lat": 34.3926,
+   "lon": -112.657
+  },
+  "AK106830220": {
+   "name": "ROC 4506",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.685
+  },
+  "AK106830219": {
+   "name": "ROC 4505",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.685
+  },
+  "AK106830218": {
+   "name": "ROC 4504",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.685
+  },
+  "AK106830217": {
+   "name": "ROC 4503",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2882,
+   "lon": -152.6936
+  },
+  "AK106830216": {
+   "name": "ROC 4502",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.7
+  },
+  "AK106830206": {
+   "name": "ROC 4422",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 61.2919,
+   "lon": -152.6395
+  },
+  "AK106830215": {
+   "name": "ROC 4501",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.7
+  },
+  "AK106830214": {
+   "name": "ROC 4500",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.288,
+   "lon": -152.7
+  },
+  "AK106830213": {
+   "name": "ROC 4499",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2882,
+   "lon": -152.7086
+  },
+  "AK106830212": {
+   "name": "ROC 4428",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2919,
+   "lon": -152.6245
+  },
+  "AK106830210": {
+   "name": "ROC 4426",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2919,
+   "lon": -152.6245
+  },
+  "AK106830209": {
+   "name": "ROC 4425",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2919,
+   "lon": -152.6245
+  },
+  "AK106830208": {
+   "name": "ROC 4424",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2921,
+   "lon": -152.6335
+  },
+  "AK106830207": {
+   "name": "ROC 4423",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2919,
+   "lon": -152.6395
+  },
+  "AK106830205": {
+   "name": "ROC 4421",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2919,
+   "lon": -152.6395
+  },
+  "AK106830203": {
+   "name": "ROC 4419",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": null,
+   "lon": null
+  },
+  "AK106830202": {
+   "name": "ROC 4418",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2919,
+   "lon": -152.6546
+  },
+  "AK106830200": {
+   "name": "ROC 4416",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2921,
+   "lon": -152.6636
+  },
+  "AZ106870637": {
+   "name": "EDGE-270",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 94.15,
+   "status": "Filed",
+   "lat": 34.2704,
+   "lon": -112.6293
+  },
+  "AK106830199": {
+   "name": "ROC 4415",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2919,
+   "lon": -152.6696
+  },
+  "AK106830198": {
+   "name": "ROC 4414",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2919,
+   "lon": -152.6696
+  },
+  "AK106830197": {
+   "name": "ROC 4413",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2919,
+   "lon": -152.6696
+  },
+  "AZ106870612": {
+   "name": "EDGE-245",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2773,
+   "lon": -112.6102
+  },
+  "NM106873247": {
+   "name": "CONQUISTADOR",
+   "state": "NM",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 32.9587,
+   "lon": -107.4696
+  },
+  "AK106830194": {
+   "name": "ROC 4410",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2919,
+   "lon": -152.6846
+  },
+  "AZ106870577": {
+   "name": "EDGE-210",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 16.52,
+   "status": "Filed",
+   "lat": 34.3281,
+   "lon": -112.5987
+  },
+  "NV106852281": {
+   "name": "PUP 37",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9269,
+   "lon": -114.6055
+  },
+  "AK106830193": {
+   "name": "ROC 4409",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": null,
+   "lon": null
+  },
+  "AK106830192": {
+   "name": "ROC 4408",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2919,
+   "lon": -152.6846
+  },
+  "AK106830191": {
+   "name": "ROC 4407",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2921,
+   "lon": -152.6936
+  },
+  "AZ106870571": {
+   "name": "EDGE-204",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 240.0,
+   "status": "Filed",
+   "lat": 34.3411,
+   "lon": -112.5969
+  },
+  "AZ106870570": {
+   "name": "EDGE-203",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 120.0,
+   "status": "Filed",
+   "lat": 34.3418,
+   "lon": -112.5992
+  },
+  "AK106830189": {
+   "name": "ROC 4405",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": null,
+   "lon": null
+  },
+  "AZ106870569": {
+   "name": "EDGE-202",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 240.0,
+   "status": "Filed",
+   "lat": 34.3417,
+   "lon": -112.6012
+  },
+  "AK106830188": {
+   "name": "ROC 4404",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2919,
+   "lon": -152.6996
+  },
+  "CA106873226": {
+   "name": "Pennsylvania Placer",
+   "state": "CA",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5913,
+   "lon": -119.7885
+  },
+  "AK106830187": {
+   "name": "ROC 4403",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2919,
+   "lon": -152.6996
+  },
+  "AK106830186": {
+   "name": "ROC 4323",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2952,
+   "lon": -152.655
+  },
+  "AK106830184": {
+   "name": "ROC 4321",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2952,
+   "lon": -152.655
+  },
+  "AK106830183": {
+   "name": "ROC 4320",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2954,
+   "lon": -152.6636
+  },
+  "AK106830182": {
+   "name": "ROC 4319",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": null,
+   "lon": null
+  },
+  "AK106830181": {
+   "name": "ROC 4318",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2952,
+   "lon": -152.67
+  },
+  "NV106852259": {
+   "name": "PUP 11",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9304,
+   "lon": -114.6096
+  },
+  "AK106830179": {
+   "name": "ROC 4316",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2952,
+   "lon": -152.67
+  },
+  "AK106830178": {
+   "name": "ROC 4315",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": null,
+   "lon": null
+  },
+  "CA106872736": {
+   "name": "Tetris",
+   "state": "CA",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 120.0,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "AK106830177": {
+   "name": "ROC 4314",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2952,
+   "lon": -152.685
+  },
+  "AK106830176": {
+   "name": "ROC 4313",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2955,
+   "lon": -152.6846
+  },
+  "AK106830175": {
+   "name": "ROC 4312",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2955,
+   "lon": -152.6846
+  },
+  "AK106830174": {
+   "name": "ROC 4311",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": null,
+   "lon": null
+  },
+  "AK106830173": {
+   "name": "ROC 4310",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": null,
+   "lon": null
+  },
+  "NV106848093": {
+   "name": "MP869",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5722,
+   "lon": -117.1624
+  },
+  "CA106872725": {
+   "name": "Rox #3",
+   "state": "CA",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "AK106830171": {
+   "name": "ROC 4308",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2952,
+   "lon": -152.7
+  },
+  "NV106848086": {
+   "name": "MP862",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5771,
+   "lon": -117.1674
+  },
+  "AK106830225": {
+   "name": "ROC 4511",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 61.288,
+   "lon": -152.67
+  },
+  "NV106851306": {
+   "name": "ML 16",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3461,
+   "lon": -114.5802
+  },
+  "NV106851302": {
+   "name": "ML 12",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3355,
+   "lon": -114.5891
+  },
+  "AZ106870693": {
+   "name": "SQ-03-2026",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3165,
+   "lon": -112.5966
+  },
+  "AZ106870683": {
+   "name": "EDGE-316",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3974,
+   "lon": -112.6556
+  },
+  "NV106848126": {
+   "name": "MP902",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.527,
+   "lon": -117.312
+  },
+  "AZ106870667": {
+   "name": "EDGE-300",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 16.53,
+   "status": "Filed",
+   "lat": 34.403,
+   "lon": -112.6275
+  },
+  "NV106851292": {
+   "name": "ML 2",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3428,
+   "lon": -114.5891
+  },
+  "AZ106870624": {
+   "name": "EDGE-257",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2665,
+   "lon": -112.6159
+  },
+  "AZ106870608": {
+   "name": "EDGE-241",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2766,
+   "lon": -112.6181
+  },
+  "AZ106870603": {
+   "name": "EDGE-236",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 15.5,
+   "status": "Filed",
+   "lat": 34.2809,
+   "lon": -112.6101
+  },
+  "NV106871330": {
+   "name": "NG-319",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.049,
+   "lon": -116.6089
+  },
+  "NV106852284": {
+   "name": "PUP 40",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9229,
+   "lon": -114.6056
+  },
+  "NV106852280": {
+   "name": "PUP 36",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9301,
+   "lon": -114.6057
+  },
+  "NV106848101": {
+   "name": "MP877",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5648,
+   "lon": -117.1621
+  },
+  "NV106848096": {
+   "name": "MP872",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5696,
+   "lon": -117.1661
+  },
+  "NV106848089": {
+   "name": "MP865",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5764,
+   "lon": -117.1624
+  },
+  "NV106848088": {
+   "name": "MP864",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5771,
+   "lon": -117.1674
+  },
+  "NV106851322": {
+   "name": "ML 32",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3345,
+   "lon": -114.5649
+  },
+  "NV106851320": {
+   "name": "ML 30",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.338,
+   "lon": -114.5652
+  },
+  "NV106851313": {
+   "name": "ML 23",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3355,
+   "lon": -114.5846
+  },
+  "NV106851311": {
+   "name": "ML 21",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3355,
+   "lon": -114.5846
+  },
+  "NV106851310": {
+   "name": "ML 20",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3352,
+   "lon": -114.5794
+  },
+  "AZ106870677": {
+   "name": "EDGE-310",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3922,
+   "lon": -112.6493
+  },
+  "AZ106870665": {
+   "name": "EDGE-298",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 16.53,
+   "status": "Filed",
+   "lat": 34.403,
+   "lon": -112.6318
+  },
+  "AZ106870660": {
+   "name": "EDGE-293",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.4066,
+   "lon": -112.6318
+  },
+  "AZ106870638": {
+   "name": "EDGE-271",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2708,
+   "lon": -112.6293
+  },
+  "AZ106870629": {
+   "name": "EDGE-262",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 11.94,
+   "status": "Filed",
+   "lat": 34.2608,
+   "lon": -112.6132
+  },
+  "AZ106870597": {
+   "name": "EDGE-230",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3096,
+   "lon": -112.5961
+  },
+  "NV106848116": {
+   "name": "MP892",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5128,
+   "lon": -117.3121
+  },
+  "NV106850706": {
+   "name": "KST 471",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.8461,
+   "lon": -118.1172
+  },
+  "AZ106870588": {
+   "name": "EDGE-221",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3205,
+   "lon": -112.5946
+  },
+  "NV106850703": {
+   "name": "KST 468",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.8503,
+   "lon": -118.1332
+  },
+  "AZ106870583": {
+   "name": "EDGE-216",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3242,
+   "lon": -112.5971
+  },
+  "NV106848107": {
+   "name": "MP883",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.527,
+   "lon": -117.312
+  },
+  "AZ106870580": {
+   "name": "EDGE-213",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3309,
+   "lon": -112.5925
+  },
+  "NV106848105": {
+   "name": "MP881",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5623,
+   "lon": -117.1618
+  },
+  "NV106852274": {
+   "name": "PUP 26",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9191,
+   "lon": -114.6087
+  },
+  "NV106852266": {
+   "name": "PUP 18",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9254,
+   "lon": -114.6103
+  },
+  "NV106848102": {
+   "name": "MP878",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5623,
+   "lon": -117.1618
+  },
+  "NV106871322": {
+   "name": "NG-278",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0528,
+   "lon": -116.6087
+  },
+  "NV106848097": {
+   "name": "MP873",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5689,
+   "lon": -117.1624
+  },
+  "NV106848090": {
+   "name": "MP866",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5771,
+   "lon": -117.1674
+  },
+  "CA106872726": {
+   "name": "Hunting Camp",
+   "state": "CA",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 41.7037,
+   "lon": -122.8345
+  },
+  "NV106851309": {
+   "name": "ML 19",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3355,
+   "lon": -114.5846
+  },
+  "NV106851307": {
+   "name": "ML 17",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3388,
+   "lon": -114.5847
+  },
+  "NV106851300": {
+   "name": "ML 10",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3355,
+   "lon": -114.5891
+  },
+  "NV106851299": {
+   "name": "ML 9",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3356,
+   "lon": -114.5941
+  },
+  "AZ106870688": {
+   "name": "EDGE-321",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 12.4,
+   "status": "Filed",
+   "lat": 34.394,
+   "lon": -112.6554
+  },
+  "AZ106870685": {
+   "name": "EDGE-318",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 12.05,
+   "status": "Filed",
+   "lat": 34.3982,
+   "lon": -112.6572
+  },
+  "AZ106870684": {
+   "name": "EDGE-317",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 12.05,
+   "status": "Filed",
+   "lat": 34.3974,
+   "lon": -112.6556
+  },
+  "AZ106870671": {
+   "name": "EDGE-304",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.4008,
+   "lon": -112.654
+  },
+  "NV106848125": {
+   "name": "MP901",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.527,
+   "lon": -117.312
+  },
+  "OR106873112": {
+   "name": "GH Marshall",
+   "state": "OR",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 42.7239,
+   "lon": -119.814
+  },
+  "AZ106870641": {
+   "name": "EDGE-274",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2688,
+   "lon": -112.6217
+  },
+  "AZ106870628": {
+   "name": "EDGE-261",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 11.94,
+   "status": "Filed",
+   "lat": 34.2613,
+   "lon": -112.6143
+  },
+  "AZ106870625": {
+   "name": "EDGE-258",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2663,
+   "lon": -112.6187
+  },
+  "AZ106870620": {
+   "name": "EDGE-253",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2699,
+   "lon": -112.6129
+  },
+  "NV106851291": {
+   "name": "ML 1",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3429,
+   "lon": -114.5941
+  },
+  "AZ106870613": {
+   "name": "EDGE-246",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 13.77,
+   "status": "Filed",
+   "lat": 34.2741,
+   "lon": -112.611
+  },
+  "AZ106870604": {
+   "name": "EDGE-237",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 15.5,
+   "status": "Filed",
+   "lat": 34.2807,
+   "lon": -112.612
+  },
+  "AZ106870596": {
+   "name": "EDGE-229",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 11.48,
+   "status": "Filed",
+   "lat": 34.3117,
+   "lon": -112.5971
+  },
+  "AZ106870594": {
+   "name": "EDGE-227",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 13.77,
+   "status": "Filed",
+   "lat": 34.3097,
+   "lon": -112.5943
+  },
+  "NV106850707": {
+   "name": "KST 472",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.8463,
+   "lon": -118.1084
+  },
+  "NV106848114": {
+   "name": "MP890",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.52,
+   "lon": -117.312
+  },
+  "AZ106870589": {
+   "name": "EDGE-222",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3207,
+   "lon": -112.5928
+  },
+  "AZ106870587": {
+   "name": "EDGE-220",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 13.77,
+   "status": "Filed",
+   "lat": 34.3205,
+   "lon": -112.5971
+  },
+  "AZ106870584": {
+   "name": "EDGE-217",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.324,
+   "lon": -112.5989
+  },
+  "AZ106870578": {
+   "name": "EDGE-211",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 12.4,
+   "status": "Filed",
+   "lat": 34.3285,
+   "lon": -112.5967
+  },
+  "NV106852278": {
+   "name": "PUP 34",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9347,
+   "lon": -114.606
+  },
+  "AZ106870572": {
+   "name": "EDGE-205",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.341,
+   "lon": -112.5949
+  },
+  "NV106852277": {
+   "name": "PUP 33",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9347,
+   "lon": -114.606
+  },
+  "NV106852268": {
+   "name": "PUP 20",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9188,
+   "lon": -114.6069
+  },
+  "NV106871321": {
+   "name": "NG-277",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0562,
+   "lon": -116.6089
+  },
+  "NV106871315": {
+   "name": "NG-240",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0601,
+   "lon": -116.6042
+  },
+  "AK106830180": {
+   "name": "ROC 4317",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 61.2952,
+   "lon": -152.67
+  },
+  "NV106871310": {
+   "name": "NG-178",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0693,
+   "lon": -116.6036
+  },
+  "NV106848081": {
+   "name": "MP857",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5839,
+   "lon": -117.1623
+  },
+  "NV106848079": {
+   "name": "MP855",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5844,
+   "lon": -117.171
+  },
+  "NV106848077": {
+   "name": "MP853",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5839,
+   "lon": -117.1623
+  },
+  "AZ106870692": {
+   "name": "EDGE-379",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 12.4,
+   "status": "Filed",
+   "lat": 34.3323,
+   "lon": -112.5968
+  },
+  "NV106848135": {
+   "name": "MP911",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5042,
+   "lon": -117.311
+  },
+  "AZ106870674": {
+   "name": "EDGE-307",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3958,
+   "lon": -112.6493
+  },
+  "AZ106870673": {
+   "name": "EDGE-306",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3957,
+   "lon": -112.6511
+  },
+  "AZ106870655": {
+   "name": "EDGE-288",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 19.28,
+   "status": "Filed",
+   "lat": 34.2579,
+   "lon": -112.6217
+  },
+  "AZ106870647": {
+   "name": "EDGE-280",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2631,
+   "lon": -112.6248
+  },
+  "OR106873196": {
+   "name": "Gold Leaf",
+   "state": "OR",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 47.2727,
+   "lon": -120.634
+  },
+  "AZ106870633": {
+   "name": "EDGE-266",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2717,
+   "lon": -112.6246
+  },
+  "NV106871331": {
+   "name": "NG-320",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0417,
+   "lon": -116.6089
+  },
+  "NV106848124": {
+   "name": "MP900",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.527,
+   "lon": -117.312
+  },
+  "NV106848123": {
+   "name": "MP899",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.527,
+   "lon": -117.312
+  },
+  "NV106848118": {
+   "name": "MP894",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5128,
+   "lon": -117.3121
+  },
+  "NV106848113": {
+   "name": "MP889",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.52,
+   "lon": -117.312
+  },
+  "NV106848106": {
+   "name": "MP882",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5623,
+   "lon": -117.1618
+  },
+  "NV106871327": {
+   "name": "NG-298",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0379,
+   "lon": -116.6324
+  },
+  "AZ106870575": {
+   "name": "EDGE-208",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3284,
+   "lon": -112.601
+  },
+  "AZ106870573": {
+   "name": "EDGE-206",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3411,
+   "lon": -112.5925
+  },
+  "NV106848095": {
+   "name": "MP871",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5689,
+   "lon": -117.1624
+  },
+  "NV106848083": {
+   "name": "MP859",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5803,
+   "lon": -117.1713
+  },
+  "NV106848082": {
+   "name": "MP858",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5803,
+   "lon": -117.1713
+  },
+  "NV106848075": {
+   "name": "MP851",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5844,
+   "lon": -117.171
+  },
+  "NV106851303": {
+   "name": "ML 13",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3316,
+   "lon": -114.5943
+  },
+  "AZ106870689": {
+   "name": "EDGE-322",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 12.4,
+   "status": "Filed",
+   "lat": 34.3921,
+   "lon": -112.6555
+  },
+  "NV106848136": {
+   "name": "MP912",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5042,
+   "lon": -117.311
+  },
+  "AZ106870679": {
+   "name": "EDGE-312",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3922,
+   "lon": -112.6536
+  },
+  "NV106848130": {
+   "name": "MP906",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.52,
+   "lon": -117.312
+  },
+  "AZ106870654": {
+   "name": "EDGE-287",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 19.28,
+   "status": "Filed",
+   "lat": 34.2579,
+   "lon": -112.6247
+  },
+  "AZ106870649": {
+   "name": "EDGE-282",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2631,
+   "lon": -112.6291
+  },
+  "OR106873113": {
+   "name": "Half and Half",
+   "state": "OR",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 42.7239,
+   "lon": -119.814
+  },
+  "AZ106870640": {
+   "name": "EDGE-273",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2691,
+   "lon": -112.6247
+  },
+  "AZ106870619": {
+   "name": "EDGE-252",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2698,
+   "lon": -112.6153
+  },
+  "AZ106870610": {
+   "name": "EDGE-243",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2771,
+   "lon": -112.6144
+  },
+  "AZ106870609": {
+   "name": "EDGE-242",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2771,
+   "lon": -112.6144
+  },
+  "AZ106870590": {
+   "name": "EDGE-223",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3174,
+   "lon": -112.5932
+  },
+  "AZ106870585": {
+   "name": "EDGE-218",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3204,
+   "lon": -112.5989
+  },
+  "NV106852285": {
+   "name": "HUB NO 7",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9135,
+   "lon": -114.6058
+  },
+  "NV106852272": {
+   "name": "PUP 24",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9211,
+   "lon": -114.6076
+  },
+  "AK106830185": {
+   "name": "ROC 4322",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 61.2952,
+   "lon": -152.655
+  },
+  "NV106871313": {
+   "name": "NG-238",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0601,
+   "lon": -116.6042
+  },
+  "NV106848092": {
+   "name": "MP868",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5733,
+   "lon": -117.167
+  },
+  "NV106848084": {
+   "name": "MP860",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5802,
+   "lon": -117.1667
+  },
+  "NV106848078": {
+   "name": "MP854",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5844,
+   "lon": -117.171
+  },
+  "NV106851315": {
+   "name": "ML 25",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3355,
+   "lon": -114.5846
+  },
+  "AZ106870681": {
+   "name": "EDGE-314",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 16.53,
+   "status": "Filed",
+   "lat": 34.3886,
+   "lon": -112.6493
+  },
+  "NV106851297": {
+   "name": "ML 7",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3356,
+   "lon": -114.5941
+  },
+  "AZ106870676": {
+   "name": "EDGE-309",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3921,
+   "lon": -112.6468
+  },
+  "NV106848129": {
+   "name": "MP905",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.52,
+   "lon": -117.312
+  },
+  "AZ106870662": {
+   "name": "EDGE-295",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 10.33,
+   "status": "Filed",
+   "lat": 34.4065,
+   "lon": -112.6337
+  },
+  "AZ106870658": {
+   "name": "EDGE-291",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.4066,
+   "lon": -112.6275
+  },
+  "AZ106870652": {
+   "name": "EDGE-285",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 19.28,
+   "status": "Filed",
+   "lat": 34.2579,
+   "lon": -112.629
+  },
+  "AK106830204": {
+   "name": "ROC 4420",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 61.2921,
+   "lon": -152.6485
+  },
+  "AZ106870650": {
+   "name": "EDGE-283",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 13.77,
+   "status": "Filed",
+   "lat": 34.2631,
+   "lon": -112.6291
+  },
+  "AZ106870639": {
+   "name": "EDGE-272",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2706,
+   "lon": -112.6276
+  },
+  "AZ106870630": {
+   "name": "EDGE-263",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2716,
+   "lon": -112.6182
+  },
+  "AZ106870621": {
+   "name": "EDGE-254",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2699,
+   "lon": -112.6129
+  },
+  "AZ106870611": {
+   "name": "EDGE-244",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 13.77,
+   "status": "Filed",
+   "lat": 34.2771,
+   "lon": -112.612
+  },
+  "AZ106870601": {
+   "name": "EDGE-234",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 15.5,
+   "status": "Filed",
+   "lat": 34.286,
+   "lon": -112.612
+  },
+  "NV106848122": {
+   "name": "MP898",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5042,
+   "lon": -117.311
+  },
+  "AZ106870595": {
+   "name": "EDGE-228",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 6.89,
+   "status": "Filed",
+   "lat": 34.3132,
+   "lon": -112.5946
+  },
+  "NV106848115": {
+   "name": "MP891",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5128,
+   "lon": -117.3121
+  },
+  "NV106850705": {
+   "name": "KST 470",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.8467,
+   "lon": -118.0982
+  },
+  "NV106848111": {
+   "name": "MP887",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.52,
+   "lon": -117.312
+  },
+  "NV106848110": {
+   "name": "MP886",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.527,
+   "lon": -117.312
+  },
+  "NV106871329": {
+   "name": "NG-318",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0414,
+   "lon": -116.6142
+  },
+  "NV106852282": {
+   "name": "PUP 38",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9269,
+   "lon": -114.6055
+  },
+  "NV106852267": {
+   "name": "PUP 19",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9207,
+   "lon": -114.6145
+  },
+  "NV106871323": {
+   "name": "NG-279",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0562,
+   "lon": -116.6044
+  },
+  "NV106871320": {
+   "name": "NG-276",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0524,
+   "lon": -116.6142
+  },
+  "NV106871318": {
+   "name": "NG-243",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0655,
+   "lon": -116.6144
+  },
+  "NV106871317": {
+   "name": "NG-242",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0601,
+   "lon": -116.5993
+  },
+  "NV106852260": {
+   "name": "PUP 12",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9277,
+   "lon": -114.609
+  },
+  "NV106871314": {
+   "name": "NG-239",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0634,
+   "lon": -116.604
+  },
+  "NV106871309": {
+   "name": "NG-409",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0561,
+   "lon": -116.6509
+  },
+  "NV106852255": {
+   "name": "PUP 7",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9312,
+   "lon": -114.6147
+  },
+  "NV106848073": {
+   "name": "MP849",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5839,
+   "lon": -117.1623
+  },
+  "NV106851324": {
+   "name": "ML 34",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3345,
+   "lon": -114.5649
+  },
+  "NV106851295": {
+   "name": "ML 5",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3389,
+   "lon": -114.5943
+  },
+  "AZ106870687": {
+   "name": "EDGE-320",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 7.23,
+   "status": "Filed",
+   "lat": 34.394,
+   "lon": -112.6554
+  },
+  "AZ106870686": {
+   "name": "EDGE-319",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 7.23,
+   "status": "Filed",
+   "lat": 34.394,
+   "lon": -112.6554
+  },
+  "AZ106870682": {
+   "name": "EDGE-315",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 12.4,
+   "status": "Filed",
+   "lat": 34.3885,
+   "lon": -112.6468
+  },
+  "AZ106870678": {
+   "name": "EDGE-311",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3921,
+   "lon": -112.6511
+  },
+  "AZ106870664": {
+   "name": "EDGE-297",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 16.53,
+   "status": "Filed",
+   "lat": 34.4029,
+   "lon": -112.6337
+  },
+  "AZ106870663": {
+   "name": "EDGE-296",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 8.26,
+   "status": "Filed",
+   "lat": 34.4034,
+   "lon": -112.6352
+  },
+  "AZ106870657": {
+   "name": "EDGE-290",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 19.28,
+   "status": "Filed",
+   "lat": 34.2594,
+   "lon": -112.6191
+  },
+  "AZ106870653": {
+   "name": "EDGE-286",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2579,
+   "lon": -112.6267
+  },
+  "AZ106870651": {
+   "name": "EDGE-284",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 12.86,
+   "status": "Filed",
+   "lat": 34.2579,
+   "lon": -112.629
+  },
+  "AZ106870646": {
+   "name": "EDGE-279",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2631,
+   "lon": -112.6216
+  },
+  "AZ106870643": {
+   "name": "EDGE-276",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2685,
+   "lon": -112.619
+  },
+  "AZ106870636": {
+   "name": "EDGE-269",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 13.77,
+   "status": "Filed",
+   "lat": 34.2726,
+   "lon": -112.6293
+  },
+  "AZ106870618": {
+   "name": "EDGE-251",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.269,
+   "lon": -112.6188
+  },
+  "AZ106870599": {
+   "name": "EDGE-232",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2858,
+   "lon": -112.6162
+  },
+  "NV106848117": {
+   "name": "MP893",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5128,
+   "lon": -117.3121
+  },
+  "NV106848109": {
+   "name": "MP885",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.527,
+   "lon": -117.312
+  },
+  "AZ106870586": {
+   "name": "EDGE-219",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 13.77,
+   "status": "Filed",
+   "lat": 34.3225,
+   "lon": -112.5971
+  },
+  "NV106852265": {
+   "name": "PUP 17",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.924,
+   "lon": -114.6147
+  },
+  "NV106871326": {
+   "name": "NG-282",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0528,
+   "lon": -116.6042
+  },
+  "NV106871325": {
+   "name": "NG-281",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0562,
+   "lon": -116.6044
+  },
+  "NV106852263": {
+   "name": "PUP 15",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.924,
+   "lon": -114.6147
+  },
+  "NV106871312": {
+   "name": "NG-236",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0601,
+   "lon": -116.6042
+  },
+  "NV106852258": {
+   "name": "PUP 10",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9304,
+   "lon": -114.6096
+  },
+  "NV106848099": {
+   "name": "MP875",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5689,
+   "lon": -117.1624
+  },
+  "NV106848094": {
+   "name": "MP870",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5696,
+   "lon": -117.1661
+  },
+  "NV106848091": {
+   "name": "MP867",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5764,
+   "lon": -117.1624
+  },
+  "NV106848076": {
+   "name": "MP852",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5841,
+   "lon": -117.1665
+  },
+  "NV106848074": {
+   "name": "MP850",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5844,
+   "lon": -117.171
+  },
+  "NV106851319": {
+   "name": "ML 29",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3383,
+   "lon": -114.5699
+  },
+  "NV106851318": {
+   "name": "ML 28",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3419,
+   "lon": -114.5649
+  },
+  "AK106830235": {
+   "name": "ROC 4521",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 61.2882,
+   "lon": -152.6335
+  },
+  "NV106851305": {
+   "name": "ML 15",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3428,
+   "lon": -114.5845
+  },
+  "AK106830221": {
+   "name": "ROC 4507",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 61.2882,
+   "lon": -152.6786
+  },
+  "AZ106870690": {
+   "name": "EDGE-323",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 12.05,
+   "status": "Filed",
+   "lat": 34.3921,
+   "lon": -112.6555
+  },
+  "NV106848134": {
+   "name": "MP910",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5128,
+   "lon": -117.3121
+  },
+  "NV106848131": {
+   "name": "MP907",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5128,
+   "lon": -117.3121
+  },
+  "AZ106870668": {
+   "name": "EDGE-301",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3993,
+   "lon": -112.6468
+  },
+  "AK106830211": {
+   "name": "ROC 4427",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 61.2919,
+   "lon": -152.6245
+  },
+  "AZ106870661": {
+   "name": "EDGE-294",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.4065,
+   "lon": -112.6337
+  },
+  "AZ106870659": {
+   "name": "EDGE-292",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.4065,
+   "lon": -112.6293
+  },
+  "AZ106870645": {
+   "name": "EDGE-278",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2631,
+   "lon": -112.6199
+  },
+  "AZ106870634": {
+   "name": "EDGE-267",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2723,
+   "lon": -112.6277
+  },
+  "NV106848121": {
+   "name": "MP897",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5042,
+   "lon": -117.311
+  },
+  "AZ106870592": {
+   "name": "EDGE-225",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3169,
+   "lon": -112.5971
+  },
+  "NV106848112": {
+   "name": "MP888",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.52,
+   "lon": -117.312
+  },
+  "NV106871328": {
+   "name": "NG-317",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0486,
+   "lon": -116.6142
+  },
+  "NV106852271": {
+   "name": "PUP 23",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9207,
+   "lon": -114.6145
+  },
+  "NV106848103": {
+   "name": "MP879",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5623,
+   "lon": -117.1618
+  },
+  "NV106852261": {
+   "name": "PUP 13",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9279,
+   "lon": -114.6145
+  },
+  "NV106871311": {
+   "name": "NG-180",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0687,
+   "lon": -116.5981
+  },
+  "AK106830172": {
+   "name": "ROC 4309",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 61.2952,
+   "lon": -152.7
+  },
+  "NV106848072": {
+   "name": "MP848",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5841,
+   "lon": -117.1665
+  },
+  "NV106851316": {
+   "name": "ML 26",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3352,
+   "lon": -114.5794
+  },
+  "NV106851312": {
+   "name": "ML 22",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3352,
+   "lon": -114.5794
+  },
+  "AK106830226": {
+   "name": "ROC 4512",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 61.2882,
+   "lon": -152.6635
+  },
+  "NV106851308": {
+   "name": "ML 18",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3387,
+   "lon": -114.5796
+  },
+  "NV106851301": {
+   "name": "ML 11",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3356,
+   "lon": -114.5941
+  },
+  "NV106851298": {
+   "name": "ML 8",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3355,
+   "lon": -114.5891
+  },
+  "AZ106870680": {
+   "name": "EDGE-313",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3905,
+   "lon": -112.6536
+  },
+  "AZ106870672": {
+   "name": "EDGE-305",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3958,
+   "lon": -112.6536
+  },
+  "NV106848128": {
+   "name": "MP904",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.52,
+   "lon": -117.312
+  },
+  "OR106873115": {
+   "name": "Sungem #4",
+   "state": "OR",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 42.71,
+   "lon": -119.8354
+  },
+  "AK106830201": {
+   "name": "ROC 4417",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 61.2919,
+   "lon": -152.6546
+  },
+  "AZ106870642": {
+   "name": "EDGE-275",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2687,
+   "lon": -112.6199
+  },
+  "AZ106870635": {
+   "name": "EDGE-268",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2726,
+   "lon": -112.6293
+  },
+  "AZ106870631": {
+   "name": "EDGE-264",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2725,
+   "lon": -112.6201
+  },
+  "AZ106870627": {
+   "name": "EDGE-260",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 17.91,
+   "status": "Filed",
+   "lat": 34.2628,
+   "lon": -112.6153
+  },
+  "AZ106870616": {
+   "name": "EDGE-249",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2739,
+   "lon": -112.615
+  },
+  "AZ106870614": {
+   "name": "EDGE-247",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 13.77,
+   "status": "Filed",
+   "lat": 34.2735,
+   "lon": -112.6124
+  },
+  "AZ106870605": {
+   "name": "EDGE-238",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2807,
+   "lon": -112.6144
+  },
+  "AZ106870602": {
+   "name": "EDGE-235",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 15.5,
+   "status": "Filed",
+   "lat": 34.2868,
+   "lon": -112.6105
+  },
+  "NV106848120": {
+   "name": "MP896",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5042,
+   "lon": -117.311
+  },
+  "AZ106870593": {
+   "name": "EDGE-226",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 13.77,
+   "status": "Filed",
+   "lat": 34.3165,
+   "lon": -112.5966
+  },
+  "AZ106870591": {
+   "name": "EDGE-224",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 16.53,
+   "status": "Filed",
+   "lat": 34.3169,
+   "lon": -112.5946
+  },
+  "AK106830196": {
+   "name": "ROC 4412",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 61.2919,
+   "lon": -152.6696
+  },
+  "NV106850702": {
+   "name": "KST 467",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.8507,
+   "lon": -118.108
+  },
+  "AZ106870581": {
+   "name": "EDGE-214",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3243,
+   "lon": -112.5928
+  },
+  "NV106852286": {
+   "name": "PINE NO 4",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9167,
+   "lon": -114.5971
+  },
+  "AZ106870576": {
+   "name": "EDGE-209",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3241,
+   "lon": -112.6014
+  },
+  "AK106830190": {
+   "name": "ROC 4406",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 61.2919,
+   "lon": -152.6996
+  },
+  "NV106852269": {
+   "name": "PUP 21",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9207,
+   "lon": -114.6145
+  },
+  "NV106848104": {
+   "name": "MP880",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5623,
+   "lon": -117.1618
+  },
+  "NV106848100": {
+   "name": "MP876",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5648,
+   "lon": -117.1621
+  },
+  "NV106852262": {
+   "name": "PUP 14",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9277,
+   "lon": -114.609
+  },
+  "NV106852257": {
+   "name": "PUP 9",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9312,
+   "lon": -114.6147
+  },
+  "NV106848087": {
+   "name": "MP863",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5764,
+   "lon": -117.1624
+  },
+  "NV106848071": {
+   "name": "MP847",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5844,
+   "lon": -117.171
+  },
+  "NV106848070": {
+   "name": "MP846",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5844,
+   "lon": -117.171
+  },
+  "NV106851323": {
+   "name": "ML 33",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3348,
+   "lon": -114.5696
+  },
+  "NV106851321": {
+   "name": "ML 31",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3348,
+   "lon": -114.5696
+  },
+  "NV106851317": {
+   "name": "ML 27",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3422,
+   "lon": -114.5697
+  },
+  "NV106851296": {
+   "name": "ML 6",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.339,
+   "lon": -114.5893
+  },
+  "NV106851293": {
+   "name": "ML 3",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3429,
+   "lon": -114.5941
+  },
+  "NV106848132": {
+   "name": "MP908",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5128,
+   "lon": -117.3121
+  },
+  "AZ106870669": {
+   "name": "EDGE-302",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3994,
+   "lon": -112.6493
+  },
+  "AZ106870656": {
+   "name": "EDGE-289",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 19.28,
+   "status": "Filed",
+   "lat": 34.2579,
+   "lon": -112.6199
+  },
+  "AZ106870648": {
+   "name": "EDGE-281",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2632,
+   "lon": -112.6268
+  },
+  "OR106873114": {
+   "name": "Sungem #3",
+   "state": "OR",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 42.71,
+   "lon": -119.8354
+  },
+  "AZ106870622": {
+   "name": "EDGE-255",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 17.22,
+   "status": "Filed",
+   "lat": 34.2664,
+   "lon": -112.6135
+  },
+  "AZ106870607": {
+   "name": "EDGE-240",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2814,
+   "lon": -112.6176
+  },
+  "AZ106870600": {
+   "name": "EDGE-233",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.286,
+   "lon": -112.6143
+  },
+  "AZ106870598": {
+   "name": "EDGE-231",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2856,
+   "lon": -112.6182
+  },
+  "AZ106870582": {
+   "name": "EDGE-215",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3241,
+   "lon": -112.5946
+  },
+  "AZ106870579": {
+   "name": "EDGE-212",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3309,
+   "lon": -112.5948
+  },
+  "NV106852283": {
+   "name": "PUP 39",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9269,
+   "lon": -114.6055
+  },
+  "NV106852276": {
+   "name": "PUP 32",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9382,
+   "lon": -114.606
+  },
+  "NV106871307": {
+   "name": "NG-405",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0561,
+   "lon": -116.6509
+  },
+  "NV106848098": {
+   "name": "MP874",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5696,
+   "lon": -117.1661
+  },
+  "NV106848080": {
+   "name": "MP856",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5841,
+   "lon": -117.1665
+  },
+  "NV106848069": {
+   "name": "MP845",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5876,
+   "lon": -117.1531
+  },
+  "NV106848068": {
+   "name": "MP844",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5875,
+   "lon": -117.1623
+  },
+  "NV106848067": {
+   "name": "MP843",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5885,
+   "lon": -117.1672
+  },
+  "NV106851304": {
+   "name": "ML 14",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3317,
+   "lon": -114.5893
+  },
+  "AZ106870696": {
+   "name": "SQ-08-2026",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3137,
+   "lon": -112.5976
+  },
+  "AZ106870675": {
+   "name": "EDGE-308",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3957,
+   "lon": -112.6468
+  },
+  "AZ106870666": {
+   "name": "EDGE-299",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 16.53,
+   "status": "Filed",
+   "lat": 34.4032,
+   "lon": -112.6243
+  },
+  "AZ106870644": {
+   "name": "EDGE-277",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2638,
+   "lon": -112.6194
+  },
+  "AZ106870626": {
+   "name": "EDGE-259",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 17.91,
+   "status": "Filed",
+   "lat": 34.2612,
+   "lon": -112.6177
+  },
+  "AZ106870615": {
+   "name": "EDGE-248",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2731,
+   "lon": -112.6142
+  },
+  "AZ106870606": {
+   "name": "EDGE-239",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2805,
+   "lon": -112.6162
+  },
+  "AZ106870574": {
+   "name": "EDGE-207",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3239,
+   "lon": -112.6033
+  },
+  "NV106852273": {
+   "name": "PUP 25",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9157,
+   "lon": -114.6145
+  },
+  "NV106852270": {
+   "name": "PUP 22",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9211,
+   "lon": -114.6076
+  },
+  "NV106871324": {
+   "name": "NG-280",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0528,
+   "lon": -116.6042
+  },
+  "NV106871316": {
+   "name": "NG-241",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.066,
+   "lon": -116.5992
+  },
+  "NV106848066": {
+   "name": "MP842",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5878,
+   "lon": -117.1712
+  },
+  "NV106851314": {
+   "name": "ML 24",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3352,
+   "lon": -114.5794
+  },
+  "NV106851294": {
+   "name": "ML 4",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3428,
+   "lon": -114.5891
+  },
+  "NV106848133": {
+   "name": "MP909",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5128,
+   "lon": -117.3121
+  },
+  "AZ106870670": {
+   "name": "EDGE-303",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.3993,
+   "lon": -112.6511
+  },
+  "NV106848127": {
+   "name": "MP903",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.52,
+   "lon": -117.312
+  },
+  "AZ106870632": {
+   "name": "EDGE-265",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2722,
+   "lon": -112.6215
+  },
+  "AZ106870623": {
+   "name": "EDGE-256",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 17.22,
+   "status": "Filed",
+   "lat": 34.2664,
+   "lon": -112.6135
+  },
+  "AZ106870617": {
+   "name": "EDGE-250",
+   "state": "AZ",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 34.2728,
+   "lon": -112.6187
+  },
+  "NV106848119": {
+   "name": "MP895",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5042,
+   "lon": -117.311
+  },
+  "NV106850704": {
+   "name": "KST 469",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.8463,
+   "lon": -118.1084
+  },
+  "NV106848108": {
+   "name": "MP884",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.527,
+   "lon": -117.312
+  },
+  "NV106852279": {
+   "name": "PUP 35",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9301,
+   "lon": -114.6057
+  },
+  "NV106852275": {
+   "name": "PUP 31",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 13.7741,
+   "status": "Filed",
+   "lat": 37.9382,
+   "lon": -114.606
+  },
+  "NV106852264": {
+   "name": "PUP 16",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9277,
+   "lon": -114.609
+  },
+  "CA106872730": {
+   "name": "Delta Sluice Box",
+   "state": "CA",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 40.9409,
+   "lon": -122.4196
+  },
+  "NV106871319": {
+   "name": "NG-244",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0601,
+   "lon": -116.5948
+  },
+  "NV106871308": {
+   "name": "NG-407",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0561,
+   "lon": -116.6509
+  },
+  "NV106852256": {
+   "name": "PUP 8",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-18",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 37.9348,
+   "lon": -114.6102
+  },
+  "NV106848085": {
+   "name": "MP861",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.58,
+   "lon": -117.1624
+  },
+  "NV106848065": {
+   "name": "MP841",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-18",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5878,
+   "lon": -117.1712
   }
  },
  "alaska": {
@@ -63526,8 +67616,10 @@
   "BLM|AK|WMD|2026-10-28",
   "BLM|NV|TC|2026-10-21",
   "BLM|AZ|BUL|2026-10-23",
-  "BLM|UT|ALICE|2026-11-13"
+  "BLM|UT|ALICE|2026-11-13",
+  "BLM|AK|ROC|2026-10-20",
+  "BLM|AZ|EDGE|2026-11-18"
  ],
- "last_blm": "2026-11-18",
- "last_alaska": "2026-11-18"
+ "last_blm": "2026-11-19",
+ "last_alaska": "2026-11-19"
 }
