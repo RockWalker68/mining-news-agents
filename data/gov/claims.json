@@ -67539,6 +67539,2556 @@
    "status": "Filed",
    "lat": 38.5878,
    "lon": -117.1712
+  },
+  "OR106873965": {
+   "name": "Purple Peak",
+   "state": "OR",
+   "type": "lode",
+   "created": "2026-11-20",
+   "acres": 1.69880624,
+   "status": "Filed",
+   "lat": 43.5739,
+   "lon": -117.0901
+  },
+  "OR106873968": {
+   "name": "Hell Begins",
+   "state": "OR",
+   "type": "placer",
+   "created": "2026-11-20",
+   "acres": 40.0,
+   "status": "Filed",
+   "lat": 42.758,
+   "lon": -124.2222
+  },
+  "NV106851416": {
+   "name": "ML 126",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-20",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106851430": {
+   "name": "ML 140",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-20",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.333,
+   "lon": -114.4794
+  },
+  "NV106870954": {
+   "name": "EVERGREEN",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-20",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 39.6418,
+   "lon": -116.7443
+  },
+  "NV106869803": {
+   "name": "SOUTHBEND 1",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-20",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 41.8502,
+   "lon": -117.4866
+  },
+  "NV106851426": {
+   "name": "ML 136",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-20",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.333,
+   "lon": -114.4794
+  },
+  "NV106851422": {
+   "name": "ML 132",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-20",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.326,
+   "lon": -114.489
+  },
+  "NV106851421": {
+   "name": "ML 131",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-20",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3262,
+   "lon": -114.4935
+  },
+  "NV106851431": {
+   "name": "ML 141",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-20",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3293,
+   "lon": -114.4842
+  },
+  "NV106851415": {
+   "name": "ML 125",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-20",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3334,
+   "lon": -114.4934
+  },
+  "NV106851432": {
+   "name": "ML 142",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-20",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3291,
+   "lon": -114.4796
+  },
+  "NV106851409": {
+   "name": "ML 119",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-20",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106851420": {
+   "name": "ML 130",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-20",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.326,
+   "lon": -114.489
+  },
+  "NV106851419": {
+   "name": "ML 129",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-20",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3262,
+   "lon": -114.4935
+  },
+  "AK106830263": {
+   "name": "ROC 4619",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2847,
+   "lon": -152.6245
+  },
+  "AK106830262": {
+   "name": "ROC 4618",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2847,
+   "lon": -152.6245
+  },
+  "AK106830261": {
+   "name": "ROC 4617",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2849,
+   "lon": -152.6335
+  },
+  "NV106851351": {
+   "name": "ML 61",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106848230": {
+   "name": "MP1006",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5124,
+   "lon": -117.2798
+  },
+  "NV106851348": {
+   "name": "ML 58",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106871362": {
+   "name": "NG-411",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0562,
+   "lon": -116.6044
+  },
+  "AK106830259": {
+   "name": "ROC 4615",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2847,
+   "lon": -152.6395
+  },
+  "AK106830258": {
+   "name": "ROC 4614",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2847,
+   "lon": -152.6395
+  },
+  "AK106830257": {
+   "name": "ROC 4613",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2847,
+   "lon": -152.6395
+  },
+  "AK106830254": {
+   "name": "ROC 4610",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2847,
+   "lon": -152.6545
+  },
+  "AK106830252": {
+   "name": "ROC 4608",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": null,
+   "lon": null
+  },
+  "AK106830251": {
+   "name": "ROC 4607",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2847,
+   "lon": -152.6695
+  },
+  "AK106830250": {
+   "name": "ROC 4606",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2847,
+   "lon": -152.6695
+  },
+  "AK106830249": {
+   "name": "ROC 4605",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2847,
+   "lon": -152.6695
+  },
+  "AK106830247": {
+   "name": "ROC 4603",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2849,
+   "lon": -152.6785
+  },
+  "CO106871500": {
+   "name": "CR52",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9743,
+   "lon": -106.4727
+  },
+  "CO106871498": {
+   "name": "CR50",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9822,
+   "lon": -106.4716
+  },
+  "CO106871497": {
+   "name": "CR49",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9822,
+   "lon": -106.4716
+  },
+  "CO106871496": {
+   "name": "CR48",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9822,
+   "lon": -106.4716
+  },
+  "CO106871495": {
+   "name": "CR47",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9822,
+   "lon": -106.4716
+  },
+  "CO106871494": {
+   "name": "CR46",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.974,
+   "lon": -106.4768
+  },
+  "CO106871492": {
+   "name": "CR44",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9822,
+   "lon": -106.4767
+  },
+  "CO106871490": {
+   "name": "CR42",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9822,
+   "lon": -106.4767
+  },
+  "CO106871489": {
+   "name": "CR41",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9822,
+   "lon": -106.4767
+  },
+  "CO106871488": {
+   "name": "CR40",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9737,
+   "lon": -106.48
+  },
+  "CO106871486": {
+   "name": "CR38",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "CO106871485": {
+   "name": "CR37",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.982,
+   "lon": -106.4811
+  },
+  "CO106871484": {
+   "name": "CR36",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.982,
+   "lon": -106.4811
+  },
+  "CO106871483": {
+   "name": "CR35",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.982,
+   "lon": -106.4811
+  },
+  "CO106871482": {
+   "name": "CR34",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9739,
+   "lon": -106.4843
+  },
+  "CO106871480": {
+   "name": "CR32",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9821,
+   "lon": -106.4862
+  },
+  "CO106871478": {
+   "name": "CR30",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9821,
+   "lon": -106.4862
+  },
+  "AK106830244": {
+   "name": "ROC 4600",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2847,
+   "lon": -152.6845
+  },
+  "CO106871477": {
+   "name": "CR29",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9854,
+   "lon": -106.487
+  },
+  "CO106871476": {
+   "name": "CR28",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9744,
+   "lon": -106.4911
+  },
+  "CO106871475": {
+   "name": "CR27",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9777,
+   "lon": -106.491
+  },
+  "CO106871474": {
+   "name": "CR26",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9819,
+   "lon": -106.4906
+  },
+  "CO106871473": {
+   "name": "CR25",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9819,
+   "lon": -106.4906
+  },
+  "CO106871472": {
+   "name": "CR24",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.9819,
+   "lon": -106.4906
+  },
+  "AK106830243": {
+   "name": "ROC 4599",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2849,
+   "lon": -152.6935
+  },
+  "AK106830240": {
+   "name": "ROC 4596",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Active",
+   "lat": 61.2847,
+   "lon": -152.6995
+  },
+  "NV106848163": {
+   "name": "MP939",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106848158": {
+   "name": "MP934",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5267,
+   "lon": -117.3024
+  },
+  "CO106869316": {
+   "name": "UNCLE SCOTT'S CLAIM TO MORE VEIN",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 18.14,
+   "status": "Filed",
+   "lat": 39.1995,
+   "lon": -107.3295
+  },
+  "NV106851390": {
+   "name": "ML 100",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3238,
+   "lon": -114.5138
+  },
+  "NV106867810": {
+   "name": "PEX 15",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.1788,
+   "lon": -117.589
+  },
+  "NV106851389": {
+   "name": "ML 99",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 16.5289,
+   "status": "Filed",
+   "lat": 40.3271,
+   "lon": -114.5184
+  },
+  "NV106867809": {
+   "name": "PEX 14",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.1749,
+   "lon": -117.5939
+  },
+  "NV106851385": {
+   "name": "ML 95",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3172,
+   "lon": -114.5467
+  },
+  "NV106851383": {
+   "name": "ML 93",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3208,
+   "lon": -114.5465
+  },
+  "NV106851381": {
+   "name": "ML 91",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106871383": {
+   "name": "NG-433",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0383,
+   "lon": -116.6042
+  },
+  "NV106848231": {
+   "name": "MP1007",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "ID106873830": {
+   "name": "SKY-10",
+   "state": "ID",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66115702,
+   "status": "Filed",
+   "lat": 43.6386,
+   "lon": -116.0575
+  },
+  "ID106873826": {
+   "name": "SKY-3",
+   "state": "ID",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66115702,
+   "status": "Filed",
+   "lat": 43.6386,
+   "lon": -116.0575
+  },
+  "NV106848198": {
+   "name": "MP974",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5124,
+   "lon": -117.2879
+  },
+  "NV106848187": {
+   "name": "MP963",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5271,
+   "lon": -117.2896
+  },
+  "NV106848244": {
+   "name": "MP10120",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5116,
+   "lon": -117.2747
+  },
+  "NV106851352": {
+   "name": "ML 62",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3206,
+   "lon": -114.5658
+  },
+  "NV106848235": {
+   "name": "MP1011",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5266,
+   "lon": -117.2747
+  },
+  "NV106871380": {
+   "name": "NG-430",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0344,
+   "lon": -116.6043
+  },
+  "NV106871375": {
+   "name": "NG-424",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0417,
+   "lon": -116.6044
+  },
+  "NV106871369": {
+   "name": "NG-418",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0417,
+   "lon": -116.6044
+  },
+  "ID106873831": {
+   "name": "DEER CREEK-1",
+   "state": "ID",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66115702,
+   "status": "Filed",
+   "lat": 43.6094,
+   "lon": -116.0368
+  },
+  "NV106871361": {
+   "name": "NG-401",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0307,
+   "lon": -116.6141
+  },
+  "NV106848218": {
+   "name": "MP994",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5042,
+   "lon": -117.2828
+  },
+  "NV106848196": {
+   "name": "MP972",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5124,
+   "lon": -117.2879
+  },
+  "NV106848188": {
+   "name": "MP964",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106848186": {
+   "name": "MP962",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5043,
+   "lon": -117.292
+  },
+  "NV106851392": {
+   "name": "ML 102",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 16.5289,
+   "status": "Filed",
+   "lat": 40.3328,
+   "lon": -114.5152
+  },
+  "NV106851376": {
+   "name": "ML 86",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3172,
+   "lon": -114.5509
+  },
+  "NV106851375": {
+   "name": "ML 85",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3166,
+   "lon": -114.561
+  },
+  "NV106851356": {
+   "name": "ML 66",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106851353": {
+   "name": "ML 63",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106848234": {
+   "name": "MP1010",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5048,
+   "lon": -117.279
+  },
+  "NV106871379": {
+   "name": "NG-429",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106851349": {
+   "name": "ML 59",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3278,
+   "lon": -114.57
+  },
+  "UT106863606": {
+   "name": "BLW 306",
+   "state": "UT",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.2685,
+   "lon": -113.5497
+  },
+  "UT106863598": {
+   "name": "BLW 298",
+   "state": "UT",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.2695,
+   "lon": -113.5628
+  },
+  "NV106848223": {
+   "name": "MP999",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5191,
+   "lon": -117.2794
+  },
+  "NV106848205": {
+   "name": "MP981",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106848204": {
+   "name": "MP980",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5267,
+   "lon": -117.284
+  },
+  "NV106848190": {
+   "name": "MP966",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5271,
+   "lon": -117.2896
+  },
+  "AK106830255": {
+   "name": "ROC 4611",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 61.2847,
+   "lon": -152.6545
+  },
+  "CO106869317": {
+   "name": "UNCLE SCOTT'S CLAIM TO EVEN MORE VEIN",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 18.23,
+   "status": "Filed",
+   "lat": 39.1995,
+   "lon": -107.3295
+  },
+  "NV106848150": {
+   "name": "MP926",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106851404": {
+   "name": "ML 114",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106851403": {
+   "name": "ML 113",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3265,
+   "lon": -114.5079
+  },
+  "NV106851393": {
+   "name": "ML 103",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 16.5289,
+   "status": "Filed",
+   "lat": 40.3303,
+   "lon": -114.5141
+  },
+  "NV106851391": {
+   "name": "ML 101",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 17.2176,
+   "status": "Filed",
+   "lat": 40.3337,
+   "lon": -114.5078
+  },
+  "NV106851384": {
+   "name": "ML 94",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 12.3967,
+   "status": "Filed",
+   "lat": 40.3208,
+   "lon": -114.5465
+  },
+  "NV106851368": {
+   "name": "ML 78",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3207,
+   "lon": -114.5505
+  },
+  "NV106851354": {
+   "name": "ML 64",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3206,
+   "lon": -114.5658
+  },
+  "NV106871384": {
+   "name": "NG-437",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0307,
+   "lon": -116.6141
+  },
+  "NV106871382": {
+   "name": "NG-432",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0344,
+   "lon": -116.6043
+  },
+  "UT106863604": {
+   "name": "BLW 304",
+   "state": "UT",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.2685,
+   "lon": -113.5497
+  },
+  "NV106871370": {
+   "name": "NG-419",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "ID106873829": {
+   "name": "SKY-9",
+   "state": "ID",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66115702,
+   "status": "Filed",
+   "lat": 43.6386,
+   "lon": -116.0575
+  },
+  "NV106848215": {
+   "name": "MP991",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5042,
+   "lon": -117.2828
+  },
+  "NV106871351": {
+   "name": "NG-391",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0307,
+   "lon": -116.6234
+  },
+  "NV106871348": {
+   "name": "NG-388",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0269,
+   "lon": -116.6324
+  },
+  "NV106848182": {
+   "name": "MP958",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5126,
+   "lon": -117.2927
+  },
+  "NV106848166": {
+   "name": "MP942",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106848149": {
+   "name": "MP925",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5123,
+   "lon": -117.3024
+  },
+  "NV106851401": {
+   "name": "ML 111",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106867814": {
+   "name": "PEX 19",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.1788,
+   "lon": -117.5846
+  },
+  "NV106851388": {
+   "name": "ML 98",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106851377": {
+   "name": "ML 87",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3208,
+   "lon": -114.5465
+  },
+  "NV106851374": {
+   "name": "ML 84",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3207,
+   "lon": -114.5505
+  },
+  "NV106851367": {
+   "name": "ML 77",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3205,
+   "lon": -114.5607
+  },
+  "NV106867798": {
+   "name": "PEX 3",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.1788,
+   "lon": -117.603
+  },
+  "NV106851365": {
+   "name": "ML 75",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106851364": {
+   "name": "ML 74",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3271,
+   "lon": -114.5626
+  },
+  "NV106851362": {
+   "name": "ML 72",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3281,
+   "lon": -114.5553
+  },
+  "NV106848243": {
+   "name": "MP1019",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5151,
+   "lon": -117.2748
+  },
+  "NV106848242": {
+   "name": "MP1018",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5189,
+   "lon": -117.2751
+  },
+  "NV106851357": {
+   "name": "ML 67",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3207,
+   "lon": -114.5703
+  },
+  "NV106848233": {
+   "name": "MP1009",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5048,
+   "lon": -117.279
+  },
+  "UT106863620": {
+   "name": "BLW 320",
+   "state": "UT",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.2243,
+   "lon": -113.4894
+  },
+  "UT106863619": {
+   "name": "BLW 319",
+   "state": "UT",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.2244,
+   "lon": -113.4756
+  },
+  "UT106863613": {
+   "name": "BLW 313",
+   "state": "UT",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.2181,
+   "lon": -113.4815
+  },
+  "UT106863597": {
+   "name": "BLW 297",
+   "state": "UT",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.2657,
+   "lon": -113.5555
+  },
+  "NV106848203": {
+   "name": "MP979",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5267,
+   "lon": -117.284
+  },
+  "NV106848172": {
+   "name": "MP948",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5272,
+   "lon": -117.294
+  },
+  "NV106848171": {
+   "name": "MP947",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5272,
+   "lon": -117.294
+  },
+  "NV106848168": {
+   "name": "MP944",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5045,
+   "lon": -117.2965
+  },
+  "NV106848167": {
+   "name": "MP943",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5045,
+   "lon": -117.2965
+  },
+  "NV106848151": {
+   "name": "MP927",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5043,
+   "lon": -117.3013
+  },
+  "NV106851382": {
+   "name": "ML 92",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3208,
+   "lon": -114.5465
+  },
+  "NV106867808": {
+   "name": "PEX 13",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106867807": {
+   "name": "PEX 12",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.1749,
+   "lon": -117.5939
+  },
+  "NV106867802": {
+   "name": "PEX 7",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.1788,
+   "lon": -117.5982
+  },
+  "UT106863611": {
+   "name": "BLW 311",
+   "state": "UT",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.2181,
+   "lon": -113.4815
+  },
+  "UT106863610": {
+   "name": "BLW 310",
+   "state": "UT",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.2183,
+   "lon": -113.4855
+  },
+  "NV106871374": {
+   "name": "NG-423",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0489,
+   "lon": -116.6044
+  },
+  "ID106873824": {
+   "name": "SKY-1",
+   "state": "ID",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 18.35399449,
+   "status": "Filed",
+   "lat": 43.6386,
+   "lon": -116.0575
+  },
+  "NV106871363": {
+   "name": "NG-412",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106848219": {
+   "name": "MP995",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106848216": {
+   "name": "MP992",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106871357": {
+   "name": "NG-397",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0308,
+   "lon": -116.6191
+  },
+  "NV106848207": {
+   "name": "MP983",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5195,
+   "lon": -117.284
+  },
+  "NV106871349": {
+   "name": "NG-389",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0308,
+   "lon": -116.6283
+  },
+  "NV106848173": {
+   "name": "MP949",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5272,
+   "lon": -117.294
+  },
+  "NV106848156": {
+   "name": "MP932",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5267,
+   "lon": -117.3024
+  },
+  "NV106848155": {
+   "name": "MP938",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106848147": {
+   "name": "MP923",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106848146": {
+   "name": "MP922",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5197,
+   "lon": -117.3029
+  },
+  "NV106851386": {
+   "name": "ML 96",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106851372": {
+   "name": "ML 82",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3207,
+   "lon": -114.5505
+  },
+  "NV106848240": {
+   "name": "MP1016",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5189,
+   "lon": -117.2751
+  },
+  "NV106851361": {
+   "name": "ML 71",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3168,
+   "lon": -114.5705
+  },
+  "NV106848239": {
+   "name": "MP1015",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5189,
+   "lon": -117.2751
+  },
+  "NV106851355": {
+   "name": "ML 65",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3207,
+   "lon": -114.5703
+  },
+  "NV106848236": {
+   "name": "MP1012",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5266,
+   "lon": -117.2747
+  },
+  "NV106871388": {
+   "name": "NG-445",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0311,
+   "lon": -116.6042
+  },
+  "UT106863618": {
+   "name": "BLW 318",
+   "state": "UT",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.2277,
+   "lon": -113.4813
+  },
+  "UT106863617": {
+   "name": "BLW 317",
+   "state": "UT",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.2243,
+   "lon": -113.4808
+  },
+  "UT106863612": {
+   "name": "BLW 312",
+   "state": "UT",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.2183,
+   "lon": -113.4855
+  },
+  "UT106863605": {
+   "name": "BLW 305",
+   "state": "UT",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.2687,
+   "lon": -113.5455
+  },
+  "NV106871378": {
+   "name": "NG-428",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0344,
+   "lon": -116.6043
+  },
+  "NV106871371": {
+   "name": "NG-420",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0417,
+   "lon": -116.6044
+  },
+  "NV106848214": {
+   "name": "MP990",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5122,
+   "lon": -117.2836
+  },
+  "NV106848202": {
+   "name": "MP978",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106871345": {
+   "name": "NG-385",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106848184": {
+   "name": "MP960",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5043,
+   "lon": -117.292
+  },
+  "NV106848183": {
+   "name": "MP959",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106848180": {
+   "name": "MP956",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5126,
+   "lon": -117.2927
+  },
+  "NV106851407": {
+   "name": "ML 117",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106851402": {
+   "name": "ML 112",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3264,
+   "lon": -114.503
+  },
+  "NV106851399": {
+   "name": "ML 109",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3298,
+   "lon": -114.508
+  },
+  "NV106851396": {
+   "name": "ML 106",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3337,
+   "lon": -114.5078
+  },
+  "NV106848241": {
+   "name": "MP1017",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5189,
+   "lon": -117.2751
+  },
+  "NV106851358": {
+   "name": "ML 68",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3206,
+   "lon": -114.5658
+  },
+  "NV106871387": {
+   "name": "NG-443",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0311,
+   "lon": -116.6042
+  },
+  "NV106848226": {
+   "name": "MP1002",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5191,
+   "lon": -117.2794
+  },
+  "NV106848225": {
+   "name": "MP1001",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5191,
+   "lon": -117.2794
+  },
+  "UT106863599": {
+   "name": "BLW 299",
+   "state": "UT",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.2691,
+   "lon": -113.5558
+  },
+  "NV106871366": {
+   "name": "NG-415",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0562,
+   "lon": -116.5949
+  },
+  "NV106871355": {
+   "name": "NG-395",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0307,
+   "lon": -116.6234
+  },
+  "NV106848191": {
+   "name": "MP967",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106871341": {
+   "name": "NG-355",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0379,
+   "lon": -116.6142
+  },
+  "NV106848177": {
+   "name": "MP953",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5198,
+   "lon": -117.2932
+  },
+  "NV106848174": {
+   "name": "MP950",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5272,
+   "lon": -117.294
+  },
+  "NV106848161": {
+   "name": "MP937",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5197,
+   "lon": -117.3029
+  },
+  "NV106848157": {
+   "name": "MP933",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5267,
+   "lon": -117.3024
+  },
+  "CO106870791": {
+   "name": "RAINBOWS END",
+   "state": "CO",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.5326,
+   "lon": -105.3849
+  },
+  "NV106848153": {
+   "name": "MP929",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5043,
+   "lon": -117.3013
+  },
+  "UT106863602": {
+   "name": "BLW 302",
+   "state": "UT",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.2648,
+   "lon": -113.5497
+  },
+  "CO106873846": {
+   "name": "WCMC # 234",
+   "state": "CO",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 40.3123,
+   "lon": -105.9799
+  },
+  "ID106873832": {
+   "name": "BIG GIANT-1",
+   "state": "ID",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66115702,
+   "status": "Filed",
+   "lat": 43.6383,
+   "lon": -116.052
+  },
+  "NV106871360": {
+   "name": "NG-400",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0272,
+   "lon": -116.6138
+  },
+  "NV106871352": {
+   "name": "NG-392",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0272,
+   "lon": -116.623
+  },
+  "NV106848208": {
+   "name": "MP984",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5195,
+   "lon": -117.284
+  },
+  "NV106848199": {
+   "name": "MP975",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5045,
+   "lon": -117.2872
+  },
+  "NV106848181": {
+   "name": "MP957",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106871335": {
+   "name": "NG-344",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0341,
+   "lon": -116.6234
+  },
+  "AK106830253": {
+   "name": "ROC 4609",
+   "state": "AK",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 61.2847,
+   "lon": -152.6545
+  },
+  "NV106848145": {
+   "name": "MP921",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106851405": {
+   "name": "ML 115",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3265,
+   "lon": -114.5079
+  },
+  "NV106867813": {
+   "name": "PEX 18",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.1749,
+   "lon": -117.5847
+  },
+  "NV106851387": {
+   "name": "ML 97",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 16.5289,
+   "status": "Filed",
+   "lat": 40.3275,
+   "lon": -114.5179
+  },
+  "NV106851378": {
+   "name": "ML 88",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3208,
+   "lon": -114.5465
+  },
+  "NV106851366": {
+   "name": "ML 76",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106851359": {
+   "name": "ML 69",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106848237": {
+   "name": "MP1013",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5266,
+   "lon": -117.2747
+  },
+  "NV106851350": {
+   "name": "ML 60",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.324,
+   "lon": -114.5703
+  },
+  "CO106873845": {
+   "name": "TTMC # 216",
+   "state": "CO",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 39.3889,
+   "lon": -105.9709
+  },
+  "NV106848224": {
+   "name": "MP1000",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5191,
+   "lon": -117.2794
+  },
+  "ID106873827": {
+   "name": "SKY-4",
+   "state": "ID",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66115702,
+   "status": "Filed",
+   "lat": 43.6386,
+   "lon": -116.0575
+  },
+  "ID106873825": {
+   "name": "SKY-2",
+   "state": "ID",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66115702,
+   "status": "Filed",
+   "lat": 43.6386,
+   "lon": -116.0575
+  },
+  "NV106848213": {
+   "name": "MP989",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5122,
+   "lon": -117.2836
+  },
+  "NV106848206": {
+   "name": "MP982",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5267,
+   "lon": -117.284
+  },
+  "NV106848197": {
+   "name": "MP973",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5124,
+   "lon": -117.2879
+  },
+  "NV106848178": {
+   "name": "MP954",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5198,
+   "lon": -117.2932
+  },
+  "NV106871338": {
+   "name": "NG-350",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106851398": {
+   "name": "ML 108",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3336,
+   "lon": -114.5029
+  },
+  "NV106867804": {
+   "name": "PEX 9",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 38.1788,
+   "lon": -117.5938
+  },
+  "NV106851369": {
+   "name": "ML 79",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106871385": {
+   "name": "NG-439",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106871381": {
+   "name": "NG-431",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0383,
+   "lon": -116.6042
+  },
+  "NV106848229": {
+   "name": "MP1005",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5124,
+   "lon": -117.2798
+  },
+  "NV106871377": {
+   "name": "NG-427",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0383,
+   "lon": -116.6042
+  },
+  "NV106851347": {
+   "name": "ML 57",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "ID106873828": {
+   "name": "SKY-5",
+   "state": "ID",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66115702,
+   "status": "Filed",
+   "lat": 43.6386,
+   "lon": -116.0575
+  },
+  "NV106848221": {
+   "name": "MP997",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5267,
+   "lon": -117.2791
+  },
+  "NV106848212": {
+   "name": "MP988",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5122,
+   "lon": -117.2836
+  },
+  "NV106848179": {
+   "name": "MP955",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5126,
+   "lon": -117.2927
+  },
+  "NV106871333": {
+   "name": "NG-340",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0341,
+   "lon": -116.6324
+  },
+  "NV106848159": {
+   "name": "MP935",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5197,
+   "lon": -117.3029
+  },
+  "NV106848152": {
+   "name": "MP928",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5043,
+   "lon": -117.3013
+  },
+  "NV106851373": {
+   "name": "ML 83",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.6612,
+   "status": "Filed",
+   "lat": 40.3204,
+   "lon": -114.5561
+  },
+  "ID106873833": {
+   "name": "BIG GIANT-2",
+   "state": "ID",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66115702,
+   "status": "Filed",
+   "lat": 43.6383,
+   "lon": -116.052
+  },
+  "NV106871356": {
+   "name": "NG-396",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0272,
+   "lon": -116.623
+  },
+  "NV106848200": {
+   "name": "MP976",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5045,
+   "lon": -117.2872
+  },
+  "NV106848189": {
+   "name": "MP965",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5271,
+   "lon": -117.2896
+  },
+  "NV106871343": {
+   "name": "NG-357",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": 40.0345,
+   "lon": -116.6045
+  },
+  "NV106848176": {
+   "name": "MP952",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5198,
+   "lon": -117.2932
+  },
+  "NV106871336": {
+   "name": "NG-346",
+   "state": "NV",
+   "type": "lode",
+   "created": "2026-11-19",
+   "acres": 20.66,
+   "status": "Filed",
+   "lat": null,
+   "lon": null
+  },
+  "NV106848169": {
+   "name": "MP945",
+   "state": "NV",
+   "type": "placer",
+   "created": "2026-11-19",
+   "acres": 20.0,
+   "status": "Filed",
+   "lat": 38.5045,
+   "lon": -117.2965
   }
  },
  "alaska": {
@@ -67618,8 +70168,10 @@
   "BLM|AZ|BUL|2026-10-23",
   "BLM|UT|ALICE|2026-11-13",
   "BLM|AK|ROC|2026-10-20",
-  "BLM|AZ|EDGE|2026-11-18"
+  "BLM|AZ|EDGE|2026-11-18",
+  "BLM|AK|ROC|2026-10-21",
+  "BLM|NV|ML|2026-11-18"
  ],
- "last_blm": "2026-11-19",
- "last_alaska": "2026-11-19"
+ "last_blm": "2026-11-20",
+ "last_alaska": "2026-11-20"
 }

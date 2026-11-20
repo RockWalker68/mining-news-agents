@@ -90,7 +90,10 @@
   "W7236027770",
   "W7236213302",
   "W7236221388",
-  "W7236349470"
+  "W7236349470",
+  "W7236592877",
+  "W7202268333",
+  "W7236629865"
  ],
  "pending": [
   {
@@ -256,42 +259,6 @@
    "abstract": ""
   },
   {
-   "id": "W7224917677",
-   "title": "Titanite-recorded tungsten migration and fluid boiling-triggered precipitation: Insights from the Xiaoyao deposit, South China",
-   "journal": "Ore Geology Reviews",
-   "date": "2026-10-31",
-   "authors": "Keqin Tao, Jun Yan",
-   "link": "https://doi.org/10.1016/j.oregeorev.2026.107639",
-   "abstract": "Mechanisms governing hydrothermal tungsten precipitation, including cooling, boiling, fluid mixing and fluid-rock interaction, represent longstanding controversial issues in economic geology. Herein, six genetically distinct titanite types from the Xiaoyao skarn-type tungsten deposit were investigated to reconstruct the complete magmatic-hydrothermal evolutionary history of the deposit. These types include primary magmatic titanite (Ttn-M) in fresh granodiorite; altered granitic titanite (Ttn-A) in altered granodiorite; as well as prograde skarn titanite (Ttn-P), early oxide-stage titanite (Ttn-O1), late oxide-stage titanite (Ttn-O2), and carbonate–sulfide-stage titanite (Ttn-C) hosted in skarn. In situ EPMA and LA-ICP-MS analyses reveal systematic compositional variations across all titanite populations. Ttn-M exhibits elevated W concentrations compared with that of W-barren granites, indicative of early pre-enrichment in the parental magma before hydrothermal exsolution. Ttn-A, Ttn-P and Ttn-O1 feature extremely high W, reflecting robust tungsten migration from residual magma into hydrothermal fluids and subsequent transport toward skarn. Abrupt W depletion in Ttn-O2 corresponds to large-scale scheelite precipitation. Consistent Y/Ho and Sr compositions, together with variable REE patterns, strongly favor fluid boiling—rather than fluid mixing, simple cooling, or fluid-rock reaction—as the dominant ore-forming trigger. This process elevates fluid pH and promotes the depolymerization of aqueous polytungstate species, thereby facilitating intensive scheelite precipitation. Titanite geochemical data also record a low-F ore-forming system, which inhibits magmatic differentiation and restricts the total tungsten endowment of the deposit. These findings demonstrate that mul"
-  },
-  {
-   "id": "W7224992087",
-   "title": "Extreme light rare earth element enrichment in carbonatite-related rare earth element deposits driven by coupled immiscibility, fractional crystallization, and melt–wall rock metasomatism",
-   "journal": "Ore Geology Reviews",
-   "date": "2026-10-31",
-   "authors": "Yihang Gao, Yan Liu",
-   "link": "https://doi.org/10.1016/j.oregeorev.2026.107652",
-   "abstract": "Carbonatite-related rare earth elements (REE) deposits are the primary global source of light rare earth elements (LREE) resources. All known giant to supergiant carbonatite-related REE deposits show extreme LREE enrichment and relative heavy rare earth elements (HREE) depletion; however, the mechanism of LREE/HREE fractionation during the formation, evolution, and mineralization of carbonatitic magmas remains unclear. The Maoniuping REE deposit, located in the Cenozoic Mianning–Dechang (MD) REE metallogenic belt in southwestern China, is an ideal target for investigating this fractionation process owing to its young mineralization age, relatively weak post-mineralization modification, and well-preserved complete alteration zoning. This study integrates published whole-rock and mineral geochemical data for syenite, carbonatite, and alteration selvages from the Maoniuping deposit, together with new in situ trace element analyses of calcite from REE-mineralized carbonatite and phlogopite from the selvages. Specifically, whole-rock comparisons reveal that syenite shows limited LREE/HREE fractionation (mean LREE/HREE ≈ 62), whereas alteration selvages have similar LREE/HREE ratios (mean LREE/HREE ≈ 58) but markedly elevated total REE contents (mean REE ≈ 4225 ppm); in contrast, REE-mineralized carbonatite exhibit extreme LREE enrichment (mean LREE/HREE ≈ 310) and high total REE contents (mean REE ≈ 8.78 wt%). Furthermore, from the initial carbonatite crystallization stage to mineralization, calcite consistently records increasing total REE contents, and its average (La/Yb) N ratio rises from ∼ 3 to 22. The average Y/Ho ratios of calcite are ∼ 26.6 and ∼ 27.3 in the initial crystallization and mineralization stages, respectively, and its Sr/Ba signatures remain consistent, c"
-  },
-  {
-   "id": "W7224996260",
-   "title": "Lithospheric step steepness controls magmatic Ni–Cu sulfide potential at craton margins",
-   "journal": "Ore Geology Reviews",
-   "date": "2026-10-31",
-   "authors": "Li Liang, He Lanfang, Chen Lin et al.",
-   "link": "https://doi.org/10.1016/j.oregeorev.2026.107653",
-   "abstract": "Craton margins host most global magmatic Ni–Cu sulfide deposits; however, the controlling mechanisms remain largely equivocal, with no quantitative geodynamic model available to assess the metallogenic potential of different margins. In this study, we develop a first-order metallogenic model that integrates melting thermodynamics, two-phase flow theory, and chalcophile element geochemistry, with lithospheric thickness variation as the primary parameter. The model yields a simple geometric index, the step steepness Δh/L t , where Δh represents the lithospheric thickness contrast between the craton and adjacent mobile belts, and L t represents the transition zone width. A comprehensive fertility index Π is defined, which is proportional to the focused melt flux and metal enrichment efficiency. A steep lithospheric step (large Δh/L t ) raises efficient melt channeling necessary for the formation of giant deposits. The model is evaluated using six well-documented examples, including Norilsk (steep, giant), Jinchuan (steep, giant), Voisey’s Bay (steep, giant), Kingash on the southern margin of the Siberian Craton (gentle, large), Hongqiling (gentle, medium), and the Huangshandong deposit on the northeastern margin of the Tarim Craton (gentle, large). The results are consistent with the model predictions. This study provides a quantitative framework for understanding magmatic sulfide mineralization along craton margins."
-  },
-  {
-   "id": "W7225007165",
-   "title": "Chlorite short-wave infrared spectral and mineral-chemical constraints on mineralization in the Haopinggou Au–Ag polymetallic deposit, Xiong’ershan region, China",
-   "journal": "Ore Geology Reviews",
-   "date": "2026-10-31",
-   "authors": "Li Jiang, Wei Jian, Jingwen Mao et al.",
-   "link": "https://doi.org/10.1016/j.oregeorev.2026.107644",
-   "abstract": "Short-wave infrared (SWIR) spectroscopy is widely used in hydrothermal mineral exploration; however, chlorite has been less widely applied because its low reflectance, compositional variability, and intergrowth with carbonates complicate spectral interpretation. The relationships among chlorite SWIR parameters, mineral chemistry, and mineralization in hydrothermal ore deposits therefore remain poorly constrained. This study integrates drill-core SWIR spectroscopy, petrographic observations, and electron probe microanalysis (EPMA) to characterize hydrothermal chlorite from the Haopinggou Au–Ag–Pb–Zn polymetallic deposit in the Xiong’ershan district, China. Two chlorite generations are recognized: early Chl-I, occurring mainly as coarse aggregates in weakly mineralized zones, and mineralization-related Chl-II, which is finer grained, sulfide-associated, and compositionally more Fe-rich. EPMA data show that Chl-II has higher FeO contents, Fe 2+ contents, and Fe/(Fe + Mg) ratios than Chl-I, whereas corrected chlorite geothermometry yields overlapping intermediate-temperature estimates of 220–290°C, mostly concentrated between 240 and 280°C. Au-mineralized intervals are characterized by relatively long-wavelength Fe–OH absorption-band positions near 2250 nm (Pos2250), commonly ≥2255 nm, and low ratios of the continuum-removed absorption depth near 2350 nm (Dep2350) to that near 2250 nm (Dep2250), commonly ≤ 1.0. The systematic Fe enrichment of mineralization-related chlorite, together with its characteristic SWIR response, is consistent with relatively reducing hydrothermal conditions associated with Au mineralization. These spectral–mineralogical criteria provide rapid vectors for concealed porphyry-related subepithermal Au–Ag–Pb–Zn mineralization."
-  },
-  {
    "id": "W7225009541",
    "title": "Geological characteristics and geochronology of the Xiaodongkeng tungsten-copper deposit in Southern Jiangxi Province, South China",
    "journal": "Journal of Geochemical Exploration",
@@ -299,24 +266,6 @@
    "authors": "Wang Wei, Xia Fei, Yongle Yang et al.",
    "link": "https://doi.org/10.1016/j.gexplo.2026.108265",
    "abstract": ""
-  },
-  {
-   "id": "W7225014564",
-   "title": "Machine-learning-based lithotectonic map updating in the southern Hamisana Shear Zone, Arabian-Nubian Shield, northeastern Sudan, using Sentinel-2 and Landsat-9",
-   "journal": "Ore Geology Reviews",
-   "date": "2026-10-31",
-   "authors": "Mohammed N.M. Hassan, W.A. Abdel Gabar, Mohammed I. Mukhtar et al.",
-   "link": "https://doi.org/10.1016/j.oregeorev.2026.107643",
-   "abstract": "Lithological mapping in high-deformation basement terrains is challenging because complex shearing, folding, refolding, and thrust repetition disrupt the continuity of boundary contacts. This study integrates multisensor remote sensing data (Sentinel-2B and Landsat-9), spectral enhancement techniques, including false-colour composites (FCCs) and (PCA), automatic lineament extraction, and supervised machine learning (ML) algorithms, namely Support vector machine (SVM) and Artificial neural network (ANN), to produce an updated lithological map of the southern Hamisana Shear Zone (Arabian Nubian Shield, NE Sudan), covering 12,350.95 km 2 . Four scenes from each sensor were prepared within the study boundary; Sentinel-2 (S2) bands were resampled to a common 10 m grid for multiband alignment. Training and testing ROIs were derived from image interpretation, whereas 155 field checkpoints were reserved exclusively for independent validation; petrographic observations were used to support lithological identification. Among the four evaluated sensor–classifier combinations, S2-SVM achieved the highest testing-ROI accuracy (OA = 84.92%, κ = 0.83), followed by Landsat-9 SVM (OA = 76.79%, κ = 0.74), S2 ANN (OA = 74.99%, κ = 0.72), and Landsat-9 ANN (OA = 61.89%, κ = 0.57). Independent evaluation against the same 155 withheld field checkpoints yielded the highest field-based performance for S2-SVM (OA = 76.13%, κ = 0.721), confirming its relative advantage among the four tested configurations. Residual misclassification was concentrated mainly among metavolcanosedimentary, metavolcanic, metasedimentary, and intrusive assemblages, consistent with spectral overlap in the highly deformed terrain. The resulting map provides a quantitatively validated lithological framework with improved"
-  },
-  {
-   "id": "W7225018412",
-   "title": "Protolith heterogeneity drives decoupling in Sn and W metallogeny of Neoproterozoic peraluminous granitoids in the western Yangtze Block, South China",
-   "journal": "Ore Geology Reviews",
-   "date": "2026-10-31",
-   "authors": "Lu Xiang, Chuanrong Nie, Yang Liu et al.",
-   "link": "https://doi.org/10.1016/j.oregeorev.2026.107654",
-   "abstract": "Protolith chemistry and mineralogy exert a dominant control on the chemistry of crustal melts and their potential to form mineral deposits. This is most clearly shown in the decoupling of Sn and W mineralization at the deposit and district scales. Here we present an integrated geochronological and geochemical study of three representative Neoproterozoic peraluminous intrusions on the western Yangtze Block, i.e., the Chahe Sn-mineralized biotite/two-mica granite, the barren Xiacun granodiorite, and the Jianzidong W-mineralized granodiorite, and associated (Sn)-W ores, to demonstrate the relation between protolith and mineralization. In-situ zircon, cassiterite and titanite LA-ICP-MS U-Pb dating yields ages of 836–843 Ma for the skarn Sn and W mineralization in the Huili area, coeval with the ca. 840 Ma peraluminous S-type granitic magmatism. The barren Xiacun granodiorite and its mafic microgranular enclaves (809–811 Ma) exhibit relatively homogeneous zircon trace-element and Hf isotopic compositions (εHf (t) = -2.7 ∼ -0.8). In contrast, zircon grains from the mineralized Chahe and Jianzidong intrusions show variable Th/U and Ce/U ratios, εHf (t) values (−17 ∼ +8), and abundant inherited cores, indicating hybrid crustal sources rather than crust-mantle magma interaction. The reduced ( f O 2 < FMQ) Chahe and Jianzidong intrusions contain no enclaves and have comparable zircon saturation temperatures (∼730–800 °C) and initial F contents (∼500 ppm), ruling out that redox state, melting temperature and mantle volatiles are primary controls on their distinct metallogeny. The Jianzidong W-mineralized intrusion displays lower whole-rock Rb/Sr, Rb/Ba ratios but higher zircon Th/U, Ce/U ratios relative to the Chahe Sn-mineralized granite, indicating less clay-rich sediment in its"
   },
   {
    "id": "W7225019471",
@@ -508,24 +457,6 @@
    "abstract": ""
   },
   {
-   "id": "W7235483491",
-   "title": "Identification and mineralization prediction of lithium-bearing pegmatites based on multimodal remote sensing data fusion",
-   "journal": "Ore Geology Reviews",
-   "date": "2026-11-01",
-   "authors": "Haojian Bu, Yuxin Tian, Zhenghai Wang et al.",
-   "link": "https://doi.org/10.1016/j.oregeorev.2026.107686",
-   "abstract": "Hyperspectral remote sensing provides abundant spectral information that can be used for quantitative identification of rocks and minerals. However, its relatively low spatial resolution constrains the accuracy of fine-scale lithological mapping. Deep-learning-based hyperspectral-multispectral image fusion can enhance the spatial resolution of hyperspectral data while preserving spectral details. First, the Dual Cross Transformer model was employed to fuse ZY1E hyperspectral imagery with Sentinel-2A multispectral imagery, and the fusion performance was comparatively evaluated. Second, the fused imagery was applied to the identification of lithium-bearing pegmatites in the Dahongliutan mineral district, Xinjiang, China. Finally, mineral indicators for lithium-bearing pegmatites were extracted by integrating ASTER thermal infrared and Sentinel-1A radar data, and a random forest algorithm was used to develop a multimodal remote-sensing-based mineralization prediction model for lithium-bearing pegmatites. The results indicate that the Dual Cross Transformer (DCTransformer) based fused imagery achieves the best performance in terms of preserving spatial details and maintaining spectral fidelity. The proposed mineralization prediction model attained a mean accuracy of 0.924 in five-fold cross-validation on the training set, an accuracy of 0.932 on the test set, and an AUC of 0.964; all evaluation metrics improved relative to the model without image fusion. By introducing a deep-learning-based hyperspectral image fusion approach, this study effectively improves the identification accuracy of lithium-bearing pegmatites. The developed multimodal remote-sensing mineralization prediction model provides a new technical pathway for remote-sensing-based mineral exploration."
-  },
-  {
-   "id": "W7236027770",
-   "title": "Nb mineralization processes during the magmatic-hydrothermal evolution of carbonatite: Indicated by origin and paragenesis of Nb minerals from Bayan Obo deposit, China",
-   "journal": "Ore Geology Reviews",
-   "date": "2026-11-01",
-   "authors": "Shang Liu, Hong-Rui Fan, Qingyan Tang et al.",
-   "link": "https://doi.org/10.1016/j.oregeorev.2026.107678",
-   "abstract": "The urgent demand and unbalanced distribution of Nb resources promote the understanding of carbonatite-related Nb deposits, the major host of over half global Nb resources. The Bayan Obo REE-Nb-Fe deposit, one of the largest carbonatite-related REE-Nb deposits, is characterized by complicated evolution of carbonatite and numerous species of Nb minerals, providing an excellent object to explore the Nb mineralization processes during the magmatic-hydrothermal evolution of carbonatite. In this study, systematic petrographic and in-situ geochemical study have been conducted on Bayan Obo Nb minerals. The paragenesis and origin of various Nb minerals have been sorted out. Pyrochlore and fersmite in carbonatite dyke and coarse-grained ore-hosting dolomite remains primary features. Mostly pyrochlore, columbite, aeschynite, fergusonite, ilmenorutile, and baotite were formed in hydrothermal processes. The Bayan Obo Nb mineralization generally consists of magmatic stage, columbitization stage, extremely REE-rich stage, and oxidizing stage. Pyrochlore and columbite from west open pits inherit low Ti and Y/Ho ratios close to mantle value from carbonatitic magma or unevolved fluids. Aeschynite and fergusonite were formed in extremely REE-rich fluids, whose compositional evolution has been recorded by those from main and east open pits. In the oxidizing stage, the ferric Nb minerals, ilmenorutile and baotite from main or east open pits contain lower Ti content and significantly variable Nb content, facilitated by crystallization of ilmenite. The Nb-bearing fluids of columbitization and final oxidizing stages were REE-enriched, occasionally forming tiny inclusions of REE-rich phases within columbite and ilmenorutile. But the Nb and REE mineralization lack correlation on the scale of or"
-  },
-  {
    "id": "W7236213302",
    "title": "LCT pegmatite formation by partial melting of S-type granite and progressive crustal distillation: Direct evidence from U-Pb geochronology, Dryden pegmatite Field, Superior Province, Canada",
    "journal": "Ore Geology Reviews",
@@ -535,15 +466,6 @@
    "abstract": ""
   },
   {
-   "id": "W7236221388",
-   "title": "Ore-Controlling structures and metallogenesis of the Baolun gold deposit in Southwestern Hainan, South China",
-   "journal": "Ore Geology Reviews",
-   "date": "2026-11-01",
-   "authors": "Di Lin, Yong Zheng, Zhongbao Zhao et al.",
-   "link": "https://doi.org/10.1016/j.oregeorev.2026.107680",
-   "abstract": "The Baolun gold deposit, on the southwestern margin of Hainan, South China, is a direct product of the collision between the South China and Indochina blocks. It is representative of the Mesozoic orogenic gold deposits in the southernmost part of South China and is important in understanding regional metallogenic mechanisms and constructing exploration models; however, the structural framework, timing of mineralization, and formation of the ore-controlling structures are debated. We identified four major stages of deformation by integrating macro- and microstructural observations of deformation, quartz EBSD fabric analysis, and isotopic dating. The D 1 and D 2 stages of deformation correspond to the widespread formation of Indosinian NE- and NW–WNW-trending ductile deformation structures, as well as associated thrust–fold structures in Hainan. The ore-conduit structures were formed initially during these stages and controlled the precipitation of early stage coarse-grained milky-white auriferous quartz lodes based on our structural observation and previous metallogenic episodes. We constrained the age of metallogenesis to the Early–Middle Triassic (247–241 Ma). The D 3 stage of deformation was characterized by NNW-directed sinistral strike-slip activity and low- to medium-temperature (<400 °C) brittle–ductile deformation, and established the present-day structural framework of the ore-controlling fracture zones. Gold mineralization peaked during this stage, corresponding to a monazite U–Pb age of 234.6 ± 2.4 Ma. In addition, the area of the Baolun deposit was modified and overprinted by D 4 brittle tectonic activity related to the development of the Baisha Fault during the Cretaceous. Synthesizing results of previous studies and the findings in this study, we propose th"
-  },
-  {
    "id": "W7236349470",
    "title": "Origin of the Qinglingou gold Deposit, South Qinling Orogen, China: Insights from Pyrite and Arsenopyrite Rb–Sr geochronology, and S-Pb isotopes",
    "journal": "Ore Geology Reviews",
@@ -551,9 +473,262 @@
    "authors": "Kun Ding, Ruiting Wang, Kai Liu et al.",
    "link": "https://doi.org/10.1016/j.oregeorev.2026.107681",
    "abstract": ""
+  },
+  {
+   "id": "W7236592877",
+   "title": "Deciphering Complex Skarn Mineralization Through 3D Dual-Scale Dynamic Modeling: A Case Study of the Dongguashan Cu–Au Orefield, East China",
+   "journal": "Natural Resources Research",
+   "date": "2026-11-18",
+   "authors": "Feihu Zhou, Liangming Liu, Han Zheng et al.",
+   "link": "https://doi.org/10.1007/s11053-026-10802-z",
+   "abstract": ""
+  },
+  {
+   "id": "W7236629865",
+   "title": "Lithium-bearing pegmatite exploration based on multisource remote sensing analysis and machine learning: A case study from the Huanglongling area, Central Altun, NW China",
+   "journal": "Ore Geology Reviews",
+   "date": "2026-11-01",
+   "authors": "Hanyin Zhang, Hailong Huo, Fengbin Han et al.",
+   "link": "https://doi.org/10.1016/j.oregeorev.2026.107691",
+   "abstract": ""
   }
  ],
  "papers": [
+  {
+   "id": "W7235483491",
+   "title": "Identification and mineralization prediction of lithium-bearing pegmatites based on multimodal remote sensing data fusion",
+   "journal": "Ore Geology Reviews",
+   "date": "2026-11-01",
+   "authors": "Haojian Bu, Yuxin Tian, Zhenghai Wang et al.",
+   "link": "https://doi.org/10.1016/j.oregeorev.2026.107686",
+   "abstract": "Hyperspectral remote sensing provides abundant spectral information that can be used for quantitative identification of rocks and minerals. However, its relatively low spatial resolution constrains the accuracy of fine-scale lithological mapping. Deep-learning-based hyperspectral-multispectral image fusion can enhance the spatial resolution of hyperspectral data while preserving spectral details. First, the Dual Cross Transformer model was employed to fuse ZY1E hyperspectral imagery with Sentinel-2A multispectral imagery, and the fusion performance was comparatively evaluated. Second, the fused imagery was applied to the identification of lithium-bearing pegmatites in the Dahongliutan mineral district, Xinjiang, China. Finally, mineral indicators for lithium-bearing pegmatites were extracted by integrating ASTER thermal infrared and Sentinel-1A radar data, and a random forest algorithm was used to develop a multimodal remote-sensing-based mineralization prediction model for lithium-bearing pegmatites. The results indicate that the Dual Cross Transformer (DCTransformer) based fused imagery achieves the best performance in terms of preserving spatial details and maintaining spectral fidelity. The proposed mineralization prediction model attained a mean accuracy of 0.924 in five-fold cross-validation on the training set, an accuracy of 0.932 on the test set, and an AUC of 0.964; all evaluation metrics improved relative to the model without image fusion. By introducing a deep-learning-based hyperspectral image fusion approach, this study effectively improves the identification accuracy of lithium-bearing pegmatites. The developed multimodal remote-sensing mineralization prediction model provides a new technical pathway for remote-sensing-based mineral exploration.",
+   "summary": "Deep-learning fusion of hyperspectral and multispectral satellite images improved a random-forest model for mapping lithium-bearing pegmatites in Xinjiang, with test accuracy of 0.932.",
+   "deposit_type": "Lithium-bearing (LCT-type) pegmatites",
+   "commodities": "Lithium, with associated beryllium, tantalum and caesium in LCT systems",
+   "setting": "Dahongliutan district, Western Kunlun, Xinjiang, China; arid, sparsely vegetated terrain with pegmatites in older crystalline rocks",
+   "where_it_applies": "Lower 48: arid to semi-arid pegmatite belts such as the Pala district in San Diego County, California, and the Black Hills of South Dakota, where LCT pegmatites are known. Alaska: little pegmatite lithium known, so limited application. The method works best where bare rock is exposed, so it is weaker in forested Black Hills ground. In my experience, remote sensing screens well in dry country and poorly under timber.",
+   "exploration": "Explorers in arid pegmatite terrain could use fused imagery and thermal and radar layers to rank target areas before field mapping. Treat the output as a targeting screen, since the model was trained on one district.",
+   "news_link": "62. Chile's lithium approvals show lithium demand driving project pipelines, though those are brine-based systems rather than pegmatites, so the link is on commodity only.",
+   "relevance": "medium",
+   "news": {
+    "title": "Chile’s $111 billion mining boom hinges on lithium approvals",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQeTRJTkVINnNVOXBHa093Skd1UXI0Vm1aRFJ5YUhxUFZ0eGpTUkZFTjdzbDBxTE5pNEFXR3ZtZUY4MjNWWVFnSk5TdXZxNVR5ejFzM3lRdml0a2JidmQ3VHJ5NGZCRUpyTzVWSWQ3QnhiZk1HeEc1c3VET1l4WDE4NWhNTXd0NE5fNXc?oc=5",
+    "why": "Chile's lithium approvals show lithium demand driving project pipelines, though those are brine-based systems rather than pegmatites, so the link is on commodity only."
+   },
+   "read": "2026-11-20",
+   "title_only": false
+  },
+  {
+   "id": "W7236027770",
+   "title": "Nb mineralization processes during the magmatic-hydrothermal evolution of carbonatite: Indicated by origin and paragenesis of Nb minerals from Bayan Obo deposit, China",
+   "journal": "Ore Geology Reviews",
+   "date": "2026-11-01",
+   "authors": "Shang Liu, Hong-Rui Fan, Qingyan Tang et al.",
+   "link": "https://doi.org/10.1016/j.oregeorev.2026.107678",
+   "abstract": "The urgent demand and unbalanced distribution of Nb resources promote the understanding of carbonatite-related Nb deposits, the major host of over half global Nb resources. The Bayan Obo REE-Nb-Fe deposit, one of the largest carbonatite-related REE-Nb deposits, is characterized by complicated evolution of carbonatite and numerous species of Nb minerals, providing an excellent object to explore the Nb mineralization processes during the magmatic-hydrothermal evolution of carbonatite. In this study, systematic petrographic and in-situ geochemical study have been conducted on Bayan Obo Nb minerals. The paragenesis and origin of various Nb minerals have been sorted out. Pyrochlore and fersmite in carbonatite dyke and coarse-grained ore-hosting dolomite remains primary features. Mostly pyrochlore, columbite, aeschynite, fergusonite, ilmenorutile, and baotite were formed in hydrothermal processes. The Bayan Obo Nb mineralization generally consists of magmatic stage, columbitization stage, extremely REE-rich stage, and oxidizing stage. Pyrochlore and columbite from west open pits inherit low Ti and Y/Ho ratios close to mantle value from carbonatitic magma or unevolved fluids. Aeschynite and fergusonite were formed in extremely REE-rich fluids, whose compositional evolution has been recorded by those from main and east open pits. In the oxidizing stage, the ferric Nb minerals, ilmenorutile and baotite from main or east open pits contain lower Ti content and significantly variable Nb content, facilitated by crystallization of ilmenite. The Nb-bearing fluids of columbitization and final oxidizing stages were REE-enriched, occasionally forming tiny inclusions of REE-rich phases within columbite and ilmenorutile. But the Nb and REE mineralization lack correlation on the scale of or",
+   "summary": "Petrographic and in-situ chemistry of Bayan Obo niobium minerals traces Nb mineralization through magmatic, columbitization, REE-rich and oxidizing stages in carbonatite-related ore.",
+   "deposit_type": "Carbonatite-related REE-Nb-Fe deposit",
+   "commodities": "Niobium (pyrochlore, columbite, fersmite, aeschynite), rare earths, iron, titanium",
+   "setting": "Bayan Obo, North China Craton margin, China; carbonatite dykes and dolomite ore host rocks, Mesoproterozoic in my background knowledge",
+   "where_it_applies": "Lower 48: the carbonatite-alkaline complexes of the Wet Mountains and Powderhorn area in Colorado, which carry Nb and REE, plus Mountain Pass in California and Bear Lodge in Wyoming for REE. Alaska: little carbonatite-related Nb known, so little application. Relevance is moderate because the Nb paragenesis is specific to a large, complex system.",
+   "exploration": "Explorers on carbonatite targets in Colorado could log pyrochlore and columbite paragenesis and use Ti and Y/Ho in Nb minerals to separate primary from hydrothermal and oxidized stages. This would help judge whether Nb is concentrated where REE is.",
+   "news_link": "42. American Rare Earths' Wyoming mine valuation is a rare earths project, but the headline does not state its deposit type, so the link is commodity only.",
+   "relevance": "medium",
+   "news": {
+    "title": "American Rare Earths Put $1.3 Billion Value On Its Wyoming Mine",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUnZaTGM3RWRNSjFSWkFDcGFoRXJlb0ZuMGRlRTkzakpSaUpNajBZZzJ3bXhwbnBsdVFRS29GYjZZTTZId0QyemFLM2EzaWoybFVwbHNDV1U0M2RGZkdKN0tfckN5S3hUcUFXb3p2NENFQUEta2Vqd3gwTmdIYjVHOHVOTl9rVGdnSjNEbHp1ZFRPemZp?oc=5",
+    "why": "American Rare Earths' Wyoming mine valuation is a rare earths project, but the headline does not state its deposit type, so the link is commodity only."
+   },
+   "read": "2026-11-20",
+   "title_only": false
+  },
+  {
+   "id": "W7236221388",
+   "title": "Ore-Controlling structures and metallogenesis of the Baolun gold deposit in Southwestern Hainan, South China",
+   "journal": "Ore Geology Reviews",
+   "date": "2026-11-01",
+   "authors": "Di Lin, Yong Zheng, Zhongbao Zhao et al.",
+   "link": "https://doi.org/10.1016/j.oregeorev.2026.107680",
+   "abstract": "The Baolun gold deposit, on the southwestern margin of Hainan, South China, is a direct product of the collision between the South China and Indochina blocks. It is representative of the Mesozoic orogenic gold deposits in the southernmost part of South China and is important in understanding regional metallogenic mechanisms and constructing exploration models; however, the structural framework, timing of mineralization, and formation of the ore-controlling structures are debated. We identified four major stages of deformation by integrating macro- and microstructural observations of deformation, quartz EBSD fabric analysis, and isotopic dating. The D 1 and D 2 stages of deformation correspond to the widespread formation of Indosinian NE- and NW–WNW-trending ductile deformation structures, as well as associated thrust–fold structures in Hainan. The ore-conduit structures were formed initially during these stages and controlled the precipitation of early stage coarse-grained milky-white auriferous quartz lodes based on our structural observation and previous metallogenic episodes. We constrained the age of metallogenesis to the Early–Middle Triassic (247–241 Ma). The D 3 stage of deformation was characterized by NNW-directed sinistral strike-slip activity and low- to medium-temperature (<400 °C) brittle–ductile deformation, and established the present-day structural framework of the ore-controlling fracture zones. Gold mineralization peaked during this stage, corresponding to a monazite U–Pb age of 234.6 ± 2.4 Ma. In addition, the area of the Baolun deposit was modified and overprinted by D 4 brittle tectonic activity related to the development of the Baisha Fault during the Cretaceous. Synthesizing results of previous studies and the findings in this study, we propose th",
+   "summary": "Structural and dating work on Baolun shows gold was deposited in shear-controlled quartz lodes during Triassic deformation, peaking in a later sinistral strike-slip stage.",
+   "deposit_type": "Orogenic gold (shear-zone-hosted quartz lodes)",
+   "commodities": "Gold, with silver as a minor by-product in orogenic systems",
+   "setting": "Southwestern Hainan, South China; Mesozoic (Triassic) collisional orogeny between South China and Indochina blocks; ductile to brittle shear zones",
+   "where_it_applies": "Lower 48: Mesozoic and Cretaceous orogenic gold belts in the Sierra Nevada and the Klamath Mountains of California and Oregon, where shear-hosted quartz veins are typical. Alaska: the Juneau Gold Belt in southeast Alaska and the Fairbanks district, which are orogenic systems in shear zones. Ages differ from Baolun, so only the structural method transfers.",
+   "exploration": "Explorers could use the paper's sequence of deformation stages to tell which shear fabrics controlled early quartz and which late structures localized the main gold. Quartz fabric and microstructure logging on core would help separate barren from productive structures.",
+   "news_link": "5. Talisker's Bralorne project is an orogenic gold system in shear-hosted quartz, so the structural controls are comparable, though it is in British Columbia, outside the Lower 48 and Alaska.",
+   "relevance": "medium",
+   "news": {
+    "title": "Talisker Resources Provides Ore Sorter Facility Construction Update for the Bralorne Gold Project",
+    "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNV01HWXFfTk80NjFUdXNaRnNwQ2FiY0JRODU3THR2Y01nS2I1ZEpSWWZ2dHZKb180bXBNMGduN3RiNGMzSVFhUi0xTFFWSTBfTlVIczE4TmQ1MXlvUkU0UFBJYUpoMXI2UDA2dVJvU1RnWG4xZmRkX0U1U1hKM00zajIwb3lyaGNzWVJxM2ZrUHVocm1kajVQTjlxOHlLMHJ6Y1hpXzF4Y29SWlEySHpPbmNzVXR1NGhyUGZfZmJpTW9BQVFsbzRFLU12V2FmX1JDZ0ROcmRQd3l5R1BnQkdoRUlpZjVEZFVnV1hWSEM2OTNMRnhJR2puSG5SdU9mY1hEQ1J6XzM0OXQtVDV6QXc?oc=5",
+    "why": "Talisker's Bralorne project is an orogenic gold system in shear-hosted quartz, so the structural controls are comparable, though it is in British Columbia, outside the Lower 48 and Alaska."
+   },
+   "read": "2026-11-20",
+   "title_only": false
+  },
+  {
+   "id": "W7202268333",
+   "title": "Review of regional lake sediment geochemistry methods for mineral exploration in glaciated terrain",
+   "journal": "Geochemistry: Exploration, Environment, Analysis",
+   "date": "2026-11-01",
+   "authors": "M B McClenaghan, S.J. Cook, M W McCurdy et al.",
+   "link": "https://doi.org/10.1144/geochem2026-006",
+   "abstract": "This paper reviews the application of lake sediment sampling in the recently glaciated terrain (last 100 000 years) of Canada where organic-rich lake sediments have been accumulating in lakes since deglaciation during the last 10 000 or so years. Lake sediment is a useful exploration sample medium for detecting geochemical dispersion from mineralized bedrock and/or metal-rich glacial dispersal trains. The method is used in areas of low to moderate topographic relief and poor to moderately developed drainage systems in the Canadian Shield and some parts of the Appalachian regions of Canada, as well as in low relief areas in the Canadian Cordillera that are covered by thick glacial sediments and have abundant lakes. Government organizations and exploration companies have conducted more than 100 lake sediment surveys across Canada since the 1970s and some of these are used to illustrate key concepts. The paper summarizes protocols for execution and interpretation of lake sediment surveys, serving as a practical guide for both the mineral exploration industry and government agencies. Methods for sample collection, processing, and analysis, quality assurance/quality control procedures, and data reporting are reviewed. Much of the information presented here is based on the methods used by the Geological Survey of Canada, British Columbia Geological Survey, and Ontario Geological Survey to conduct lake sediment surveys in Canada.",
+   "summary": "Review of lake sediment geochemical surveys across glaciated Canada sets out sampling, processing, QA/QC and interpretation protocols for detecting bedrock mineralization and glacial dispersal trains.",
+   "deposit_type": "General (multi-deposit regional geochemical survey method)",
+   "commodities": "General; multi-element suite covering gold, base metals and pathfinders",
+   "setting": "Glaciated terrain of the Canadian Shield, Appalachians and Cordillera; lakes since deglaciation roughly 10,000 years ago; glacial cover up to 100,000 years old",
+   "where_it_applies": "Lower 48: glaciated northern tier, including the Archean greenstone belts of northern Minnesota and Michigan's Upper Peninsula, and the Appalachian terrain of New England and New York. Alaska: glaciated ranges such as the Alaska Range and Brooks Range, though lake density is variable. Good fit for the glaciated northern Lower 48.",
+   "exploration": "Explorers in the glaciated northern Lower 48 could use lake sediment surveys as a regional screen before drilling, and read dispersal trains with ice-flow direction in mind. The QA/QC and organic-content guidance would help them avoid misreading the data.",
+   "news_link": "13. QGold's Mine Centre channel sample shows bedrock grades in Ontario's glaciated Superior Province, the kind of source that lake sediment surveys are designed to detect at regional scale.",
+   "relevance": "high",
+   "news": {
+    "title": "QGold Reports 564 g/t Gold over 0.25 Metres from Channel Sampling at Mine Centre",
+    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPUlI2cl9VWDZPYjBONGhuOVhTNUNBclptVXZZNFhnRkxid0RMOUZmOGl4aE11NzdRZkVnSTh2LXV1T1ROTjI4cXJiYjkzY0x1aWpBYjhDc0tIYTBzaXg2YlB6NjB3MU1wanVmS3kzbmtvaU84Yk1TVURIY3Z3MFZkMzVoSzI0V21Ua2Y0UkNvcF9faEplQlB3T19lZlpVcmJoZHVpRlJZaTBRX25BOXlTdmFoSjBCSm9nX0pYVVh4blAyUDdELUx0V1NHRFNlUHptVndfby13Y1B6eDhNY0NoSEYtdzZ6M2M?oc=5",
+    "why": "QGold's Mine Centre channel sample shows bedrock grades in Ontario's glaciated Superior Province, the kind of source that lake sediment surveys are designed to detect at regional scale."
+   },
+   "read": "2026-11-20",
+   "title_only": false
+  },
+  {
+   "id": "W7224917677",
+   "title": "Titanite-recorded tungsten migration and fluid boiling-triggered precipitation: Insights from the Xiaoyao deposit, South China",
+   "journal": "Ore Geology Reviews",
+   "date": "2026-10-31",
+   "authors": "Keqin Tao, Jun Yan",
+   "link": "https://doi.org/10.1016/j.oregeorev.2026.107639",
+   "abstract": "Mechanisms governing hydrothermal tungsten precipitation, including cooling, boiling, fluid mixing and fluid-rock interaction, represent longstanding controversial issues in economic geology. Herein, six genetically distinct titanite types from the Xiaoyao skarn-type tungsten deposit were investigated to reconstruct the complete magmatic-hydrothermal evolutionary history of the deposit. These types include primary magmatic titanite (Ttn-M) in fresh granodiorite; altered granitic titanite (Ttn-A) in altered granodiorite; as well as prograde skarn titanite (Ttn-P), early oxide-stage titanite (Ttn-O1), late oxide-stage titanite (Ttn-O2), and carbonate–sulfide-stage titanite (Ttn-C) hosted in skarn. In situ EPMA and LA-ICP-MS analyses reveal systematic compositional variations across all titanite populations. Ttn-M exhibits elevated W concentrations compared with that of W-barren granites, indicative of early pre-enrichment in the parental magma before hydrothermal exsolution. Ttn-A, Ttn-P and Ttn-O1 feature extremely high W, reflecting robust tungsten migration from residual magma into hydrothermal fluids and subsequent transport toward skarn. Abrupt W depletion in Ttn-O2 corresponds to large-scale scheelite precipitation. Consistent Y/Ho and Sr compositions, together with variable REE patterns, strongly favor fluid boiling—rather than fluid mixing, simple cooling, or fluid-rock reaction—as the dominant ore-forming trigger. This process elevates fluid pH and promotes the depolymerization of aqueous polytungstate species, thereby facilitating intensive scheelite precipitation. Titanite geochemical data also record a low-F ore-forming system, which inhibits magmatic differentiation and restricts the total tungsten endowment of the deposit. These findings demonstrate that mul",
+   "summary": "Titanite trace-element chemistry at Xiaoyao shows W was pre-enriched in magma and that fluid boiling, not cooling or mixing, drove scheelite precipitation in the skarn.",
+   "deposit_type": "Skarn-type tungsten deposit (scheelite skarn)",
+   "commodities": "Tungsten (scheelite), with minor molybdenum and copper in skarns in my background knowledge",
+   "setting": "Xiaoyao, South China; granodiorite intrusion with prograde skarn and oxide and carbonate-sulfide stages; age not stated in the abstract",
+   "where_it_applies": "Lower 48: tungsten skarns in the Pine Creek district of Inyo County, California, and Mesozoic skarn systems in the Great Basin and Sierra Nevada. Alaska: little tungsten skarn known, so limited application. The boiling test is most useful where a granite-skarn link is already established.",
+   "exploration": "Explorers on Great Basin skarn targets could use titanite or similar accessory minerals in the intrusion and skarn to trace tungsten migration. Y/Ho and Sr trends would help test whether boiling caused scheelite deposition.",
+   "news_link": "1. Spartan's Victorio tungsten-molybdenum PEA shares the tungsten commodity, though the headline does not state the deposit type, so the link is commodity-level.",
+   "relevance": "medium",
+   "news": {
+    "title": "Spartan Metals Announces US$2.14 Billion After Tax NPV8 and 30.9% IRR for Victorio Tungsten-Molybdenum Project PEA",
+    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOVGppdlN5THRiXzhDdnNkeUg1c0NNbl8xOFRyN0RXbWZ3b0JqM2RWM0RuNWhpOVZaUkcyc29RQ0xabFBWWXdIcENCbFo4QVIzLXFKdEZneWpVbGtIMUNoU1dTbXVIdk9ybGFmSVhaOWxKU3NjWDFqM1ZWZkktVDREN3FyeHFwS0VnSGZ6MktRUmR1MFZmd1ZiWlJfbFk5R0tGNkp1em5Ic2hrUHpWQXJPMm1mTGxxM2hBdC05LXc5a0dXclBmcjh6UTZRalR0VzYyVDhVY2lhYlZvZlNVdy14Z2QzbVdkRzVHbDAw?oc=5",
+    "why": "Spartan's Victorio tungsten-molybdenum PEA shares the tungsten commodity, though the headline does not state the deposit type, so the link is commodity-level."
+   },
+   "read": "2026-11-20",
+   "title_only": false
+  },
+  {
+   "id": "W7224992087",
+   "title": "Extreme light rare earth element enrichment in carbonatite-related rare earth element deposits driven by coupled immiscibility, fractional crystallization, and melt–wall rock metasomatism",
+   "journal": "Ore Geology Reviews",
+   "date": "2026-10-31",
+   "authors": "Yihang Gao, Yan Liu",
+   "link": "https://doi.org/10.1016/j.oregeorev.2026.107652",
+   "abstract": "Carbonatite-related rare earth elements (REE) deposits are the primary global source of light rare earth elements (LREE) resources. All known giant to supergiant carbonatite-related REE deposits show extreme LREE enrichment and relative heavy rare earth elements (HREE) depletion; however, the mechanism of LREE/HREE fractionation during the formation, evolution, and mineralization of carbonatitic magmas remains unclear. The Maoniuping REE deposit, located in the Cenozoic Mianning–Dechang (MD) REE metallogenic belt in southwestern China, is an ideal target for investigating this fractionation process owing to its young mineralization age, relatively weak post-mineralization modification, and well-preserved complete alteration zoning. This study integrates published whole-rock and mineral geochemical data for syenite, carbonatite, and alteration selvages from the Maoniuping deposit, together with new in situ trace element analyses of calcite from REE-mineralized carbonatite and phlogopite from the selvages. Specifically, whole-rock comparisons reveal that syenite shows limited LREE/HREE fractionation (mean LREE/HREE ≈ 62), whereas alteration selvages have similar LREE/HREE ratios (mean LREE/HREE ≈ 58) but markedly elevated total REE contents (mean REE ≈ 4225 ppm); in contrast, REE-mineralized carbonatite exhibit extreme LREE enrichment (mean LREE/HREE ≈ 310) and high total REE contents (mean REE ≈ 8.78 wt%). Furthermore, from the initial carbonatite crystallization stage to mineralization, calcite consistently records increasing total REE contents, and its average (La/Yb) N ratio rises from ∼ 3 to 22. The average Y/Ho ratios of calcite are ∼ 26.6 and ∼ 27.3 in the initial crystallization and mineralization stages, respectively, and its Sr/Ba signatures remain consistent, c",
+   "summary": "Maoniuping carbonatite data show REE-mineralized rock reaches LREE/HREE ratios near 310, with calcite recording rising REE and (La/Yb)N from about 3 to 22 during evolution toward ore.",
+   "deposit_type": "Carbonatite-related REE deposit",
+   "commodities": "Light rare earth elements (lanthanum, cerium, neodymium) with some heavy rare earths",
+   "setting": "Maoniuping, Mianning-Dechang belt, southwestern China; young Cenozoic carbonatite with syenite and alteration selvages",
+   "where_it_applies": "Lower 48: Mountain Pass in California and Bear Lodge in Wyoming, both carbonatite-related REE systems with LREE enrichment. Alaska: no comparable carbonatite REE system known. The fractionation model is directly relevant to the US's main carbonatite REE districts.",
+   "exploration": "Explorers in the Mountain Pass or Bear Lodge settings could use calcite trace-element chemistry and alteration-selvage phlogopite as vectors toward high-REE zones. Tracking (La/Yb)N and Y/Ho through the paragenesis would help locate the most enriched carbonatite.",
+   "news_link": "42. American Rare Earths' Wyoming project shares the REE focus; the headline does not give its deposit type, so the link is on commodity and region only.",
+   "relevance": "high",
+   "news": {
+    "title": "American Rare Earths Put $1.3 Billion Value On Its Wyoming Mine",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUnZaTGM3RWRNSjFSWkFDcGFoRXJlb0ZuMGRlRTkzakpSaUpNajBZZzJ3bXhwbnBsdVFRS29GYjZZTTZId0QyemFLM2EzaWoybFVwbHNDV1U0M2RGZkdKN0tfckN5S3hUcUFXb3p2NENFQUEta2Vqd3gwTmdIYjVHOHVOTl9rVGdnSjNEbHp1ZFRPemZp?oc=5",
+    "why": "American Rare Earths' Wyoming project shares the REE focus; the headline does not give its deposit type, so the link is on commodity and region only."
+   },
+   "read": "2026-11-20",
+   "title_only": false
+  },
+  {
+   "id": "W7224996260",
+   "title": "Lithospheric step steepness controls magmatic Ni–Cu sulfide potential at craton margins",
+   "journal": "Ore Geology Reviews",
+   "date": "2026-10-31",
+   "authors": "Li Liang, He Lanfang, Chen Lin et al.",
+   "link": "https://doi.org/10.1016/j.oregeorev.2026.107653",
+   "abstract": "Craton margins host most global magmatic Ni–Cu sulfide deposits; however, the controlling mechanisms remain largely equivocal, with no quantitative geodynamic model available to assess the metallogenic potential of different margins. In this study, we develop a first-order metallogenic model that integrates melting thermodynamics, two-phase flow theory, and chalcophile element geochemistry, with lithospheric thickness variation as the primary parameter. The model yields a simple geometric index, the step steepness Δh/L t , where Δh represents the lithospheric thickness contrast between the craton and adjacent mobile belts, and L t represents the transition zone width. A comprehensive fertility index Π is defined, which is proportional to the focused melt flux and metal enrichment efficiency. A steep lithospheric step (large Δh/L t ) raises efficient melt channeling necessary for the formation of giant deposits. The model is evaluated using six well-documented examples, including Norilsk (steep, giant), Jinchuan (steep, giant), Voisey’s Bay (steep, giant), Kingash on the southern margin of the Siberian Craton (gentle, large), Hongqiling (gentle, medium), and the Huangshandong deposit on the northeastern margin of the Tarim Craton (gentle, large). The results are consistent with the model predictions. This study provides a quantitative framework for understanding magmatic sulfide mineralization along craton margins.",
+   "summary": "A geodynamic model uses the steepness of the lithospheric step at craton margins to rank magmatic Ni-Cu sulfide potential, with steep steps matching the world's giant deposits.",
+   "deposit_type": "Magmatic Ni-Cu(-PGE) sulfide deposits",
+   "commodities": "Nickel, copper, cobalt and platinum-group elements",
+   "setting": "Craton margins worldwide; examples include Norilsk, Jinchuan, Voisey's Bay, Kingash and Huangshandong; lithospheric step geometry as the control",
+   "where_it_applies": "Lower 48: the Duluth Complex of northeastern Minnesota and the Eagle deposit in Michigan's Marquette Range, both Ni-Cu-PGE systems associated with the Midcontinent Rift and the edge of the Superior craton. Alaska: few Ni-Cu sulfide systems are known, so little application. The model is most useful for ranking Midcontinent Rift margins.",
+   "exploration": "Explorers on the Superior and Midcontinent Rift margins could use lithospheric thickness contrasts from seismic or magnetotelluric data to rank craton edges before staking. Steep steps would be the first priority for magmatic sulfide targets.",
+   "news_link": "14. Ni-Co Energy's 4.60 m at 0.59% nickel at Kremer-2 is a magmatic sulfide exploration result, so the deposit type matches the model's target.",
+   "relevance": "high",
+   "news": {
+    "title": "Ni-Co Energy Reports 4.60 Metres at 0.59% Nickel at Kremer-2; Phase-One Drilling Advances Magmatic Sulphide Exploration Model",
+    "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQRnA0U05rd216N1lfM2F5RHViZGxibHpMazNVR1g4YjRRNHBRS3lQTmctdV9NaDZJbGRXdUlCWFRoSTlkUGZ1aDZzdFRqRTdRMmR4ZXNKNTUyMkt1aHFYQ1IwQzJrdVlxVnZJeTJydzZuVXdQWElVbEloc2txQVJRU0Z2cWs1SFBLUlotRlgzTlZuYk83bnUxQVBDelhGaVhEZG1VX0lfRUdkWmdITklPbG5Xak9hUEk4Y09FWmVYTjNnQ25JTHpLc3FZZUc3RVVuN1h1VnVnWk5kbkJWNUFSTWl5TkFCVXMyQlo0a1h5MzRIc1N0djJJ?oc=5",
+    "why": "Ni-Co Energy's 4.60 m at 0.59% nickel at Kremer-2 is a magmatic sulfide exploration result, so the deposit type matches the model's target."
+   },
+   "read": "2026-11-20",
+   "title_only": false
+  },
+  {
+   "id": "W7225007165",
+   "title": "Chlorite short-wave infrared spectral and mineral-chemical constraints on mineralization in the Haopinggou Au–Ag polymetallic deposit, Xiong’ershan region, China",
+   "journal": "Ore Geology Reviews",
+   "date": "2026-10-31",
+   "authors": "Li Jiang, Wei Jian, Jingwen Mao et al.",
+   "link": "https://doi.org/10.1016/j.oregeorev.2026.107644",
+   "abstract": "Short-wave infrared (SWIR) spectroscopy is widely used in hydrothermal mineral exploration; however, chlorite has been less widely applied because its low reflectance, compositional variability, and intergrowth with carbonates complicate spectral interpretation. The relationships among chlorite SWIR parameters, mineral chemistry, and mineralization in hydrothermal ore deposits therefore remain poorly constrained. This study integrates drill-core SWIR spectroscopy, petrographic observations, and electron probe microanalysis (EPMA) to characterize hydrothermal chlorite from the Haopinggou Au–Ag–Pb–Zn polymetallic deposit in the Xiong’ershan district, China. Two chlorite generations are recognized: early Chl-I, occurring mainly as coarse aggregates in weakly mineralized zones, and mineralization-related Chl-II, which is finer grained, sulfide-associated, and compositionally more Fe-rich. EPMA data show that Chl-II has higher FeO contents, Fe 2+ contents, and Fe/(Fe + Mg) ratios than Chl-I, whereas corrected chlorite geothermometry yields overlapping intermediate-temperature estimates of 220–290°C, mostly concentrated between 240 and 280°C. Au-mineralized intervals are characterized by relatively long-wavelength Fe–OH absorption-band positions near 2250 nm (Pos2250), commonly ≥2255 nm, and low ratios of the continuum-removed absorption depth near 2350 nm (Dep2350) to that near 2250 nm (Dep2250), commonly ≤ 1.0. The systematic Fe enrichment of mineralization-related chlorite, together with its characteristic SWIR response, is consistent with relatively reducing hydrothermal conditions associated with Au mineralization. These spectral–mineralogical criteria provide rapid vectors for concealed porphyry-related subepithermal Au–Ag–Pb–Zn mineralization.",
+   "summary": "Drill-core SWIR spectra and chlorite chemistry show Au-mineralized intervals have Fe-rich chlorite with absorption near 2250 nm, giving spectral vectors toward concealed epithermal Au-Ag-Pb-Zn.",
+   "deposit_type": "Subepithermal Au-Ag-Pb-Zn deposit, related to porphyry systems",
+   "commodities": "Gold, silver, lead and zinc",
+   "setting": "Haopinggou, Xiong'ershan district, China; hydrothermal chlorite in drill core, with carbonate intergrowths; age not stated in the abstract",
+   "where_it_applies": "Lower 48: the Great Basin of Nevada and the epithermal districts of Arizona and Colorado, where SWIR spectrometers are routinely used on core and chlorite-bearing alteration is common. Alaska: epithermal systems in southeast Alaska could use the same tool, though I'd expect more weathering interference. The method fits Basin and Range epithermal targets best.",
+   "exploration": "Explorers could run SWIR on chlorite-bearing core in Nevada or Arizona epithermal systems and map Pos2250 and Dep2350/Dep2250 ratios as a vector toward Au-bearing zones. Calibration against Fe content would reduce misreads from carbonate intergrowths.",
+   "news_link": "65. Vizsla Silver's Panuco timeline is an epithermal silver-gold project, the same general deposit family, though in Mexico.",
+   "relevance": "medium",
+   "news": {
+    "title": "Vizsla Silver Adjusts Panuco Timeline Amid Strategic Push",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQms1S0N0cDctanFwMUJCclB3dmJxbERhZ1luclpVVldzRzFQazFDTUhPZ21Zb1lJV1c0a3RLdEhwVEp1XzBESlFTY3RwZEZzaWI2MDdFWVlaeHlEMUhsTnVNc051OGRfclh3RjBCczk1RDNaMFVSMFBVTDNpcW5jcVhBWkpXNW04LXg0cmxvd1JmelNjdXNDUEdtTFZjZw?oc=5",
+    "why": "Vizsla Silver's Panuco timeline is an epithermal silver-gold project, the same general deposit family, though in Mexico."
+   },
+   "read": "2026-11-20",
+   "title_only": false
+  },
+  {
+   "id": "W7225014564",
+   "title": "Machine-learning-based lithotectonic map updating in the southern Hamisana Shear Zone, Arabian-Nubian Shield, northeastern Sudan, using Sentinel-2 and Landsat-9",
+   "journal": "Ore Geology Reviews",
+   "date": "2026-10-31",
+   "authors": "Mohammed N.M. Hassan, W.A. Abdel Gabar, Mohammed I. Mukhtar et al.",
+   "link": "https://doi.org/10.1016/j.oregeorev.2026.107643",
+   "abstract": "Lithological mapping in high-deformation basement terrains is challenging because complex shearing, folding, refolding, and thrust repetition disrupt the continuity of boundary contacts. This study integrates multisensor remote sensing data (Sentinel-2B and Landsat-9), spectral enhancement techniques, including false-colour composites (FCCs) and (PCA), automatic lineament extraction, and supervised machine learning (ML) algorithms, namely Support vector machine (SVM) and Artificial neural network (ANN), to produce an updated lithological map of the southern Hamisana Shear Zone (Arabian Nubian Shield, NE Sudan), covering 12,350.95 km 2 . Four scenes from each sensor were prepared within the study boundary; Sentinel-2 (S2) bands were resampled to a common 10 m grid for multiband alignment. Training and testing ROIs were derived from image interpretation, whereas 155 field checkpoints were reserved exclusively for independent validation; petrographic observations were used to support lithological identification. Among the four evaluated sensor–classifier combinations, S2-SVM achieved the highest testing-ROI accuracy (OA = 84.92%, κ = 0.83), followed by Landsat-9 SVM (OA = 76.79%, κ = 0.74), S2 ANN (OA = 74.99%, κ = 0.72), and Landsat-9 ANN (OA = 61.89%, κ = 0.57). Independent evaluation against the same 155 withheld field checkpoints yielded the highest field-based performance for S2-SVM (OA = 76.13%, κ = 0.721), confirming its relative advantage among the four tested configurations. Residual misclassification was concentrated mainly among metavolcanosedimentary, metavolcanic, metasedimentary, and intrusive assemblages, consistent with spectral overlap in the highly deformed terrain. The resulting map provides a quantitatively validated lithological framework with improved",
+   "summary": "Machine learning on Sentinel-2 imagery mapped lithologies in the Hamisana Shear Zone, with SVM reaching 84.9% test accuracy and 76.1% against independent field checkpoints.",
+   "deposit_type": "General (lithological mapping method in a deformed basement terrain)",
+   "commodities": "General; no commodity focus in the abstract",
+   "setting": "Hamisana Shear Zone, Arabian-Nubian Shield, northeastern Sudan; Neoproterozoic deformed metavolcanic and metasedimentary basement",
+   "where_it_applies": "Lower 48: arid Basin and Range terrain in Nevada and Arizona, where bare rock favours satellite lithological mapping. Alaska: sparsely vegetated ranges of the Brooks Range or Alaska Range could use the approach, though snow and cloud limit it. Little direct geological match with Lower 48 or Alaska terranes, so the application is methodological only.",
+   "exploration": "Explorers in arid Nevada or Arizona could use the SVM approach on Sentinel-2 to produce a first-pass lithology map before field mapping, with careful field checks at contacts. The paper's accuracy figures are a realistic expectation for such work.",
+   "news_link": "None",
+   "relevance": "low",
+   "read": "2026-11-20",
+   "title_only": false
+  },
+  {
+   "id": "W7225018412",
+   "title": "Protolith heterogeneity drives decoupling in Sn and W metallogeny of Neoproterozoic peraluminous granitoids in the western Yangtze Block, South China",
+   "journal": "Ore Geology Reviews",
+   "date": "2026-10-31",
+   "authors": "Lu Xiang, Chuanrong Nie, Yang Liu et al.",
+   "link": "https://doi.org/10.1016/j.oregeorev.2026.107654",
+   "abstract": "Protolith chemistry and mineralogy exert a dominant control on the chemistry of crustal melts and their potential to form mineral deposits. This is most clearly shown in the decoupling of Sn and W mineralization at the deposit and district scales. Here we present an integrated geochronological and geochemical study of three representative Neoproterozoic peraluminous intrusions on the western Yangtze Block, i.e., the Chahe Sn-mineralized biotite/two-mica granite, the barren Xiacun granodiorite, and the Jianzidong W-mineralized granodiorite, and associated (Sn)-W ores, to demonstrate the relation between protolith and mineralization. In-situ zircon, cassiterite and titanite LA-ICP-MS U-Pb dating yields ages of 836–843 Ma for the skarn Sn and W mineralization in the Huili area, coeval with the ca. 840 Ma peraluminous S-type granitic magmatism. The barren Xiacun granodiorite and its mafic microgranular enclaves (809–811 Ma) exhibit relatively homogeneous zircon trace-element and Hf isotopic compositions (εHf (t) = -2.7 ∼ -0.8). In contrast, zircon grains from the mineralized Chahe and Jianzidong intrusions show variable Th/U and Ce/U ratios, εHf (t) values (−17 ∼ +8), and abundant inherited cores, indicating hybrid crustal sources rather than crust-mantle magma interaction. The reduced ( f O 2 < FMQ) Chahe and Jianzidong intrusions contain no enclaves and have comparable zircon saturation temperatures (∼730–800 °C) and initial F contents (∼500 ppm), ruling out that redox state, melting temperature and mantle volatiles are primary controls on their distinct metallogeny. The Jianzidong W-mineralized intrusion displays lower whole-rock Rb/Sr, Rb/Ba ratios but higher zircon Th/U, Ce/U ratios relative to the Chahe Sn-mineralized granite, indicating less clay-rich sediment in its",
+   "summary": "Zircon, cassiterite and titanite dating and isotopes show Sn and W mineralization at about 840 Ma was controlled by protolith heterogeneity, with inherited crustal sources in mineralized granites.",
+   "deposit_type": "Skarn Sn and W deposits associated with peraluminous S-type granites",
+   "commodities": "Tin and tungsten",
+   "setting": "Western Yangtze Block, South China; Neoproterozoic peraluminous S-type granitoids, about 840 Ma, with skarn ores in the Huili area",
+   "where_it_applies": "Alaska: Cretaceous granite-related tin-tungsten systems on the Seward Peninsula, including Lost River, are the closest match, as crustal-source control on Sn-W granites is directly relevant. Lower 48: few comparable granite-related Sn-W systems in the Lower 48, so limited application. The protolith argument is the most transferable point for Alaska.",
+   "exploration": "Explorers on Seward Peninsula granites could compare inherited zircon cores and Hf isotopes between mineralized and barren plutons to see which intrusions carry the right crustal source. Sampling for protolith signature would help prioritize granites before drilling.",
+   "news_link": "1. Spartan's Victorio tungsten-molybdenum project shares the tungsten commodity; the headline does not state its deposit type, so the link is commodity-level only.",
+   "relevance": "medium",
+   "news": {
+    "title": "Spartan Metals Announces US$2.14 Billion After Tax NPV8 and 30.9% IRR for Victorio Tungsten-Molybdenum Project PEA",
+    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOVGppdlN5THRiXzhDdnNkeUg1c0NNbl8xOFRyN0RXbWZ3b0JqM2RWM0RuNWhpOVZaUkcyc29RQ0xabFBWWXdIcENCbFo4QVIzLXFKdEZneWpVbGtIMUNoU1dTbXVIdk9ybGFmSVhaOWxKU3NjWDFqM1ZWZkktVDREN3FyeHFwS0VnSGZ6MktRUmR1MFZmd1ZiWlJfbFk5R0tGNkp1em5Ic2hrUHpWQXJPMm1mTGxxM2hBdC05LXc5a0dXclBmcjh6UTZRalR0VzYyVDhVY2lhYlZvZlNVdy14Z2QzbVdkRzVHbDAw?oc=5",
+    "why": "Spartan's Victorio tungsten-molybdenum project shares the tungsten commodity; the headline does not state its deposit type, so the link is commodity-level only."
+   },
+   "read": "2026-11-20",
+   "title_only": false
+  },
   {
    "id": "W7235725931",
    "title": "Geochemistry and distribution of Co in the magmatic-hydrothermal IOCG–ISCG deposit spectrum",

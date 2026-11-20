@@ -1,5 +1,5 @@
 {
-  "next_id": 33,
+  "next_id": 42,
   "items": [
     {
       "id": "P1",
@@ -17,6 +17,10 @@
         {
           "date": "2026-11-19",
           "note": "Today's HR Law Canada item (news 15) says Teck is barred from using newly promoted supervisors during the B.C. copper strike, which adds pressure toward a deal, but no tentative or ratified agreement appears and the headline gives no figures."
+        },
+        {
+          "date": "2026-11-20",
+          "note": "Items 135 (over 1,000 workers in two B.C. strikes) and the HR Law item on Teck's barred use of newly promoted supervisors add pressure toward a deal, but no tentative or ratified agreement appears."
         }
       ]
     },
@@ -36,6 +40,10 @@
         {
           "date": "2026-11-19",
           "note": "The same HR Law Canada item (news 15) shows added pressure on Highland Valley Copper to settle, but neither a tentative nor a ratified agreement is reported, and the headline gives no figures."
+        },
+        {
+          "date": "2026-11-20",
+          "note": "Item 135 (over 1,000 workers in two B.C. strikes) and the Teck supervisor restriction show pressure to settle, but neither a tentative nor a ratified agreement is reported."
         }
       ]
     },
@@ -177,7 +185,12 @@
       "confidence": "low",
       "made": "2026-11-18",
       "status": "open",
-      "evidence": []
+      "evidence": [
+        {
+          "date": "2026-11-20",
+          "note": "Item 53 (CreditSights on Indonesia's mining policy uncertainty and cost pressure) and item 79 show the policy is still unsettled, but no implementing decree is reported."
+        }
+      ]
     },
     {
       "id": "P16",
@@ -266,8 +279,10 @@
       "by": "2026-12-31",
       "confidence": "medium",
       "made": "2026-11-19",
-      "status": "open",
-      "evidence": []
+      "status": "did not happen",
+      "evidence": [],
+      "resolved": "2026-11-20",
+      "verdict_note": "The American Samoa sale went ahead, with the leases sold to one bidder for about $6 million (items 66, 90, 96), and despite the court setback it was not postponed or halted (items 113, 132)."
     },
     {
       "id": "P25",
@@ -277,7 +292,12 @@
       "confidence": "medium",
       "made": "2026-11-19",
       "status": "open",
-      "evidence": []
+      "evidence": [
+        {
+          "date": "2026-11-20",
+          "note": "Items 113 and 132 say the government proceeded despite the court setback, which makes an appeal likely, but no notice of appeal is reported."
+        }
+      ]
     },
     {
       "id": "P26",
@@ -287,7 +307,12 @@
       "confidence": "low",
       "made": "2026-11-19",
       "status": "open",
-      "evidence": []
+      "evidence": [
+        {
+          "date": "2026-11-20",
+          "note": "Gold has fallen below $3,600 and hit a 14-month low (items 110, 129), so a move above $4,000 by June 2027 would need a rise of more than 10%, and today's news points against it."
+        }
+      ]
     },
     {
       "id": "P27",
@@ -346,6 +371,96 @@
       "by": "2026-12-31",
       "confidence": "low",
       "made": "2026-11-19",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P33",
+      "author": "strategist",
+      "text": "The US government files a notice of appeal or stay motion against the Hawaii ruling on the Pacific seabed plan",
+      "by": "2027-01-31",
+      "confidence": "medium",
+      "made": "2026-11-20",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P34",
+      "author": "strategist",
+      "text": "Côte d'Ivoire's government adopts higher mining royalty rates in law or decree",
+      "by": "2027-06-30",
+      "confidence": "low",
+      "made": "2026-11-20",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P35",
+      "author": "geologist",
+      "text": "Côte d'Ivoire formally enacts higher mining royalty rates through a decree or finance law",
+      "by": "2027-03-31",
+      "confidence": "medium",
+      "made": "2026-11-20",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P36",
+      "author": "geologist",
+      "text": "Japan begins its full-scale rare-earth seabed mud recovery test at sea",
+      "by": "2027-03-31",
+      "confidence": "medium",
+      "made": "2026-11-20",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P37",
+      "author": "chief",
+      "text": "Highland Valley Copper and its union announce a tentative agreement ending the strike",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-20",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P38",
+      "author": "chief",
+      "text": "enCore announces extraction has begun from its final Wyoming wellfield",
+      "by": "2026-12-15",
+      "confidence": "medium",
+      "made": "2026-11-20",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P39",
+      "author": "chief",
+      "text": "The US government files an appeal or stay request against the Hawaii ruling on the American Samoa seabed lease sale",
+      "by": "2027-01-31",
+      "confidence": "medium",
+      "made": "2026-11-20",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P40",
+      "author": "chief",
+      "text": "The US government or Hawaii-based litigants file a notice of appeal or stay motion against the court ruling on the Pacific seabed leasing programme",
+      "by": "2026-12-31",
+      "confidence": "medium",
+      "made": "2026-11-20",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P41",
+      "author": "chief",
+      "text": "Côte d'Ivoire formally enacts a higher mineral royalty rate through decree or law",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-20",
       "status": "open",
       "evidence": []
     }
