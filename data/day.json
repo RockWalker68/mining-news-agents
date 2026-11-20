@@ -1,8 +1,782 @@
 {
-  "articles": [],
-  "discussions": [],
-  "chief_sessions": [],
-  "world": [],
+  "articles": [
+    {
+      "title": "US leases American Samoan seabed for mining in auction deemed illegal by court",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNODk5Rjk4RWRRYnFERnY2Z2lTTGFGeGpjcy10WUxHcFhiNGZBOW5Yb1RvM21WYUFRamN2dFI3bzZMb2hSMHZlVWpiWVlyV21JS3NwX2ZzY3VwYkhhSmJCTXEwZXJwUU1KdG1RUmZIeU5jY2pLRUF0T1FVS0xndGdmalBiR1hIcFFhVnZ5c2RmaXZwMnZDdWFhNy1nY050QWp5bVRweWVoOWZLVXFDMXFCOGNNWdIBuAFBVV95cUxOVDlYNVB5dTMtM1huQXQyenVVTm5tTWZUYTl6ZWZyajM5S1B4RjNIZVczaTBIVVRKU3FUTS1JRnVwVmlEWmRLdjYxV0VxVE9xZWpyc2NFdUlsZzgwa1FvbXdVcGpQTEUtVFdjU01CUWxYODVNTkRYbnplRTY5NFdBZW5uRnNsV0ptVm04R0FDTThfRE5UNmtnYklnUTVTVTcwS2RwTXRyMjhLZ0dMS19CWFQ1ZXV0Smxv?oc=5",
+      "published": "Fri, 20 Nov 2026 22:30:00 GMT",
+      "source": "news - Mongabay",
+      "lane": "industry"
+    },
+    {
+      "title": "US issues first deep sea mining leases off American Samoa",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUkR0UURJaE5XdmdUNXBGTWQxamtXNVJjdGo4QklwSWdVRVN2U1lpVTFQME1aMzdfQ1BiTEhvNXRkeDl3YVFpeVVRSGwxdjJuVUhQLXhTV1NrNWZhZGV0TjBMZkZKckFaeEVkVTRQdzRUNFQ5cWxmM053UzJ1VTlsSXJZTEx2QVpjZEV3cnpSaFNoWlh4aHZLTnBHckg5Zw?oc=5",
+      "published": "Fri, 20 Nov 2026 09:01:04 GMT",
+      "source": "Oceanographic Magazine",
+      "lane": "industry"
+    },
+    {
+      "title": "CRMA raises bar for sustainable mining",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRjVKVzBubGt6V0hLZ1p2YWVGYnFBZk5YVzYxMUtmVGstbk8wRl9hLVlSQzJaNnJaTEVLRGVTZG5CTWkzdmtfdUpBa2NGNGMwa0t3bndJS3dxZVNPY0FJQUpPV3Y4cXZINkgtemdjYklrN21uSFlzb1JvYjJoU2lmUWFxaVktbmk4OWxMSW5nbzFkTm1lT2g0eWhlWTdmQ0FZRUc4?oc=5",
+      "published": "Fri, 20 Nov 2026 20:01:11 GMT",
+      "source": "Metal Tech News",
+      "lane": "industry"
+    },
+    {
+      "title": "Defying judge, Trump admin holds Samoa deep-sea mining auction",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTnRncnVCczhCcV9xS2tna1NmQTNLMGUwS2xFazlaUTJGZWJ4cjdYMTRleVlPYlctdDVTTEN0RWhXSlotZUl0V09DT3NSZTEybnF1eGVtZGhqR1lNMGkzc3ZSOG5OQVhHVWd4VVJLTnVkYlJ2cjZLRnJ5aHVqR29Ua0ZNT0YzWng4bTVvTGc0RGx1SnlUY1FB?oc=5",
+      "published": "Fri, 20 Nov 2026 20:45:22 GMT",
+      "source": "Asia Times",
+      "lane": "industry"
+    },
+    {
+      "title": "Senate passes bill on energy, mining permitting",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWmhSUjVTaEluYUkxV002SHYycnk2OHF2eDhCNzJDdFlNSUh2NlFHeFkzcnk5Vm1WMERmaVNVSTU0WjdjRDZKRkpMRU9BTlpRcThaRnBZZm5fT0ZFM0pjbmNxYjJmSzRkclJjekc1aFRzb3Z4eEJNSzlER0ZEYzFDQ2ZGZl85WElsSExxYm1BSXdxbTl5ZVFmY2pVdXBRVU0?oc=5",
+      "published": "Fri, 20 Nov 2026 21:30:00 GMT",
+      "source": "Elko Daily Free Press",
+      "lane": "industry"
+    },
+    {
+      "title": "Environmental Monitoring: The Key to Preventing Sanctions",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNS0RrbXpldlIyQ2tnTlVxeERqY3JTY2QwalRVcFRRaWdZTGNLN0tpQlBEWW5WY3JBUnowVVI4TXYxOFd3a0pOZ1hBWkZ1dU5DcmhkZm5HZ1NKWHRhY1JMVEVrYXNoVnRHZG5kSExMQnVoeUxVc1JCeVpCbnF5MTU0a1NfZ3NWTnRYanVoNGdDOXNNZktIS0I0MTU4N0pLWUU?oc=5",
+      "published": "Fri, 20 Nov 2026 15:39:34 GMT",
+      "source": "Mexico Business News",
+      "lane": "industry"
+    },
+    {
+      "title": "Australia To Become Scandium Mineral Powerhouse",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPS1EzOVVqZmk5RnBtWnYwV01pdGFXWm0xX3ZhQkxWV01PMjl3RlpRblhZcC12UXpGVGJpanotTzItaVBSODRNaW96am1nc0xjODJKaC1XZ0dQWmVJNFF5QlZlU0lCZFdBWFVKT2RQcmJaX2RxeU5lXzJaVXMxcm8zdng1Y1pPaGR4M0M0OVBwSm5qdm5nOFlsbmNnUUNyMnFS?oc=5",
+      "published": "Fri, 20 Nov 2026 13:56:01 GMT",
+      "source": "Industrial Info Resources",
+      "lane": "industry"
+    },
+    {
+      "title": "Chile's mining investment pipeline hits a 13-year high as lithium spending surges past US$10 billion",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQel9zUDl5UHh0TEh4eGIwN1ZNZm0zWTAyVnEzd0YyOVVGeTJFN2hHUkxaeG5nX3NpdkJTZmUwbjdaTXhEWkY3N1FEckpTdHhpVHY3bXkyNmNyYjNMOURjRFRYNU5Dd1dDUDBnUGo3Q1dfR0FvUVpFbmVYbDc0cGFzWHJR?oc=5",
+      "published": "Fri, 20 Nov 2026 20:32:13 GMT",
+      "source": "Latin Times",
+      "lane": "industry"
+    },
+    {
+      "title": "Fortuna Mining (NYSE:FSM) Screens as a Growth-at-a-Reasonable-Price Candidate",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTG5kdnBraDhCYTFpaHJkNmxJZ3hXaWtGTEdHckVvbDlnN3NqVkMtWFRQaDdzSDlKYnJ1dTQwcHpBbkpmd2p0NXFTbzJ6TXFLcERyYjNaWDJOSXhabDFrNzVTNGFDOHhfSGowWVRzNGJKcUFmbmQ3UFczRUxDemRZNnhDaFZ1MjgyTHczY1Jmb3J5MGR5N2xXYmVrSFdmSkhQNkR5SEtGY1dLOVhtSk16NVNyR2cxcmw2T2JvTVM2Z3VEZG8?oc=5",
+      "published": "Fri, 20 Nov 2026 09:21:03 GMT",
+      "source": "ChartMill",
+      "lane": "industry"
+    },
+    {
+      "title": "Copper price sinks into bear market, erasing 2026 gains in worst week of the year",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUUdITlJjU1Byem9WdFRMRjlFem11OEw5Q3lkZVdOX0xad2ZrNWM3U3pzTEE2N0MzTFFxMHZkZGpRckJWajB2b0NvNjdpRUhzZVZQNWc1OXF1VmhqcjgyUnpSRy1Oa1AzU09WUjZ3UVlSZlluV2JhdzVKODVuVFpPZWtiLTJlVkpVdUJrT01kUFVkV3NGMUsxQnRVMzVZYURSSWgzWlJFQQ?oc=5",
+      "published": "Fri, 20 Nov 2026 19:24:57 GMT",
+      "source": "Mining.com",
+      "lane": "industry"
+    },
+    {
+      "title": "EACON reports continuing growth in financial capacity to support AHS initiatives",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSnAzUDZURE16WTF1WXpkangyeld4N1htRDI3Q2ZIdlZRYUQ3cjNBUU14a2hiTzQ3X1RDYXVXREM3YXR2NTV1clZuRkI4RU5YZ0J6TzdDVlhuWkRXbXd2MVZ3a1VDbko4RDV5cFZpOUd5dmFuOVVsZnhMTWNBdEVlSWtpY2JHa251MGtMaXBlSmxZMW1Ia0t4YUc3bllzWldNVTlKa0lpUkR0eXEyZmlqN2JqaUc?oc=5",
+      "published": "Fri, 20 Nov 2026 16:25:52 GMT",
+      "source": "International Mining",
+      "lane": "industry"
+    },
+    {
+      "title": "MMG faces beefed up EU evidence citing concerns over Anglo deal",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPWmxna1JEYmZiVHh6NmFPWlV5U085RXl5cUxHU1ZweVp6Y1c4V2NFMlRFWk96VGY4dnk3V0lpNzZDS3M2cDkxdjB1OFlIcHdLNmNoM0JfUmNnaWV2X09GYXJNYW53dGRlOWItdFRZN3FmY1BuTVNtY2x4b0lsbnNZc2NPUmRyZlU3N2N6eFhHajJSN2ZYeUE?oc=5",
+      "published": "Fri, 20 Nov 2026 17:32:53 GMT",
+      "source": "Mining.com",
+      "lane": "industry"
+    },
+    {
+      "title": "US Security Support for Cameroon May Become Linked to Mining Access, Report Says",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTzlhcks1OEtQQU1odGNNMXFBYXBrTlN3R19GVjNQdVRZM0pWZGVvQ1h5Sk1neDVlYVMycUZsejhQeHpyT0pmcXBZTkU2UXJQcl9WNUZuT3RxeFdJWF83cDJYVlAzbW0xMy1oT0Zjd05WU19CNGtnX2N0V3lMaEU0NWhYTVJpNFJlemM3OVVUdHkybjVtMFZVLXp0MnptMG5WVUQzZWhKVnZyU1VudUdhYVNmMTJQSWxqcmpLbC1lcnRBZF9HekVYcl96bnQ?oc=5",
+      "published": "Fri, 20 Nov 2026 19:02:33 GMT",
+      "source": "Business in Cameroon",
+      "lane": "industry"
+    },
+    {
+      "title": "Argentina’s Mendoza adds BHP, Teck and Patagonia Gold to its mining map",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQb0VlcGkwVzBOQXFVYTNfU2R3S0FQQlJCTmVZZzBxN2VCT05aRUx6T25FRWxYZjlveUxFS0ZjT3VwSFRPemdMUDkxZjdZSHBZVkR1UUo4UVhCWThZMXE5ZFpRQTVuTDI1QmZsbjJsUElUaW5YQkNrNmJQY3BDbHdHaGtGaHB2ZVhXT2Y1UV8xUHBQQk0zQzcyM2lZYWw1elFieHRHaG52RQ?oc=5",
+      "published": "Fri, 20 Nov 2026 21:45:00 GMT",
+      "source": "BNamericas",
+      "lane": "industry"
+    },
+    {
+      "title": "Op-Ed: -Funds dump copper but Shanghai has run out of metal",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdlhpZ0FHeGFuemZ3X3ZaVkluOVZmd04zei1ldlY5a3M1N2x2bDVNeFJyTEs4b1lnQ2syT3RiS2lOSUtfUk16WkNjM2VyRHI3WVBpM2FhZFBiT1hrekp2bXNqVTgxUWpSeUtwOXhTNzNHQy1qZDN4OU51dDhIZUNTdU9saXpQZzZUbVcwUWpR?oc=5",
+      "published": "Fri, 20 Nov 2026 22:54:40 GMT",
+      "source": "Mining.com",
+      "lane": "industry"
+    },
+    {
+      "title": "Modern Mining targets 40,000 gold ounces from e-waste",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQbld0N09Db01GZnNwRFoxS1ZvU1dnVHphWk5TeWNLdFN5V3NJU3NGMzNMNzV2Z0Z0SXFFb2xCX1N0VC05ZkpjTkxSd2tYZ0x6MXlVeW5SUzBpRHdIOXcwZGFVbTE0ZElrbmdRZ2dFaFVBUzFkTEtjVFFmaXNSUFJScUVn?oc=5",
+      "published": "Fri, 20 Nov 2026 17:57:39 GMT",
+      "source": "Mining.com",
+      "lane": "industry"
+    },
+    {
+      "title": "“Mining for Gold”: How Christopher ‘Zoz’ Gruse Told Ken Cockrel Sr.’s Story — LBB",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMFR6NlNsUF8tS0UxTTFnelBXRi1Tb1FncjJGZEVLUTdBMGVncURoWXlYX05oWUUxbmF1YmUteDZ1TjNJX2N0NnJfRVB5YVIxU3J6T3pZOG4tcUloSmZ4cjBSN2V3NjJIRG53aVZxWVpFY085V0hyaUt2SGNFbUItZWhrRUh2V3I0cFVFSU15QThQNHVNbnd5eFVVdVoxd0FKM0h0eGQ0TDQ?oc=5",
+      "published": "Fri, 20 Nov 2026 17:54:25 GMT",
+      "source": "LBB - Little Black Book",
+      "lane": "industry"
+    },
+    {
+      "title": "Ground View Pakistan: The smelter before the mine",
+      "link": "https://www.mining.com/ground-view-pakistan-the-smelter-before-the-mine/",
+      "published": "Fri, 20 Nov 2026 16:10:00 +0000",
+      "source": "MINING.COM",
+      "lane": "industry"
+    },
+    {
+      "title": "Gold price fall nears $3,500 as miners face soaring costs",
+      "link": "https://www.mining.com/gold-price-falls-nears-3500-as-miners-face-soaring-costs/",
+      "published": "Fri, 20 Nov 2026 12:29:03 +0000",
+      "source": "MINING.COM",
+      "lane": "industry"
+    },
+    {
+      "title": "Miners drill more, but raise 28% less money",
+      "link": "https://www.northernminer.com/news/miners-drill-more-but-raise-28-less-money/1003898112/",
+      "published": "Fri, 20 Nov 2026 15:20:43 +0000",
+      "source": "The Northern Miner",
+      "lane": "industry"
+    },
+    {
+      "title": "Sponsored Q&A with SRK video: Stuart Smith on mining’s shift from build to buy",
+      "link": "https://www.northernminer.com/regulatory-issues/sponsored-qa-with-srk-video-stuart-smith-on-minings-shift-from-build-to-buy/1003898102/",
+      "published": "Fri, 20 Nov 2026 15:01:23 +0000",
+      "source": "The Northern Miner",
+      "lane": "industry"
+    },
+    {
+      "title": "Angola plans US$180 million for De Beers stake",
+      "link": "https://www.northernminer.com/news/angola-plans-us180-million-for-de-beers-stake/1003898116/",
+      "published": "Fri, 20 Nov 2026 14:48:00 +0000",
+      "source": "The Northern Miner",
+      "lane": "industry"
+    },
+    {
+      "title": "Xplor 2026: Vior plans 30,000 metres to test Ligneris gold discovery",
+      "link": "https://www.northernminer.com/precious-metals/xplor-2026-vior-plans-30000-metres-to-test-ligneris-gold-discovery/1003898110/",
+      "published": "Fri, 20 Nov 2026 14:26:50 +0000",
+      "source": "The Northern Miner",
+      "lane": "industry"
+    },
+    {
+      "title": "Resource Review video: N.L. prospectors look to find the next generation",
+      "link": "https://www.northernminer.com/news/resource-review-video-n-l-prospectors-look-to-find-the-next-generation/1003898106/",
+      "published": "Fri, 20 Nov 2026 14:16:22 +0000",
+      "source": "The Northern Miner",
+      "lane": "industry"
+    },
+    {
+      "title": "Manitoba names first chief mining officer, Agnico Eagle plans major hiring push and federal funding for the Mactung project",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNeGhieG5XcEpNbUwwYkMtTHJYRHZYVWtXWDJfZ1J6aWlHM0RaeExtVVVlZjRPQ3ZIWW54SmM0bFlxWU9tZFJmYVFiTWFxRXlKVWpBOTg1TUZRUF9ReFBFU3NkSUZlX3Yzc2ptNnEyZWN6TWIyamdvcUdiMlUyZjJOTg?oc=5",
+      "published": "Fri, 20 Nov 2026 18:19:15 GMT",
+      "source": "CIM Magazine",
+      "lane": "industry"
+    },
+    {
+      "title": "Thousands could be hired for Northern Ontario Mining projects over the next 5-10 years",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPcHZSVkpVNG53cGVxYmNLbmNsR2FQdzNBa3NOdXVVRHVzM2pqcjJpZmIzQlk0dFFlMGJpTWNXNkpfcXhBR3g2b2Y0dnBrT0NjX282WmVlWUl4emNwR0NEUGdHWEVncU9CelBhazIzcTRFb19LeTM2UHR2YUJhZVFUbFd5dVF0WmtYZXJxVUppaTZoMGV0MU80WUREOFZIVHQxVXBuWHJGS053VDdRY3poUnFDTW55NExfUFNPblpTU2FyZmYxNGNSTUw2dmFjLXVuS1JxTg?oc=5",
+      "published": "Fri, 20 Nov 2026 18:05:47 GMT",
+      "source": "BayToday.ca",
+      "lane": "industry"
+    },
+    {
+      "title": "Canada Nickel looks to secure billions in funding for proposed Timmins, Ont.-area mine",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTFF3dlZjVzBaM0ZaY3ZfWUNBcXpZRlRsRTNmSm5TRjVxdmx3NlVzdkVyWjZrcDNYMXYtSjRRUFVfSWZsdnoxd0I2YW0wT1pXLThEX016Qi1sanR4b0w4WW00RW5mRUFfS2p0SFBEbnhPM1V3OXlhWDZqNjJyWEZBLTU0dTFJQ0dXWmloNVBR?oc=5",
+      "published": "Thu, 19 Nov 2026 09:00:00 GMT",
+      "source": "CBC",
+      "lane": "industry"
+    },
+    {
+      "title": "Cowboy State rare earths mine takes shape",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObnFkTVRiUjQtb2RTNS1VQV9NMENONC0xNUZCSFZEYW00LTJqd01LLUlOeWwzYUY1ZEE3bTVDbmNpalQ1eDEtZkN6aGo1a05IQVBQTTZFY3hTV1Y4VGoycHZjMTF3a3dMNFlSU2VqVmRqV0VseGxlMXlFbFVVTHIxY0hndUxiQkpYRW9Hb2h1a19iVHhmcHFYMlZJaXFCMTFzUk5NTDMySkFWWHBxRElj?oc=5",
+      "published": "Fri, 20 Nov 2026 20:00:25 GMT",
+      "source": "Metal Tech News",
+      "lane": "industry"
+    },
+    {
+      "title": "VIDEO: Vehicle recovered from abandoned Tooele County mine",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSV9mbVpKYTZVb1lwaGhWRU5TcGdZM1p3ek1YcVphMy1CWXpWV3ZpMkRiSlJfNlZNUFVWeWRHUHAxLUpPVWlNWWI5RFRRamtEYkxWTEZrMDcxckc3Y0FjYmlSVDY2dXViWk1MMjhpay1IWFVKaXRHSHdpQkFOZ3ZvXzhyaGY0cjI5eGVLSVNaVXBSd3lWdllxdmROOTBWSDNjczVhU2JPWjJ4UQ?oc=5",
+      "published": "Fri, 20 Nov 2026 20:24:44 GMT",
+      "source": "FOX 13 News Utah",
+      "lane": "industry"
+    },
+    {
+      "title": "Weber State art students honor Park City’s mining history",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE42bXNXUW5Rdm5iZlY0S1RSTU5pcXNvcnFEZ18tdTdtVWpTeUoxMk5CZjFNMnNYU1RjcTFCaGNoTHRvSGtOeG9uOUlZUHJJM1NYSWtNaTU5bXpfOVlVSGRpazkxTFlqYVVjLVpiSWF5WdIBdEFVX3lxTE5pTVJRUEx2OHhjQ3JOd1hzc3gtUUdQNkhKMlc3OWV5UmR1MGk5VEtEQm1CSGw3TE9KYlFJYThfcENsZ2x2dkVkb01mVXh5aU41cFdfaGsyX0kwVmJQTXFPVTNBWkVwTzhMZy1Pd3k5Q2Q2dXpN?oc=5",
+      "published": "Fri, 20 Nov 2026 20:56:04 GMT",
+      "source": "ABC4 Utah",
+      "lane": "industry"
+    },
+    {
+      "title": "Attorneys make closing arguments in Libby Mine reinsurance case",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1WR21sdkY5bTB6ejlNeDIxRVhTel91b0JueFE3bWMtNjJhd3FQd2dMVTUtdFd5b1ZjY2tsek93aG5mWUpWNFltdGpPbzBnNHAtRzlUYzhaZw?oc=5",
+      "published": "Fri, 20 Nov 2026 16:11:13 GMT",
+      "source": "Missoula Current",
+      "lane": "industry"
+    },
+    {
+      "title": "McCollum: New Congress may approve restored mining moratorium to protect the Boundary Waters",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPU1MtQTNyQnYwUnVOYV8tczRIUktxOFhfSW5kU0FUUmtGYW1xamNCdGVTNWg0LS1pZGdkSWpyMWg5WjlLcEE2bjVBelA3c0tNMlp1VGNzS0RseGx6V282cW03Q0NXbUJwLTdCRi1NcVlzc1NvSk82Q0JSWUxFeWtSN1NTSW1SbVBqQUl1d3ZvYkxTenpNVndyZFZSbmhBOFJ2TmdpeTQzVHY4dC0wc2MwbzAxT2ZCVTRlUzFnampLNXY1djV2c3FCSUI1X1dRR1FLdjkwMVdHcXhXcU5pOXc?oc=5",
+      "published": "Thu, 19 Nov 2026 11:00:00 GMT",
+      "source": "MinnPost",
+      "lane": "industry"
+    },
+    {
+      "title": "China Promised to Help Africa Process Its Minerals. Did It Deliver?",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNYW95REdjS0d1cy1QMHBpQThBclBISjNvTWMyUzJfcm1wM3lxUkdmWGVqOGExTFdPVUZpNElDMUM3RThhaFRPa3FCMjZhLVRCeHNtOE9mQXBOd2JtTEVhaUwzMFFIRWx4eFBIYUtpYWFpbDJYZ3M5WW9ZRVAyVDE2M1lRdkk0dGZZQVA1R1ZuNXJlTEE?oc=5",
+      "published": "Fri, 20 Nov 2026 22:40:20 GMT",
+      "source": "The China-Global South Project",
+      "lane": "industry"
+    },
+    {
+      "title": "Perseus Mining CEO Craig Jones: ‘High gold price makes acquisitions more complex’",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcFFSb0tBYzlXaHVKMFIwWDdpdzV2T3BfNTZoNFFEcFRwRThtaE1UbzAwX3pfLUhJY3BTRXBYSm9rXzRWZG1SdFNJbWo4VmZSRk9kaXhrVFRKWGRXNm1iVFFuM1lmVERXRWkwNWkyMHB5RThSUVpILWMxdlJMNkszbUtZT0JUMUdEVXQweVVTSW96QnhENHdnVGNYc3Q5QkhnaDJQcnh0VEtxMXBIUlpMcnlCZHpvcTJtYkE?oc=5",
+      "published": "Fri, 20 Nov 2026 13:00:39 GMT",
+      "source": "The Africa Report",
+      "lane": "industry"
+    },
+    {
+      "title": "Togo Plans Repatriation of Nationals After Guinea Mining Crackdown",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTHR1Wkktc0dFUHlUeDloQTg1OWxFcmNERDFZYkp2VnZwdjlkQVFvSkFJOHhLLXRacTBsdDZvNkNNc3Yxd2lmRm5CZGpmTjNwVmFuWkpHdXpHalZSUFRCWnUzdnpjUTV0ODVZRnltZDlIaEpXeEFQQVRnaTVFV3F6ZjRQd2NSSHpPV0l6UWR6SEpFc0pHVXFKbXctMFBPTURPU1ZLOFVuN1U1Q0VhaGR3RkxtMA?oc=5",
+      "published": "Fri, 20 Nov 2026 19:08:44 GMT",
+      "source": "Togo First",
+      "lane": "industry"
+    },
+    {
+      "title": "Ecuador copper mine advancing despite opposition from Indigenous communities",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbk9zTXJOS3dRWUc0RlJQdU1LTzh1NHJVRnBjOFRJVmk5ZGhhbnI1cVJMU1FtQjR1Yy1fMHN5UWJJTndxT180U1U0MEw1Y1JhWlpnalVlS2wyekJfVFphQU9uQ0NjeWtNM2ptLUlyMkFqM3ZnU1Rjd0VodktjNVAwbVlaQnhLTlpIQlhuZHRVYlZRemdEM2dnV3pZNmR5c1FKX3FQVUdKT1BZWmw1SVl4YdIBtgFBVV95cUxPQjBtRV82UUlMV1BZZXJUTHFJNlFTVlRPTGhUam9paWZPVHRjTjBGSzhmNExTNzBvLXFDT0pXU1czeGFKdUVnZ2gxYm05NEJrTmIwNkQ4RjltVU9oMmRDSWVCUGtldVRtTFBZVHpUR2I1U1JOVXN6clZueEpiS2VVSVJKVlB4eVhuTTNjekc4YnVVN1o0Q2diR0JaalV0QkVzS1duNXZ2TjVuM0kxWEZpY2czbTVRQQ?oc=5",
+      "published": "Fri, 20 Nov 2026 17:48:45 GMT",
+      "source": "news - Mongabay",
+      "lane": "industry"
+    },
+    {
+      "title": "Mining and SME Development Take Centre Stage at the Experiencia San Juan 2026 National Meeting",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUEpvSk9fR3lvNzZBUEk5VjNSaTRMV3RheFJsZHIwRmt6OC1BaFhJVTZLakRORXFhS0c4TlhDZ1MxQ1ByZ2VaMzJCbXdSeEcwRUZjUnlVVXpGVTV3RW1kYnRQWXpva1JncUtZNk50Mk84SjlURmZVMElOVnlBMjNSc25hNTZ4aDFHajJLc2dleExrYjd4QkJnMnlLMzN0dUFLZzV5T3ZrYU5IdHhDX1hCdC1RT3FoYTVVeWYyR2VtNlZfOGRObnpQTk95VTV3Vzg?oc=5",
+      "published": "Fri, 20 Nov 2026 18:15:40 GMT",
+      "source": "Panorama Minero",
+      "lane": "industry"
+    },
+    {
+      "title": "Greenland Mines Ltd (GRML) Stock Price, News, Quote & History",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9zSjVZaHdTaTQ4Y1lMWk5iWmJEOFMtMFdiQ1ZzUG9yNlFEbWN3YlJnQVhFM3E3NXNPQ1pydVJoSklyRE9VVC1QX2NPa1dhRVUxTkE?oc=5",
+      "published": "Fri, 20 Nov 2026 14:42:13 GMT",
+      "source": "Yahoo! Finance Canada",
+      "lane": "industry"
+    },
+    {
+      "title": "Greenland Mines (NASDAQ: GRML) Welcomes Unanimous Danish Parliamentary Approval of Arctic Security Agreement",
+      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNWFdBODlkaFRqRndkei1Hck4wQ0NCQ0VmVTBGM2NfanNfVWE0OFJ0TjBUUjlTeDVxQjcwX0QydUdVZDMyYUVSSHZCVjlxYy12QnFCNmd2NDFoWmZBZHZ1X1RuRjBhUjlwMmwzZFpsYnlYbXM0U25JY0dleDlEUVJGd2lQc2dia2E0Z0RVbThnWlRqdms5N0lVdHFHVGU5cGYzV2d3TWZsODY3M2R6RmJUSFRYVjd0YlEzWWJNZ2lDVFZYOGNsckJfcUxrNl9DU1NLdWtlTlBfX04yeWtEWGhUUE1yUF9qcUNBa0pjVjhR?oc=5",
+      "published": "Fri, 20 Nov 2026 18:39:16 GMT",
+      "source": "USA Today",
+      "lane": "industry"
+    },
+    {
+      "title": "Uzbekistan and ESAN Discuss Joint Mining Project",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPcGNEN2ktczNYajE0eV9HSXJGV3phUUk5dE1Ca0lveGViV1ByVkMxZlh2RGZKU0hiUWRjdDF6amUzUVcyTXo4d2R3b29veEFoZm5zMnc5YWoydVpsVDJpV05SQkJHWW5xM0VPUFpjb1hrb2stUzZFeU9aX0JTTWp2bQ?oc=5",
+      "published": "Fri, 20 Nov 2026 17:18:52 GMT",
+      "source": "UzDaily.uz",
+      "lane": "industry"
+    },
+    {
+      "title": "Viridian Metals Continues to Demonstrate Broad Mineralization at Surface from Kraken Main",
+      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNMHBYVzdHTWhwckdTQkRBVkFDSkZlQTQ1Zm8wNVVLRmsyUmNKM1NsRmFneTE3M2pyd1lGbkd1YlE1V0ZEMHJtZ0pKYWYyUms0Wldxc0J4aWF0UkhPSnBCTVNiX3d5dEpGNno0SVVxQmVmRlc1MDVVQ01NOGZHV0h2Wmk0dGQ0b05LRlV5d0lBUzhxYU1GQzR5cTJRQnhCUmkwczVFVTZVeDQ4U3RicU5qbzB5WVlsSE5PVllXNkdQWFd3MHNndGptZktBeE8wMjB1VlhTbzc0S3FsZlBpMXFmdERrbnY5VzFVWHVUTlMyQ2FFNlFZN1NISm5MMXVPZlM3c3hnYk41YTY?oc=5",
+      "published": "Fri, 20 Nov 2026 20:41:11 GMT",
+      "source": "Junior Mining Network",
+      "lane": "juniors"
+    },
+    {
+      "title": "Fortitude Gold Closes $10 Million Private Placement",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZ3lqUFFmdzdGRFI3bTBSNXpJd294SHBCM0ZsUDQ5b0ZaajFvTmlSNkJFTWxBWExYc1ppbXlBUElncHFVVWh1ekZnMTNQdmZPb2I2V3o1dlRNTnRkdlc2X2xjVzZXSGVVby1RQW9FOFNYcWJmMnFpd0FyOGVWOXU1SkVFcDNZYnk2MGtSTmgyU1FBbng3eDUxaDFpZHgzeTlYSzRGbERydUh5cGktYzc3S3ZsMHR3Q3AzbTFQZktxbzNMRGp2N1JXai1MRjRKSTM1NDZRYlYyY1h1clpiNDVuZFZ3aw?oc=5",
+      "published": "Fri, 20 Nov 2026 21:56:15 GMT",
+      "source": "Junior Mining Network",
+      "lane": "juniors"
+    },
+    {
+      "title": "Skeleton Coast Uranium Closes Second Tranche of Private Placement",
+      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNbVM2RlBOYUZod0pWYnFYT1dRTVRvcDcxMUFkbFFHdnBBdThDMlJsTmlxVmtLdE5YZ2FOQm5JRlBLSGNsampHa2dZTUxqNFhaZGhsSkp6RjhoWVpaYThTaGZsNm5mcXJENG1JQURISjRRTEVxcnBiQUpMVURaaEZneHBkRkJOTGlJOVgtWnVNR1VLMVVoRFBRT2dISEd3d1cxbFk0Y0NxTHBIRjJjcEtIdktneFRRc2JmZ3NuTmtObkxCcXA3T1dueUI5YVhoa1dYVThUeXpYdmZxdkJLcHdpQkdGM0tBY2RZcFUtdzBlZUVyMXgtckNlMHBqUGs?oc=5",
+      "published": "Fri, 20 Nov 2026 12:36:30 GMT",
+      "source": "Junior Mining Network",
+      "lane": "juniors"
+    },
+    {
+      "title": "Metalite Resources Expands Launay Property Along the Macamic Fault, Establishing Macamic-Authier Block as its Third Area of Gold Exploration",
+      "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxNamtNX0pPcGp4enBwcWF4MXFWMC1Kdzc4QlNYd1ptRHR2aC1RSC0zTzl0SUJjVFV5ak1CRWZ1VVZNWjE3c0xDYW9wY2RQdk9NR1NJZGQ4ZFZzWHBXYlZKVlNWOGhPWWFZQk9MclpXdmRpdWdSQk04bWtjLThwS2FOeXVfX0xJODFFWC13SjhZN3E3cTNyUmNHdkFnUE5YeEg4R3lmODlRdHV0R3JfeFpORF9qWmlIWkpVa1JCZW51elB4SUFkTGJLRkF6VF8tUTlfRWhHcC1PVURjMHQ1YVE4UDVQbERVQWlmNHhfVzljQmNLVFh0ejJMRkRWWWViMFJIZnVyaVRJNFpkMXZhYy13MHVPb1FLUEN4YmJtUzBUSm9BdEl1QWkxOVVXUEgwNDQwNndYVVphNkdZTnMwS1Y5a3I3U0M5SnM?oc=5",
+      "published": "Fri, 20 Nov 2026 14:00:40 GMT",
+      "source": "Junior Mining Network",
+      "lane": "juniors"
+    },
+    {
+      "title": "Vesari Wins Competitive 4,921 Acre Geothermal Lease Located Adjacent to Idaho's Raft River Geothermal Field",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQNlBHNmVGWVUwTkpfYXRIcFhWeWVtXy0xN2RzMWd4emtoMnptcFphVW5MczZkUTBJU08zdnVFV3c3UG1nZG5xcVY1ZkRPUElOVHMxTmd1MXM5NlRrUFl4V1M1amhiN2hJU2otZ2lTTGgtaVg0RE9NM2hwRUdjUy1iS3ctMXQzaW5MbE9lLXpTM1MxbEVvQlFIclZHRXhOaURCY0xGNy1nc2hpRy1BeXdTUEF1dzI5QnpnLTV2enNKaGJTM1preDgzSXIza1gtVGl6ZHpZbVg3T2tRX2tFTlFweUlBaw?oc=5",
+      "published": "Fri, 20 Nov 2026 13:00:00 GMT",
+      "source": "TMX Newsfile",
+      "lane": "juniors"
+    },
+    {
+      "title": "J2 Metals Reports Annual General and Special Meeting Voting Results",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOb05vTkNhWmFFQnctX053eUs1dkwzeVRPdjRQZFlHV2lBSUZTRFViblVMUlBtUXpUY2JyazFRQUNXa0RZOHBnT2F4WVliM2w3N01RYzEwRE1jVWRaeGlQd3F1aV91bEJNMm4zSFhEalltcGdYMmlXNmUzbllqY1I3UHpiZEVwc01zeXZiMF9YQmdSWW9BWTN0SUZ0UHV6eDl2MV90WFpaalNkZWdWeUY2UQ?oc=5",
+      "published": "Fri, 20 Nov 2026 21:00:00 GMT",
+      "source": "TMX Newsfile",
+      "lane": "juniors"
+    },
+    {
+      "title": "Securities Fraud Lawsuit Filed Against Fervo Energy Company: The Law Offices of Frank R. Cruz Outlines Lead Plaintiff Deadline",
+      "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOWHREYy1rdjBqWVJPTmZUNjdxVGE1a3E1WEtYdjJJaWd6cklqQTBFUzhDMlRWeE40ZHI4U1JTbndGTG5uZEtFQWYzZUpNOEFNUm1PcEt2TWVWdWZpNmVwRlVIbTV4Uld0MHp4VkQxWGpKTEJaUFFzbi1Rbk1fX3pKUlRQd0p4QkY4Snktdi1rUmxKZFNKUXNVSDBpLW9fYWhQeWJzdXhJTk5DMl9xcHV6Slc1VkNxaHpPWTJnMGpNMHZZTk1hV0RyYjg1bE5IR1FHZEpWOUZ2QWdrMEgwdjdiX3RqY2F3aGRkUnZJOURqdHl6TTFTZHhPRERoR0xZZHVELWc4aWt3OHdIZ0F5cnhn?oc=5",
+      "published": "Fri, 20 Nov 2026 03:06:37 GMT",
+      "source": "Business Wire",
+      "lane": "juniors"
+    },
+    {
+      "title": "Niron Magnetics to build $1.8 billion Alabama rare-earth-free mag",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUk1TX1RnbFhlZmEwNW84RVNTWkRVVDJ2Um83dGdCV1hlLUJRaUd0OTlXczZxYmVuX282amVzWlFCRERwQjRvaWVEcWpzYjF2c3o3d2ExeElPeVRGeWdaRWVxdHdpVFBBVmxxZGxhVURhUzVJVjZ3dFBDZ014V0U5UFRRcVRqcG05VXhUMXF4ajhXRXJ4d0tkRmp5dEQwejQ?oc=5",
+      "published": "Fri, 20 Nov 2026 22:09:45 GMT",
+      "source": "Global Banking & Finance Review",
+      "lane": "tech"
+    },
+    {
+      "title": "10,000-ton US plant to make rare-earth-free permanent magnets at scale",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPRGtwRzdlb2JvTFdKYXF5RFVZODVNMXhTMHNabGRlY2FtRkR3bTRCR2FoQk02NmwwQ2NSYi1qN2ZtRzQ4T1FPUWhwOTd2ZHJyRkVrX0ZVTms3aGFHOVNUdEpRNFREeWNkSDNKakFXbUxFQldvSG1rbmRkVmhXQ0k3NXhzbnFnSWZJVkxn?oc=5",
+      "published": "Fri, 20 Nov 2026 20:55:00 GMT",
+      "source": "Interesting Engineering",
+      "lane": "tech"
+    },
+    {
+      "title": "Governor Ivey Announces $1.8 Billion Niron Magnetics Investment -",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcjVNR2k1dm5oU0ZOWEI3ZGNBMy1GWUZ3aFNmVTdlTThWb0o4WE84cTF0Z2dqODUtcHBqUXFrZ2VtSjBQVGJTMDcyUi1ING9CaHhkNTYwWlZfSUI3SnBZbWs5WnNvVHBIcDJPbFV6UXFPTXBVMGxULVYtaDFVcUljeW1EUV93bWlaMlBjUGRxOG1TV0tiZEY1WWVsUm40eXE1WEF5SjYtMUpwMW0yZXc?oc=5",
+      "published": "Fri, 20 Nov 2026 18:29:32 GMT",
+      "source": "Alabama Governor's Office (.gov)",
+      "lane": "tech"
+    },
+    {
+      "title": "Utilities commission approves Duke Energy increases, data center charges",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYXVnUG44aGRELTgyeDEzS19Mcm1nQm5waUJBUW5pWXp3WGNrS3JaWjVfLVVJaUdSTzB5SUF4dzczczlNOVdKRk1SRHV4bTNxclZxdVNLbnViVHM4S01zTm1xUVhQUEZmclgtTXJ6d3p6bVNDOVAycE5vdzg0ejBMQzVMaDExdWNUWTJIVlVacmZiMUoyXzBpVFRocFLSAaIBQVVfeXFMT1Jnby02a2VWck43clRLbkV5a0dtVVJRX2RkY1dxNmZqUzRhWFdMN2l4R01kSWtlMnd2c2tvNC01bXFtdjBwd3ozU2xDbjZ1OTNDbW9LVzBGQllabVpuQlh2UFZ0ZmNiNnNxek92bkRISTBEb2NKU0M2ZTlzVjhhRzhtOEcwc0RQYl9aLUNTOWp6NHBSQnptT1R2Z3RPa2trVldB?oc=5",
+      "published": "Fri, 20 Nov 2026 01:13:00 GMT",
+      "source": "The Center Square",
+      "lane": "tech"
+    },
+    {
+      "title": "US data center backlash raises risks for Korean suppliers",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNbEpaQ016Q0k5MmFTWkNmSWdrWFY1UnVKRXlTM2Vzd2NvWjVIQlRnQW1LUkE3MXdUcHo4dGk1WkhoWHdmNHF5YldXRjBLT2VrRVVpaFRFZzk1NHM5TkI2MDRsUzlTX1ZnRWdxbndBc3NxbkN0ZWNaR1c5VlB2MnFoQU82NGZjTi1UQjJVT2lxNEI4alNtelVKT2lyejZCdHlyS1BEbEhuSVdLeXdodndWZ2ZZbVJqLWlIQ1lkTE130gG-AUFVX3lxTE1sSlpDTXpDSTkyYVNaQ2ZJZ2tYVjVSdUpFeVMzZXN3Y29aNUhCVGdBbUtSQTcxd1Rwejh0aTVaSGhYd2Y0cXliV1dGMEtPZWtFVWloVEVnOTU0czlOQjYwNGxTOVNfVmdFZ3Fud0Fzc3FuQ3RlY1pHVzlWUHYycWhBTzY0ZmNOLVRCMlVPaXE0QjhqU216VUpPaXJ6NkJ0eXJLUERsSG5JV0t5d2h2d1ZnZlltUmotaUhDWWRMTXc?oc=5",
+      "published": "Thu, 19 Nov 2026 03:01:03 GMT",
+      "source": "The Korea Times",
+      "lane": "tech"
+    },
+    {
+      "title": "Base, precious metals meltdown; dollar dominance holds key: Julius Baer",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQbVZwbGY1MmpaQkNWQkN1YlNLNFF5VXB5Rno0czQxOW1lYVNMUmpFRlFmYW1IcWRWSWpGRFAtYjZkQS13OUdUVno0MmJrc0VPZnhKRTZiaTh2Z2IyR3J6Z1JQQzFtMm14UXhpT3VIcFpfNkROaDUxR1hPYWtPQ0VjdlFIVUJTMzBERl9SYmV4N1lWYWxtclllU2tRdGdYaHdtdE1mTExLUTZZRGFrT01zc3hrd2hMUEpISW85MG1UMUI5cW5Vb0pn0gHMAUFVX3lxTE1WcUlXVC1NMmo3di13QmtzMk1IRUFQai1CeVNSZkRkS2FWT3hDdEtvTks0eUVhWGJTRl9kNUt5TjZXSUtKMTBNRF9LSXhqb2lnVndBM19hMXA5Rk5fLW9MVm5pdkU2Y2xxVkI3VU5QQmxmdWE3SzBoUHZ1TDFqRGlxSDAwVFZwTlpnYVctMmhzYkp5SlZGaWVUdHJUZ2FFaE40QjU3NTVQUXVKcnoxYzZ1OF9vYmpCNC15UV9tNmstbHJMVGNjYkQ5TkR2aA?oc=5",
+      "published": "Fri, 20 Nov 2026 01:52:28 GMT",
+      "source": "Business Standard",
+      "lane": "tech"
+    },
+    {
+      "title": "Canada–South Korea Critical Mineral Supply Chain Co-operation",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdTdaeFIwSkRUSy1LRHl0NEM0QkhHN1A0LUhwS0F6QlZ5Y2pZeUJFX244QjhPOTBfbUNUT3JFZHZXSFBURTdQeGd6b3ZTQmRKWEVPQU9GQTJnekZEVF91a0hkYmc2bWdPaEFiS2s2MEh6TGIwc3BSLXI3QzNQUjNuTFpTX1M1clpXa3l5b0VETndvY2VMeUc0NnhYVy1hYTNu?oc=5",
+      "published": "Thu, 19 Nov 2026 02:04:02 GMT",
+      "source": "Asia Pacific Foundation of Canada",
+      "lane": "tech"
+    },
+    {
+      "title": "PH eyes jobs from ASEAN-Australia energy cooperation",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRzBWX25vamdUVktOTGlwSkhKNWZhbVlTNkhFSDE4VjBCSUhocTVicnZFYTJXTkc5YUJGUk5UbU9tYzE5cGI2TVZ0a1ZJeHdwT243VFlya1NFLXl0M3MtSW9PNlk2MTM1ck5ZMjAyM3lEQmtaVzNvTHVDYmJiVlk4QklFa2JHTmdSQUt3UXhmSFc0aDNONHpOY2J30gGnAUFVX3lxTE42NXljaWg4VFpFU2trQ2paQ0ZQSWpRWFdua1Rucjlkb1oyMVctMmNNRDBQck9FemFYMjFRWmpNdkhSMDJYZlhDekFXaWxPODZ0NVNFZ0RGVFhfTE15Nlo5Zkg2eEN1cEdrZkNYM3B2OVR2Wk9aUmVtd0xqR1BRV1pMQUxkYVpZTFVqbzFQS1JGbk1BZXBrMTRPQXotbE5QWS13ZVZkOGxJ?oc=5",
+      "published": "Fri, 20 Nov 2026 17:38:01 GMT",
+      "source": "SunStar Publishing Inc.",
+      "lane": "tech"
+    },
+    {
+      "title": "Resource nationalism in the critical minerals era: Can state intervention deliver structural transformation?",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNX0JUd1Uwa29LOE1GXzhDbi1RM0k3bWxtZk92aTI3a1B3eG5ZYjN6YW9kZ01URU5VMjgxMEtBZmlxNnJTU1VKVDFQSHloZENJWG9ZWUN2RFd1c2RlSDhSNGc3OEo4Y0dqeEdHTElXeno0RnEyR3ZzWE9YR0lLeGFjSzNKMnFxVEZ3clZjSkVyQ01jdDE1TTZLMEUzNHdZc1BMS1pjQjFrUWZqMWJyQWJFcm5DX2otc3lGMmdiX2NEaDNveUJyV0JTY0VCUk5IWnhkdnc?oc=5",
+      "published": "Thu, 19 Nov 2026 17:08:31 GMT",
+      "source": "Institute of Development Studies",
+      "lane": "tech"
+    }
+  ],
+  "discussions": [
+    {
+      "time": "2026-11-20T15:12:14.669781-08:00",
+      "article_count": 56,
+      "strategist": "INDUSTRY HEALTH:\nCopper's slide is the story. Mining.com calls it a bear market, erasing 2026 gains in the worst week of the year, and an op-ed notes that funds are dumping copper while Shanghai has run out of metal. That gap points to a financial sell-off sitting on top of physical tightness, which fits Dr Simon's view that treatment charges will show the squeeze first. The price below US$13,000 appears in only one set of notes, so treat it as single-source. Gold is reported nearing US$3,500 as miners face soaring costs. Our earlier view that gold would hold above US$4,000 is now weakened. Cornelius's test of a sustained break below US$3,600 is a fair one. Juniors are drilling more but raising 28% less money, so financing is now a binding constraint alongside labour. Highland Valley enters week four with no signed deal.\n\nREGIONAL TRENDS:\nNorth America, United States: The American Samoa lease sale went ahead, drawing about US$6M from reportedly one bidder, despite the Hawaii ruling. Our call that the sale would be postponed or halted was wrong, and I'd rather say so plainly. The litigation view is now weakened. The Hawaii appeal is the next test. A Senate-passed permitting bill and talk of restoring the Boundary Waters moratorium show Washington pulling in both directions. North America, Canada: Canada Nickel is seeking billions for its Timmins-area mine, and Northern Ontario projects could hire thousands over five to ten years. Manitoba has named a chief mining officer, and Agnico Eagle plans a major hiring push. That competes for the same skilled workers as Highland Valley and the Ontario squeeze already flagged, so expect wage pressure. Ivanhoe Electric's first Gleeson holes in Arizona found two copper-gold-silver domains. This is an early, real discovery signal, but true width is unproven. Latin America: Chile's mining investment pipeline reportedly hit a 13-year high, with lithium spending above US$10bn, even as the economy contracted 1.1% and the Codelco overstatement remains unexplained. Ecuador's copper project advances despite Indigenous opposition. Africa: Togo plans to repatriate nationals after the Guinea crackdown. Côte d'Ivoire plans higher royalties before IMF talks, and miners are protesting. Angola plans US$180M for a De Beers stake, a sign that African sovereigns want a larger role in ownership.\n\nTECHNOLOGY & DEMAND:\n- Niron's US$1.8bn Alabama plant for rare-earth-free magnets, reported at 10,000 tonnes, could trim rare-earth demand over the long run. It is an announcement, not yet a plant, so the timing is years away.\n- Grid build-out still supports copper and electrical steel. Duke Energy's data-centre charges and the US data-centre backlash show that utilities and communities are pushing back on the power side of the AI buildout.\n- Nickel and cobalt continue to lose share as LFP scales in Michigan.\n\nON THE HORIZON:\n- Hawaii appeal or stay request, within the 60-day window.\n- Highland Valley tentative deal, then signature. Restart would follow weeks to months later.\n- Fed decisions, which will show whether gold's drop holds.\n- Codelco's explanation of the overstatement, which would tell us how much weight to give Chile's private-role debate.\n- Major Drilling's fiscal Q2 results on 3 December, a useful read on drilling demand.",
+      "geologist": "INDUSTRY HEALTH:\nPrices are squeezing budgets. Copper is in a bear market, and gold is near US$3,500 in one headline. Two single-source notes put copper below US$13,000 and gold below US$3,600, so treat those exact levels as thin. The clearest health signal is that miners are drilling more but raising 28% less money. Juniors are still closing placements, such as Fortitude's US$10M and a Skeleton Coast tranche, but these are small. Labour and permits still set the pace for tonnes. Highland Valley is in week four with no signed deal, and a BC ruling bars replacement workers, which adds legal pressure but no settlement. Projected hiring in Northern Ontario of thousands over five to ten years shows the labour squeeze is structural. The US Senate passed an energy and mining permitting bill, but its path onward is unclear.\n\nREGIONAL TRENDS:\nNorth America: The US offshore critical-minerals sale (PACM-1) went ahead, drawing about US$6M in bids, reportedly from one bidder. The desk's call that it would be postponed or halted was wrong. A single bidder shows thin commercial appetite, and the Hawaii appeal is now the swing factor. Ivanhoe Electric's first eleven Gleeson holes in Arizona are the clearest discovery in today's set. Two copper-gold-silver domains sit beneath low-angle faults. True widths are unproven and there is no resource estimate. In Canada, Ottawa's C$14M for Mactung and federal funding for a Yukon tungsten project are policy money. A BC court quashed a substantial-start determination and ordered consultation, a reminder that permits get reopened at the consultation stage.\nMexico: Vizsla delayed first silver at Panuco by a year.\nAfrica: Côte d'Ivoire plans higher mineral royalties ahead of IMF talks, and miners are protesting. Togo is repatriating nationals after Guinea's mining crackdown.\nLatin America: Chile's mining investment pipeline reached a 13-year high, with lithium spending above US$10bn. Against that, the economy shrank 1.1% y/y in Q3, and Codelco's 42,100-tonne overstatement is still unexplained.\n\nTECHNOLOGY & DEMAND:\nNiron Magnetics' planned US$1.8bn Alabama plant for rare-earth-free magnets could take demand from rare earths if it reaches its 10,000-ton scale. Timing and yield are not in the record, so this is long-dated. Ford's CATL-licensed LFP cells in Michigan keep nickel and cobalt losing share, with lithium gaining modestly. Copper and electrical steel gain from grid build-out, but data-centre backlash and Duke Energy's new data-centre charges show AI load is raising power costs and drawing political pushback. Defence money keeps tungsten and antimony firm.\n\nON THE HORIZON:\nA tentative Highland Valley deal is the swing event. Restart takes weeks to months after signature, so new supply from it is a 2027 question even if a deal lands soon. The Hawaii appeal window runs up to 60 days from judgment. Watch whether the Pacific sale's bidder files environmental documents. For gold, a sustained break below US$3,600 would weaken the view that it trades above US$4,000 again. Meldrum says one break is not decisive. Côte d'Ivoire's royalty decree and the Boundary Waters moratorium are the next policy tests.",
+      "strategist_reply": "Yukon, your sharpest contribution is the BC consultation ruling. Permits can be reopened at the consultation stage, a timing risk my notes underweighted. I had treated permitting as a single gate. You've shown it can be a recurring one.\n\nWhere I see it differently is the single bidder. You read the PACM-1 result as thin commercial appetite, and that's the likely reading. But a sale drawing one bidder for about US$6M also suggests it was built for a narrow set of buyers, so it's a weak guide to offshore appetite in general. I'd hold the commercial read loosely.\n\nOn labour, I'd push back on calling Ontario's hiring need structural based on one announcement. Five-to-ten-year hiring plans are intentions until they clear permits and financing, which is your own point about juniors. I'd call it a tightening constraint, not a settled one.\n\nThe bigger pattern across our two readings is that private capital for building mines is getting harder to raise, while public and sovereign money is arriving. Juniors are drilling more but raising 28% less. Ottawa's C$14M for Mactung, federal tungsten money, defence demand, and Angola's US$180M move on De Beers all point the same way. State-backed projects will get built, and the rest will wait for better conditions. The copper and gold sell-off, which looks like a financial correction sitting on physical tightness, sharpens that divide.",
+      "geologist_reply": "Meldrum, your copper read is right on the financial side, but from the ground I'd separate two timescales. A bear market adds no mine tonnes. The physical tightness you describe will show first in treatment charges and then in deferred projects, which means 2028 to 2030 output, not this year's. Price falls mostly change which projects get sanctioned.\n\nOn gold, I'd weight the cost side more than one break below US$3,600. At these prices most operating mines still make money. The damage falls on marginal projects and juniors who need to raise cash to test them. Drilling up while financing falls 28% means fewer discoveries reach the stage where anyone can value them. That is the slower signal.\n\nI'd push back on Niron. Iron-nitride magnets could replace rare-earth magnets in some motors, mostly lower-power ones, but motor makers take years to qualify a new magnet. A 10,000-tonne plant signals confidence, not proven demand. I'd call rare-earth substitution \"possible, not yet\" until a customer signs.\n\nOn Samoa, one bidder means thin commercial appetite. The sale going ahead doesn't make the seabed project financeable.\n\nThe pattern I see across both analyses is that new supply is getting more expensive on every axis at once. Money is harder to raise, skilled labour is short, permits can be reopened in court, and producer governments want more through royalties and stakes. Demand is rising from grids and data centres while the front end of the pipeline thins. That gap matters more to me than any single price move.",
+      "summary": "INDUSTRY HEALTH:\n- Copper is in a bear market and gold is reported near US$3,500, though both levels come from single-source notes.\n- Juniors are drilling more but raising 28% less money, so financing is a binding constraint alongside labour.\n- Highland Valley enters week four with no signed deal.\n\nREGIONAL TRENDS:\n- The US offshore PACM-1 sale drew about US$6M from one reported bidder. Both analysts had expected postponement or a halt.\n- Ivanhoe Electric's first Gleeson holes in Arizona found two copper-gold-silver domains; true widths are unproven.\n- A BC court ordered consultation after quashing a substantial-start determination.\n- Northern Ontario projects could hire thousands over five to ten years.\n- Chile's investment pipeline hit a 13-year high, while its economy shrank 1.1%.\n- Côte d'Ivoire plans higher royalties, and Angola plans US$180M for a De Beers stake.\n\nTECHNOLOGY & DEMAND:\n- Niron's planned Alabama plant for rare-earth-free magnets is an announcement, not yet operating capacity.\n- Grid build-out supports copper, while data-centre charges and community backlash show power-side pushback.\n- LFP cells in Michigan keep nickel and cobalt losing share.\n\nON THE HORIZON:\n- Hawaii appeal or stay request, within 60 days of judgment.\n- Highland Valley tentative deal, then signature; restart follows weeks to months later.\n- Fed decisions on whether gold's drop holds.\n- Codelco's explanation of its 42,100-tonne overstatement.\n\nWHERE THEY DISAGREE:\n- Copper timing: Meldrum expects treatment charges to show the squeeze first; Cornelius expects the physical effect mainly in 2028 to 2030 output.\n- Gold: Meldrum says a sustained break below US$3,600 would weaken the US$4,000 view; Cornelius weights cost pressure on marginal projects more heavily.\n- Single bidder: Cornelius reads thin commercial appetite; Meldrum says the sale may have been built for narrow buyers, so it is a weak guide.\n- Labour: Meldrum calls Ontario's hiring a tightening constraint; Cornelius calls it structural.\n- Niron: Cornelius says substitution is possible but not yet; Meldrum sees a long-run effect."
+    }
+  ],
+  "chief_sessions": [
+    {
+      "time": "2026-11-20T15:12:14.669781-08:00",
+      "world_count": 46,
+      "opening": "GLOBAL VIEW:\nMost of today's headlines carry no mining content, but three bear on the industry.\n\nThe clearest is US policy on AI infrastructure. Trump's threat to penalise US tech firms that build AI data centres overseas, and his insistence they stay in the US, appears in BBC, CBC and Al Jazeera coverage. If it holds, AI load concentrates in North America, which lifts copper, electrical steel and power demand on this side of the border and sharpens the grid and utility pushback the desk already tracks.\n\nChip controls push the other way. Nikkei reports Nvidia server suppliers halting Southeast Asia shipments over US curbs. That is one outlet, so treat it as provisional. Lawmakers pushing for tougher chip rules (Al Jazeera) point the same direction. A slower Asian data-centre build would trim Asian copper and electrical-steel demand with a lag.\n\nReuters reports, citing sources, that the SEC is examining Nvidia's accounting. That feeds the AI-trade sentiment the copper sell-off has been linked to. It is a price channel, not a supply one.\n\nNHK reports Japan will triple its Saudi crude reserves. Importer stockpiling keeps diesel costs a live risk for North American haulage.\n\nIn West Africa, Guinea's ban on a Burkina Faso broadcaster (France 24) is another sign of strain in the Guinea–Burkina gold corridor, where artisanal flows and the Endeavour halt already sit.\n\nDESK REVIEW:\nMeldrum's split between a financial copper sell-off and physical tightness is the most useful framing on the desk. Today's chip headlines support the downgrade of a direct AI-to-copper link. Cornelius's timescale point is solid: price falls change which projects get sanctioned, so the output effect lands in 2028 to 2030, not this year. His BC consultation ruling is the best permitting insight in the set.\n\nWeaker spots. Both analysts lean on two single-source price levels (copper below US$13,000, gold below US$3,600). Neither should anchor a view yet. The Chile investment high and the 28% fall in junior financing also appear only in desk notes, not in the headlines, so treat them as desk-sourced. The \"structural\" versus \"tightening\" dispute on Ontario labour is fair, and Meldrum is right to keep it open. Cornelius's \"every axis at once\" synthesis is the most useful summary, but it rests on the same thin base.\n\nOn my own record: the American Samoa postponement call was wrong, and that is now closed. The Hawaii appeal remains open. The Highland Valley view is unchanged: a deal is the swing event, and new supply from the restart is a 2027 question.\n\nQUESTIONS FOR THE STRATEGIST:\n- If US policy keeps AI data-centre build onshore, does the copper and power demand move to North American utilities faster than the Duke-style pushback can slow it, and where do you expect that conflict to surface first?\n- You expect state-backed projects to get built while private money waits. Do Côte d'Ivoire's royalty plan and Angola's De Beers stake change that split, by making sovereign stakes a cost of entry for private capital?\n\nQUESTIONS FOR THE GEOLOGIST:\n- At Gleeson, what drilling pattern would separate true width from a low-angle fault artefact, and how many holes would you want before a domain is worth a resource estimate?\n- With Guinea's artisanal flows and Burkina's underground halt, which deposit types are most exposed to informal output, and how quickly would that show up in reported tonnes?",
+      "global_view": "Most of today's headlines carry no mining content, but three bear on the industry.\n\nThe clearest is US policy on AI infrastructure. Trump's threat to penalise US tech firms that build AI data centres overseas, and his insistence they stay in the US, appears in BBC, CBC and Al Jazeera coverage. If it holds, AI load concentrates in North America, which lifts copper, electrical steel and power demand on this side of the border and sharpens the grid and utility pushback the desk already tracks.\n\nChip controls push the other way. Nikkei reports Nvidia server suppliers halting Southeast Asia shipments over US curbs. That is one outlet, so treat it as provisional. Lawmakers pushing for tougher chip rules (Al Jazeera) point the same direction. A slower Asian data-centre build would trim Asian copper and electrical-steel demand with a lag.\n\nReuters reports, citing sources, that the SEC is examining Nvidia's accounting. That feeds the AI-trade sentiment the copper sell-off has been linked to. It is a price channel, not a supply one.\n\nNHK reports Japan will triple its Saudi crude reserves. Importer stockpiling keeps diesel costs a live risk for North American haulage.\n\nIn West Africa, Guinea's ban on a Burkina Faso broadcaster (France 24) is another sign of strain in the Guinea–Burkina gold corridor, where artisanal flows and the Endeavour halt already sit.",
+      "strategist_answer": "On the onshore question: the policy is still a threat rather than a rule, so I'd treat the copper and power effect as conditional. If AI load does concentrate in North America, the copper demand arrives mainly through utility spending on lines, transformers, and switchgear, not through the data centres themselves. Those projects are slow, so the binding constraints are interconnection queues and transformer lead times. Pushback mostly changes where load lands and how it is paid for, not how much load gets built. I'd expect the first real conflict at state utility commissions, in large-load tariff cases that decide who pays for new generation and grid upgrades, and then in local zoning and water fights. Federal policy will make the headlines, but the state dockets will set the timing. This modestly revises my earlier view. The direct AI-to-copper link I downgraded is partly restored for North America, though only through utility spending, which is lumpy and lags the headlines.\n\nOn sovereign stakes: they do raise the cost of entry, but through two different instruments. Royalties hit margin, and on marginal projects margin is what delays sanctioning, which is the pattern I expected. Equity stakes such as Angola's change control and who carries the capital burden. Historically, many African mining codes have required state carried interests, so this is not new. A state buying into an existing major's asset, as with the De Beers stake, adds no new supply. My net read: sovereign-partnered projects get financed, while private juniors face higher margin hurdles plus a partner they did not choose. I'd sharpen my split. It is less state versus private than who carries the royalty and who holds the stake. Confidence is medium, since Côte d'Ivoire's plan is not yet final.",
+      "geologist_answer": "On Gleeson, the test is geometry. A low-angle structure can make a flat zone look thick in vertical holes, because the hole runs nearly parallel to the plane. To separate a true width from a fault artefact, drill the same domain from at least two or three directions with different dips and azimuths, use oriented core, and log structures carefully. A real tabular body gives intercepts that change predictably with hole angle, and its alteration and veining match from hole to hole. A fault-controlled smear gives intercepts that jump around with orientation. Until that work is done, the widths stay unproven, which is where the desk already is.\n\nFor a first resource estimate, I want the domain crossed by enough holes on a grid tight enough to show continuity, usually a dozen or more, spread across at least two drill directions, with QA/QC that holds up. Before that, you have a target, not a resource. That is a rule of thumb, not a fixed number, and it depends on how complex the geology is.\n\nOn Guinea and Burkina, the most exposed deposits are the ones artisans can work without a plant: alluvial and eluvial placers, shallow oxide zones, and narrow high-grade veins that small crews can follow underground. Large bulk-tonnage open pits are much less exposed. Informal output reaches reported tonnes slowly. A formal shutdown, such as the Burkina underground halt, shows up in official production almost at once. Artisanal flows surface only through export and reconciliation gaps, often a quarter or more later, and even then they are estimates.\n\nDr Simon's chip-control and data-centre points don't change my view on either question, though the US onshore push matters more for the copper and power side the desk tracks than for mine geology.",
+      "conclusion": "INDUSTRY HEALTH:\n- The squeeze that matters most is financing, not price. Juniors are drilling more while raising 28% less, so fewer discoveries reach the stage where they can be valued or sanctioned. The copper and gold price levels are single-source, so I would not anchor on them yet.\n- Price falls mainly change which projects get sanctioned. The output effect lands in 2028 to 2030, not this year.\n\nREGIONAL TRENDS:\n- North America: US policy on AI data centres is a threat, not yet a rule, but if it keeps load onshore, the first real conflict will be state utility tariff cases on who pays for grid upgrades. Canada's permitting risk has shifted to courts: the BC ruling shows permits can be reopened at the consultation stage, and the Highland Valley impasse is the labour pressure point. The American Samoa sale went ahead on one bidder, so my postponement call was wrong and the commercial read is thin.\n- Latin America: Chile's investment pipeline is led by lithium, but the economy shrank and the Codelco overstatement is unexplained, so I give the investment high moderate weight until Codelco explains it.\n- Africa: Côte d'Ivoire's royalty plan and Angola's De Beers stake both show sovereigns taking a larger share of margin and ownership, and the Guinea–Burkina corridor strain is raising informal-output risk.\n\nTECHNOLOGY & DEMAND:\n- Copper and electrical steel gain from grid and utility spending on lines, transformers, and switchgear, which is lumpy and lags the headlines. Nickel and cobalt keep losing share as LFP scales, with lithium gaining modestly.\n- Niron's rare-earth-free magnet plant is an announcement, not proven demand; motor qualification takes years, so I treat rare-earth substitution as possible but not yet. Defence spending keeps tungsten and antimony firm.\n\nON THE HORIZON:\n- The Hawaii appeal or stay request falls within 60 days of judgment. It decides whether the American Samoa litigation risk resolves or lingers.\n- A signed Highland Valley deal would be the swing event for Canadian copper, but restart takes weeks to months after signature, so new supply is a 2027 question.\n- Major Drilling's fiscal Q2 results on 3 December will give a read on whether drilling demand is holding while financing falls.\n\nCREATIVE ANGLES:\n- If royalty and carried-interest demands spread across Africa, juniors may need to bring in a state partner early, shifting ownership before a project reaches feasibility. (speculation level: medium)\n- Utility spending on transformers and switchgear could outlast a data-centre slowdown, and transformer lead times may become the binding constraint on North American copper demand. (speculation level: medium)\n- A single-bidder seabed sale may signal that seabed minerals will be a state-anchored market, like defence tungsten, rather than a commercial one. (speculation level: high)\n\nGLOBAL BRIEFING:\nWatch US moves to keep AI data-centre construction onshore. If they hold, copper, electrical steel, and grid spending concentrate in North America, and utility tariff fights become the place where AI demand meets political limits. Tighter US chip controls, and reported halts to Nvidia server shipments into Southeast Asia, could slow Asian data-centre build and trim Asian copper demand with a lag. Japan's move to triple its Saudi crude reserves keeps diesel costs a live risk for North American haulage. In West Africa, strain in the Guinea–Burkina gold corridor raises the chance that artisanal output shifts in ways that official tonnes will not capture quickly.\n\nPREDICTIONS:\nPREDICTION: Highland Valley copper strike ends with a tentative agreement announced by Teck or the union | BY: 2026-12-31 | CONFIDENCE: low\nPREDICTION: Hawaii appeal or stay request in the American Samoa offshore minerals case is formally filed | BY: 2027-01-31 | CONFIDENCE: medium\nPREDICTION: Côte d'Ivoire formally adopts higher mineral royalties by decree | BY: 2026-12-31 | CONFIDENCE: low",
+      "sections": [
+        [
+          "Industry health",
+          [
+            "The squeeze that matters most is financing, not price. Juniors are drilling more while raising 28% less, so fewer discoveries reach the stage where they can be valued or sanctioned. The copper and gold price levels are single-source, so I would not anchor on them yet.",
+            "Price falls mainly change which projects get sanctioned. The output effect lands in 2028 to 2030, not this year."
+          ]
+        ],
+        [
+          "Regional trends",
+          [
+            "North America: US policy on AI data centres is a threat, not yet a rule, but if it keeps load onshore, the first real conflict will be state utility tariff cases on who pays for grid upgrades. Canada's permitting risk has shifted to courts: the BC ruling shows permits can be reopened at the consultation stage, and the Highland Valley impasse is the labour pressure point. The American Samoa sale went ahead on one bidder, so my postponement call was wrong and the commercial read is thin.",
+            "Latin America: Chile's investment pipeline is led by lithium, but the economy shrank and the Codelco overstatement is unexplained, so I give the investment high moderate weight until Codelco explains it.",
+            "Africa: Côte d'Ivoire's royalty plan and Angola's De Beers stake both show sovereigns taking a larger share of margin and ownership, and the Guinea–Burkina corridor strain is raising informal-output risk."
+          ]
+        ],
+        [
+          "Technology & demand",
+          [
+            "Copper and electrical steel gain from grid and utility spending on lines, transformers, and switchgear, which is lumpy and lags the headlines. Nickel and cobalt keep losing share as LFP scales, with lithium gaining modestly.",
+            "Niron's rare-earth-free magnet plant is an announcement, not proven demand; motor qualification takes years, so I treat rare-earth substitution as possible but not yet. Defence spending keeps tungsten and antimony firm."
+          ]
+        ],
+        [
+          "On the horizon",
+          [
+            "The Hawaii appeal or stay request falls within 60 days of judgment. It decides whether the American Samoa litigation risk resolves or lingers.",
+            "A signed Highland Valley deal would be the swing event for Canadian copper, but restart takes weeks to months after signature, so new supply is a 2027 question.",
+            "Major Drilling's fiscal Q2 results on 3 December will give a read on whether drilling demand is holding while financing falls."
+          ]
+        ]
+      ],
+      "creative": [
+        "If royalty and carried-interest demands spread across Africa, juniors may need to bring in a state partner early, shifting ownership before a project reaches feasibility. (speculation level: medium)",
+        "Utility spending on transformers and switchgear could outlast a data-centre slowdown, and transformer lead times may become the binding constraint on North American copper demand. (speculation level: medium)",
+        "A single-bidder seabed sale may signal that seabed minerals will be a state-anchored market, like defence tungsten, rather than a commercial one. (speculation level: high)"
+      ],
+      "briefing": "Watch US moves to keep AI data-centre construction onshore. If they hold, copper, electrical steel, and grid spending concentrate in North America, and utility tariff fights become the place where AI demand meets political limits. Tighter US chip controls, and reported halts to Nvidia server shipments into Southeast Asia, could slow Asian data-centre build and trim Asian copper demand with a lag. Japan's move to triple its Saudi crude reserves keeps diesel costs a live risk for North American haulage. In West Africa, strain in the Guinea–Burkina gold corridor raises the chance that artisanal output shifts in ways that official tonnes will not capture quickly."
+    }
+  ],
+  "world": [
+    {
+      "title": "UK to explore even closer ties with EU after agreeing deal, says Burnham",
+      "link": "https://www.bbc.co.uk/news/articles/c6jreyqgw4e9o?at_medium=RSS&at_campaign=rss",
+      "published": "Fri, 20 Nov 2026 17:49:48 GMT",
+      "source": "BBC News",
+      "lane": "world"
+    },
+    {
+      "title": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper",
+      "link": "https://www.bbc.co.uk/news/articles/cmde1lj4yjxno?at_medium=RSS&at_campaign=rss",
+      "published": "Fri, 20 Nov 2026 21:57:07 GMT",
+      "source": "BBC News",
+      "lane": "world"
+    },
+    {
+      "title": "French police officers sentenced for beating of music producer Michel Zecler",
+      "link": "https://www.bbc.co.uk/news/articles/ck9d7e9wvvweo?at_medium=RSS&at_campaign=rss",
+      "published": "Fri, 20 Nov 2026 22:37:09 GMT",
+      "source": "BBC News",
+      "lane": "world"
+    },
+    {
+      "title": "Gérard Depardieu and French author investigated over sexual allegations",
+      "link": "https://www.bbc.co.uk/news/articles/c9ly43pj10mvo?at_medium=RSS&at_campaign=rss",
+      "published": "Fri, 20 Nov 2026 19:45:20 GMT",
+      "source": "BBC News",
+      "lane": "world"
+    },
+    {
+      "title": "Trump threatens ban on US firms building AI data centres overseas",
+      "link": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss",
+      "published": "Fri, 20 Nov 2026 20:54:12 GMT",
+      "source": "BBC News",
+      "lane": "world"
+    },
+    {
+      "title": "Indian man sentenced to 19-plus years in plot to assassinate US-based Sikh separatist leader",
+      "link": "https://www.bbc.co.uk/news/articles/cq702ez8d4lwo?at_medium=RSS&at_campaign=rss",
+      "published": "Fri, 20 Nov 2026 19:27:49 GMT",
+      "source": "BBC News",
+      "lane": "world"
+    },
+    {
+      "title": "EXCLUSIVE: Nvidia's accounting is a focus of US SEC investigation, sources say",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMzlPdFVTT2cyVkhmMFVKNWZ1MnpNT0NLcURnblg4THMwUWNuYTRBLWUxU0ZSSUR5bk1zNnBmVlhIUjByNkN6TzVBNC1uaXQxM0dwY2FkMzZQdm00a0xyMXo3NFNpSUNPdERZWU82aGZLa0lNZHpMOXVnVDBVQW9lMmNrWEVRczVYS1Racm1NNlNERDBJeTFJRG1pZVRfTC1LTy1pNjhpVzRaeGRrY25kSzQ1aDNUUQ?oc=5",
+      "published": "Fri, 20 Nov 2026 21:37:28 GMT",
+      "source": "Reuters",
+      "lane": "world"
+    },
+    {
+      "title": "French Senate approves police shootings law dubbed 'licence to kill' by critics",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOa1REWkppS2F2SjhjZkk2S2NYbW5HTkNsenZuaWJTRjQ0dUxXUm1rNkltdzdlM3VTY19yTTJZZjhUODB6T01sdjNNRUVFdTFlNGFLOVpvdF91X2hUU2RaaTFhSFhDdWt6YTZWeWdQUFlxNllYcEE0T2hpWXVnb1p5amxHMmNoUjRaTzZHS0QtVEMzUnJFRU9wNURJWFpnTWVwbnRGbWdFOEY5WVlCRHZYR2QxSk5aa00?oc=5",
+      "published": "Fri, 20 Nov 2026 20:27:05 GMT",
+      "source": "Reuters",
+      "lane": "world"
+    },
+    {
+      "title": "Trump cites good talks with Putin on Ukraine, holds back on security guarantees",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQX3JPLTZVMmozZDY5c0piSTJBajFkeXRoMVc0UWVRRVVtZTdHb3BNcU8temVfeW1TNWRzZzBGVVVTUEs4TGl3eFpuSGNCNFpsLUpPRE1PSjdQYzZDbl9LM2NkMlo3TmpFVEV5QkNhODJyZy1qTUc3U0VNSFhUZHhqWWowLUxSamJlUlIxYjgyVV81ZjFOYmM0ZjdDUQ?oc=5",
+      "published": "Fri, 20 Nov 2026 21:04:31 GMT",
+      "source": "Reuters",
+      "lane": "world"
+    },
+    {
+      "title": "Former Nvidia CEO Huang agreed to testify at public US Senate hearing, senator's aide says",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVXRKZGYxUkVSVnNCbGJHOG9wWjFSY1puTVMtdUMyeGg4VTFXR2xhRXd1ZmxYZ1g5QlBZRzljX1F0V1R5WERUOGdhb09IWXE0MTJXWXl3Z0F1czYyck1OT1NHc012Rm1PaDdXR1BQSkVRTkNqQkpCVUZZSUdTMnY1S1Zsa0kwYV8tai16c1Z3QnBwb0JZNjA5QXA1TkllMFhacFZMcm9MNHoyYU1LNHBlY2ZiN1lHUElQSURVSFo5aw?oc=5",
+      "published": "Fri, 20 Nov 2026 19:21:45 GMT",
+      "source": "Reuters",
+      "lane": "world"
+    },
+    {
+      "title": "Second judge blocks Trump's triumphal arch, calling it a 'rushed job'",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPajdFUmpSOXN6d045Q1JacldoemRSTldiRTFnRWtITzRtdHZsZ0FROGM5V0RZLUVPS25MUUhFdU10WmdDLXNHeXZfRTJxNXRGNVdaQVVnT0Z2X1c4cy1KYVo2NURYZ0JLMmt2VW1iU0F5RlVWV0M0RTZISVlrRUVEY2s4LTNrUU80TnNVS1FCWWplWk1DRUJEUlNfWnpxOE5OelluZ2FZeVZwQQ?oc=5",
+      "published": "Fri, 20 Nov 2026 17:47:12 GMT",
+      "source": "Reuters",
+      "lane": "world"
+    },
+    {
+      "title": "Student protests held across Europe with demands from school funding to climate",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNT203dWpPR19PY3FGeGlGWkNqRklXMDA0cEtFTXBoY21LbVhhaEVNNzVXWTJfOUhUOURwUVVtQXBVazBOdjRjNmVnRktLOGxHam9tZ3ZneGp3bXNfQ2lHOU0yY0I2WF9qdnJxSkNrVm1Pc0REblNaMXJxRHZqRnpDcmY5MEhOdkNaeUZMUVFQYUxDUXRKbmhmckRvQnBHZUlXclh6ZEJJSUJQYll3SUNfdGJ5WQ?oc=5",
+      "published": "Fri, 20 Nov 2026 16:30:09 GMT",
+      "source": "Reuters",
+      "lane": "world"
+    },
+    {
+      "title": "Mayor Mamdani announces plan to close New York's Rikers Island jail by 2032",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRWJEVWdSMkxUUEMxd1FENDRfSkJLSEpfV2VlOGpSZEtxUmJqMnowSktRSTVxa2o2RXRmazFYRWFDQzlqcGs5ZkRpLW5MUGZqSl9XUzJEVkk1RTJCX1d0Y1IySktPU01sbDhBcVRuR1I4d2hzS1ZBRmdlMlBLWm5fY0FBUW1ydVFjNy1Eb2wxSkpuZVpiOTdUQnF0N2VJeVl0Tl85NGZxeTNVQ25tMFFZbnVJQQ?oc=5",
+      "published": "Fri, 20 Nov 2026 18:51:22 GMT",
+      "source": "Reuters",
+      "lane": "world"
+    },
+    {
+      "title": "Two veto-wielding powers reject Costa Rica's Grynspan as UN chief in poll, sources say",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSDY4NjdrMXdBMnZVZEhOd0ZCR19VYk5LX3NCaDF5dHRHNENkUnJsQjhlTC1hLWpIdUdzbGMwYVNTWGhpUmVZX2hROTVSN3NTLXJVVXpGTlY4WmhwUWxHMGhvajhNelJoMmZVeEoxWU0tR0p2cjhJYWdFZUtWeWFickh4ZEt4QW0yY2tVUUU5MjB2eGRIMTFGLS11MXc5NWZqb3A0YTVNS0s1b0FRMmlaYUFVQUVrTnQ3U2prWWJUZUNMUjY1?oc=5",
+      "published": "Fri, 20 Nov 2026 19:42:03 GMT",
+      "source": "Reuters",
+      "lane": "world"
+    },
+    {
+      "title": "Myanmar genocide judgment may bolster Gaza case against Israel",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVXpvX3JTUmpQTWxpbnp3ZFFxaVFmd3ZEUjhSbmFlNDBwbG4tcWNmTzNnSkZXVks3YzlsSUNqOXk3QThrZXRONnBaSlh6RXp1YndKOFhKcEhQeHJGdjFzYlhKdnBnLXR6clpkQkl2ejh4UzJmaVhNbXc3My1ucEpqS0UzNTFmYzhNY2F6UV9sTHJ3RWlsdUFrWUxtQ2pPRHJUYWV3RlI2eVB3Q2N3bnVhMkUtenBUcXlq?oc=5",
+      "published": "Fri, 20 Nov 2026 22:21:42 GMT",
+      "source": "Reuters",
+      "lane": "world"
+    },
+    {
+      "title": "Melania Trump gives a peek inside her marriage, motherhood and more in new series",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeGVNSWdUaU9iYzlNSklfQVRFNkg1bEV6c1NlUlBsbS1VaERleUJ4Qk81TThTbm5BVDZoNWtGQmlqR3NFZU1Db0w3WktDeFk3OWt6QzVCeXJQRTJKbkd1bC02RVNNSjgtZWZ1YjlyYUZoalhGZGdVT2MwT3N1VzkyczNLZ1F6SU82V09iMlRQemxzbXdLejNPMXZoWQ?oc=5",
+      "published": "Fri, 20 Nov 2026 13:40:00 GMT",
+      "source": "AP News",
+      "lane": "world"
+    },
+    {
+      "title": "Trump defends calling Putin a friend but says he ‘can’t speak’ to whether he's a friend to the US",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQkhfc2NSR2FxMldlZzg4WHVHdUdTR0Q4eExlN3dTZUFydXRVeFM4Z2hwcENYU3VNcGtqeEhOZFpjbmZmVVRzY2hVLS1iMTVIUkdyZ0lyTHBHM25CSjBJQzhRc0Uxbmk2Zy0zQmpZbVVrM3pOaUVpX2MwTHB0Q0lFdlVsQkIxRHRMUDFCTS04OUlSZw?oc=5",
+      "published": "Fri, 20 Nov 2026 21:47:00 GMT",
+      "source": "AP News",
+      "lane": "world"
+    },
+    {
+      "title": "US lawmakers push for tougher AI chip rules amid China export crackdown",
+      "link": "https://www.aljazeera.com/economy/2026/11/20/us-lawmakers-push-for-tougher-ai-chip-rules-amid-china-export-crackdown?traffic_source=rss",
+      "published": "Fri, 20 Nov 2026 22:15:07 +0000",
+      "source": "Al Jazeera – Breaking News, World News and Video from Al Jazeera",
+      "lane": "world"
+    },
+    {
+      "title": "Iraq PM targets militia stronghold in bid to assert state control",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/20/aje-onl-nf_iraq-pm-targets-militia-stronghold-jurf-al-sakhar-201126?traffic_source=rss",
+      "published": "Fri, 20 Nov 2026 21:28:25 +0000",
+      "source": "Al Jazeera – Breaking News, World News and Video from Al Jazeera",
+      "lane": "world"
+    },
+    {
+      "title": "Trump defends Putin relationship, warns AI data centres must stay in US",
+      "link": "https://www.aljazeera.com/news/2026/11/20/trump-defends-putin-relationship-warns-ai-data-centres-must-stay-in-us?traffic_source=rss",
+      "published": "Fri, 20 Nov 2026 21:05:07 +0000",
+      "source": "Al Jazeera – Breaking News, World News and Video from Al Jazeera",
+      "lane": "world"
+    },
+    {
+      "title": "Two Salvadoran soldiers killed in Haiti while handling explosives",
+      "link": "https://www.aljazeera.com/news/2026/11/20/two-salvadoran-soldiers-killed-in-haiti-while-handling-explosives?traffic_source=rss",
+      "published": "Fri, 20 Nov 2026 20:59:04 +0000",
+      "source": "Al Jazeera – Breaking News, World News and Video from Al Jazeera",
+      "lane": "world"
+    },
+    {
+      "title": "Can the UK and EU turn the page on Brexit?",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/20/can-the-uk-and-eu-turn-the-page-on-brexit?traffic_source=rss",
+      "published": "Fri, 20 Nov 2026 20:51:19 +0000",
+      "source": "Al Jazeera – Breaking News, World News and Video from Al Jazeera",
+      "lane": "world"
+    },
+    {
+      "title": "Russian ornithologist jailed over small donations to Navalny's foundation",
+      "link": "https://www.dw.com/en/russian-ornithologist-jailed-over-small-donations-to-navalny-s-foundation/a-80005505?maca=en-rss-en-world-4025-rdf",
+      "published": "",
+      "source": "World | Deutsche Welle",
+      "lane": "world"
+    },
+    {
+      "title": "Repression against Iranian lawyers increases",
+      "link": "https://www.dw.com/en/repression-against-iranian-lawyers-increases/a-80006742?maca=en-rss-en-world-4025-rdf",
+      "published": "",
+      "source": "World | Deutsche Welle",
+      "lane": "world"
+    },
+    {
+      "title": "Paris police officers sentenced to prison over 2020 beating of Black man",
+      "link": "https://www.france24.com/en/france/20261120-paris-police-officers-sentenced-to-prison-over-2020-beating-of-black-man-michel-zecler",
+      "published": "Fri, 20 Nov 2026 22:04:45 GMT",
+      "source": "© Thomas Samson, AFP",
+      "lane": "world"
+    },
+    {
+      "title": "Guinea bans Burkina Faso broadcaster, escalating diplomatic tensions",
+      "link": "https://www.france24.com/en/tv-shows/eye-on-africa/20261120-guinea-bans-burkina-faso-broadcaster-escalating-diplomatic-tensions",
+      "published": "Fri, 20 Nov 2026 21:53:35 GMT",
+      "source": "France 24 - International breaking news, top stories and headlines",
+      "lane": "world"
+    },
+    {
+      "title": "'Friends' But Who Benefits? Notes from an Historic Summit, Myanmar's Genocide Ruling, Time to 'Bre-join' the EU?",
+      "link": "https://www.france24.com/en/tv-shows/the-world-this-week/20261120-friends-but-who-benefits-notes-from-an-historic-summit-myanmar-s-genocide-ruling-time-to-bre-join-the-eu",
+      "published": "Fri, 20 Nov 2026 19:42:58 GMT",
+      "source": "France 24 - International breaking news, top stories and headlines",
+      "lane": "world"
+    },
+    {
+      "title": "🦛 USA: Fiona, Cincinnati Zoo’s famous hippo, has died",
+      "link": "https://www.france24.com/en/video/20261120-%F0%9F%A6%9B-usa-fiona-cincinnati-zoo-s-famous-hippo-has-died",
+      "published": "Fri, 20 Nov 2026 17:35:32 GMT",
+      "source": "France 24 - International breaking news, top stories and headlines",
+      "lane": "world"
+    },
+    {
+      "title": "Japan to triple Saudi crude oil reserves | NHK WORLD-JAPAN News",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5teHVEdDJwSXBzd2pQVmlfTkVqdnh5b1lFQmJhMWptNnI5VXJfeHA3ME4tS3c3M2tCQUdJeElNVVRSYTBLN2NBWmk1QkdPTUhjeTVWODZIalhVb2tETEhJSW40QQ?oc=5",
+      "published": "Fri, 20 Nov 2026 11:29:09 GMT",
+      "source": "NHKニュース",
+      "lane": "world"
+    },
+    {
+      "title": "Breakthrough trilateral summit raises questions for Japan | NHK WORLD-JAPAN News",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBhWjJUMEd0LTNKaEM5LTZrT1FuVDMtVGxNTFVrRHVnRmdzSF9ZdlVlMVU2aGs0Mm1pV1dOLUtBaUhsb2F1T1NnUDlGWm9tNlVlbUNOWHR5ZE0yQmdqQWhneWdPOA?oc=5",
+      "published": "Fri, 20 Nov 2026 09:55:18 GMT",
+      "source": "NHKニュース",
+      "lane": "world"
+    },
+    {
+      "title": "'Peace declaration' overshadowed by Russian attack",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBvMDQ0YmZJSWJzMlVCQ1VmOUtDMUd4TEx4Sl9hMFljTUdnSEppRUVYREFxLUE0elZqXzZXSXFJTmYtUkpiUG1xOXFKaUwzUWxBQ0h4SVZLMFM2MWlIRTU4ZHBBOA?oc=5",
+      "published": "Fri, 20 Nov 2026 19:09:35 GMT",
+      "source": "NHKニュース",
+      "lane": "world"
+    },
+    {
+      "title": "Sixty years ago, the public service 'marriage bar' lifted",
+      "link": "https://www.abc.net.au/news/2026-11-21/60-years-since-ban-married-women-public-service-lifted/107406214",
+      "published": "Fri, 20 Nov 2026 23:00:17 +0000",
+      "source": "Just In",
+      "lane": "world"
+    },
+    {
+      "title": "Farmer hopes MND trial could give her more time with family",
+      "link": "https://www.abc.net.au/news/2026-11-21/kilkivan-farmer-places-hope-in-national-mnd-trial/107400112",
+      "published": "Fri, 20 Nov 2026 22:59:07 +0000",
+      "source": "Just In",
+      "lane": "world"
+    },
+    {
+      "title": "Inquest probes DV incidents in years before Ngukurr mother's suicide",
+      "link": "https://www.abc.net.au/news/2026-11-21/ngukurr-inquest-mirniyowan-suicide-domestic-violence/107406224",
+      "published": "Fri, 20 Nov 2026 22:33:41 +0000",
+      "source": "Just In",
+      "lane": "world"
+    },
+    {
+      "title": "The key takeaways from 2026 AFL Draft",
+      "link": "https://www.abc.net.au/news/2026-11-21/afl-draft-2026-dougie-cochrane-top-pick/107412216",
+      "published": "Fri, 20 Nov 2026 22:11:00 +0000",
+      "source": "Just In",
+      "lane": "world"
+    },
+    {
+      "title": "Farmers warned to pay up or potentially lose drivers licences",
+      "link": "https://www.abc.net.au/news/2026-11-21/farmers-could-lose-drivers-licence-for-fine-payment-refusal/107401972",
+      "published": "Fri, 20 Nov 2026 21:57:45 +0000",
+      "source": "Just In",
+      "lane": "world"
+    },
+    {
+      "title": "Trump threatens to penalize U.S. tech companies that build AI data centres in other countries",
+      "link": "https://www.cbc.ca/news/world/ai-data-centres-us-tech-companies-trump-9.7430426?cmp=rss",
+      "published": "Fri, 20 Nov 2026 16:35:47 EST",
+      "source": "CBC | World News",
+      "lane": "world"
+    },
+    {
+      "title": "Former White House press secretary Katie Zacharia investigated by California state bar",
+      "link": "https://www.cbc.ca/news/world/katie-zacharia-california-state-bar-investigation-9.7430437?cmp=rss",
+      "published": "Fri, 20 Nov 2026 16:21:40 EST",
+      "source": "CBC | World News",
+      "lane": "world"
+    },
+    {
+      "title": "Buenos Aires marks King Charles's birthday with a reconciliation message amid bilateral tension",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZWVrZWtjbmRzazdTOVhRQ1hHWWoyUXNXNlRVenRyc3ZOT3RjNzlhRlg3VWlHclVPTUZHMUpVdUxBZDVXd2xSa2hpaUlyQk1LWjRLTDZ2cmtoWnRHWlpRdTd4TVZTWW5ETlVpenoxNF9yNVViRHBtTGxjRXhzT3Z2TXV4cDF6MVQtR2NzNWZ2UFZRbC1IaExCSGxMZU1kN2FkMlNTeWw0OXlHdGRjUS05VlUyVDhHbE1ZNnhzOVBtQ210Si16ckZna2pCTkU?oc=5",
+      "published": "Fri, 20 Nov 2026 14:21:00 GMT",
+      "source": "MercoPress",
+      "lane": "world"
+    },
+    {
+      "title": "UK and EU sign their biggest deal since Brexit in Brussels",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdWNoVlh4Ymp0anBoX0UyTnloSlc5RTh1N3lUXy1UWjhBUEp6elRNV2cyR19TVlR5bG9VU253c2NMbHh2Y1hpQklWYVdYRTRiRU9zRm9EQTNxbnpQOUw3dWVWeEJZQUdoeEF5b295d1JqdUE5UVp5YXdfSVdzTGQweHh4ZnlQWDFxLW1sQjJwTW4yQ21fSE0wUUdPWQ?oc=5",
+      "published": "Fri, 20 Nov 2026 19:42:00 GMT",
+      "source": "MercoPress",
+      "lane": "world"
+    },
+    {
+      "title": "Motor racing-Nike to become Formula One’s official apparel and uniform partner",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUnU1TDVPOTRERDlvbm13TThEMEEtRnJ2WEJTOVJnVk9GUHlIR3lzbk1CaDRDM3pPYjhCdm5CazRHbU5LU0RfYTFYVGlaeHNVWERGaGVwNTZHclpkTUNfNTFycjg3SGFBRlRNYzM4aDVnUjhhVldTTXlUdnN3VlRuUlpsdG0xbFczVVA5WDdFMzhxcG5jVGpzWWY3YUxKVlA0NlZYNDFVY2dFaUhBekNmcUMzcWdlV055andhd19waUJQdUZtcXpzVQ?oc=5",
+      "published": "Fri, 20 Nov 2026 03:12:44 GMT",
+      "source": "Daily Maverick",
+      "lane": "world"
+    },
+    {
+      "title": "Trump ousts cyber director after tech outages spark criticism",
+      "link": "https://news.google.com/rss/articles/CBMixgJBVV95cUxQQXl5Z3RpS2t3RVo4bUR3Tkd3eHRwWnhJazF6N2Vha09hdkdBSWNiYkVUc1haVml6b1l2VDlTVXBKV2lEYkN3azlTNWpMSnRiVmk3YXVkWV8wcEhad2dCN0NKSDVNQ3pGV01pVFBWZ0xsNm9yMUtCaW9tc1l1WFpwXzFxaUtDQkx5MHZDeEt2a21PU0tzR0ZIWnRRN053dkU5N2Jjd0JIUUNaa2NObi1sV1BWQXJMVTRMX2taLUplUGMzUGRab1E0aHd1ZmdwV3VGNE9LT09SdWlNdDFDMGpXWDdJdVhVY0JCaTNKbWprNjVTUmozY0xiNGtobklrckxGLTVlWEY5NFc4OWt6R3FqeFRoa3NvRGNOSVV3UWlSVGZUaWZVcDhMdVBsNHVuM3VSNk1vZXdFcTB4MHBBWndBVVhWWlFDQQ?oc=5",
+      "published": "Fri, 20 Nov 2026 03:12:44 GMT",
+      "source": "Daily Maverick",
+      "lane": "world"
+    },
+    {
+      "title": "Kenya says two hippos died after eating maize, fishing nets",
+      "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxON2xlamljc1M5MEdwYlY4UWw4Uk1uWDFfNUJ3cXZXVzNFUnh5bkQ4OUNpUTFGaWVNQjVUeUtZdllSU2pSN1NzdVk2dnMxZ1gwREQxNHFua2ptWi00ZmotTjhWMGFZTTNQS1JrV2ZfdF9mU1BJbjFiLWlQRlJldXI4V0h5U0hqYW5sV0NLc3NRX3ZoUTFic2RRWnFocnF5V2NmMl96aHE1a3VTZHBYZ29CYzZjRVRkWVNSSVA0WjBQNVp3S1BtNnZ2a1RSbng4QUN2MEFVZkNOaVN4YldhdTJpdDh5T3J3T1BCSHNvek1OLW5ZQ05pVDVqRmRFLTRvYnc2RXVzSjlmYWxOT1V4NTRyVEFWYWU2ZzA4?oc=5",
+      "published": "Fri, 20 Nov 2026 08:22:23 GMT",
+      "source": "Daily Maverick",
+      "lane": "world"
+    },
+    {
+      "title": "Alibaba defrauded shareholders by concealing ties to suspected spy in Nvidia scandal, lawsuit says",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPMGZvYXVSZmM3ZWlad2NGRmNJc2FVTEc0b1cxdG42VXZObUdsWFlHRXVjZ1BGMjBzeEJua0k2UDB3cUU0T1BpX0RIMHNUQTZOVXBHY25uYWI4S0h2elg4bldwZkZ4aUNlQlMwcmJOb25xZk43aW5tcndXbzNUck5FT280YzI3bXY5aTVxcnB2VktqZUZ6ZEp2ZHVONXVXRUpUZnBTZG9RZG9rVkpTNms1NFFZdkNhdFFMUFZFYXFiWV9maVVwU1hicGhOUGR3aFFKRFlQdV9rMmRVMXZqczJKVTNLUQ?oc=5",
+      "published": "Fri, 20 Nov 2026 07:01:59 GMT",
+      "source": "Daily Maverick",
+      "lane": "world"
+    },
+    {
+      "title": "Nvidia server suppliers halt Southeast Asia shipments over US curbs",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPQWJ2Ynl0elFmc2U2cHV6em9qVVp6SGdacE1hRjdjaEJsZExHRDhkSm95cDYwNGxDN3pwY1dBYkhSSkgzd0JveGJUMExPaDBXS2lrc0hCaUtOd09ZUUdPRWNjNHZJOXZhRkpmajhral9vZDV1WjV3UzItRnhiU3Y5NmtKV3JueDZQVHVlaEFTamxxOG1pUm9KdTlXazlOSXEtLUNFdkJmaFY0cG9td1hqV2dCLTF4b2t0ZXZBVVVQSHh0Zy1OY05EV0NwcmJ1c2Ni?oc=5",
+      "published": "Fri, 20 Nov 2026 20:04:00 GMT",
+      "source": "Nikkei Asia",
+      "lane": "world"
+    },
+    {
+      "title": "Vietnam shifts FDI focus from jobs and factories to technology",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMjR2cVhoaENUUjRaNDRoWl9MOFFwazF2akNBSFJ4TkdSNE4yQkVtOWlfODVDVXo0Y3Bua3YydkF0bE0tUlNyXzcyMnFiTkhvTk5TRmtoTTdlWVlPTjhvRFJLOER2dnFRa1pEYW54Z2lLdk8tNUZneUFHSEVWTVVTbnZaMUZSWDFZRmE2eHRRZkJ1N3FjRlZwN0lCNFllNEFJYVJuYkh3TW5Ra1U?oc=5",
+      "published": "Fri, 20 Nov 2026 08:41:00 GMT",
+      "source": "Nikkei Asia",
+      "lane": "world"
+    }
+  ],
   "claims_new": [],
   "claims_active": [],
   "notices": [],
