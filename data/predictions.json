@@ -1,5 +1,5 @@
 {
-  "next_id": 42,
+  "next_id": 51,
   "items": [
     {
       "id": "P1",
@@ -21,6 +21,10 @@
         {
           "date": "2026-11-20",
           "note": "Items 135 (over 1,000 workers in two B.C. strikes) and the HR Law item on Teck's barred use of newly promoted supervisors add pressure toward a deal, but no tentative or ratified agreement appears."
+        },
+        {
+          "date": "2026-11-21",
+          "note": "Today's news adds pressure toward a deal (the replacement-worker order in the CBC headline, the Teck supervisor restriction in news 15, and news 64 on blocked picketing in a B.C. steel strike) and \"over 1,000 workers\" are still out, but no tentative or ratified agreement is reported."
         }
       ]
     },
@@ -44,6 +48,10 @@
         {
           "date": "2026-11-20",
           "note": "Item 135 (over 1,000 workers in two B.C. strikes) and the Teck supervisor restriction show pressure to settle, but neither a tentative nor a ratified agreement is reported."
+        },
+        {
+          "date": "2026-11-21",
+          "note": "The same pressure items (CBC replacement-worker order, news 15, news 64) and \"over 1,000 workers\" in two B.C. strikes point toward settlement, but no tentative or ratified agreement is reported yet."
         }
       ]
     },
@@ -296,6 +304,10 @@
         {
           "date": "2026-11-20",
           "note": "Items 113 and 132 say the government proceeded despite the court setback, which makes an appeal likely, but no notice of appeal is reported."
+        },
+        {
+          "date": "2026-11-21",
+          "note": "Items 1, 2 and 4 show the government held the American Samoa seabed lease auction after a judge ruled it illegal (\"Defying judge, Trump admin holds Samoa deep-sea mining auction\"), which makes an appeal more likely, but no notice of appeal is reported."
         }
       ]
     },
@@ -311,6 +323,10 @@
         {
           "date": "2026-11-20",
           "note": "Gold has fallen below $3,600 and hit a 14-month low (items 110, 129), so a move above $4,000 by June 2027 would need a rise of more than 10%, and today's news points against it."
+        },
+        {
+          "date": "2026-11-21",
+          "note": "Gold is near $3,500 (news 19, \"Gold price fall nears $3,500\"), so a move above $4,000 by June 2027 would need a rise of about 14%, and today's news points against it."
         }
       ]
     },
@@ -382,7 +398,12 @@
       "confidence": "medium",
       "made": "2026-11-20",
       "status": "open",
-      "evidence": []
+      "evidence": [
+        {
+          "date": "2026-11-21",
+          "note": "Items 1, 2 and 4 show the government proceeding with the American Samoa auction after a court setback, which raises the odds of an appeal or stay motion by 2027-01-31, but neither has been reported."
+        }
+      ]
     },
     {
       "id": "P34",
@@ -461,6 +482,96 @@
       "by": "2026-12-31",
       "confidence": "low",
       "made": "2026-11-20",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P42",
+      "author": "strategist",
+      "text": "The US House passes the Senate-passed permitting bill",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-21",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P43",
+      "author": "strategist",
+      "text": "Niron publicly confirms construction start at its Alabama rare-earth-free magnet plant",
+      "by": "2027-06-30",
+      "confidence": "low",
+      "made": "2026-11-21",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P44",
+      "author": "geologist",
+      "text": "The US House passes the Senate-approved federal permitting bill that affects the Boundary Waters",
+      "by": "2027-06-30",
+      "confidence": "low",
+      "made": "2026-11-21",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P45",
+      "author": "geologist",
+      "text": "Angola's state entity signs a binding agreement to acquire a stake in De Beers",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-21",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P46",
+      "author": "chief",
+      "text": "Highland Valley copper strike ends with a tentative agreement announced by Teck or the union",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-21",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P47",
+      "author": "chief",
+      "text": "Hawaii appeal or stay request in the American Samoa offshore minerals case is formally filed",
+      "by": "2027-01-31",
+      "confidence": "medium",
+      "made": "2026-11-21",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P48",
+      "author": "chief",
+      "text": "Côte d'Ivoire formally adopts higher mineral royalties by decree",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-21",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P49",
+      "author": "chief",
+      "text": "The US House passes the Senate-approved permitting bill that affects the Boundary Waters",
+      "by": "2026-12-31",
+      "confidence": "low",
+      "made": "2026-11-21",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "P50",
+      "author": "chief",
+      "text": "Ivanhoe Electric publishes further Gleeson drill results from Arizona",
+      "by": "2026-12-31",
+      "confidence": "medium",
+      "made": "2026-11-21",
       "status": "open",
       "evidence": []
     }
